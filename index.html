@@ -283,6 +283,41 @@
 						<div class="clear"></div>
 					</div>
 					<div class="toggle-content">	
+                      <div class="example_code">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">yt.mods</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;RD0005/RedshiftOutput0005&quot;</span><span class="p">)</span>
+<span class="c"># Let&#39;s center at the center of the box</span>
+<span class="n">pc</span> <span class="o">=</span> <span class="n">PlotCollection</span><span class="p">(</span><span class="n">pf</span><span class="p">,</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">])</span>
+<span class="c"># Project Density along the x axis...</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">pc</span><span class="o">.</span><span class="n">add_projection</span><span class="p">(</span><span class="s">&quot;Density&quot;</span><span class="p">,</span> <span class="s">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">pc</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</pre></div>
+                      </div>
+                      <img class="example_image" src="img/density_projection.png">
+					</div><!-- end toggle-content -->
+				</div><!-- end toggle-container -->
+				
+				<div class="toggle-container full-width">						
+					<div class="toggle-header">
+						<h4>Density and Halo Projection</h4>
+						<a class="toggle-link toggle-open" href="#"></a>
+						<div class="clear"></div>
+					</div>
+					<div class="toggle-content">	
+                      <div class="example_code">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">yt.mods</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;RD0005/RedshiftOutput0005&quot;</span><span class="p">)</span>
+<span class="c"># Let&#39;s center at the center of the box</span>
+<span class="n">pc</span> <span class="o">=</span> <span class="n">PlotCollection</span><span class="p">(</span><span class="n">pf</span><span class="p">,</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">])</span>
+<span class="c"># Project Density along the x axis...</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">pc</span><span class="o">.</span><span class="n">add_projection</span><span class="p">(</span><span class="s">&quot;Density&quot;</span><span class="p">,</span> <span class="s">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">halos</span> <span class="o">=</span> <span class="n">HaloFinder</span><span class="p">(</span><span class="n">pf</span><span class="p">)</span>
+<span class="n">p</span><span class="o">.</span><span class="n">modify</span><span class="p">[</span><span class="s">&quot;hop_circles&quot;</span><span class="p">](</span><span class="n">halos</span><span class="p">)</span>
+<span class="n">p</span><span class="o">.</span><span class="n">modify</span><span class="p">[</span><span class="s">&quot;hop_particles&quot;</span><span class="p">](</span><span class="n">halos</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c"># Max of 10 halos</span>
+<span class="n">pc</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</pre></div>
+                      </div>
+                      <img class="example_image" src="img/density_projection_halos.png">
 					</div><!-- end toggle-content -->
 				</div><!-- end toggle-container -->
 				
@@ -334,8 +369,8 @@
 <span class="n">pc</span><span class="o">.</span><span class="n">set_width</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="s">&#39;au&#39;</span><span class="p">)</span>
 <span class="n">pc</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
 </pre></div>
-                      <img src="img/off_axis_slice.png" class="example_image">
 				      </div>
+                      <img class="example_image" src="img/off_axis_slice.png">
 					</div>
 				</div><!-- end toggle-container -->	
 				
