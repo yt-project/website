@@ -97,7 +97,23 @@ $(document).ready(function() {
 		}
 	});
 
-
+    var bburl
+    bburl = "https://api.bitbucket.org/1.0/repositories/yt_analysis/yt/events/";
+    $.getJSON(bburl + "?limit=5&callback=?", populate_events('yt'));
+    bburl = "https://api.bitbucket.org/1.0/repositories/yt_analysis/yt/issues/";
+    $.getJSON(bburl + "?limit=10&callback=?", populate_issues('yt'));
+    populate_forks("yt")( [ {username:'sskory'},
+                            {username:'MatthewTurk'},
+                            {username:'MatthewTurk', reponame:'yt-newfields'},
+                            {username:'BrittonSmith'},
+                            {username:'samskillman'},
+                            {username:'atmyers'},
+                            {username:'jwise77'},
+                            {username:'sklemer'},
+                            {username:'caseywstark'},
+                            {username:'gsiisg'},
+                            {username:'chummels', reponame:'yt-chummels'},
+                          ]);
 
 });	//END of jQuery
 
