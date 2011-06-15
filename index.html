@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>The yt Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!--imports the main css file-->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+<!--imports prettyPhoto css file-->
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="css/pygments.css" type="text/css" media="screen" />
+
+<!--imports Google Maps API key-->
+<!--<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;ENTER
+  YOUR GOOGLE MAP API KEY HERE" type="text/javascript"></script>-->
+<!--imports jquery-->
+<script type="text/javascript" src="js/jquery-1.5.2.js"></script>
+<!--imports jquery form plugin-->
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<!--imports twitter feed plugin-->
+<script type="text/javascript" src="js/jquery.tweet.js"></script>
+<!--imports cycle slider plugin-->
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<!--imports easing plugin-->
+<script type="text/javascript" src="js/easing.js"></script>
+<!--imports prettyPhoto plugin-->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<!--imports scrollTo plugin-->
+<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+<!--imports local scroll plugin-->
+<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+<!--imports jQuery Tools plugin-->
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+
+<!--imports custom javascript code-->
+<script type="text/javascript" src="js/custom.js"></script>
+
+<!-- handles the jquery cycle slider -->
+<script type="text/javascript">
+
+	$('#slider-cycle').cycle({ 
+		fx:      'scrollHorz', // transition type
+		speed:    1200,
+		timeout:  8000,
+		cleartype: false,   //  Fixes the issue with IE6+
+		startingSlide: 0,
+		next: '#cycle-next',
+		prev: '#cycle-prev'
+	});
+		
+</script>
+
+<!--[if IE 7]><link href="css/ie7.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+
+</head>
+
+<body>
+
+	<div id="left" class="noise">
+		<ul id="navigation">
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a href="#getyt">Get YT</a></li>
+			<li><a href="#about">Examples</a></li>
+			<li><a href="#community">Community</a></li>
+            <li>&nbsp;</li>
+			<li><a href="doc/index.html">Docs</a></li>
+			<li><a href="http://hg.enzotools.org/">Devel</a></li>
+			<li><a href="http://blog.enzotools.org/">Blog</a></li>
+		</ul>
+		
+		<div id="logo">
+			<!--<h1><a href="#home">Temptation</a></h1>-->
+			<!--<p>Get YT: <a href="http://goo.gl/hQv1d">goo.gl/hQv1d</a></p>-->
+			<p>Get YT: <a href="http://goo.gl/DdwC4" class="urlshort">goo.gl/DdwC4</a></p>
+		</div>
+		<!--<p id="copyright">Copyright &copy; 2011 John Doe. All rights
+        reserved</p>-->
+	</div><!-- end left -->	
+	
+	<div id="right" class="lines-1">
+
+		<div id="home" class="page">
+				<h2>yt.enzotools.org</h2>
+				<p class="sub-title">Astrophysical Simulation Analysis and Viz</p>
+				<div class="featured cycle">
+					
+					<ul id="slider-cycle">
+						<!-- slide 1 -->
+						<li>
+							<img src="img/reion.png" alt="image" />
+							<!-- caption text -->
+							<div class="caption">
+								<h3>Physically-Motivated Visualization</h3>
+								<p>Simulation of dwarf galaxies by Wise &amp; Cen</p>
+							</div><!-- end caption -->
+						</li>
+						<!-- slide 6 -->
+						<li>
+							<img src="img/cosmo_proj.png" alt="image" />
+							<!-- caption text -->
+							<div class="caption">
+								<h3>Fast projections</h3>
+								<p>Projection of dark matter density by the Nyx group</p>
+							</div><!-- end caption -->
+						</li>
+						<!-- slide 2 -->
+						<li>
+							<img src="img/popiii_j64.png" alt="image" />
+							<!-- caption text -->
+							<div class="caption">
+								<h3>Isocontour Visualization</h3>
+								<p>Population III star simulation by Turk, Oishi &amp; Abel</p>
+							</div><!-- end caption -->
+						</li>
+						<!-- slide 3 -->
+						<li>
+							<img src="img/sscluster.png" alt="image" />
+							<!-- caption text -->
+							<div class="caption">
+								<h3>Massively Parallel</h3>
+								<p>Cluster simulation by Skillman, Burns &amp; O'Shea</p>
+							</div><!-- end caption -->
+						</li>
+						<!-- slide 4 -->
+						<li>
+							<img src="img/halo_0029.png" alt="image" />
+							<!-- caption text -->
+							<div class="caption">
+								<h3>Quantitative Viz</h3>
+								<p>Off-axis projection of a disk-galaxy by Hummels &amp; Bryan</p>
+							</div><!-- end caption -->
+						</li>
+						<!-- slide 5 -->
+						<li>
+							<img src="img/phaseplot.png" alt="image" />
+							<!-- caption text -->
+							<div class="caption">
+								<h3>Quantitative Analysis</h3>
+								<p>Phase plot of matter distribution by Turk &amp; Bryan</p>
+							</div><!-- end caption -->
+						</li>
+					</ul>
+					
+					<ul id="slider-cycle-nav">
+						<li><a id="cycle-prev"></a></li>
+						<li><a id="cycle-next"></a></li>
+					</ul>
+					
+				</div><!-- end featured -->
+				
+				<div class="separator-line"></div>
+				
+				<p class="slogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium luc tus urna, <a href="#">nec commodo</a> erat tempus ac. Ut accumsan dolor velit.</p>
+			
+			<div class="separator-line"></div>
+			
+			<div class="boxes">
+				<div class="one-third">
+					<div class="box-title">
+						<img class="box-icon" src="img/box-icons/magnifier.png" alt="image" />
+						<h3>Data-Driven</h3>
+						<span class="subtitle">Inspect your data</span>
+					</div>	
+                    <p>yt is designed to provide a consistent, cross-code
+                    interface to analyzing and visualizing astrophysical
+                    simulation data from a physical perspective.</p>
+                    <a href="#examples">Read More</a>
+				</div>
+				
+				<div class="one-third">
+					<div class="box-title">
+						<img class="box-icon" src="img/box-icons/wrench2.png" alt="image" />
+						<h3>Free Software</h3>
+						<span class="subtitle">Open Source, Open Science</span>
+					</div>	
+                    <p>yt is developed completely in the open.  The developers 
+                    are committed to open source practices and fidelity of scientific
+                    results.</p>
+                    <a href="#getyt">Read More</a>
+				</div>
+				
+				<div class="one-third last">
+					<div class="box-title">
+						<img class="box-icon" src="img/box-icons/thumbup.png" alt="image" />
+						<h3>Community</h3>
+						<span class="subtitle">Participants welcome!</span>
+					</div>	
+                    <p> yt is composed of a friendly community of users and
+                    developers.  We want to make it easy to use and develop --
+                    we'd love it if you got involved!  </p>
+					<a href="#community">Read More</a>
+				</div>						
+				
+				<div class="clear"></div>
+				
+			</div><!-- end boxes -->			
+			
+			<div class="separator-line"></div>
+			
+			<div class="two-third">
+				<h3>yt mission statement</h3>
+                <p>To produce an integrated science environment for asking and
+                   answering astrophysical questions, utilizing advanced
+                   simulations, reproducible analysis and communicative, beautiful
+                   visualizations.</p>
+                <p>Development of yt is driven by a commitment to
+                   Open Science principles as manifested in participatory
+                   development, a friendly and helpful community, and Free and Libre
+                   Open Source Software.</p>
+			</div>				
+				
+			<div class="one-third last">
+				<h3>Twitter Feed</h3>
+				<div id="twitter-feed"></div>					
+			</div>
+			
+			<div class="clear"></div>
+			
+		</div><!-- end home page -->			
+
+		
+
+	<!-- INSTALL PAGE -->
+		<div id="getyt" class="page">
+			<h2>Getting YT</h2>	
+			<p class="sub-title">Installation instructions for the faint of heart</p>
+			<div class="full-width">
+              <p>yt is built on a stack of completely
+              <a href="http://www.fsf.org/working-together/">free and libre open source software</a>,
+              with <b>no</b> proprietary dependencies.  It provides its own
+              install script, to assist with constructing an isolated
+              environment that can be upgraded and operated in independently of
+              the host operating system.</p>
+              <p>Usually getting yt is as simple as running the installation
+              script. To download the current "stable" version:</p>
+              <div class="install_code">
+                  $ wget <a href="http://hg.enzotools.org/yt/src/stable/doc/install_script.sh">http://hg.enzotools.org/yt/raw/stable/doc/install_script.sh</a><br/> 
+                  $ bash install_script.sh
+              </div>
+              <p>Or, if you'd rather the current main development tree:</p>
+              <div class="install_code">
+                  $ wget <a href="http://hg.enzotools.org/yt/src/yt/doc/install_script.sh">http://hg.enzotools.org/yt/raw/yt/doc/install_script.sh</a><br/> 
+                  $ bash install_script.sh
+              </div> 
+              <p>There are more detailed installation instructions
+                 <a href="http://yt.enzotools.org/doc/orientation.html#installing-yt">in the manual</a>,
+                 and some pointers about some <a href="http://hg.enzotools.org/yt/wiki/CommunityInstallations">community installation locations</a>.
+              </p>
+            </div>
+        </div>
+
+	<!-- ABOUT PAGE -->
+		
+		
+		<div id="about" class="page">
+			<h2>Examples</h2>	
+			<p class="sub-title">Some examples to get you going</p>
+			<div class="full-width">
+				<h3>Recipes!</h3>
+                <p><img class="image-left" src="img/iyt_120px.png" alt="Image description" />
+                In the <a href="doc/">documentation</a> you'll find a number of
+                samples, examples, tutorials and canned recipes.  You can even
+                check out the <a href="http://hg.enzotools.org/cookbook/">cookbook</a>
+                repository.  Additionally, on the <a href=http://lists.spacepope.org/listinfo.cgi/yt-users-spacepope.org">users' mailing list</a>
+                there are a number of people who are willing to help out.</p>
+                <p>Here, though, we've provided a couple snippets of code that
+                show how you might get started looking at data, making
+                visualizations, and exploring.  This is only a selection of the
+                stuff yt can do, but it is a good sampling.</p>
+			</div>	
+					
+			<h3>Script Examples</h3>
+
+			<div class="separator-line"></div>				
+														
+			<div class="toggles">
+				<div class="toggle-container full-width">						
+					<div class="toggle-header">
+						<h4>Density Projection</h4>
+						<a class="toggle-link toggle-open" href="#"></a>
+						<div class="clear"></div>
+					</div>
+					<div class="toggle-content">	
+					</div><!-- end toggle-content -->
+				</div><!-- end toggle-container -->
+				
+				<div class="toggle-container full-width">						
+					<div class="toggle-header">
+						<h4>Examining Grid Values</h4>
+						<a class="toggle-link toggle-open" href="#"></a>
+						<div class="clear"></div>
+					</div>
+					<div class="toggle-content">	
+					</div>
+				</div><!-- end toggle-container -->
+				<div class="toggle-container full-width">						
+					<div class="toggle-header">
+						<h4>All-Sky Column Density</h4>
+						<a class="toggle-link toggle-open" href="#"></a>
+						<div class="clear"></div>
+					</div>
+					<div class="toggle-content">	
+                      <div class="example_code">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">yt.mods</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">yt.visualization.volume_rendering.camera</span> <span class="kn">as</span> <span class="nn">camera</span>
+
+<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;../RedshiftOutput0010.dir/RedshiftOutput0010&quot;</span><span class="p">)</span>
+<span class="n">cam</span> <span class="o">=</span> <span class="n">camera</span><span class="o">.</span><span class="n">HEALpixCamera</span><span class="p">([</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span> <span class="mf">50.</span><span class="o">/</span><span class="n">pf</span><span class="p">[</span><span class="s">&#39;mpc&#39;</span><span class="p">],</span> 
+                           <span class="n">nside</span> <span class="o">=</span> <span class="mi">64</span><span class="p">,</span> <span class="n">pf</span> <span class="o">=</span> <span class="n">pf</span><span class="p">,</span>
+                           <span class="n">log_fields</span> <span class="o">=</span> <span class="p">[</span><span class="bp">False</span><span class="p">])</span>
+<span class="n">bitmap</span> <span class="o">=</span> <span class="n">cam</span><span class="o">.</span><span class="n">snapshot</span><span class="p">(</span><span class="s">&quot;allsky.png&quot;</span><span class="p">)</span>
+</pre></div>
+                      </div>
+                      <img src="img/allsky.png" class="example_image">
+					</div>
+				</div><!-- end toggle-container -->
+				
+				<div class="toggle-container full-width">
+					<div class="toggle-header">
+						<h4>Off-Axis Slice</h4>
+						<a class="toggle-link toggle-open" href="#"></a>
+						<div class="clear"></div>
+					</div>
+					<div class="toggle-content">	
+                      <div class="example_code">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">yt.mods</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;../bfield_j64/DD0053/DD0053&quot;</span><span class="p">)</span>
+<span class="n">sp</span> <span class="o">=</span> <span class="n">pf</span><span class="o">.</span><span class="n">h</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span><span class="s">&#39;max&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mf">100.0</span><span class="p">,</span><span class="s">&#39;au&#39;</span><span class="p">))</span>
+<span class="n">L</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">quantities</span><span class="p">[</span><span class="s">&quot;AngularMomentumVector&quot;</span><span class="p">]()</span>
+<span class="n">pc</span> <span class="o">=</span> <span class="n">PlotCollection</span><span class="p">(</span><span class="n">pf</span><span class="p">)</span>
+<span class="n">pc</span><span class="o">.</span><span class="n">add_cutting_plane</span><span class="p">(</span><span class="s">&quot;Density&quot;</span><span class="p">,</span> <span class="n">L</span><span class="p">)</span>
+<span class="n">pc</span><span class="o">.</span><span class="n">set_width</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="s">&#39;au&#39;</span><span class="p">)</span>
+<span class="n">pc</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</pre></div>
+                      <img src="img/off_axis_slice.png" class="example_image">
+				      </div>
+					</div>
+				</div><!-- end toggle-container -->	
+				
+				<div class="toggle-container full-width">
+					<div class="toggle-header">
+						<h4>Isocontour Volume Rendering</h4>
+						<a class="toggle-link toggle-open" href="#"></a>
+						<div class="clear"></div>
+					</div>
+					<div class="toggle-content">	
+                      <div class="example_code">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">yt.mods</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;../JHK-DD0030/galaxy0030&quot;</span><span class="p">)</span>
+
+<span class="n">sphere</span> <span class="o">=</span> <span class="n">pf</span><span class="o">.</span><span class="n">h</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span><span class="s">&#39;max&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">125</span><span class="p">,</span> <span class="s">&#39;kpc&#39;</span><span class="p">))</span>
+<span class="n">limits</span> <span class="o">=</span> <span class="n">sphere</span><span class="o">.</span><span class="n">quantities</span><span class="p">[</span><span class="s">&quot;Extrema&quot;</span><span class="p">](</span><span class="s">&quot;Density&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">tf</span> <span class="o">=</span> <span class="n">ColorTransferFunction</span><span class="p">(</span><span class="n">na</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">limits</span><span class="p">))</span>
+<span class="c"># five layers, with the kamae colormap, 0.1 dex wide each</span>
+<span class="n">tf</span><span class="o">.</span><span class="n">add_layers</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="n">colormap</span><span class="o">=</span><span class="s">&quot;kamae&quot;</span><span class="p">,</span> <span class="n">w</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
+<span class="n">cam</span> <span class="o">=</span> <span class="n">pf</span><span class="o">.</span><span class="n">h</span><span class="o">.</span><span class="n">camera</span><span class="p">([</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span> <span class="c"># center</span>
+                  <span class="p">[</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">],</span> <span class="c"># view-angle</span>
+                  <span class="mf">125.0</span><span class="o">/</span><span class="n">pf</span><span class="p">[</span><span class="s">&#39;kpc&#39;</span><span class="p">],</span>   <span class="c"># FOV</span>
+                  <span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">),</span>      <span class="c"># resolution</span>
+                  <span class="n">tf</span><span class="p">)</span>              <span class="c"># transfer function</span>
+<span class="n">cam</span><span class="o">.</span><span class="n">snapshot</span><span class="p">(</span><span class="s">&quot;image.png&quot;</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">)</span> <span class="c"># clip by 4.0 * std()</span>
+</pre></div>
+                      </div>
+                      <img class="example_image" src="img/iso_vol.png">
+					</div>
+				</div><!-- end toggle-container -->	
+
+				<div class="toggle-container full-width">
+					<div class="toggle-header">
+						<h4>Phase Diagram</h4>
+						<a class="toggle-link toggle-open" href="#"></a>
+						<div class="clear"></div>
+					</div>
+					<div class="toggle-content">	
+					</div>
+				</div><!-- end toggle-container -->	
+				
+			</div><!-- end toggles -->
+			
+		</div><!-- end about page -->					
+		
+	<!-- COMMUNITY PAGE -->	
+		
+		<div id="community" class="page">
+			<h2>Community</h2>
+			<p class="sub-title">Participation encouraged!</p>
+			
+			<div class="two-third">
+				<h3>Project Statistics</h3>
+				<p>A snapshot into the development history of yt, courtesy of <a href="http://ohloh.net/">Ohloh</a></p>
+				<script type="text/javascript" src="http://www.ohloh.net/p/129183/widgets/project_basic_stats.js"></script>
+			</div>
+			
+			<div class="one-third last">				
+				<h3>Communication Channels</h3>
+				<p>
+					<a href="http://lists.spacepope.org/listinfo.cgi/yt-users-spacepope.org">users mailing list</a><br />
+					<a href="http://lists.spacepope.org/listinfo.cgi/yt-dev-spacepope.org">dev mailing list</a><br />
+					<a href="http://lists.spacepope.org/listinfo.cgi/yt-svn-spacepope.org">commits mailing list</a><br />
+				</p>
+				
+				<p>
+                    <a href="http://yt.enzotools.org/irc.html">IRC</a> (<span style="font-family:Inconsolata;">#yt</span> on 
+                                                                        <span style="font-family:Inconsolata;">chat.freenode.net</span>)
+				</p>
+                <p>
+                    <a href="http://hg.enzotools.org/">Project Page</a>
+                      (<a href="http://hg.enzotools.org/yt/src">source</a>)<br />
+                    <a href="http://hg.enzotools.org/yt/issues/new">Report a bug</a>
+                </p>
+
+				
+				<div class="social-networks">
+					<h3>Around the internet</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>	
+					<ul class="social-links">
+						<li class="vimeo"><a href="http://vimeo.com/groups/ytgallery">Vimeo</a></li>
+						<li class="twitter"><a href="http://twitter.com/yt_astro">Twitter</a></li>
+						<li class="tumblr"><a href="http://blog.enzotools.org/">Posterous</a></li>
+					</ul>
+				</div><!-- end social-networks -->
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div class="separator-line"></div>
+			
+			<div class="clear"></div>				
+		
+		</div><!-- end contact page -->
+
+	</div><!-- end right -->	
+</body>
+
+</html>
