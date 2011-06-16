@@ -104,7 +104,6 @@ $(document).ready(function() {
     $.getJSON(bburl + "?limit=10&callback=?", populate_issues('yt'));
     populate_forks("yt")( [ {username:'sskory'},
                             {username:'MatthewTurk'},
-                            {username:'MatthewTurk', reponame:'yt-newfields'},
                             {username:'BrittonSmith'},
                             {username:'samskillman'},
                             {username:'atmyers'},

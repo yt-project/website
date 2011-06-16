@@ -1159,3 +1159,4 @@ div.install_code { font-family: Inconsolata; color: #000000; margin-left: 40px; 
 div.example_code { background-color: #333333; font-family: Inconsolata; color: #000000; width: 100%;}
 img.example_image { align: center; width: 100%; }
 div#getyt {font-size: 125%; }
+ul.quicklinks {font-size: 125%; list-style-type: square; margin-left: 20px; padding: 0px; }
