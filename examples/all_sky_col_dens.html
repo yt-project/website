@@ -1,0 +1,9 @@
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">yt.mods</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">yt.visualization.volume_rendering.camera</span> <span class="kn">as</span> <span class="nn">camera</span>
+
+<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;RedshiftOutput0010.dir/RedshiftOutput0010&quot;</span><span class="p">)</span>
+<span class="n">cam</span> <span class="o">=</span> <span class="n">camera</span><span class="o">.</span><span class="n">HEALpixCamera</span><span class="p">([</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span> <span class="mf">50.</span><span class="o">/</span><span class="n">pf</span><span class="p">[</span><span class="s">&#39;mpc&#39;</span><span class="p">],</span> 
+                           <span class="n">nside</span> <span class="o">=</span> <span class="mi">64</span><span class="p">,</span> <span class="n">pf</span> <span class="o">=</span> <span class="n">pf</span><span class="p">,</span>
+                           <span class="n">log_fields</span> <span class="o">=</span> <span class="p">[</span><span class="bp">False</span><span class="p">])</span>
+<span class="n">bitmap</span> <span class="o">=</span> <span class="n">cam</span><span class="o">.</span><span class="n">snapshot</span><span class="p">(</span><span class="s">&quot;allsky.png&quot;</span><span class="p">)</span>
+</pre></div>
