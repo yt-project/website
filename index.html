@@ -426,6 +426,17 @@
 						<div class="clear"></div>
 					</div>
 					<div class="toggle-content">	
+                      <div class="example_code">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">yt.mods</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;JHK-DD0030/galaxy0030&quot;</span><span class="p">)</span>
+<span class="n">pc</span> <span class="o">=</span> <span class="n">PlotCollection</span><span class="p">(</span><span class="n">pf</span><span class="p">,</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">])</span>
+<span class="n">pc</span><span class="o">.</span><span class="n">add_phase_sphere</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="s">&#39;1&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;Density&quot;</span><span class="p">,</span> <span class="s">&quot;Temperature&quot;</span><span class="p">,</span> <span class="s">&quot;CellMassMsun&quot;</span><span class="p">],</span>
+        <span class="n">weight</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
+<span class="n">pc</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</pre></div>
+                      </div>
+                      <img class="example_image" src="img/phase.png">
 					</div>
 				</div><!-- end toggle-container -->	
 				
