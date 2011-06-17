@@ -371,7 +371,7 @@
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">yt.mods</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">yt.visualization.volume_rendering.camera</span> <span class="kn">as</span> <span class="nn">camera</span>
 
-<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;../RedshiftOutput0010.dir/RedshiftOutput0010&quot;</span><span class="p">)</span>
+<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;RedshiftOutput0010.dir/RedshiftOutput0010&quot;</span><span class="p">)</span>
 <span class="n">cam</span> <span class="o">=</span> <span class="n">camera</span><span class="o">.</span><span class="n">HEALpixCamera</span><span class="p">([</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span> <span class="mf">50.</span><span class="o">/</span><span class="n">pf</span><span class="p">[</span><span class="s">&#39;mpc&#39;</span><span class="p">],</span> 
                            <span class="n">nside</span> <span class="o">=</span> <span class="mi">64</span><span class="p">,</span> <span class="n">pf</span> <span class="o">=</span> <span class="n">pf</span><span class="p">,</span>
                            <span class="n">log_fields</span> <span class="o">=</span> <span class="p">[</span><span class="bp">False</span><span class="p">])</span>
@@ -391,7 +391,7 @@
 					<div class="toggle-content">	
                       <div class="example_code">
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">yt.mods</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;../bfield_j64/DD0053/DD0053&quot;</span><span class="p">)</span>
+<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;DD0053/DD0053&quot;</span><span class="p">)</span>
 <span class="n">sp</span> <span class="o">=</span> <span class="n">pf</span><span class="o">.</span><span class="n">h</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span><span class="s">&#39;max&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mf">100.0</span><span class="p">,</span><span class="s">&#39;au&#39;</span><span class="p">))</span>
 <span class="n">L</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">quantities</span><span class="p">[</span><span class="s">&quot;AngularMomentumVector&quot;</span><span class="p">]()</span>
 <span class="n">pc</span> <span class="o">=</span> <span class="n">PlotCollection</span><span class="p">(</span><span class="n">pf</span><span class="p">)</span>
@@ -414,19 +414,19 @@
                       <div class="example_code">
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">yt.mods</span> <span class="kn">import</span> <span class="o">*</span>
 
-<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;../JHK-DD0030/galaxy0030&quot;</span><span class="p">)</span>
+<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;JHK-DD0030/galaxy0030&quot;</span><span class="p">)</span>
 
 <span class="n">sphere</span> <span class="o">=</span> <span class="n">pf</span><span class="o">.</span><span class="n">h</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span><span class="s">&#39;max&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">125</span><span class="p">,</span> <span class="s">&#39;kpc&#39;</span><span class="p">))</span>
 <span class="n">limits</span> <span class="o">=</span> <span class="n">sphere</span><span class="o">.</span><span class="n">quantities</span><span class="p">[</span><span class="s">&quot;Extrema&quot;</span><span class="p">](</span><span class="s">&quot;Density&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">tf</span> <span class="o">=</span> <span class="n">ColorTransferFunction</span><span class="p">(</span><span class="n">na</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">limits</span><span class="p">))</span>
-<span class="c"># five layers, with the kamae colormap, 0.1 dex wide each</span>
+<span class="c"># five layers, with the kamae colormap, 0.001 dex wide each</span>
 <span class="n">tf</span><span class="o">.</span><span class="n">add_layers</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="n">colormap</span><span class="o">=</span><span class="s">&quot;kamae&quot;</span><span class="p">,</span> <span class="n">w</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
 <span class="n">cam</span> <span class="o">=</span> <span class="n">pf</span><span class="o">.</span><span class="n">h</span><span class="o">.</span><span class="n">camera</span><span class="p">([</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span> <span class="c"># center</span>
                   <span class="p">[</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">],</span> <span class="c"># view-angle</span>
                   <span class="mf">125.0</span><span class="o">/</span><span class="n">pf</span><span class="p">[</span><span class="s">&#39;kpc&#39;</span><span class="p">],</span>   <span class="c"># FOV</span>
                   <span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">),</span>      <span class="c"># resolution</span>
                   <span class="n">tf</span><span class="p">)</span>              <span class="c"># transfer function</span>
-<span class="n">cam</span><span class="o">.</span><span class="n">snapshot</span><span class="p">(</span><span class="s">&quot;image.png&quot;</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">)</span> <span class="c"># clip by 4.0 * std()</span>
+<span class="n">cam</span><span class="o">.</span><span class="n">snapshot</span><span class="p">(</span><span class="s">&quot;image.png&quot;</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">)</span> <span class="c"># clip by 4.0 * std()</span>
 </pre></div>
                       </div>
                       <img class="example_image" src="img/iso_vol.png">
