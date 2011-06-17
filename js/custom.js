@@ -99,10 +99,10 @@ $(document).ready(function() {
 
     var bburl
     bburl = "https://api.bitbucket.org/1.0/repositories/yt_analysis/yt/events/";
-    $.getJSON(bburl + "?limit=5&callback=?", populate_events('yt'));
+    $.getJSON(bburl + "?limit=10&callback=?", populate_events('yt'));
     bburl = "https://api.bitbucket.org/1.0/repositories/yt_analysis/yt/issues/";
-    $.getJSON(bburl + "?limit=10&callback=?", populate_issues('yt'));
-    populate_forks("yt")( [ {username:'sskory'},
+    $.getJSON(bburl + "?limit=5&callback=?", populate_issues('yt'));
+    /*populate_forks("yt")( [ {username:'sskory'},
                             {username:'MatthewTurk'},
                             {username:'BrittonSmith'},
                             {username:'samskillman'},
@@ -112,7 +112,7 @@ $(document).ready(function() {
                             {username:'caseywstark'},
                             {username:'gsiisg'},
                             {username:'chummels', reponame:'yt-chummels'},
-                          ]);
+                          ]);*/
 
 });	//END of jQuery
 

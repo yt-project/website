@@ -67,9 +67,9 @@
 			<li><a href="#getyt">Get YT</a></li>
 			<li><a href="#about">Examples</a></li>
 			<li><a href="#community">Community</a></li>
+			<li><a href="#devel">Devel</a></li>
             <li>&nbsp;</li>
 			<li><a href="doc/index.html">Docs</a></li>
-			<li><a href="http://hg.enzotools.org/">Devel</a></li>
 			<li><a href="http://blog.enzotools.org/">Blog</a></li>
 		</ul>
 		
@@ -165,18 +165,6 @@
 			<div class="boxes">
 				<div class="one-third">
 					<div class="box-title">
-						<img class="box-icon" src="img/box-icons/wrench2.png" alt="image" />
-						<h3>Free Software</h3>
-						<span class="subtitle">Open Source, Open Science</span>
-					</div>	
-                    <p>yt is developed completely in the open.  The developers 
-                    are committed to open source practices and fidelity of scientific
-                    results.</p>
-                    <a href="#getyt">Read More</a>
-				</div>
-
-				<div class="one-third">
-					<div class="box-title">
 						<img class="box-icon" src="img/box-icons/magnifier.png" alt="image" />
 						<h3>Data-Driven</h3>
 						<span class="subtitle">Inspect your data</span>
@@ -199,6 +187,18 @@
 					<a href="#community">Read More</a>
 				</div>						
 				
+				<div class="one-third">
+					<div class="box-title">
+						<img class="box-icon" src="img/box-icons/wrench2.png" alt="image" />
+						<h3>Free Software</h3>
+						<span class="subtitle">Open Source, Open Science</span>
+					</div>	
+                    <p>yt is developed completely in the open.  The developers 
+                    are committed to open source practices and fidelity of scientific
+                    results.</p>
+                    <a href="#devel">Read More</a>
+				</div>
+
 				<div class="clear"></div>
 				
 			</div><!-- end boxes -->			
@@ -207,14 +207,19 @@
 			
 			<div class="two-third">
 				<h3>yt mission statement</h3>
-                <p>To produce an integrated science environment for asking and
-                   answering astrophysical questions, utilizing advanced
-                   simulations, reproducible analysis and communicative, beautiful
-                   visualizations.</p>
-                <p>Development of yt is driven by a commitment to
-                   Open Science principles as manifested in participatory
-                   development, a friendly and helpful community, and Free and Libre
-                   Open Source Software.</p>
+                <p>
+                The yt project aims to produce an integrated science
+                environment for collaboratively asking and answering
+                astrophysical questions, encompassing the creation of initial
+                conditions, the execution of simulations and the detailed
+                exploration and visualization of the resultant data.  It will
+                provide a standard framework based on physical quantities for
+                interoperability between codes. Development of yt is driven by
+                a commitment to Open Science principles as manifested in
+                participatory development, reproducibility, documented and
+                approachable code, a friendly and helpful community of users
+                and developers, and Free and Libre Open Source Software.
+                </p>
 			</div>				
 				
 			<div class="one-third last">
@@ -458,9 +463,24 @@
 			<p class="sub-title">Participation encouraged!</p>
 			
 			<div class="two-third">
-				<h3>Project Statistics</h3>
-				<p>A snapshot into the development history of yt, courtesy of <a href="http://ohloh.net/">Ohloh</a></p>
-				<script type="text/javascript" src="http://www.ohloh.net/p/129183/widgets/project_basic_stats.js"></script>
+				<h3>How To Get Involved</h3>
+                <p>
+                yt is a friendly community.  We like hearing about fun things
+                you have done with the code, and we're happy to help you out if
+                you have a question or some trouble.  You can join us in IRC,
+                on the mailing lists, and if you'd like, you can check out how
+                to <a href="#devel">develop, too</a>.
+                </p>
+                <p>
+                If you've got some code to share, or scripts that you'd like to
+                share, start up a repo on <a href="http://bitbucket.org/">BitBucket</a>,
+                or share them on our <a href="http://paste.enzotools.org/">PasteBin</a>.
+                If you have any trouble, drop by the mailing list and we're
+                happy to help out.
+                </p>
+                <p>
+                Hope to hear from you!
+                </p>
 			</div>
 			
 			<div class="one-third last">				
@@ -475,12 +495,6 @@
                     <a href="http://yt.enzotools.org/irc.html">IRC</a> (<span style="font-family:Inconsolata;">#yt</span> on 
                                                                         <span style="font-family:Inconsolata;">chat.freenode.net</span>)
 				</p>
-                <p>
-                    <a href="http://hg.enzotools.org/">Project Page</a>
-                      (<a href="http://hg.enzotools.org/yt/src">source</a>)<br />
-                    <a href="http://hg.enzotools.org/yt/issues/new">Report a bug</a>
-                </p>
-
 				
 				<div class="social-networks">
 					<h3>Around the internet</h3>
@@ -493,21 +507,55 @@
 				</div><!-- end social-networks -->
 			</div>
 			<div class="clear"></div>
+			
+			<div class="separator-line"></div>
+			
+			<div class="clear"></div>				
+		
+		</div><!-- end contact page -->
 
-			<div class="full-width repo">
+	<!-- DEVEL PAGE -->	
+		
+		<div id="devel" class="page">
+			<h2>Development</h2>
+			<p class="sub-title">Want to help out?</p>
+
+			<div class="one-half first">
+				<h3>Getting Started</h3>
+                <p style="font-size:125%;"><a href="http://bitbucket.org/yt_analysis/yt/fork">Fork us on BitBucket</a>!</p>
+                <p>
+                If you're interested in getting started with helping out,
+                the easiest way is to <a href="http://bitbucket.org/yt_analysis/yt/fork">Fork us on BitBucket</a>,
+                check out the <a href="http://yt.enzotools.org/doc/advanced/developing.html">developer guide</a>,
+                and stop by the <a href="http://lists.spacepope.org/listinfo.cgi/yt-dev-spacepope.org">developers' mailing list</a>.
+                </p>
+                <p>
+                There are lots of <a href="http://yt.enzotools.org/doc/advanced/developing.html#project-ideas">fun projects to work on</a>,
+                along with some <a href="http://hg.enzotools.org/yt/issues?status=new&status=open">open issues</a>,
+                and we'd particularly like if you'd help out by <a href="http://hg.enzotools.org/yt/wiki/AddingSupportForANewCode">adding a new code</a>
+                or if you'd like to help out by shoring up support in
+                <a href="http://hg.enzotools.org/yt/wiki/CodeSupportLevels">semi-supported code</a>.
+                </p>
+                <p>
+                Let us know how it goes!
+                </p>
+			</div>
+			
+			<div class="one-half last">
+				<h3>Project Statistics</h3>
+				<script type="text/javascript" src="http://www.ohloh.net/p/129183/widgets/project_basic_stats.js"></script>
+			</div>
+			
+			<div class="clear"></div>
+
+            <div class="two-third">
 			  <h3>Recent Commits</h3>
               <ul id="yt_commits" class="events">
               </ul>
             </div>
-			<div class="clear"></div>
-            <div class="two-third">
+			<div class="one-third last">
 			  <h3>Recent Bug Reports</h3>
               <ul id="yt_issues" class="events">
-              </ul>
-            </div>
-			<div class="one-third last">
-			  <h3>Forks of yt</h3>
-              <ul id="yt_forks" class="events">
               </ul>
             </div>
 			<div class="clear"></div>
