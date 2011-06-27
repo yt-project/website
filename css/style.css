@@ -81,10 +81,10 @@ h1, h2, h3, h5  {
 }
 
 h1 {
-	font-size: 50px;
-	line-height: 40px;
-	color: #4a8f43;
-	text-shadow: 1px 1px #1e1e1e;
+	font-size: 36px;
+	line-height: 36px;
+	color: #2b2b2b;
+	text-shadow: 1px 1px #ffffff;
 }
 
 h2 {
@@ -317,12 +317,12 @@ ol li {
 	margin-bottom: 0;
 }
 
-.page h2 {
-	text-align: right;
-	line-height: 36px;
-}
+.page h1, .page h2 { text-align: right; }
+.page h1 { line-height: 36px; }
+.page h2 { line-height: 20px; }
 
 .sub-title {
+	font-family: Arial, sans-serif;
 	border-bottom: 7px solid #eaeaea;
 	margin-bottom: 30px;
 	font-size: 12px;
