@@ -114,6 +114,8 @@ $(document).ready(function() {
                             {username:'chummels', reponame:'yt-chummels'},
                           ]);*/
 
+   $('#notification').delay(1000).show('slow').delay(10000).hide('slow');
+   $('#notification').delay(10000).hide('slow');
 });	//END of jQuery
 
 

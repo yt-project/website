@@ -218,6 +218,7 @@ ol li {
 	width: 67%;
 	background-color: #f7f7f7;
 	float: right;
+    padding-top: 2.0em;
 }
 
 /*=== BACKGROUND PATTERNS
@@ -1160,3 +1161,14 @@ div.example_code { background-color: #333333; font-family: Inconsolata; color: #
 img.example_image { align: center; width: 100%; }
 div#getyt {font-size: 125%; }
 ul.quicklinks {font-size: 125%; list-style-type: square; margin-left: 20px; padding: 0px; }
+
+#notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	background: #4a8f43;
+    z-index:100;
+    display: none;
+    text-align: center;
+}
