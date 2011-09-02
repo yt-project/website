@@ -122,7 +122,11 @@ $(document).ready(function() {
             var wrap = this.getOverlay().find(".content_wrap");
             wrap.html("<iframe src=\"http://player.vimeo.com/video/20201648\" width=\"640\" height=\"320\" frameborder=\"0\"></iframe>");
         },
-        onBeforeClose: function() { $("#slider-cycle").cycle("resume"); }
+        onBeforeClose: function() {
+            $("#slider-cycle").cycle("resume");
+            var wrap = this.getOverlay().find(".content_wrap");
+            wrap.html("");
+        }
         }); 
 });	//END of jQuery
 
