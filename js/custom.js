@@ -116,7 +116,12 @@ $(document).ready(function() {
 
    $('#notification').delay(1000).show('slow').delay(10000).hide('slow');
    $('#notification').delay(20000).hide('slow');
-   $("a[rel]").overlay(); 
+   $("a[rel]").overlay({
+        onBeforeLoad: function() {
+            var wrap = this.getOverlay().find(".content_wrap");
+            wrap.html("<iframe src=\"http://player.vimeo.com/video/20201648\" width=\"640\" height=\"320\" frameborder=\"0\"></iframe>");
+        }
+        }); 
 });	//END of jQuery
 
 

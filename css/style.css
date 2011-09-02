@@ -1186,8 +1186,9 @@ ul.quicklinks {font-size: 125%; list-style-type: square; margin-left: 20px; padd
 	/* styling */
 	background-color:#333;
 	
-	width:675px;	
-	min-height:200px;
+	width:640px;	
+	min-height:240px;
+    padding: 10px;
 	border:1px solid #666;
 	
 	/* CSS3 styling for latest browsers */
