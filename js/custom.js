@@ -124,7 +124,7 @@ $(document).ready(function() {
         onBeforeLoad: function() {
             $("#slider-cycle").cycle("pause");
             var wrap = this.getOverlay().find(".content_wrap");
-            wrap.html("<iframe src=\"http://player.vimeo.com/video/20201648\" width=\"640\" height=\"320\" frameborder=\"0\"></iframe>");
+            wrap.html("<iframe src=\"http://player.vimeo.com/video/28506477\" width=\"640\" height=\"320\" frameborder=\"0\"></iframe>");
         },
         onBeforeClose: function() {
             $("#slider-cycle").cycle("resume");
