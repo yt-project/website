@@ -115,7 +115,8 @@ $(document).ready(function() {
                           ]);*/
 
    $('#notification').delay(1000).show('slow').delay(10000).hide('slow');
-   $('#notification').delay(10000).hide('slow');
+   $('#notification').delay(20000).hide('slow');
+   $("a[rel]").overlay(); 
 });	//END of jQuery
 
 
