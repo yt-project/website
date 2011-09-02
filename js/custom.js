@@ -117,6 +117,10 @@ $(document).ready(function() {
    $('#notification').delay(1000).show('slow');
    $('#notification').delay(30000).hide('slow');
    $("a[rel]").overlay({
+        mask: { color: "#555",
+           loadSpeed: 200,
+           opacity: 0.9
+        },
         onBeforeLoad: function() {
             $("#slider-cycle").cycle("pause");
             var wrap = this.getOverlay().find(".content_wrap");
