@@ -1167,11 +1167,17 @@ ul.quicklinks {font-size: 125%; list-style-type: square; margin-left: 20px; padd
     top: 0;
     left: 0;
     width: 100%;
-	/*background: #4a8f43;*/
     background: white;
     z-index:100;
     display: none;
     text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 4px;
+    color: #000000;
+	font-family: Bebas, Arial, sans-serif;
+	font-weight: normal
+    height:30px;
 }
 
 /* the overlayed element */
