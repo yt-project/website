@@ -124,7 +124,7 @@ $(document).ready(function() {
         onBeforeLoad: function() {
             $("#slider-cycle").cycle("pause");
             var wrap = this.getOverlay().find(".content_wrap");
-            wrap.html("<iframe src=\"http://player.vimeo.com/video/28506477\" width=\"640\" height=\"320\" frameborder=\"0\"></iframe>");
+            wrap.html("<object type=\"application/x-shockwave-flash\" width=\"640\" height=\"320\" data=\"http://vimeo.com/hubnut/?user_id=user3192834&amp;color=4a8f43&amp;background=000000&amp;fullscreen=1&amp;slideshow=0&amp;stream=channel&amp;id=243779&amp;server=vimeo.com\"> <param name=\"quality\" value=\"best\" />       <param name=\"allowfullscreen\" value=\"true\" />     <param name=\"allowscriptaccess\" value=\"always\" />   <param name=\"scale\" value=\"showAll\" /> <param name=\"movie\" value=\"http://vimeo.com/hubnut/?user_id=user3192834&amp;color=4a8f43&amp;background=000000&amp;fullscreen=1&amp;slideshow=0&amp;stream=channel&amp;id=243779&amp;server=vimeo.com\" /></object>");
         },
         onBeforeClose: function() {
             $("#slider-cycle").cycle("resume");
