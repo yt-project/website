@@ -1153,6 +1153,8 @@ label {
 	.twitter a:hover { background: url(../img/social/twitter.png) no-repeat bottom center; }
 	.vimeo a { background: url(../img/social/vimeo.png) no-repeat top center; }	
 	.vimeo a:hover { background: url(../img/social/vimeo.png) no-repeat bottom center; }
+	.google a { background: url(../img/social/google+.png) no-repeat top center; }	
+	.google a:hover { background: url(../img/social/google+.png) no-repeat bottom center; }
 	.yahoo a { background: url(../img/social/yahoo.png) no-repeat top center; }	
 	.yahoo a:hover { background: url(../img/social/yahoo.png) no-repeat bottom center; }
 
