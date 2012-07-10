@@ -114,7 +114,7 @@ $(document).ready(function() {
                             {username:'chummels', reponame:'yt-chummels'},
                           ]);*/
 
-   $('#notification').delay(1000).slideDown('slow');
+   $('#notification').delay(10).slideDown('slow');
    $('#notification').delay(30000).slideUp('slow');
    $("a[rel]").overlay({
         mask: { color: "#555",
