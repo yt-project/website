@@ -12,4 +12,4 @@ cam = pf.h.camera([0.5, 0.5, 0.5], # center
                   125.0/pf['kpc'],   # FOV
                   (512, 512),      # resolution
                   tf)              # transfer function
-cam.snapshot("image.png", 4.0) # clip by 4.0 * std()
+cam.snapshot("image.png", clip_ratio=4.0) # clip by 4.0 * std()

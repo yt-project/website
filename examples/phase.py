@@ -1,7 +1,7 @@
 import time
 from yt.mods import *
-pf = load("JHK-DD0030/galaxy0030")
-pc = PlotCollection(pf, [0.5, 0.5, 0.5])
-pc.add_phase_sphere(1.0, '1', ["Density", "Temperature", "CellMassMsun"],
+pf = load("GalaxyClusterMerger/fiducial_1to3_b0.273d_hdf5_plt_cnt_0175")
+pc = PlotCollection(pf, "c")
+pc.add_phase_sphere(10.0, 'mpc', ["Density", "Temperature", "CellMassMsun"],
         weight=None)
 pc.save()

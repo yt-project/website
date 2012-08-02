@@ -1,8 +1,6 @@
 from yt.mods import *
-pf = load("DD0053/DD0053")
+pf = load("DD0087/DD0087")
 sp = pf.h.sphere('max', (100.0,'au'))
 L = sp.quantities["AngularMomentumVector"]()
-pc = PlotCollection(pf)
-pc.add_cutting_plane("Density", L)
-pc.set_width(1000, 'au')
-pc.save()
+off = OffAxisSlicePlot(pf, L, "Density", center="max", width=(1000, "au"))
+off.save()
