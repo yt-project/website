@@ -12,5 +12,5 @@
                   <span class="mf">125.0</span><span class="o">/</span><span class="n">pf</span><span class="p">[</span><span class="s">&#39;kpc&#39;</span><span class="p">],</span>   <span class="c"># FOV</span>
                   <span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">),</span>      <span class="c"># resolution</span>
                   <span class="n">tf</span><span class="p">)</span>              <span class="c"># transfer function</span>
-<span class="n">cam</span><span class="o">.</span><span class="n">snapshot</span><span class="p">(</span><span class="s">&quot;image.png&quot;</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">)</span> <span class="c"># clip by 4.0 * std()</span>
+<span class="n">cam</span><span class="o">.</span><span class="n">snapshot</span><span class="p">(</span><span class="s">&quot;image.png&quot;</span><span class="p">,</span> <span class="n">clip_ratio</span><span class="o">=</span><span class="mf">4.0</span><span class="p">)</span> <span class="c"># clip by 4.0 * std()</span>
 </pre></div>

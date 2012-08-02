@@ -122,6 +122,14 @@ a {
 	text-decoration: none;
 }
 
+p a {
+    font-weight: bold;
+}
+
+p.slogan a {
+    font-weight: normal;
+}
+
 a:hover {
 	text-decoration: underline;
 }

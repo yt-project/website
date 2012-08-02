@@ -1,9 +1,7 @@
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">yt.mods</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;DD0053/DD0053&quot;</span><span class="p">)</span>
+<span class="n">pf</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&quot;DD0087/DD0087&quot;</span><span class="p">)</span>
 <span class="n">sp</span> <span class="o">=</span> <span class="n">pf</span><span class="o">.</span><span class="n">h</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span><span class="s">&#39;max&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mf">100.0</span><span class="p">,</span><span class="s">&#39;au&#39;</span><span class="p">))</span>
 <span class="n">L</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">quantities</span><span class="p">[</span><span class="s">&quot;AngularMomentumVector&quot;</span><span class="p">]()</span>
-<span class="n">pc</span> <span class="o">=</span> <span class="n">PlotCollection</span><span class="p">(</span><span class="n">pf</span><span class="p">)</span>
-<span class="n">pc</span><span class="o">.</span><span class="n">add_cutting_plane</span><span class="p">(</span><span class="s">&quot;Density&quot;</span><span class="p">,</span> <span class="n">L</span><span class="p">)</span>
-<span class="n">pc</span><span class="o">.</span><span class="n">set_width</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="s">&#39;au&#39;</span><span class="p">)</span>
-<span class="n">pc</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<span class="n">off</span> <span class="o">=</span> <span class="n">OffAxisSlicePlot</span><span class="p">(</span><span class="n">pf</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="s">&quot;Density&quot;</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="s">&quot;max&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="s">&quot;au&quot;</span><span class="p">))</span>
+<span class="n">off</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
 </pre></div>
