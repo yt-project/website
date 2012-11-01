@@ -42,6 +42,7 @@
   <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
   <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
   <script type="text/javascript" src="js/jquery.tools.min.js"></script>
+  <script type="text/javascript" src="js/jquery.jfeed.pack.js"></script>
 
   <!-- custom javascript code-->
   <script type="text/javascript" src="js/custom.js"></script>
@@ -56,6 +57,17 @@
       next: '#cycle-next',
       prev: '#cycle-prev'
   	});
+   jQuery.getFeed({
+     url: 'atom.atom',
+     success: function(feed) {
+        var entry;
+        jQuery.each(feed.items.slice(0,3), function(ind, item) {
+          entry = "<li><a href='" + item.link + "'><b>" + item.title
+                + "</b></a><br/>" + "Posted on " + item.updated;
+          $('#blog-entries').append(entry);
+        });
+     }
+   });
   </script>
 
   <script type="text/javascript" src="js/konami.pack.js"></script>
@@ -76,9 +88,9 @@
   <div id="left" class="noise">
     <ul id="navigation">
       <li><a href="#home">Home</a></li>
+      <li><a href="#community">Community</a></li>
       <li><a href="#getyt">Get YT</a></li>
       <li><a href="#examples">Examples</a></li>
-      <li><a href="#community">Community</a></li>
       <li><a href="#devel">Develop</a></li>
       <li>&nbsp;</li>
       <li><a href="#help">Help!</a>"</li>
@@ -300,6 +312,77 @@
 
     </div><!-- end home page -->
 
+      <!-- COMMUNITY PAGE -->
+
+      <div id="community" class="page">
+        <h2>Community</h2>
+        <p class="sub-title">Participation encouraged!</p>
+
+        <div class="one-half first">
+          <h3>Recent Blog Entries</h3>
+          <ul id="blog-entries">
+          </ul>
+        </div>
+        <div class="one-half last">
+            <img class="image-right" src="img/community_small.jpg" alt="People Working" />
+        </div>
+        <div class="two-third">
+          <h3>How To Get Involved</h3>
+          <p>
+            yt is a friendly community.  We like hearing about fun things you
+            have done with the code, and we're happy to help you out if you have
+            a question or some trouble.  You can join us in IRC, on the mailing
+            lists, and if you'd like, you can check out how to <a href="#devel">
+            develop, too</a>.
+          </p>
+          <p>
+            If you've got some code to share, or scripts that you'd like to
+            share, start up a repo on <a href="http://bitbucket.org/">BitBucket
+            </a>, or share them on our <a href="http://paste.enzotools.org/">
+            PasteBin</a>.  For longer chunks of code or repositories used to
+            make papers, we encourage you to check out the
+            <a href="http://hub.yt-project.org/">yt Hub</a>, which is designed to
+            share utilities, management scripts and so on with other people.
+            If you have any trouble, drop by the mailing list and we'll be
+            happy to help out.
+          </p>
+          <p>
+            Hope to hear from you!
+          </p>
+        </div>
+        <div class="one-third last">
+          <h3>Communication Channels</h3>
+          <p>
+            <a href="http://lists.spacepope.org/listinfo.cgi/yt-users-spacepope.org">users mailing list</a><br />
+            <a href="http://lists.spacepope.org/listinfo.cgi/yt-dev-spacepope.org">dev mailing list</a><br />
+            <a href="http://lists.spacepope.org/listinfo.cgi/yt-svn-spacepope.org">commits mailing list</a><br />
+          </p>
+          <p>
+            <a href="http://yt-project.org/irc.html">IRC</a>
+            (<span style="font-family:Inconsolata;">#yt</span> on 
+            <span style="font-family:Inconsolata;">chat.freenode.net</span>)
+          </p>
+
+          <div class="social-networks">
+            <h3>Around the internet</h3>
+            <p>Some of the places to find yt stuff!</p>
+            <ul class="social-links">
+              <li class="vimeo"><a href="http://vimeo.com/groups/ytgallery">Vimeo</a></li>
+              <li class="twitter"><a href="http://twitter.com/yt_astro">Twitter</a></li>
+              <li class="tumblr"><a href="http://blog.yt-project.org/">Posterous</a></li>
+              <li class="google"><a href="https://plus.google.com/107728486871834552760?prsrc=3">Google+</a></li>
+	    </ul>
+          </div><!-- end social-networks -->
+        </div>
+        <div class="clear"></div>
+
+        <div class="separator-line"></div>
+
+        <div class="clear"></div>	
+
+      </div><!-- end contact page -->
+
+
     <!-- INSTALL PAGE -->
     <div id="getyt" class="page">
       <h2>Getting YT</h2>	
@@ -392,8 +475,9 @@
 <span class="c"># Project Density along the x axis...</span>
 <span class="n">ProjectionPlot</span><span class="p">(</span><span class="n">pf</span><span class="p">,</span> <span class="s">&quot;x&quot;</span><span class="p">,</span> <span class="s">&quot;Density&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
 </pre></div>
-              </div>
+              </div> <!-- end highlight -->
               <img class="example_image" src="img/density_projection.png">
+            </div><!-- end example_code -->
             </div><!-- end toggle-content -->
           </div><!-- end toggle-container -->
 
@@ -417,6 +501,7 @@
 </pre></div>
               </div>
               <img class="example_image" src="img/density_projection_halos.png">
+            </div><!-- end example_code -->
             </div><!-- end toggle-content -->
           </div><!-- end toggle-container -->
 
@@ -440,6 +525,7 @@
 </pre></div>
               </div>
             </div>
+            </div><!-- end toggle-content -->
           </div><!-- end toggle-container -->
 
           <div class="toggle-container full-width">
@@ -462,6 +548,7 @@
               </div>
               <img src="img/allsky.png" class="example_image">
             </div>
+            </div><!-- end toggle-content -->
           </div><!-- end toggle-container -->
 
           <div class="toggle-container full-width">
@@ -483,6 +570,7 @@
               </div>
               <img class="example_image" src="img/off_axis_slice.png">
             </div>
+            </div><!-- end toggle-content -->
           </div><!-- end toggle-container -->
 
           <div class="toggle-container full-width">
@@ -513,6 +601,7 @@
               </div>
               <img class="example_image" src="img/iso_vol.png">
             </div>
+            </div><!-- end toggle-content -->
           </div><!-- end toggle-container -->
 
           <div class="toggle-container full-width">
@@ -535,71 +624,10 @@
               </div>
               <img class="example_image" src="img/phase.png">
             </div>
+            </div><!-- end toggle-content -->
           </div><!-- end toggle-container -->
         </div><!-- end toggles -->
       </div><!-- end about page -->
-
-      <!-- COMMUNITY PAGE -->
-
-      <div id="community" class="page">
-        <h2>Community</h2>
-        <p class="sub-title">Participation encouraged!</p>
-
-        <div class="two-third">
-          <h3>How To Get Involved</h3>
-          <p>
-            yt is a friendly community.  We like hearing about fun things you
-            have done with the code, and we're happy to help you out if you have
-            a question or some trouble.  You can join us in IRC, on the mailing
-            lists, and if you'd like, you can check out how to <a href="#devel">
-            develop, too</a>.
-          </p>
-          <p>
-            If you've got some code to share, or scripts that you'd like to
-            share, start up a repo on <a href="http://bitbucket.org/">BitBucket
-            </a>, or share them on our <a href="http://paste.enzotools.org/">
-            PasteBin</a>.  For longer chunks of code or repositories used to
-            make papers, we encourage you to check out the
-            <a href="http://hub.yt-project.org/">yt Hub</a>, which is designed to
-            share utilities, management scripts and so on with other people.
-            If you have any trouble, drop by the mailing list and we'll be
-            happy to help out.
-          </p>
-          <p>
-            Hope to hear from you!
-          </p>
-        </div>
-        <div class="one-third last">
-          <h3>Communication Channels</h3>
-          <p>
-            <a href="http://lists.spacepope.org/listinfo.cgi/yt-users-spacepope.org">users mailing list</a><br />
-            <a href="http://lists.spacepope.org/listinfo.cgi/yt-dev-spacepope.org">dev mailing list</a><br />
-            <a href="http://lists.spacepope.org/listinfo.cgi/yt-svn-spacepope.org">commits mailing list</a><br />
-          </p>
-          <p>
-            <a href="http://yt-project.org/irc.html">IRC</a>
-            (<span style="font-family:Inconsolata;">#yt</span> on 
-            <span style="font-family:Inconsolata;">chat.freenode.net</span>)
-          </p>
-
-          <div class="social-networks">
-            <h3>Around the internet</h3>
-            <p>Some of the places to find yt stuff!</p>
-            <ul class="social-links">
-              <li class="vimeo"><a href="http://vimeo.com/groups/ytgallery">Vimeo</a></li>
-              <li class="twitter"><a href="http://twitter.com/yt_astro">Twitter</a></li>
-              <li class="tumblr"><a href="http://blog.yt-project.org/">Posterous</a></li>
-              <li class="google"><a href="https://plus.google.com/107728486871834552760?prsrc=3">Google+</a></li>
-	    </ul>
-          </div><!-- end social-networks -->
-        </div>
-        <div class="clear"></div>
-
-        <div class="separator-line"></div>
-
-        <div class="clear"></div>	
-
-      </div><!-- end contact page -->
 
       <!-- DEVEL PAGE -->	
 

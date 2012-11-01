@@ -1222,3 +1222,11 @@ ul.quicklinks {font-size: 125%; list-style-type: square; margin-left: 20px; padd
 	height:35px;
 	width:35px;
 }
+
+ul#blog-entries {
+    list-style-type: none;
+}
+
+ul#blog-entries li {
+    margin-bottom: 10px;
+}
