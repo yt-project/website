@@ -299,7 +299,7 @@
           <p>
             <!--<img class="image-left" src="img/working_hard.jpg" alt="Working hard!" />-->
             <img class="image-left" src="img/ch_lecture.jpg" alt="Cameron Lecturing" />
-            The yt project is a Python package for analyzing and visualing
+            The yt project is a Python package for analyzing and visualizing
             volumetric, multi-resolution astrophysical data.  yt was originally
             written by Matthew Turk in late 2006 to quickly slice data from the
             code <a href="http://enzo-project.org/">Enzo</a>.
@@ -416,11 +416,21 @@
         </p>
         <div class="install_code">
           $ wget <a href="http://hg.yt-project.org/yt/src/stable/doc/install_script.sh">http://hg.yt-project.org/yt/raw/stable/doc/install_script.sh</a><br/> 
-          $ bash install_script.sh
         </div>
-        <p>Or, if you'd rather the current main development tree:</p>
+        <p>If you don't have <i>wget</i> on your machine you can use <i>curl</i> as an alternative:</p>
+        <div class="install_code">
+          $ curl -O <a href="http://hg.yt-project.org/yt/src/stable/doc/install_script.sh">http://hg.yt-project.org/yt/raw/stable/doc/install_script.sh</a><br/>
+        </div>
+        <p>If you'd rather the current main development tree:</p>
         <div class="install_code">
           $ wget <a href="http://hg.yt-project.org/yt/src/yt/doc/install_script.sh">http://hg.yt-project.org/yt/raw/yt/doc/install_script.sh</a><br/> 
+        </div>
+        <p>Or using <i>curl</i></p>
+        <div class="install_code">
+          $ curl -O <a href="http://hg.yt-project.org/yt/src/yt/doc/install_script.sh">http://hg.yt-project.org/yt/raw/yt/doc/install_script.sh</a><br/> 
+        </div>
+        <p>After successful download you can proceed with the installation by executing:</p>
+        <div class="install_code">
           $ bash install_script.sh
         </div>
         <p>Either way you do it, you can easily update to the most recent version of the code (in your branch) very easily:</p>
