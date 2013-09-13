@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>The yt Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap_cyborg.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">yt project</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">Learning</li>
+                    <li><a href="http://yt-project.org/doc/orientation/index.html#orientation">Quick Start</a></li>
+                    <li><a href="http://yt-project.org/doc/">Documentation</a></li>
+                    <li><a href="http://adsabs.harvard.edu/abs/2011ApJS..192....9T">APJS paper</a>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Getting Help</li>
+                    <li><a href="http://lists.spacepope.org/listinfo.cgi/yt-users-spacepope.org">Mailing List</a></li>
+                    <li><a href="http://yt-project.org/irc.html">Chat Channel</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Development</li>
+                    <li><a href="http://hg.yt-project.org/yt/issues/new">Report a Bug</a></li>
+                    <li><a href="http://bitbucket.org/yt_analysis/yt">Project Page</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide container ytCarousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active ">
+          <img src="img/reion.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Volumetric Data Analysis</h1>
+              <p>yt is a python package for analyzing and visualizing
+              volumetric, multi-resolution data from astrophysical simulations,
+              radio telescopes, and a burgeoning interdisciplinary community.</p>
+              <p><a class="btn btn-large btn-primary" href="#">Get yt</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item ytImage">
+          <img src="img/kowalik.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Visualization as a Side Effect</h1>
+              <p>
+              yt is less an application than a library for inquiry on top of
+              which visualizations can be built: data objects, line integrals,
+              streamlines, non-spatial analysis, and even volume renderings.
+              </p>
+              <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item ytImage">
+          <img src="img/richardson.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Many formats, one language</h1>
+              <p>
+              The principal goal of yt is to provide a uniform way to access,
+              understand, query, process and visualize volumetric data -- be
+              that data be of star formation, earthquakes, galaxies or even
+              planetesimals forming.
+              </p>
+              <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/logmagz_140.png" alt="Ji et al, arxiv/1302.5700">
+          <h2>Data-Driven</h2>
+          <p>
+            yt is designed to provide a consistent, cross-code interface to
+            analyzing and visualizing astrophysical simulation data from a
+            physical perspective.
+          </p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/community_small_140.jpg" alt="Workshop picture">
+          <h2>Community</h2>
+          <p>
+            yt is composed of a friendly community of users and developers. We
+            want to make it easy to use and develop &mdash; we'd love it if you
+            got involved!
+          </p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/working_hard_140.jpg" alt="Developing">
+          <h2>Free Software</h2>
+            <p>
+              yt is developed completely in the open under a 3-clause BSD
+              license.  The developers are committed to open source practices
+              and fidelity of scientific results.
+            </p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+        <p class="lead">
+          The yt project aims to produce an integrated science environment for
+          collaboratively asking and answering astrophysical questions. To do
+          so, it will encompass the creation of initial conditions, the
+          execution of simulations, and the detailed exploration and
+          visualization of the resultant data. It will also provide a standard
+          framework based on physical quantities interoperability between codes.
+        </p>
+        <p class="lead">
+          Development of yt is driven by a commitment to Open Science principles
+          as manifested in participatory development, reproducibility,
+          documented and approachable code, a friendly and helpful community of
+          users and developers, and Free and Libre Open Source Software.
+        </p>
+        <p><a class="btn btn-llg btn-primary yt-btn" href="#">Get Started</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-rounded img-responsive" src="img/analysis.jpg" alt="Dev workshop 2013">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-rounded img-responsive" src="img/workshop_montage.jpg" alt="Workshop Images">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Community: <span class="text-muted">yt's best feature.</span></h2>
+          <p class="lead">
+            yt is a friendly community.  We like hearing about fun things you
+            have done with the code, and we're happy to help you out if you
+            have a question or some trouble.  You can join us in IRC, on the
+            mailing lists, and if you'd like, you can check out how to
+            <a href="#devel"> develop, too</a>.
+          </p>
+          <p class="lead">
+            If you've got some code to share, or scripts that you'd like to
+            share, start up a repo on <a href="http://bitbucket.org/">BitBucket
+            </a> or share them on our <a href="http://paste.yt-project.org/">
+            pastebin</a>.  For longer chunks of code or repositories used to
+            make papers, we encourage you to check out the
+            <a href="http://hub.yt-project.org/">yt Hub</a>, which is designed to
+            share utilities, management scripts and so on with other people.
+            If you have any trouble, drop by the
+            <a href="http://lists.spacepope.org/listinfo.cgi/yt-users-spacepope.org">mailing list</a>
+            and we'll be happy to help out.
+        <p><a class="pull-right btn btn-llg btn-primary" href="#">Join the Community</a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Participatory <span class="text-muted">
+              development.</span></h2>
+          <p class="lead">
+            If you're interested in getting started with helping out, the
+            easiest way is to <a
+            href="http://bitbucket.org/yt_analysis/yt/fork">Fork us
+            on BitBucket</a>, check out the <a
+            href="http://yt-project.org/doc/advanced/developing.html">
+            developer guide</a>, and stop by the <a
+            href="http://lists.spacepope.org/listinfo.cgi/yt-dev-spacepope.org">
+            development mailing list</a>.  yt is released under the 
+            modified BSD License.
+          </p>
+          <p class="lead">
+            There are lots of <a
+            href="http://yt-project.org/doc/advanced/developing.html#project-ideas">
+            fun projects to work on</a>, along with some <a
+            href="http://hg.yt-project.org/yt/issues?status=new&status=open">open
+            issues</a>, and we'd particularly like if you'd help out by <a
+            href="http://hg.yt-project.org/yt/wiki/AddingSupportForANewCode">adding
+            a new code</a> or if you'd like to help out by shoring up support in
+            <a href="http://hg.yt-project.org/yt/wiki/CodeSupportLevels">
+            semi-supported code</a>.
+          </p>
+          <p><a class="pull-left btn btn-llg btn-primary" href="#">Fork us on Bitbucket!</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+      <div class="row">
+        <div class="col-md-offset-1 col-md-5">
+          <h1>Get yt:<span class="text-muted"> all-in-one script.</h1>
+          <p class="lead">
+            yt is built on a stack of completely <a
+            href="http://www.fsf.org/working-together/">free and libre open source
+            software</a>, with <b>no</b> proprietary dependencies. It provides its
+            own install script, to assist with constructing an isolated
+            environment that can be upgraded and operated in independently of the
+            host operating system.
+          </p>
+          <p class="lead">
+            Usually getting yt is as simple as running the installation script.
+            Simply download it from one of the links below, and run it.  You
+            can do this using <span class="install_code">wget</span> or <span
+              class="install_code">curl</span>, or even just right click and
+            choose <b>Save As</b>.
+          </p>
+          <p class="text-center">
+          <a class="btn btn-llg btn-success"
+            href="http://hg.yt-project.org/yt/raw/stable/doc/install_script.sh">Stable Version</a>
+          <a class="btn btn-llg btn-warning"
+            href="http://hg.yt-project.org/yt/raw/yt/doc/install_script.sh">Devel Version</a>
+          </p>
+          <p class="lead" style="margin-top:20px;">Once you've downloaded it, just run:</p>
+          <div class="install_code">
+            $ bash install_script.sh
+          </div>
+        </div>
+        <div class="col-md-offset-1 col-md-5">
+          <h1>Get yt:<span class="text-muted"> from source.</h1>
+          <p class="lead">
+            If you are comfortable installing Python packages, ...
+          </p>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <script type="text/javascript">
+          sc_project=3616111;
+          sc_invisible=1;
+          sc_partition=41;
+          sc_security="3865f346";
+        </script>
+        <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="holder.js"></script>
+    <script type="text/javascript">
+      $('#myCarousel').carousel({interval:10000})
+    </script>
+    <style type="text/css">
+      .featurette-heading {
+        margin-top:1px;
+      }
+      .carousel-inner .item img{
+        margin:0 auto; 
+      }  
+      div.install_code {
+        font-family: Inconsolata;
+        color: #FFFFFF;
+        font-size: 140%;
+        margin-bottom: 20px;
+      }
+    </style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-391373-2']);
+  _gaq.push(['_setDomainName', 'yt-project.org']);
+  _gaq.push(['_setAllowHash', false]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </body>
+</html>
