@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.png" />
+    <link href="https://plus.google.com/107728486871834552760" rel="publisher" />
+
+    <title>The yt Project: Development</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap_cyborg.min.css" rel="stylesheet">
+    <link href="css/local.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">yt project</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="http://blog.yt-project.org/">Blog</a></li>
+                <li><a href="https://hub.yt-project.org/">Hub</a></li>
+                <li class="active"><a href="development.html">Develop</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">Learning</li>
+                    <li><a href="http://yt-project.org/doc/orientation/index.html#orientation">Quick Start</a></li>
+                    <li><a href="http://yt-project.org/doc/">Documentation</a></li>
+                    <li><a href="http://adsabs.harvard.edu/abs/2011ApJS..192....9T">APJS paper</a>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Getting Help</li>
+                    <li><a href="http://lists.spacepope.org/listinfo.cgi/yt-users-spacepope.org">Mailing List</a></li>
+                    <li><a href="http://yt-project.org/irc.html">Live Chat</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Development</li>
+                    <li><a href="http://hg.yt-project.org/yt/issues/new">Report a Bug</a></li>
+                    <li><a href="http://bitbucket.org/yt_analysis/yt">Project Page</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row yt-package">
+        <div class="col-md-offset-2 col-md-8">
+          <h1>Development</h1>
+          <p class="lead">
+            yt is developed completely in the open.  Our
+            <a href="https://bitbucket.org/yt_analysis">team</a> on BitBucket
+            contains the repositories that make up the 
+            <a href="https://bitbucket.org/yt_analysis/yt/">stable branch</a>,
+            the <a href="https://bitbucket.org/yt_analysis/yt-3.0">development branch</a>,
+            the and even <a href="https://bitbucket.org/yt_analysis/website">this website</a>.
+            The <a href="https://bitbucket.org/yt_analysis/yt-doc/">documentation</a>
+            for yt is also versioned, and when you get the yt source code you
+            get everything necessary to submit changes to the code or the docs.
+            yt is released under the modified BSD license.
+          </p>
+          <p class="lead">
+            We invite contributions of any type -- code, analysis modules,
+            documentation, blog posts, and even enhancements for the website.
+            Below are some hints on what to expect and how to get involved, but
+            please stop by
+            <a href="http://lists.spacepope.org/listinfo.cgi/yt-dev-spacepope.org">yt-dev</a>
+            or <span class="yt_code">#yt</span> on
+            <span class="yt_code">chat.freenode.org</span> if you have any questions.
+          </p>
+        </div>
+      </div>
+<script type="text/javascript" src="http://www.ohloh.net/p/129183/widgets/project_basic_stats.js"></script>
+
+
+      <div class="row yt-package">
+        <div class="col-md-5">
+          <img src="img/graph_screenshot.jpg" class="pull-left img-rounded">
+        </div>
+        <div class="col-md-7">
+          <h1>How to Get Started</h1>
+          <p class="lead">
+            Here's the simplest way to get started contributing to yt.  You can
+            <a href="https://bitbucket.org/yt_analysis/yt/fork">fork</a> yt on
+            Bitbucket, push some changes to your fork, and issue a pull
+            request.
+          </p>
+          <p class="lead">
+            In the documentaiton you can find an 
+            <a href="http://yt-project.org/docs/2.5/advanced/developing.html">an outline</a>
+            of how to contribute changes, but here are some handy tips and
+            tricks:
+            <ul class="lead">
+              <li>Use <span class="yt_code">hg bookmark</span> to track where
+              you are in your development.  (Avoid using branches!)</li>
+              <li>yt has a pretty forky development process, so check out how
+              to use commands like <span class="yt_code">hg identify</span> and
+              <span class="yt_code">hg log</span> for ease of navigation.</li>
+              <li>Push to your repository and issue pull requests from
+              there.</li>
+              <li>Add
+              <a href="http://yt-project.org/docs/2.5/advanced/testing.html">tests</a>
+              and documentation for new functionality.</li>
+              <li>If you get stuck or want feedback, drop by IRC or the mailing
+              list!</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="row yt-package">
+        <div class="col-md-7">
+          <h1>What To Expect</h1>
+          <p class="lead">
+            Contributions to yt go through several stages.  Once you've
+            submitted a pull request, to the source code, the documentation, or
+            even the blog, you will likely receive comments on it from
+            developers or other individuals.  <b>Every</b> pull request gets
+            reviewed, even those issued by developers that have been with the
+            project for years.
+          </p>
+          <p class="lead">
+            These comments might address stylistic issues, may request changes
+            to the variable names, may suggest methods of testing, or may even
+            suggest alternate approaches to solving given problems.
+          </p>
+          <p class="lead">
+            We're grateful for every contribution, and we hope to hear from
+            you.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img src="img/pr_screenshot.jpg" class="pull-left img-rounded">
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="holder.js"></script>
+    <script type="text/javascript">
+      $('#myCarousel').carousel({interval:10000})
+    </script>
+  </body>
+</html>
