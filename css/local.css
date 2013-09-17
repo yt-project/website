@@ -22,3 +22,9 @@ span.download_script {
   margin-bottom: 10px;
   white-space:nowrap;
 }
+
+.gallery-image {
+  height: auto;
+  max-width: 400px;
+  margin: 0 auto;
+}
