@@ -283,21 +283,65 @@
             href="http://www.fsf.org/working-together/">free and libre open source
             software</a>, with <b>no</b> proprietary dependencies. It provides its
             own install script, to assist with constructing an isolated
-            environment that can be upgraded and operated in independently of the
+            environment that can be upgraded and operated independently of the
             host operating system.
           </p>
           <p class="lead">
             Usually getting yt is as simple as running the installation script.
-            Simply download it from one of the links below, and run it.  You
-            can do this using <span class="yt_code">wget</span> or <span
-              class="yt_code">curl</span>, or even just right click and
-            choose <b>Save As</b>.
+            Simply download the stable, dev, or bleeding-edge version of the
+            install script and run it.  Carefully read the instructions the
+            script prints to your terminal since there might be special
+            instructions for your operating system.
           </p>
+
           <p class="text-center">
-            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-success" href="http://hg.yt-project.org/yt/raw/stable/doc/install_script.sh">Stable</a><br/>
-            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-warning" href="http://hg.yt-project.org/yt/raw/yt/doc/install_script.sh">Development</a><br/>
-            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-danger" href="http://hg.yt-project.org/yt-3.0/raw/yt-3.0/doc/install_script.sh">Bleeding Edge</a>
+
+            <div style="display:inline; margin:0 auto;" class="row">
+              <div style="display:block; margin:0 auto;" class="collapse-group">
+                <p><a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-success" href="#">Stable &raquo</a></p>
+                <p style="fontsize: 110%;" class="collapse">
+                  <span class="download_script">
+                    $ wget http://hg.yt-project.org/yt/raw/stable/doc/install_script.sh
+                  </span></br>
+                  or, if you do not have wget:
+                  <span class="download_script">
+                    $ curl -o http://hg.yt-project.org/yt/raw/stable/doc/install_script.sh
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div style="display:block; margin:0 auto;" class="row">
+              <div style="display:block; margin:0 auto;" class="collapse-group">
+                <p><a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-warning" href="#">Development &raquo</a></p>
+                <p style="fontsize: 110%;" class="collapse">
+                  <span class="download_script">
+                    $ wget http://hg.yt-project.org/yt/raw/yt/doc/install_script.sh
+                  </span></br>
+                  or, if you do not have wget:
+                  <span class="download_script">
+                    $ curl -o http://hg.yt-project.org/yt/raw/yt/doc/install_script.sh
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div style="display:block; margin:0 auto;" class="row">
+              <div style="display:block; margin:0 auto;" class="collapse-group">
+                <p><a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-danger" href="#">Bleeding Edge &raquo</a></p>
+                <p style="fontsize: 110%;" class="collapse">
+                  <span class="download_script">
+                    $ wget http://hg.yt-project.org/yt-3.0/raw/yt-3.0/doc/install_script.sh
+                  </span></br>
+                  or, if you do not have wget:
+                  <span class="download_script">
+                    $ curl -o http://hg.yt-project.org/yt-3.0/raw/yt-3.0/doc/install_script.sh
+                  </span>
+                </p>
+              </div>
+            </div>
           </p>
+
           <p class="lead" style="margin-top:20px;">Once you've downloaded it, just run:</p>
           <div class="yt_code">
             $ bash install_script.sh
@@ -306,7 +350,27 @@
         <div class="col-md-offset-2 col-md-5">
           <h1>Get yt:<span class="text-muted"> from source.</h1>
           <p class="lead">
-            If you are comfortable installing Python packages, ...
+            If you are comfortable installing Python packages and a have a
+            build environment set up, you can install yt using pip:
+            <div class="yt_code">
+              $ pip install yt
+            </div>
+          </p>
+          <p class="lead">
+            To build yt, you will first need to install a number of Python and C
+            libraries that yt uses for key functionality.
+            <ul>
+              <li> HDF5 </li> <!-- version numbers? -->
+              <li> NumPy </li>
+              <li> h5py </li>
+              <li> Matplotlib </li>
+              <li> Cython </li>
+              <li> libpng </li>
+              <li> Freetype2 </li>
+              <li> IPython </li>
+              <li> PyX </li>
+              <li> Nose </li>
+            </ul>
           </p>
         </div>
       </div>
@@ -335,6 +399,13 @@
     <script src="holder.js"></script>
     <script type="text/javascript">
       $('#myCarousel').carousel({interval:15000})
+
+      $('.row .btn').on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $collapse = $this.closest('.collapse-group').find('.collapse');
+        $collapse.collapse('toggle');
+      });
     </script>
 <script type="text/javascript">
 

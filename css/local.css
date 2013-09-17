@@ -15,3 +15,10 @@ div.yt_code {
 .yt-package {
   padding-bottom: 30px;
 }
+span.download_script {
+  font-family: Inconsolata;
+  color: #FFFFFF;
+  font-size: 110%;
+  margin-bottom: 10px;
+  white-space:nowrap;
+}
