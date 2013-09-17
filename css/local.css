@@ -1,0 +1,17 @@
+.featurette-heading {
+  margin-top:1px;
+}
+.carousel-inner .item img{
+  margin:0 auto; 
+}  
+.yt_code {
+  font-family: Inconsolata;
+  color: #FFFFFF;
+}
+div.yt_code {
+  font-size: 140%;
+  margin-bottom: 20px;
+}
+.yt-package {
+  padding-bottom: 30px;
+}
