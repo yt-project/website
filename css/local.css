@@ -28,3 +28,8 @@ span.download_script {
   max-width: 400px;
   margin: 0 auto;
 }
+
+div.gadget {
+  color: black;
+ background-color: white;
+}
