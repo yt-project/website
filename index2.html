@@ -85,8 +85,7 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="item active ">
-          <img src="img/reion.jpg" alt="First slide", style="max-width: 100%; height: auto;" \>
+        <div class="item ytImage active im1">
           <div class="container">
             <div class="carousel-caption">
               <h1>Volumetric Data Analysis</h1>
@@ -97,8 +96,7 @@
             </div>
           </div>
         </div>
-        <div class="item ytImage">
-          <img src="img/kowalik.jpg" alt="First slide", style="max-width: 100%; height: auto;" />
+        <div class="item ytImage im2">
           <div class="container">
             <div class="carousel-caption">
               <h1>Quantitative Analysis and Visualization</h1>
@@ -112,8 +110,7 @@
             </div>
           </div>
         </div>
-        <div class="item ytImage">
-          <img src="img/richardson.jpg" alt="First slide", style="max-width: 100%; height: auto;" />
+        <div class="item ytImage im3">
           <div class="container">
             <div class="carousel-caption">
               <h1>Many formats, one language</h1>
@@ -412,6 +409,51 @@
         $collapse.collapse('toggle');
       });
     </script>
+    <style type="text/css">
+      .featurette-heading {
+        margin-top:1px;
+      }
+      .carousel-inner .item img{
+        margin:0 auto; 
+      }  
+      div.install_code {
+        font-family: Inconsolata;
+        color: #FFFFFF;
+        font-size: 140%;
+        margin-bottom: 20px;
+      }
+      span.download_script {
+        font-family: Inconsolata;
+        color: #FFFFFF;
+        font-size: 110%;
+        margin-bottom: 10px;
+        white-space:nowrap;
+      }
+
+      #myCarousel {
+      width: 100%;
+      }
+      
+      .carousel-inner .item {
+      width: 100%;
+      height: 500px;
+      background-size: cover;
+      background-origin: content-box;
+      }
+
+      .im1 {
+      background: url(img/reion.jpg) no-repeat center center local;
+      }
+
+      .im2 {
+      background: url(img/kowalik.jpg) no-repeat center center local;
+      }
+      
+      .im3 {
+      background: url(img/richardson.jpg) no-repeat center center local;
+      }
+
+    </style>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
