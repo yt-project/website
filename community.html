@@ -31,6 +31,10 @@
     <div class="navbar-wrapper">
       <div class="container">
 
+        <!-- We store a copy of the menubar in menubar.inc.  Better to include
+             that when you modify it, so the changes get propagated.-->
+        <!-- Be sure to modify the "active" item -->
+
         <div class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
@@ -39,28 +43,39 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">yt project</a>
+              <a class="navbar-brand" href="http://yt-project.org/">yt project</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="http://yt-project.org/doc/dev">Dev</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.5</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.4</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.3</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.2</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.1</a></li>
+                  </ul>
+                </li>
                 <li class="active"><a href="community.html">Community</a></li>
-                <li><a href="http://blog.yt-project.org/">Blog</a></li>
-                <li><a href="https://hub.yt-project.org/">Hub</a></li>
                 <li><a href="development.html">Develop</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="https://hub.yt-project.org/">Data Hub</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li class="dropdown-header">Learning</li>
+                    <li><a href="http://blog.yt-project.org/">yt Blog</a></li>
                     <li><a href="http://yt-project.org/doc/orientation/index.html#orientation">Quick Start</a></li>
                     <li><a href="http://yt-project.org/doc/">Documentation</a></li>
                     <li><a href="http://adsabs.harvard.edu/abs/2011ApJS..192....9T">APJS paper</a>
                     <li class="divider"></li>
-                    <li class="dropdown-header">Getting Help</li>
+                    <li class="dropdown-header">Help!</li>
                     <li><a href="http://lists.spacepope.org/listinfo.cgi/yt-users-spacepope.org">Mailing List</a></li>
                     <li><a href="http://yt-project.org/irc.html">Live Chat</a></li>
+                    <li><a href="http://yt-project.org/doc/cheatsheet.pdf">Cheat sheet</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Development</li>
                     <li><a href="http://hg.yt-project.org/yt/issues/new">Report a Bug</a></li>
@@ -72,6 +87,7 @@
           </div>
         </div>
 
+        <!-- End of menubar.inc inclusion -->
       </div>
     </div>
 
@@ -171,7 +187,7 @@
             of interest to others, as well as
             <a href="http://ipython.org/">IPython Notebooks</a>.  For very
             short form items, we also provide a
-            <a href="http://paste.yt-project.org/">pastebine</a>.
+            <a href="http://paste.yt-project.org/">pastebin</a>.
           </p>
         </div>
       </div>
@@ -199,7 +215,9 @@
           </p>
         </div>
         <div class="col-md-5">
-          <div class="g-page" data-layout="landscape" data-theme="dark" data-showcoverphoto="true" data-align="right" data-width="400" data-href="https://plus.google.com/107728486871834552760"></div>
+            <div class="g-page" data-layout="landscape" data-theme="dark" data-showcoverphoto="true" data-align="right" data-width="400" data-href="https://plus.google.com/107728486871834552760"></div>
+            <a href="https://twitter.com/yt_astro" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @yt_astro</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </div>
       </div>
 

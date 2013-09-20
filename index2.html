@@ -30,6 +30,10 @@
     <div class="navbar-wrapper">
       <div class="container">
 
+        <!-- We store a copy of the menubar in menubar.inc.  Better to include
+             that when you modify it, so the changes get propagated.-->
+        <!-- Be sure to modify the "active" item -->
+
         <div class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
@@ -38,28 +42,39 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">yt project</a>
+              <a class="navbar-brand" href="http://yt-project.org/">yt project</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="http://yt-project.org/doc/dev">Dev</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.5</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.4</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.3</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.2</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.1</a></li>
+                  </ul>
+                </li>
                 <li><a href="community.html">Community</a></li>
-                <li><a href="http://blog.yt-project.org/">Blog</a></li>
-                <li><a href="https://hub.yt-project.org/">Hub</a></li>
                 <li><a href="development.html">Develop</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="https://hub.yt-project.org/">Data Hub</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li class="dropdown-header">Learning</li>
+                    <li><a href="http://blog.yt-project.org/">yt Blog</a></li>
                     <li><a href="http://yt-project.org/doc/orientation/index.html#orientation">Quick Start</a></li>
                     <li><a href="http://yt-project.org/doc/">Documentation</a></li>
                     <li><a href="http://adsabs.harvard.edu/abs/2011ApJS..192....9T">APJS paper</a>
                     <li class="divider"></li>
-                    <li class="dropdown-header">Getting Help</li>
+                    <li class="dropdown-header">Help!</li>
                     <li><a href="http://lists.spacepope.org/listinfo.cgi/yt-users-spacepope.org">Mailing List</a></li>
                     <li><a href="http://yt-project.org/irc.html">Live Chat</a></li>
+                    <li><a href="http://yt-project.org/doc/cheatsheet.pdf">Cheat sheet</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Development</li>
                     <li><a href="http://hg.yt-project.org/yt/issues/new">Report a Bug</a></li>
@@ -70,6 +85,7 @@
             </div>
           </div>
         </div>
+        <!-- End of menubar.inc inclusion -->
 
       </div>
     </div>
@@ -115,12 +131,11 @@
             <div class="carousel-caption">
               <h1>Many formats, one language</h1>
               <p>
-                The principal goal of yt is to provide a uniform way to access,
-                understand, query, process and visualize volumetric data.  yt
-                currently supports FLASH, Enzo, Boxlib, Athena, arbitrary
-                volumes, and support is in progress for Gadget, Tipsy, ART,
-                RAMSES and MOAB.  If your data isn't already supported, why not
-                add it?
+                yt aims to provide a simple uniform way of handling volumetric
+                data, regardless of where it is generated. yt currently supports
+                FLASH, Enzo, Boxlib, Athena, arbitrary volumes, and support is in
+                progress for Gadget, Tipsy, ART, RAMSES and MOAB. If your data
+                isn't already supported, why not add it?
               </p>
               <p><a class="btn btn-large btn-primary" href="#getyt">Get yt</a></p>
             </div>
@@ -178,10 +193,10 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="learn">
         <div class="col-md-7">
-          <a name="learn"><h2 class="featurette-heading">Learn:
-              <span class="text-muted"> getting started.</span></h2></a>
+          <h2 class="featurette-heading">Learn:
+              <span class="text-muted"> getting started.</span></h2>
           <p class="lead">
             To get started with using yt to explore data, we provide resources
             including <a href="http://yt-project.org/doc/">documentation</a>,
@@ -209,12 +224,12 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="community">
         <div class="col-md-5">
           <img class="featurette-image img-rounded img-responsive" src="img/workshop_montage.jpg" alt="Workshop Images">
         </div>
         <div class="col-md-7">
-          <a name="community"><h2 class="featurette-heading">Community:
+          <h2 class="featurette-heading">Community:
               <span class="text-muted">yt's best feature.</span></h2></a>
           <p class="lead">
             yt is a friendly community.  We like hearing about fun things you
@@ -240,9 +255,9 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="development">
         <div class="col-md-7">
-          <a name="development"><h2 class="featurette-heading">Participatory
+          <h2 class="featurette-heading">Participatory
               <span class="text-muted"> development.</span></h2></a>
           <p class="lead">
             If you're interested in getting started with helping out, the
@@ -298,7 +313,7 @@
 
           <p class="text-center">
 
-            <div style="display:inline; margin:0 auto;" class="row">
+            <div style="display:inline; margin:0 auto;" class="row collapsers">
               <div style="display:block; margin:0 auto;" class="collapse-group">
                 <p><a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-success" href="#">Stable &raquo</a></p>
                 <p style="fontsize: 110%;" class="collapse">
@@ -402,7 +417,7 @@
     <script type="text/javascript">
       $('#myCarousel').carousel({interval:15000})
 
-      $('.row .btn').on('click', function(e) {
+      $('.collapsers .row .btn').on('click', function(e) {
         e.preventDefault();
         var $this = $(this);
         var $collapse = $this.closest('.collapse-group').find('.collapse');

@@ -30,6 +30,10 @@
     <div class="navbar-wrapper">
       <div class="container">
 
+        <!-- We store a copy of the menubar in menubar.inc.  Better to include
+             that when you modify it, so the changes get propagated.-->
+        <!-- Be sure to modify the "active" item -->
+
         <div class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
@@ -38,28 +42,39 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">yt project</a>
+              <a class="navbar-brand" href="http://yt-project.org/">yt project</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="http://yt-project.org/doc/dev">Dev</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.5</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.4</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.3</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.2</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.1</a></li>
+                  </ul>
+                </li>
                 <li><a href="community.html">Community</a></li>
-                <li><a href="http://blog.yt-project.org/">Blog</a></li>
-                <li><a href="https://hub.yt-project.org/">Hub</a></li>
                 <li class="active"><a href="development.html">Develop</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="https://hub.yt-project.org/">Data Hub</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li class="dropdown-header">Learning</li>
+                    <li><a href="http://blog.yt-project.org/">yt Blog</a></li>
                     <li><a href="http://yt-project.org/doc/orientation/index.html#orientation">Quick Start</a></li>
                     <li><a href="http://yt-project.org/doc/">Documentation</a></li>
                     <li><a href="http://adsabs.harvard.edu/abs/2011ApJS..192....9T">APJS paper</a>
                     <li class="divider"></li>
-                    <li class="dropdown-header">Getting Help</li>
+                    <li class="dropdown-header">Help!</li>
                     <li><a href="http://lists.spacepope.org/listinfo.cgi/yt-users-spacepope.org">Mailing List</a></li>
                     <li><a href="http://yt-project.org/irc.html">Live Chat</a></li>
+                    <li><a href="http://yt-project.org/doc/cheatsheet.pdf">Cheat sheet</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Development</li>
                     <li><a href="http://hg.yt-project.org/yt/issues/new">Report a Bug</a></li>
@@ -70,6 +85,8 @@
             </div>
           </div>
         </div>
+
+        <!-- End of menubar.inc inclusion -->
 
       </div>
     </div>
@@ -85,7 +102,7 @@
             contains the repositories that make up the 
             <a href="https://bitbucket.org/yt_analysis/yt/">stable branch</a>,
             the <a href="https://bitbucket.org/yt_analysis/yt-3.0">development branch</a>,
-            the and even <a href="https://bitbucket.org/yt_analysis/website">this website</a>.
+            and even <a href="https://bitbucket.org/yt_analysis/website">this website</a>.
             The <a href="https://bitbucket.org/yt_analysis/yt-doc/">documentation</a>
             for yt is also versioned, and when you get the yt source code you
             get everything necessary to submit changes to the code or the docs.
@@ -108,11 +125,34 @@
         </div>
       </div>
 
-
       <div class="row yt-package">
         <div class="col-md-5">
-          <img src="img/graph_screenshot.jpg" class="pull-left img-rounded">
+          <img src="img/pr_screenshot.jpg" class="pull-left img-rounded">
         </div>
+        <div class="col-md-7">
+          <h1>What To Expect</h1>
+          <p class="lead">
+            Contributions to yt go through several stages.  Once you've
+            submitted a pull request, to the source code, the documentation, or
+            even the blog, you will likely receive comments on it from
+            developers or other individuals.  <b>Every</b> pull request gets
+            reviewed, even those issued by developers that have been with the
+            project for years.
+          </p>
+          <p class="lead">
+            These comments might address stylistic issues, may request changes
+            to the variable names, may suggest methods of testing, or may even
+            suggest alternate approaches to solving given problems.
+          </p>
+          <p class="lead">
+            We're grateful for every contribution, and we hope to hear from
+            you.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row yt-package">
         <div class="col-md-7">
           <h1>How to Get Started</h1>
           <p class="lead">
@@ -145,31 +185,8 @@
             </ul>
           </p>
         </div>
-      </div>
-
-      <div class="row yt-package">
-        <div class="col-md-7">
-          <h1>What To Expect</h1>
-          <p class="lead">
-            Contributions to yt go through several stages.  Once you've
-            submitted a pull request, to the source code, the documentation, or
-            even the blog, you will likely receive comments on it from
-            developers or other individuals.  <b>Every</b> pull request gets
-            reviewed, even those issued by developers that have been with the
-            project for years.
-          </p>
-          <p class="lead">
-            These comments might address stylistic issues, may request changes
-            to the variable names, may suggest methods of testing, or may even
-            suggest alternate approaches to solving given problems.
-          </p>
-          <p class="lead">
-            We're grateful for every contribution, and we hope to hear from
-            you.
-          </p>
-        </div>
         <div class="col-md-5">
-          <img src="img/pr_screenshot.jpg" class="pull-left img-rounded">
+          <img src="img/graph_screenshot.jpg" class="pull-left img-rounded">
         </div>
       </div>
 
