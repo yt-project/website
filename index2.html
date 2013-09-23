@@ -308,57 +308,17 @@
           <p class="lead">
             Usually getting yt is as simple as running the installation script.
             Simply download the stable, dev, or bleeding-edge version of the
-            install script and run it.  Carefully read the instructions the
-            script prints to your terminal since there might be special
-            instructions for your operating system.
+            install script and run it.  You can do this using <span
+              class="yt_code">wget</span> or <span class="yt_code">curl</span>,
+            or even just right click and choose <b>Save As</b>.  Carefully read
+            the instructions the script prints to your terminal since there
+            might be special instructions for your operating system.
           </p>
 
           <p class="text-center">
-
-            <div style="display:inline; margin:0 auto;" class="row collapsers">
-              <div style="display:block; margin:0 auto;" class="collapse-group">
-                <p><a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-success" href="#">Stable &raquo</a></p>
-                <p style="fontsize: 110%;" class="collapse">
-                  <span class="download_script">
-                    $ wget http://hg.yt-project.org/yt/raw/stable/doc/install_script.sh
-                  </span></br>
-                  or, if you do not have wget:
-                  <span class="download_script">
-                    $ curl -o http://hg.yt-project.org/yt/raw/stable/doc/install_script.sh
-                  </span>
-                </p>
-              </div>
-            </div>
-
-            <div style="display:block; margin:0 auto;" class="row">
-              <div style="display:block; margin:0 auto;" class="collapse-group">
-                <p><a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-warning" href="#">Development &raquo</a></p>
-                <p style="fontsize: 110%;" class="collapse">
-                  <span class="download_script">
-                    $ wget http://hg.yt-project.org/yt/raw/yt/doc/install_script.sh
-                  </span></br>
-                  or, if you do not have wget:
-                  <span class="download_script">
-                    $ curl -o http://hg.yt-project.org/yt/raw/yt/doc/install_script.sh
-                  </span>
-                </p>
-              </div>
-            </div>
-
-            <div style="display:block; margin:0 auto;" class="row">
-              <div style="display:block; margin:0 auto;" class="collapse-group">
-                <p><a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-danger" href="#">Bleeding Edge &raquo</a></p>
-                <p style="fontsize: 110%;" class="collapse">
-                  <span class="download_script">
-                    $ wget http://hg.yt-project.org/yt-3.0/raw/yt-3.0/doc/install_script.sh
-                  </span></br>
-                  or, if you do not have wget:
-                  <span class="download_script">
-                    $ curl -o http://hg.yt-project.org/yt-3.0/raw/yt-3.0/doc/install_script.sh
-                  </span>
-                </p>
-              </div>
-            </div>
+            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-success" href="http://hg.yt-project.org/yt/raw/stable/doc/install_script.sh">Stable</a><br/>
+            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-warning" href="http://hg.yt-project.org/yt/raw/yt/doc/install_script.sh">Development</a><br/>
+            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-danger" href="http://hg.yt-project.org/yt-3.0/raw/yt-3.0/doc/install_script.sh">Bleeding Edge</a>
           </p>
 
           <p class="lead" style="margin-top:20px;">Once you've downloaded it, just run:</p>
@@ -418,13 +378,6 @@
     <script src="holder.js"></script>
     <script type="text/javascript">
       $('#myCarousel').carousel({interval:15000})
-
-      $('.collapsers .row .btn').on('click', function(e) {
-        e.preventDefault();
-        var $this = $(this);
-        var $collapse = $this.closest('.collapse-group').find('.collapse');
-        $collapse.collapse('toggle');
-      });
     </script>
     <style type="text/css">
       #myCarousel {
