@@ -331,9 +331,20 @@
           <h1>Get yt:<span class="text-muted"> from source.</h1>
           <p class="lead">
             If you are comfortable installing Python packages and a have a
-            build environment set up, you can install yt using pip:
+            build environment set up, you can install yt via
+            <span class="yt_code">pip</span>:
             <div class="yt_code">
               $ pip install yt
+            </div>
+          </p>
+          <p class="lead">
+            If you would like to install yt from the
+            <a href="https://bitbucket.org/yt_analysis/yt">development</a> or
+            <a href="https://bitbucket.org/yt_analysis/yt-3.0">bleeding edge</a>
+            repositories, first clone the repository and then run the following
+            command in the root directory:
+            <div class="yt_code">
+              $ python setup.py develop
             </div>
           </p>
           <p class="lead">
