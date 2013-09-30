@@ -33,3 +33,5 @@ div.gadget {
   color: black;
  background-color: white;
 }
+
+body { padding-top: 70px; }
