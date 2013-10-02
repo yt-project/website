@@ -2,250 +2,312 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>yt sample data</title>
-    <metsection id="description" content="">
-    <metsection id="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.png" />
+    <link href="https://plus.google.com/107728486871834552760" rel="publisher" />
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <title>The yt Project: Sample Data</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap_cyborg.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Le styles -->
-    <link href="../workshop2012/bootstrap/bootstrap.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-      }
-    </style>
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
   </head>
-
+<!-- NAVBAR
+================================================== -->
   <body>
+    <div class="navbar-wrapper">
+      <div class="container">
 
-    <div class="topbar">
-      <div class="topbar-inner">
-        <div class="container-fluid">
-          <a class="brand" href="#">yt sample data</a>
+
+        <!-- We store a copy of the menubar in menubar.inc.  Better to include
+             that when you modify it, so the changes get propagated.-->
+        <!-- Be sure to modify the "active" item -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="http://yt-project.org/">yt project</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="../about.html">About</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="http://yt-project.org/doc/dev">Dev</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.5</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.4</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.3</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.2</a></li>
+                    <li><a href="http://yt-project.org/doc/dev">2.1</a></li>
+                  </ul>
+                </li>
+                <li><a href="../community.html">Community</a></li>
+                <li><a href="../development.html">Develop</a></li>
+                <li class="active"><a href="../gallery.html">Gallery</a></li>
+                <li><a href="https://hub.yt-project.org/">Data Hub</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">Learning</li>
+                    <li><a href="http://blog.yt-project.org/">yt Blog</a></li>
+                    <li><a href="http://yt-project.org/doc/orientation/index.html#orientation">Quick Start</a></li>
+                    <li><a href="http://yt-project.org/doc/">Documentation</a></li>
+                    <li><a href="http://adsabs.harvard.edu/abs/2011ApJS..192....9T">APJS paper</a>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Help!</li>
+                    <li><a href="http://lists.spacepope.org/listinfo.cgi/yt-users-spacepope.org">Mailing List</a></li>
+                    <li><a href="http://yt-project.org/irc.html">Live Chat</a></li>
+                    <li><a href="http://yt-project.org/doc/cheatsheet.pdf">Cheat sheet</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Development</li>
+                    <li><a href="http://hg.yt-project.org/yt/issues/new">Report a Bug</a></li>
+                    <li><a href="http://ytep.readthedocs.org/en/latest/">YTEPs</a></li>
+                    <li><a href="http://bitbucket.org/yt_analysis/yt">Project Page</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+        <!-- End of menubar.inc inclusion -->
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="content">
-         <div class="row">
-           <div class="span16">
-             <div class="alert-message warning">
-                <p><strong>These datasets are provided for experimentation and
-                  testing purposes only.  They do not necessarily reflect any
-                  published work or scientific consistency.</strong></p>
-             </div>
-           </div>
-         </div>
-         <div class="row">
-           <div class="span16">
-             <!-- DAY ONE -->
-             <table class="bordered zebra-striped">
-             <thead>
-               <th>Filename</th><th>Size</th><th>Description</th><th>Code</th><th>Link</th>
-             </thead>
-             <tbody>
-               <tr><td>enzo_tiny_cosmology</td>
-                   <td>419 MB </td>
-                   <td>Enzo simulation, cosmology, 32^3 root grid, 5 levels AMR, star formation,</br> 
-		     32 Mpc/h on a side, 57 datasets, 680 MB total.</td>
-                   <td>Enzo</td>
-                   <td><a href="http://yt-project.org/data/enzo_tiny_cosmology.tar.gz">download</a></td>
-               </tr>
-               <tr><td>enzo_cosmology_plus</td>
-                   <td>779 MB </td>
-                   <td>Enzo simulation, cosmology, identical
-		     dimensions as the enzo_tiny_cosmology dataset,
-		     but with additional physics: primordial
-		     chemistry, metal cooling, and UV background.</br> 
-		     57 datasets, 1 GB total.</td>
-                   <td>Enzo</td>
-                   <td><a href="http://yt-project.org/data/enzo_cosmology_plus.tar.gz">download</a></td>
-               </tr>
-               <tr><td>Enzo_64</td>
-                   <td>2.4 GB </td>
-                   <td>Enzo dataset, cosmology, 64^3 root grid, 5 levels AMR, star formation</br>
-		     128 Mpc/h on a side, 4GB total.</td>
-                   <td>Enzo</td>
-                   <td><a href="http://yt-project.org/data/Enzo_64.tar.gz">download</a></td>
-               </tr>
-               <tr><td>IsolatedGalaxy</td>
-                   <td>292 MB</td>
-                   <td>An isolated galaxy dataset.</td>
-                   <td>Enzo</td>
-                   <td><a href="http://yt-project.org/data/IsolatedGalaxy.tar.gz">download</a></td>
-               </tr>
-               <tr><td>Sedov3D</td>
-                   <td>38 MB </td>
-                   <td>Sedov3D test</td>
-                   <td>FLASH</td>
-                   <td><a href="http://yt-project.org/data/Sedov_3d.tar.gz">download</a></td>
-               </tr>
-               <tr><td>GasSloshing</td>
-                   <td>330 MB </td>
-                   <td>Two timesteps of gas sloshing around</td>
-                   <td>FLASH</td>
-                   <td><a href="http://yt-project.org/data/GasSloshing.tar.gz">download</a></td>
-               </tr>
-               <tr><td>GasSloshingLowRes</td>
-                   <td>1 GB </td>
-                   <td>Many timesteps of (low-res) gas sloshing around</td>
-                   <td>FLASH</td>
-                   <td><a href="http://yt-project.org/data/GasSloshingLowRes.tar.gz">download</a></td>
-               </tr>
-               <tr><td>WindTunnel</td>
-                   <td>74 MB </td>
-                   <td>Wind tunnel test problem</td>
-                   <td>FLASH</td>
-                   <td><a href="http://yt-project.org/data/WindTunnel.tar.gz">download</a></td>
-               </tr>
-               <tr><td>GalaxyClusterMerger</td>
-                   <td>4.0 GB </td>
-                   <td>A merger of two galaxy clusters</td>
-                   <td>FLASH</td>
-                   <td><a href="http://yt-project.org/data/GalaxyClusterMerger.tar.gz">download</a></td>
-               </tr>
-               <tr><td>TurbBoxLowRes</td>
-                   <td>89 MB </td>
-                   <td>Turbulent Box (CGS units)</td>
-                   <td>Chombo</td>
-                   <td><a href="http://yt-project.org/data/TurbBoxLowRes.tar.gz">download</a></td>
-               </tr>
-               <tr><td>RadTube</td>
-                   <td>12 MB </td>
-                   <td>Non-Cubic Domain</td>
-                   <td>Orion</td>
-                   <td><a href="http://yt-project.org/data/RadTube.tar.gz">download</a></td>
-               </tr>
-               <tr><td>GaussianCloud</td>
-                   <td>122 MB </td>
-                   <td>Refine-ratio of 4</td>
-                   <td>Chombo</td>
-                   <td><a href="http://yt-project.org/data/GaussianCloud.tar.gz">download</a></td>
-               </tr>
-               <tr><td>RadAdvect</td>
-                   <td>48 KB </td>
-                   <td>Unigrid</td>
-                   <td>Orion</td>
-                   <td><a href="http://yt-project.org/data/RadAdvect.tar.gz">download</a></td>
-               </tr>
-	       <tr><td>test_outputs</td>
-		   <td>534 MB </td>
-		   <td>All the datasets used in the yt answer testing suite </td>
-		   <td>Various </td>
-		   <td><a href="http://yt-project.org/data/test_outputs.tar.gz">download</a></td>
-             </tbody>
-             </table>
-           </div>
-         </div>
+    <div class="container">
+
+
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Sample Data</div>
+      <div class="panel-body">
+        <p><strong>These datasets are provided for experimentation and
+          testing purposes only.  They do not necessarily reflect any
+          published work or scientific consistency.</strong></p>
       </div>
+
+      <!-- Table -->
+      <table class="table">
+         <thead>
+           <th>Filename</th><th>Size</th><th>Description</th><th>Code</th><th>Link</th>
+         </thead>
+         <tbody>
+           <tr><td>enzo_tiny_cosmology</td>
+               <td>419 MB </td>
+               <td>Enzo simulation, cosmology, 32^3 root grid, 5 levels AMR, star formation,</br> 
+         32 Mpc/h on a side, 57 datasets, 680 MB total.</td>
+               <td>Enzo</td>
+               <td><a href="http://yt-project.org/data/enzo_tiny_cosmology.tar.gz">download</a></td>
+           </tr>
+           <tr><td>enzo_cosmology_plus</td>
+               <td>779 MB </td>
+               <td>Enzo simulation, cosmology, identical
+         dimensions as the enzo_tiny_cosmology dataset,
+         but with additional physics: primordial
+         chemistry, metal cooling, and UV background.</br> 
+         57 datasets, 1 GB total.</td>
+               <td>Enzo</td>
+               <td><a href="http://yt-project.org/data/enzo_cosmology_plus.tar.gz">download</a></td>
+           </tr>
+           <tr><td>Enzo_64</td>
+               <td>2.4 GB </td>
+               <td>Enzo dataset, cosmology, 64^3 root grid, 5 levels AMR, star formation</br>
+         128 Mpc/h on a side, 4GB total.</td>
+               <td>Enzo</td>
+               <td><a href="http://yt-project.org/data/Enzo_64.tar.gz">download</a></td>
+           </tr>
+           <tr><td>IsolatedGalaxy</td>
+               <td>292 MB</td>
+               <td>An isolated galaxy dataset.</td>
+               <td>Enzo</td>
+               <td><a href="http://yt-project.org/data/IsolatedGalaxy.tar.gz">download</a></td>
+           </tr>
+           <tr><td>Sedov3D</td>
+               <td>38 MB </td>
+               <td>Sedov3D test</td>
+               <td>FLASH</td>
+               <td><a href="http://yt-project.org/data/Sedov_3d.tar.gz">download</a></td>
+           </tr>
+           <tr><td>GasSloshing</td>
+               <td>330 MB </td>
+               <td>Two timesteps of gas sloshing around</td>
+               <td>FLASH</td>
+               <td><a href="http://yt-project.org/data/GasSloshing.tar.gz">download</a></td>
+           </tr>
+           <tr><td>GasSloshingLowRes</td>
+               <td>1 GB </td>
+               <td>Many timesteps of (low-res) gas sloshing around</td>
+               <td>FLASH</td>
+               <td><a href="http://yt-project.org/data/GasSloshingLowRes.tar.gz">download</a></td>
+           </tr>
+           <tr><td>WindTunnel</td>
+               <td>74 MB </td>
+               <td>Wind tunnel test problem</td>
+               <td>FLASH</td>
+               <td><a href="http://yt-project.org/data/WindTunnel.tar.gz">download</a></td>
+           </tr>
+           <tr><td>GalaxyClusterMerger</td>
+               <td>4.0 GB </td>
+               <td>A merger of two galaxy clusters</td>
+               <td>FLASH</td>
+               <td><a href="http://yt-project.org/data/GalaxyClusterMerger.tar.gz">download</a></td>
+           </tr>
+           <tr><td>TurbBoxLowRes</td>
+               <td>89 MB </td>
+               <td>Turbulent Box (CGS units)</td>
+               <td>Chombo</td>
+               <td><a href="http://yt-project.org/data/TurbBoxLowRes.tar.gz">download</a></td>
+           </tr>
+           <tr><td>RadTube</td>
+               <td>12 MB </td>
+               <td>Non-Cubic Domain</td>
+               <td>Orion</td>
+               <td><a href="http://yt-project.org/data/RadTube.tar.gz">download</a></td>
+           </tr>
+           <tr><td>GaussianCloud</td>
+               <td>122 MB </td>
+               <td>Refine-ratio of 4</td>
+               <td>Chombo</td>
+               <td><a href="http://yt-project.org/data/GaussianCloud.tar.gz">download</a></td>
+           </tr>
+           <tr><td>RadAdvect</td>
+               <td>48 KB </td>
+               <td>Unigrid</td>
+               <td>Orion</td>
+               <td><a href="http://yt-project.org/data/RadAdvect.tar.gz">download</a></td>
+           </tr>
+       <tr><td>test_outputs</td>
+       <td>534 MB </td>
+       <td>All the datasets used in the yt answer testing suite </td>
+       <td>Various </td>
+       <td><a href="http://yt-project.org/data/test_outputs.tar.gz">download</a></td>
+         </tbody>
+         </table>
+      </table>
     </div>
 
-    <div class="container-fluid">
-      <div class="content">
-         <div class="row">
-           <div class="span16">
-             <!-- DAY ONE -->
-             <table class="bordered zebra-striped">
-             <thead>
-               <th>yt-3.0 Datasets</th><th>Size</th><th>Description</th><th>Code</th><th>Link</th>
-             </thead>
-             <tbody>
-               <tr><td>snapshot_033</td>
-                   <td>269 MB</td>
-                   <td>Gadget HDF5 snapshot (OWLS) dataset with 2*128^3
-                     particles, including Gas and DM.</td>
-                   <td>Gadget (OWLS)</td>
-                   <td><a href="http://yt-project.org/data/snapshot_033.tar.gz">download</a></td>
-               </tr>
-               <tr><td>output_00080</td>
-                   <td>222 MB</td>
-                   <td>RAMSES dataset with gas and particles.</td>
-                   <td>RAMSES</td>
-                   <td><a href="http://yt-project.org/data/output_00080.tar.gz">download</a></td>
-               </tr>
-               <tr><td>agora_1e11.00400</td>
-                   <td>277 MB</td>
-                   <td>Cosmology output</td>
-                   <td>Gasoline</td>
-                   <td><a href="http://yt-project.org/data/agora_1e11.00400.tar.gz">download</a></td>
-               </tr>
-               <tr><td>halo1e11_run1.00400</td>
-                   <td>1 GB</td>
-                   <td>Cosmology output</td>
-                   <td>PKDGrav</td>
-                   <td><a href="http://yt-project.org/data/halo1e11_run1.00400.tar.gz">download</a></td>
-               </tr>
-               <tr><td>output_00101</td>
-                   <td>355 MB</td>
-                   <td>Cosmology output</td>
-                   <td>RAMSES</td>
-                   <td><a href="http://yt-project.org/data/output_00101.tar.gz">download</a></td>
-               </tr>
-               <tr><td>snapshot_010</td>
-                   <td>98 MB</td>
-                   <td>Cosmology output</td>
-                   <td>Gadget</td>
-                   <td><a href="http://yt-project.org/data/snapshot_010.tar.gz">download</a></td>
-               </tr>
-               <tr><td>sizmbhloz-clref04SNth-rs9_a0.9011</td>
-                   <td>93 MB</td>
-                   <td>Isolated galaxy with particles and gas.</td>
-                   <td>ARTIO</td>
-                   <td><a href="http://yt-project.org/data/sizmbhloz-clref04SNth-rs9_a0.9011.tar.gz">download</a></td>
-               </tr>
-               <tr><td>c5</td>
-                   <td>24 MB</td>
-                   <td>MoabHex8 dataset (63^3)</td>
-                   <td>Moab (Cantor set)</td>
-                   <td><a href="http://yt-project.org/data/c5.tar.gz">download</a></td>
-               </tr>
-             </tbody>
-             </table>
-           </div>
-         </div>
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Data Tables</div>
+      <div class="panel-body">
+        <p><strong>These data tables can be used in yt for various analysis
+          tasks.</strong></p>
       </div>
+
+      <table class="table">
+      <thead>
+        <th>Data Tables</th><th>Size (mb)</th><th>Description</th><th>Link</th>
+      </thead>
+      <tbody>
+        <tr><td>xray_emissivity</td>
+            <td>2.1 </td>
+            <td>X-ray emissivity tables created
+            with <a href="http://www.nublado.org/">Cloudy</a>
+            and used for creating x-ray emissivity and
+            luminosity fields.</td>
+            <td><a href="http://yt-project.org/data/xray_emissivity.h5">download</a></td>
+        </tr>
+      </tbody>
+      </table>
     </div>
 
-    <div class="container-fluid">
-      <div class="content">
-         <div class="row">
-           <div class="span16">
-             <!-- DAY ONE -->
-             <table class="bordered zebra-striped">
-             <thead>
-               <th>Data Tables</th><th>Size (mb)</th><th>Description</th><th>Link</th>
-             </thead>
-             <tbody>
-               <tr><td>xray_emissivity</td>
-                   <td>2.1 </td>
-                   <td>X-ray emissivity tables created
-                   with <a href="http://www.nublado.org/">Cloudy</a>
-                   and used for creating x-ray emissivity and
-                   luminosity fields.</td>
-                   <td><a href="http://yt-project.org/data/xray_emissivity.h5">download</a></td>
-               </tr>
-             </tbody>
-             </table>
-           </div>
-         </div>
-        </section>
-        <footer>
-          <p><a href="http://yt-project.org/">yt project</a></p>
-        </footer>
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">yt 3.0 Sample Data</div>
+      <div class="panel-body">
+        <p><strong>These datasets are provided for testing of yt 3.0.</strong></p>
       </div>
-    </div>
 
+      <!-- Table -->
+      <table class="table">
+         <thead>
+           <th>Filename</th><th>Size</th><th>Description</th><th>Code</th><th>Link</th>
+         </thead>
+         <tbody>
+           <tr><td>snapshot_033</td>
+               <td>269 MB</td>
+               <td>Gadget HDF5 snapshot (OWLS) dataset with 2*128^3
+                 particles, including Gas and DM.</td>
+               <td>Gadget (OWLS)</td>
+               <td><a href="http://yt-project.org/data/snapshot_033.tar.gz">download</a></td>
+           </tr>
+           <tr><td>output_00080</td>
+               <td>222 MB</td>
+               <td>RAMSES dataset with gas and particles.</td>
+               <td>RAMSES</td>
+               <td><a href="http://yt-project.org/data/output_00080.tar.gz">download</a></td>
+           </tr>
+           <tr><td>agora_1e11.00400</td>
+               <td>277 MB</td>
+               <td>Cosmology output</td>
+               <td>Gasoline</td>
+               <td><a href="http://yt-project.org/data/agora_1e11.00400.tar.gz">download</a></td>
+           </tr>
+           <tr><td>halo1e11_run1.00400</td>
+               <td>1 GB</td>
+               <td>Cosmology output</td>
+               <td>PKDGrav</td>
+               <td><a href="http://yt-project.org/data/halo1e11_run1.00400.tar.gz">download</a></td>
+           </tr>
+           <tr><td>output_00101</td>
+               <td>355 MB</td>
+               <td>Cosmology output</td>
+               <td>RAMSES</td>
+               <td><a href="http://yt-project.org/data/output_00101.tar.gz">download</a></td>
+           </tr>
+           <tr><td>snapshot_010</td>
+               <td>98 MB</td>
+               <td>Cosmology output</td>
+               <td>Gadget</td>
+               <td><a href="http://yt-project.org/data/snapshot_010.tar.gz">download</a></td>
+           </tr>
+           <tr><td>sizmbhloz-clref04SNth-rs9_a0.9011</td>
+               <td>93 MB</td>
+               <td>Isolated galaxy with particles and gas.</td>
+               <td>ARTIO</td>
+               <td><a href="http://yt-project.org/data/sizmbhloz-clref04SNth-rs9_a0.9011.tar.gz">download</a></td>
+           </tr>
+           <tr><td>c5</td>
+               <td>24 MB</td>
+               <td>MoabHex8 dataset (63^3)</td>
+               <td>Moab (Cantor set)</td>
+               <td><a href="http://yt-project.org/data/c5.tar.gz">download</a></td>
+           </tr>
+         </tbody>
+         </table>
+      </table>
+    </div>
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="../holder.js"></script>
   </body>
 </html>
