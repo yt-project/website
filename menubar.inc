@@ -36,7 +36,7 @@
                   <ul class="dropdown-menu">
                     <li class="dropdown-header">Learning</li>
                     <li><a href="http://blog.yt-project.org/">yt Blog</a></li>
-                    <li><a href="http://yt-project.org/doc/orientation/index.html#orientation">Quick Start</a></li>
+                    <li><a href="http://yt-project.org/doc/bootcamp/index.html">Quick Start</a></li>
                     <li><a href="http://yt-project.org/doc/">Documentation</a></li>
                     <li><a href="http://adsabs.harvard.edu/abs/2011ApJS..192....9T">APJS paper</a>
                     <li class="divider"></li>
