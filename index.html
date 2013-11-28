@@ -320,7 +320,7 @@
           <p class="text-center">
             <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-success" href="http://hg.yt-project.org/yt/raw/stable/doc/install_script.sh">Stable</a><br/>
             <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-warning" href="http://hg.yt-project.org/yt/raw/yt/doc/install_script.sh">Development</a><br/>
-            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-danger" href="http://hg.yt-project.org/yt-3.0/raw/yt-3.0/doc/install_script.sh">Bleeding Edge</a>
+            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-danger" href="http://hg.yt-project.org/yt/raw/yt-3.0/doc/install_script.sh">Bleeding Edge</a>
           </p>
 
           <p class="lead" style="margin-top:20px;">Once you've downloaded it, just run:</p>
@@ -328,7 +328,7 @@
             $ bash install_script.sh<br/>
             $ source YT_DEST/bin/activate
           </div>
-          where YT_DEST will be where you installed yt (usually <span class="yt_code">yt-x86_64</span> but depends on your system).
+          <p class="lead">where YT_DEST will be where you installed yt (usually <span class="yt_code">yt-x86_64</span> but depends on your system).</p>
         </div>
         <div class="col-md-offset-2 col-md-5">
           <h1>Get yt:<span class="text-muted"> from source.</h1>
@@ -341,15 +341,29 @@
             </div>
           </p>
           <p class="lead">
-            If you would like to install yt from the
-            <a href="https://bitbucket.org/yt_analysis/yt">development</a> or
-            <a href="https://bitbucket.org/yt_analysis/yt-3.0">bleeding edge</a>
-            repositories, first clone the repository and then run the following
-            command in the root directory:
-            <div class="yt_code">
-              $ python setup.py develop
-            </div>
+            If you would like to install the development or bleeding
+            edge versions of yt, first clone the repository 
+            <a href="https://bitbucket.org/yt_analysis/yt">here</a>.
           </p>
+          <p class="lead">
+            For the development version, run the following command in
+            the root source directory:
+          </p>
+          <div class="yt_code">
+            $ hg update yt
+          </div>
+          <p class="lead">
+            For the bleeding edge version, instead do:
+          </p>
+          <div class="yt_code">
+            $ hg update yt-3.0
+          </div>
+          <p class="lead">
+            Then do the following:
+          </p>
+          <div class="yt_code">
+            $ python setup.py develop
+          </div>
           <p class="lead">
             To build yt, you will first need to install a number of Python and C
             libraries that yt uses for key functionality.
