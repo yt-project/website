@@ -49,8 +49,8 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="http://yt-project.org/docs/dev-3.0">(3.0) Dev</a></li>
-                    <li><a href="http://yt-project.org/docs/dev">(2.x) Dev</a></li>
+                    <li><a href="http://yt-project.org/docs/dev">Dev</a></li>
+                    <li><a href="http://yt-project.org/docs/3.0">3.0</a></li>
                     <li><a href="http://yt-project.org/docs/2.6">2.6</a></li>
                     <li><a href="http://yt-project.org/docs/2.5">2.5</a></li>
                     <li><a href="http://yt-project.org/docs/2.4">2.4</a></li>
@@ -311,7 +311,7 @@
           </p>
           <p class="lead">
             Usually getting yt is as simple as running the installation script.
-            Simply download the stable, dev, or bleeding-edge version of the
+            Simply download the legacy, stable, or development version of the
             install script and run it.  You can do this using <span
               class="yt_code">wget</span> or <span class="yt_code">curl</span>,
             or even just right click and choose <b>Save As</b>.  Carefully read
@@ -320,9 +320,9 @@
           </p>
 
           <p class="text-center">
+            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-success" href="http://hg.yt-project.org/yt/raw/yt-2.x/doc/install_script.sh">2.x (Legacy)</a><br/>
             <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-success" href="http://hg.yt-project.org/yt/raw/stable/doc/install_script.sh">Stable</a><br/>
             <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-warning" href="http://hg.yt-project.org/yt/raw/yt/doc/install_script.sh">Development</a><br/>
-            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-danger" href="http://hg.yt-project.org/yt/raw/yt-3.0/doc/install_script.sh">Bleeding Edge</a>
           </p>
 
           <p class="lead" style="margin-top:20px;">Once you've downloaded it, just run:</p>
@@ -355,24 +355,17 @@
             </div>
           </p>
           <p class="lead">
-            If you would like to install the development or bleeding
-            edge versions of yt, first clone the repository: 
+            If you would like to install the development version of yt, first
+            clone the repository: 
           </p>
           <div class="yt_code">
             $ hg clone https://bitbucket.org/yt_analysis/yt
           </div>
           <p class="lead">
-            For the development version, run the following command in
-            the root source directory:
+            And run the following command in the root source directory:
           </p>
           <div class="yt_code">
             $ hg update yt
-          </div>
-          <p class="lead">
-            For the bleeding edge version, instead do:
-          </p>
-          <div class="yt_code">
-            $ hg update yt-3.0
           </div>
           <p class="lead">
             Then do the following:
