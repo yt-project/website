@@ -46,7 +46,7 @@
                     <li><a href="http://yt-project.org/docs/cheatsheet.pdf">Cheat sheet</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Development</li>
-                    <li><a href="http://hg.yt-project.org/yt/issues/new">Report a Bug</a></li>
+                    <li><a href="http://bitbucket.org/yt_analysis/yt/issues/new">Report a Bug</a></li>
                     <li><a href="http://ytep.readthedocs.org/en/latest/">YTEPs</a></li>
                     <li><a href="http://bitbucket.org/yt_analysis/yt">Project Page</a></li>
                     <li><a href="http://trello.com/yt_analysis">Project Planning</a></li>
