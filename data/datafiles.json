@@ -28,30 +28,30 @@
         {
             "code": "Athena",
             "description": "Gas sloshing with MHD, with static mesh refinement. \"time_unit\":(1.0,\"Myr\"), \"length_unit\":(1.0,\"Mpc\"), \"mass_unit\":(1.0e14,\"Msun\")",
-            "filename": "MHDSloshin",
+            "filename": "MHDSloshing",
             "size": "1.5 GB",
             "url": "http://yt-project.org/data/MHDSloshing.tar.gz"
         },
         {
             "code": "Athena",
             "description": "Time series data of a MHD blast simulation.",
-            "filename": "MHDBlas",
+            "filename": "MHDBlast",
             "size": "283 MB",
             "url": "http://yt-project.org/data/MHDBlast.tar.gz"
         },
         {
             "code": "Athena",
             "description": "HD simulation of a ram pressure-stripped galaxy, from Stephanie Tonnesen. \"time_unit\":3.086e14, \"length_unit\":8.0236e22, \"mass_unit\":5.1649293e+39",
-            "filename": "RamPressureStrippin",
+            "filename": "RamPressureStripping",
             "size": "2.1 GB",
-            "url": "http://yt-project.org/data/RamPressureStripping"
+            "url": "http://yt-project.org/data/RamPressureStripping.tar.gz"
         },
         {
             "code": "Athena",
             "description": "Hydro simulation of shock interacting with a cloud, with static mesh refinement.",
             "filename": "ShockCloud",
             "size": "104 MB",
-            "url": "http://yt-project.org/data/ShockCloud"
+            "url": "http://yt-project.org/data/ShockCloud.tar.gz"
         }
     ],
     "boxlib frontend": [
@@ -100,7 +100,7 @@
         {
             "code": "Orion",
             "description": "Non-Cubic Domain",
-            "filename": "RadAdvec",
+            "filename": "RadAdvect",
             "size": "12 MB",
             "url": "http://yt-project.org/data/RadAdvect.tar.gz"
         },
@@ -137,7 +137,7 @@
         {
             "code": "pluto",
             "description": "2D Kelvin-Helmholtz Instability",
-            "filename": "KelvinHelmhol",
+            "filename": "KelvinHelmholtz",
             "size": "4.2 MB",
             "url": "http://yt-project.org/data/KelvinHelmholtz.tar.gz"
         },
@@ -197,21 +197,21 @@
             "description": "Enzo 3.0 dataset including CenOstriker active particles",
             "filename": "ActiveParticleCosmology",
             "size": "73 MB",
-            "url": "http://yt-project.org/data/ActiveParticleCosmology"
+            "url": "http://yt-project.org/data/ActiveParticleCosmology.tar.gz"
         }
     ],
     "fits frontend": [
         {
             "code": "FITS",
             "description": "A FITS 3D cube of radio data from the <a href=\"http://www.bu.edu/galacticring/new_index.htm\">BU Galactic Ring Survey</a>.",
-            "filename": "grs-50-cube.fits",
+            "filename": "grs-50-cube.fits.gz",
             "size": "171 MB",
             "url": "http://yt-project.org/data/grs-50-cube.fits.gz"
         },
         {
             "code": "FITS",
             "description": "A FITS 3D cube of VLA radio data of M33, provided by <a href=\"http://www.cv.nrao.edu/~aleroy/Site/Welcome.html\">Adam Leroy</a> of NRAO. This version has been compressed along the spectral axis.",
-            "filename": "m33_hi.fits",
+            "filename": "m33_hi.fits.gz",
             "size": "430 MB",
             "url": "http://yt-project.org/data/m33_hi.fits.gz"
         },
@@ -225,7 +225,7 @@
         {
             "code": "FITS",
             "description": "An events file from a Chandra observation of the Bullet Cluster downloaded from the <a href=\"http://cxc.harvard.edu/cda/\">Chandra Data Archive</a>, OBS ID 5356.",
-            "filename": "acisf05356N003_evt2.fits",
+            "filename": "acisf05356N003_evt2.fits.gz",
             "size": "15 MB",
             "url": "http://yt-project.org/data/acisf05356N003_evt2.fits.gz"
         }
@@ -241,7 +241,7 @@
         {
             "code": "FLASH",
             "description": "Two timesteps of gas sloshing around",
-            "filename": "GasSloshin",
+            "filename": "GasSloshing",
             "size": "330 MB",
             "url": "http://yt-project.org/data/GasSloshing.tar.gz"
         },
@@ -262,14 +262,14 @@
         {
             "code": "FLASH",
             "description": "The two-body problem with no gas fields",
-            "filename": "Orbi",
+            "filename": "Orbit",
             "size": "6.6 MB",
             "url": "http://yt-project.org/data/Orbit.tar.gz"
         },
         {
             "code": "FLASH",
             "description": "A merger of two galaxy clusters",
-            "filename": "GalaxyClusterMerge",
+            "filename": "GalaxyClusterMerger",
             "size": "4.0 GB",
             "url": "http://yt-project.org/data/GalaxyClusterMerger.tar.gz"
         }
@@ -310,7 +310,7 @@
         {
             "code": "Moab",
             "description": "fng_usrbin22.h5m: sample mcnp mesh data & mcnp_n_impr_fluka.h5m: faceted geometric model.",
-            "filename": "MoabTes",
+            "filename": "MoabTest",
             "size": "168 MB",
             "url": "http://yt-project.org/data/MoabTest.tar.gz"
         }
@@ -319,7 +319,7 @@
         {
             "code": "Genric",
             "description": "Two datasets of uniformly gridded fields in HDF5 and one in a FITS file.",
-            "filename": "UnigridD",
+            "filename": "UnigridData",
             "size": "1.6 GB",
             "url": "http://yt-project.org/data/UnigridData.tar.gz"
         },
@@ -349,7 +349,7 @@
         {
             "code": "RAMSES",
             "description": "MHD dataset, 32^3 base grid, 3 levels of AMR. Unzips to 457 MB.",
-            "filename": "ramses_mhd_am",
+            "filename": "ramses_mhd_amr",
             "size": "10 MB",
             "url": "http://yt-project.org/data/ramses_mhd_amr.tar.gz"
         },
@@ -430,7 +430,7 @@
             "description": "Tipsy datasets with auxiliary files",
             "filename": "TipsyAuxiliary",
             "size": "39 MB",
-            "url": "http://yt-project.org/data/TipsyAuxiliary"
+            "url": "http://yt-project.org/data/TipsyAuxiliary.tar.gz"
         }
     ]
 }
