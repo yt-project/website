@@ -6,7 +6,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.png" />
-    <link rel="import" href="signup.html">
     <link href="https://plus.google.com/107728486871834552760" rel="publisher" />
 
     <title>The yt Project: Community</title>
@@ -170,11 +169,6 @@
             <a href="http://yt-project.org/irc.html">web client</a>
             that will connect you directly to our channel.
           </p>
-          <p class="lead" id="slack">
-            We also hang out and chat about development on <a href="https://yt-project.slack.com">slack</a>. 
-            If you would like to join us, please send us your name and email to get an 
-            invitation using the button on the right.
-          </p>
           <p class="lead">
             If nobody answers your question right away, it might just mean that
             nobody is around right then.  Usually the channel is the busiest
@@ -183,7 +177,7 @@
           </p>
         </div>
         <div class="col-md-5">
-          <img src="img/irc_screenshot.jpg" class="pull-right img-rounded" id="irc_screen">
+          <img src="img/irc_screenshot.jpg" class="pull-right img-rounded">
         </div>
       </div>
 
@@ -264,13 +258,6 @@
     <script src="holder.js"></script>
     <script type="text/javascript">
       $('#myCarousel').carousel({interval:10000})
-    </script>
-    <script type="text/javascript">
-        var link = document.querySelector('link[rel="import"]');
-        var el = link.import.querySelector('.mycontainer');
-        el.style.textAlign = "center";
-        var div = document.getElementById("irc_screen");
-        div.parentNode.insertBefore(el, div.nextSibling);
     </script>
   </body>
 </html>

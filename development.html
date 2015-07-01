@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.png" />
     <link href="https://plus.google.com/107728486871834552760" rel="publisher" />
-    <link rel="import" href="signup.html">
+
     <title>The yt Project: Development</title>
 
     <!-- Bootstrap core CSS -->
@@ -112,7 +112,7 @@
             changes to the code or the docs.
             yt is released under the modified BSD license.
           </p>
-          <p class="lead" id="irc">
+          <p class="lead">
             We invite contributions of any type -- code, analysis modules,
             documentation, blog posts, and even enhancements for the website.
             Below are some hints on what to expect and how to get involved, but
@@ -120,15 +120,7 @@
             <a href="http://lists.spacepope.org/listinfo.cgi/yt-dev-spacepope.org">the yt-dev mailing list</a>
             or <span class="yt_code">#yt</span> on
             <span class="yt_code">chat.freenode.org</span> if you have any questions.
-            Recently we have started to use <a href="https://slack.com">slack</a> as a communication platform.
-            Feel free to sign up and <a href="https://yt-project.slack.com/">try it</a> out.
           </p>
-          <script>
-              var link = document.querySelector('link[rel="import"]');
-              var el = link.import.querySelector('.mycontainer');
-              var div = document.getElementById("irc");
-              div.parentNode.insertBefore(el, div.nextSibling)
-          </script>
         </div>
         <div class="col-md-5">
           <iframe src="http://www.ohloh.net/p/129183/widgets/project_basic_stats.html"
@@ -248,12 +240,11 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="holder.js"></script>
     <script type="text/javascript">
       $('#myCarousel').carousel({interval:10000})
     </script>
-    <script src="signupslack.js"></script>
   </body>
 </html>
