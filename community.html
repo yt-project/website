@@ -183,7 +183,9 @@
           </p>
         </div>
         <div class="col-md-5">
-          <img src="img/irc_screenshot.jpg" class="pull-right img-rounded" id="irc_screen">
+          <div class="irc_window" id="slack_signup">
+            <img src="img/irc_screenshot.jpg" class="pull-right img-rounded">
+          </div>
         </div>
       </div>
 
@@ -267,9 +269,9 @@
     </script>
     <script type="text/javascript">
         var link = document.querySelector('link[rel="import"]');
-        var el = link.import.querySelector('.mycontainer');
+        var el = link.import.querySelector('.slack_signup_container');
         el.style.textAlign = "center";
-        var div = document.getElementById("irc_screen");
+        var div = document.getElementById("slack_signup");
         div.parentNode.insertBefore(el, div.nextSibling);
     </script>
   </body>

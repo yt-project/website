@@ -53,3 +53,11 @@ td.frontend {
   text-align: center;
   color: #ffffff;
 }
+
+div.irc_window {
+    overflow: auto
+}
+
+div.slack_signup_container {
+    padding-top: 50px
+}
