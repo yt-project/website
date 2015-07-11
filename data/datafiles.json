@@ -285,6 +285,13 @@
     ],
     "halo_catalog frontends": [
         {
+            "code": "Gadget FOF",
+            "description": "Two halo catalogs made using inline FOF/SUBFIND in a Gadget N-body simulation",
+            "filename": "gadget_fof_halos",
+            "size": "412 kB",
+            "url": "http://yt-project.org/data/gadget_fof_halos.tar.gz"
+        },
+        {
             "code": "OWLS Subfind",
             "description": "Two halo catalogs made using inline FOF in an OWLS N-body simulation",
             "filename": "owls_fof_halos",
