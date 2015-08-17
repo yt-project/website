@@ -348,6 +348,13 @@
         },
         {
             "code": "RAMSES",
+            "description": "Isolated galaxy disk dataset containing gas and particles, set up with boxlen != 1. Generated using the <a href=\"https://bitbucket.org/vperret/dice\">DICE code</a>. Unzips to 663 MB.",
+            "filename": "DICEGalaxyDisk",
+            "size": "79 MB",
+            "url": "http://yt-project.org/data/DICEGalaxyDisk.tar.gz"
+        },
+        {
+            "code": "RAMSES",
             "description": "MHD dataset, 128^3. Unzips to 316 MB.",
             "filename": "ramses_mhd_128",
             "size": "7.3 MB",
