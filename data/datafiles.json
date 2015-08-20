@@ -276,7 +276,7 @@
         {
             "code": "FLASH",
             "description": "Magnetized white dwarf binary merger in 2-D cylindrical coordinates, produced by <a href=\"https://sites.google.com/site/fishercompgroup/\">Fisher Computational Astrophysics Group</a> and used in <a href=\"http://adsabs.harvard.edu/abs/2013ApJ...773..136J\">S. Ji et al., 2013, ApJ, 773, 136</a>",
-            "filename": "WD2d_hdf5_chk_1000",
+            "filename": "WDMerger_hdf5_chk_1000",
             "size": "59 MB",
             "url": "http://yt-project.org/data/WDMerger_hdf5_chk_1000.tar.gz"
         }
