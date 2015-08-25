@@ -348,9 +348,9 @@
     "ramses frontend": [
         {
             "code": "RAMSES",
-            "description": "RAMSES dataset with gas and particles.",
+            "description": "Cosmological zoom simulation with gas, DM and stars.Unzips to 366 MB  ",
             "filename": "output_00080",
-            "size": "222 MB",
+            "size": "250 MB",
             "url": "http://yt-project.org/data/output_00080.tar.gz"
         },
         {
@@ -376,9 +376,9 @@
         },
         {
             "code": "RAMSES",
-            "description": "Cosmology output",
+            "description": "DM only cosmology output, unzips to 813 MB",
             "filename": "output_00101",
-            "size": "355 MB",
+            "size": "400 MB",
             "url": "http://yt-project.org/data/output_00101.tar.gz"
         }
     ],
