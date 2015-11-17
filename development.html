@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.png" />
     <link href="https://plus.google.com/107728486871834552760" rel="publisher" />
-
+    <link rel="import" href="signup.html">
     <title>The yt Project: Development</title>
 
     <!-- Bootstrap core CSS -->
@@ -51,14 +51,8 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="http://yt-project.org/docs/dev">Dev</a></li>
-                    <li><a href="http://yt-project.org/docs/3.1">3.1</a></li>
-                    <li><a href="http://yt-project.org/docs/3.0">3.0</a></li>
-                    <li><a href="http://yt-project.org/docs/2.6">2.6</a></li>
-                    <li><a href="http://yt-project.org/docs/2.5">2.5</a></li>
-                    <li><a href="http://yt-project.org/docs/2.4">2.4</a></li>
-                    <li><a href="http://yt-project.org/docs/2.3">2.3</a></li>
-                    <li><a href="http://yt-project.org/docs/2.2">2.2</a></li>
-                    <li><a href="http://yt-project.org/docs/2.1">2.1</a></li>
+                    <li><a href="http://yt-project.org/doc/">Stable</a></li>
+                    <li><a href="http://yt-project.org/docs/2.6">Legacy (2.x)</a></li>
                   </ul>
                 </li>
                 <li><a href="community.html">Community</a></li>
@@ -78,10 +72,10 @@
                     <li><a href="http://lists.spacepope.org/listinfo.cgi/yt-users-spacepope.org">Mailing List</a></li>
                     <li><a href="http://lists.spacepope.org/listinfo.cgi/yt-dev-spacepope.org">Development Mailing List</a></li>
                     <li><a href="http://yt-project.org/irc.html">Live Chat</a></li>
-                    <li><a href="http://yt-project.org/doc/cheatsheet.pdf">Cheat sheet</a></li>
+                    <li><a href="http://yt-project.org/docs/cheatsheet.pdf">Cheat sheet</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Development</li>
-                    <li><a href="http://hg.yt-project.org/yt/issues/new">Report a Bug</a></li>
+                    <li><a href="http://bitbucket.org/yt_analysis/yt/issues/new">Report a Bug</a></li>
                     <li><a href="http://ytep.readthedocs.org/en/latest/">YTEPs</a></li>
                     <li><a href="http://bitbucket.org/yt_analysis/yt">Project Page</a></li>
                     <li><a href="http://trello.com/yt_analysis">Project Planning</a></li>
@@ -120,13 +114,19 @@
             <a href="http://lists.spacepope.org/listinfo.cgi/yt-dev-spacepope.org">the yt-dev mailing list</a>
             or <span class="yt_code">#yt</span> on
             <span class="yt_code">chat.freenode.org</span> if you have any questions.
+            Additionally, we use <a href="https://slack.com">slack</a> as a communication platform for
+            development discussions.
+            Feel free to sign up and <a href="https://yt-project.slack.com/">try it</a> out.
           </p>
         </div>
         <div class="col-md-5">
           <iframe src="http://www.ohloh.net/p/129183/widgets/project_basic_stats.html"
             scrolling="no" marginheight="0" marginwidth="0"
-            style="margin-top:70px; height: 192px; background: white; width: 334px; border: none;
-                   border-radius: 12px; -webkit-border-radius: 12px;"></iframe>
+            style="margin-top:70px; height: 192px; background: white; 
+                   width: 334px; border: none; border-radius: 12px; 
+                   -webkit-border-radius: 12px; margin-left: auto;
+                   margin-right: auto; display: block"></iframe>
+          <div id="slack_signup"></div>
         </div>
       </div>
 
@@ -229,6 +229,85 @@
         </div>
       </div>
 
+      <a name="codeofconduct"></a>
+      <div class="row yt-package">
+        <div class="col-md-offset-2 col-md-8">
+          <h1>yt Community Code of Conduct</h1>
+          <p class="lead">The community of participants in open source
+          Scientific projects is made up of members from around the
+          globe with a diverse set of skills, personalities, and
+          experiences. It is through these differences that our
+          community experiences success and continued growth. We
+          expect everyone in our community to follow these guidelines
+          when interacting with others both inside and outside of our
+          community. Our goal is to keep ours a positive, inclusive,
+          successful, and growing community.</p>
+          <p class="lead">As members of the community,
+            <ul>
+              <li>We pledge to treat all people with respect and
+                provide a harassment- and bullying-free environment,
+                regardless of sex, sexual orientation and/or gender
+                identity, disability, physical appearance, body size,
+                race, nationality, ethnicity, and religion. In
+                particular, sexual language and imagery, sexist,
+                racist, or otherwise exclusionary jokes are not
+                appropriate.</li>
+
+              <li>We pledge to respect the work of others by
+                recognizing acknowledgment/citation requests of
+                original authors. As authors, we pledge to be explicit
+                about how we want our own work to be cited or
+                acknowledged.</li>
+
+              <li>We pledge to welcome those interested in joining the
+                community, and realize that including people with a
+                variety of opinions and backgrounds will only serve to
+                enrich our community. In particular, discussions
+                relating to pros/cons of various technologies,
+                programming languages, and so on are welcome, but
+                these should be done with respect, taking proactive
+                measure to ensure that all participants are heard and
+                feel confident that they can freely express their
+                opinions.</li>
+
+              <li>We pledge to welcome questions and answer them
+                respectfully, paying particular attention to those new
+                to the community. We pledge to provide respectful
+                criticisms and feedback in forums, especially in
+                discussion threads resulting from code
+                contributions.</li>
+
+              <li>We pledge to be conscientious of the perceptions of
+                the wider community and to respond to criticism
+                respectfully. We will strive to model behaviors that
+                encourage productive debate and disagreement, both
+                within our community and where we are criticized. We
+                will treat those outside our community with the same
+                respect as people within our community.</li>
+
+              <li>We pledge to help the entire community follow the
+              code of conduct, and to not remain silent when we see
+              violations of the code of conduct. We will take action
+              when members of our community violate this code such as
+              contacting confidential@yt-project.org (all emails sent to
+              this address will be treated with the strictest
+              confidence) or talking privately with the person.</li>
+            </ul>
+          </p>
+
+          <p class="lead">This code of conduct applies to all
+          community situations online and offline, including mailing
+          lists, forums, social media, conferences, meetings,
+          associated social events, and one-to-one interactions.</p>
+
+          <p class="lead">The yt Community Code of Conduct was adapted
+            from the 
+            <a href="http://www.astropy.org/about.html#codeofconduct">
+              Astropy Community Code of Conduct</a>, which was
+              partially inspired by the PSF code of conduct.</p>
+        </div>
+      </div>
+
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
@@ -246,5 +325,13 @@
     <script type="text/javascript">
       $('#myCarousel').carousel({interval:10000})
     </script>
+    <script type="text/javascript">
+        var link = document.querySelector('link[rel="import"]');
+        var el = link.import.querySelector('.slack_signup_container');
+        el.style.textAlign = "center";
+        var div = document.getElementById("slack_signup");
+        div.parentNode.insertBefore(el, div.nextSibling);
+    </script>
+    <script src="signupslack.js"></script>
   </body>
 </html>

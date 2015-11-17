@@ -1,0 +1,464 @@
+{
+    "art frontend": [
+        {
+            "code": "NMSU-ART",
+            "description": "Hydro cosmological zoom-in simulation of a dwarf galaxy. NMSU-ART Dataset.",
+            "filename": "D9p_500",
+            "size": "343 MB",
+            "url": "http://yt-project.org/data/D9p_500.tar.gz"
+        },
+        {
+            "code": "NMSU-ART",
+            "description": "Dark Matter only cosmological NMSU-ART Dataset.",
+            "filename": "DMonly",
+            "size": "1 GB",
+            "url": "http://yt-project.org/data/DMonly.tar.gz"
+        }
+    ],
+    "artio frontend": [
+        {
+            "code": "ARTIO",
+            "description": "Isolated galaxy with particles and gas.",
+            "filename": "sizmbhloz-clref04SNth-rs9_a0.9011",
+            "size": "93 MB",
+            "url": "http://yt-project.org/data/sizmbhloz-clref04SNth-rs9_a0.9011.tar.gz"
+        }
+    ],
+    "athena frontend": [
+        {
+            "code": "Athena",
+            "description": "Gas sloshing with MHD, with static mesh refinement. \"time_unit\":(1.0,\"Myr\"), \"length_unit\":(1.0,\"Mpc\"), \"mass_unit\":(1.0e14,\"Msun\")",
+            "filename": "MHDSloshing",
+            "size": "1.5 GB",
+            "url": "http://yt-project.org/data/MHDSloshing.tar.gz"
+        },
+        {
+            "code": "Athena",
+            "description": "Time series data of a MHD blast simulation.",
+            "filename": "MHDBlast",
+            "size": "283 MB",
+            "url": "http://yt-project.org/data/MHDBlast.tar.gz"
+        },
+        {
+            "code": "Athena",
+            "description": "HD simulation of a ram pressure-stripped galaxy, from Stephanie Tonnesen. \"time_unit\":3.086e14, \"length_unit\":8.0236e22, \"mass_unit\":5.1649293e+39",
+            "filename": "RamPressureStripping",
+            "size": "2.1 GB",
+            "url": "http://yt-project.org/data/RamPressureStripping.tar.gz"
+        },
+        {
+            "code": "Athena",
+            "description": "Hydro simulation of shock interacting with a cloud, with static mesh refinement.",
+            "filename": "ShockCloud",
+            "size": "104 MB",
+            "url": "http://yt-project.org/data/ShockCloud.tar.gz"
+        }
+    ],
+    "boxlib frontend": [
+        {
+            "code": "Castro",
+            "description": "Sod problem, 1-d dataset, 3 levels",
+            "filename": "castro_sod_x_plt00036",
+            "size": "9.9 kB",
+            "url": "http://yt-project.org/data/castro_sod_x_plt00036.tar.gz"
+        },
+        {
+            "code": "Castro",
+            "description": "Sedov problem, 2-d dataset, 4 levels",
+            "filename": "castro_sedov_2d_cyl_in_cart_plt00150",
+            "size": "4.6 MB",
+            "url": "http://yt-project.org/data/castro_sedov_2d_cyl_in_cart_plt00150.tar.gz"
+        },
+        {
+            "code": "Maestro",
+            "description": "sub-chandra problem, 3-d dataset, spherical base state, 2 levels",
+            "filename": "maestro_subCh_plt00248",
+            "size": "474 MB",
+            "url": "http://yt-project.org/data/maestro_subCh_plt00248.tar.gz"
+        },
+        {
+            "code": "Maestro",
+            "description": "X-ray burst problem, 3-d dataset, plane-parallel base state, 1 level, non-cubic domain",
+            "filename": "maestro_xrb_lores_23437",
+            "size": "1.8 GB",
+            "url": "http://yt-project.org/data/maestro_xrb_lores_23437.tar.gz"
+        },
+        {
+            "code": "Nyx",
+            "description": "Tiny Nyx dataset",
+            "filename": "nyx_small",
+            "size": "0.1 MB",
+            "url": "http://yt-project.org/data/nyx_small.tar.gz"
+        },
+        {
+            "code": "Orion",
+            "description": "Non-Cubic Domain",
+            "filename": "RadTube",
+            "size": "12 MB",
+            "url": "http://yt-project.org/data/RadTube.tar.gz"
+        },
+        {
+            "code": "Orion",
+            "description": "Non-Cubic Domain",
+            "filename": "RadAdvect",
+            "size": "12 MB",
+            "url": "http://yt-project.org/data/RadAdvect.tar.gz"
+        },
+        {
+            "code": "Orion",
+            "description": "An Orion dataset with star particles",
+            "filename": "StarParticles",
+            "size": "12 MB",
+            "url": "http://yt-project.org/data/StarParticles.tar.gz"
+        }
+    ],
+    "chombo frontend": [
+        {
+            "code": "Orion 2",
+            "description": "Turbulent Box (CGS units)",
+            "filename": "TurbBoxLowRes",
+            "size": "89 MB",
+            "url": "http://yt-project.org/data/TurbBoxLowRes.tar.gz"
+        },
+        {
+            "code": "Chombo",
+            "description": "A small, two-dimensional generic Chombo dataset that contains particles.",
+            "filename": "ZeldovichPancake",
+            "size": "308 kB",
+            "url": "http://yt-project.org/data/ZeldovichPancake.tar.gz"
+        },
+        {
+            "code": "Orion 2",
+            "description": "Refine-ratio of 4",
+            "filename": "GaussianCloud",
+            "size": "122 MB",
+            "url": "http://yt-project.org/data/GaussianCloud.tar.gz"
+        },
+        {
+            "code": "pluto",
+            "description": "2D Kelvin-Helmholtz Instability",
+            "filename": "KelvinHelmholtz",
+            "size": "4.2 MB",
+            "url": "http://yt-project.org/data/KelvinHelmholtz.tar.gz"
+        },
+        {
+            "code": "Orion 2",
+            "description": "An Orion 2 dataset with sink particles",
+            "filename": "IsothermalSphere",
+            "size": "122 MB",
+            "url": "http://yt-project.org/data/IsothermalSphere.tar.gz"
+        }
+    ],
+    "enzo frontend": [
+        {
+            "code": "Enzo",
+            "description": "Enzo simulation, cosmology, 32^3 root grid, 5 levels AMR, star formation, 32 Mpc/h on a side, 57 datasets, 680 MB total.",
+            "filename": "enzo_tiny_cosmology",
+            "size": "419 MB",
+            "url": "http://yt-project.org/data/enzo_tiny_cosmology.tar.gz"
+        },
+        {
+            "code": "Enzo",
+            "description": "Enzo simulation, cosmology, identical dimensions as the enzo_tiny_cosmology dataset, but with additional physics: primordial chemistry, metal cooling, and UV background. 57 datasets, 1 GB total.",
+            "filename": "enzo_cosmology_plus",
+            "size": "779 MB",
+            "url": "http://yt-project.org/data/enzo_cosmology_plus.tar.gz"
+        },
+        {
+            "code": "Enzo",
+            "description": "Enzo dataset, cosmology, 64^3 root grid, 5 levels AMR, star formation 128 Mpc/h on a side, 4GB total.",
+            "filename": "Enzo_64",
+            "size": "2.4 GB",
+            "url": "http://yt-project.org/data/Enzo_64.tar.gz"
+        },
+        {
+            "code": "Enzo",
+            "description": "An isolated galaxy dataset.",
+            "filename": "IsolatedGalaxy",
+            "size": "292 MB",
+            "url": "http://yt-project.org/data/IsolatedGalaxy.tar.gz"
+        },
+        {
+            "code": "Enzo",
+            "description": "Same as the IsolatedGalaxy dataset, but with the gravitational potential field added.",
+            "filename": "IsolatedGalaxy_Gravity",
+            "size": "177 MB",
+            "url": "http://yt-project.org/data/IsolatedGalaxy_Gravity.tar.gz"
+        },
+        {
+            "code": "Enzo",
+            "description": "A high resolution isolated galaxy dataset. The center of the galaxy is at [0.53, 0.53, 0.53].",
+            "filename": "HiresIsolatedGalaxy",
+            "size": "2.9 GB",
+            "url": "http://yt-project.org/data/HiresIsolatedGalaxy.tar.gz"
+        },
+        {
+            "code": "Enzo",
+            "description": "Enzo 3.0 dataset including CenOstriker active particles",
+            "filename": "ActiveParticleCosmology",
+            "size": "73 MB",
+            "url": "http://yt-project.org/data/ActiveParticleCosmology.tar.gz"
+        }
+    ],
+    "fits frontend": [
+        {
+            "code": "FITS",
+            "description": "A FITS 3D cube of radio data from the <a href=\"http://www.bu.edu/galacticring/new_index.htm\">BU Galactic Ring Survey</a>.",
+            "filename": "grs-50-cube.fits.gz",
+            "size": "171 MB",
+            "url": "http://yt-project.org/data/grs-50-cube.fits.gz"
+        },
+        {
+            "code": "FITS",
+            "description": "A FITS 3D cube of VLA radio data of M33, provided by <a href=\"http://www.cv.nrao.edu/~aleroy/Site/Welcome.html\">Adam Leroy</a> of NRAO. This version has been compressed along the spectral axis.",
+            "filename": "m33_hi.fits.gz",
+            "size": "430 MB",
+            "url": "http://yt-project.org/data/m33_hi.fits.gz"
+        },
+        {
+            "code": "FITS",
+            "description": "Two X-ray images provided by <a href=\"http://hea-www.cfa.harvard.edu/~srandall/\">Scott Randall</a>, used in <a href=\"http://adsabs.harvard.edu/cgi-bin/bib_query?2011ApJ...737...99B\">Blanton, E.L., Randall, S.W., Clarke, T.E., et al. 2011, ApJ, 737, 99</a>.",
+            "filename": "A2052",
+            "size": "507 kB",
+            "url": "http://yt-project.org/data/A2052.tar.gz"
+        },
+        {
+            "code": "FITS",
+            "description": "An events file from a Chandra observation of the Bullet Cluster downloaded from the <a href=\"http://cxc.harvard.edu/cda/\">Chandra Data Archive</a>, OBS ID 5356.",
+            "filename": "acisf05356N003_evt2.fits.gz",
+            "size": "15 MB",
+            "url": "http://yt-project.org/data/acisf05356N003_evt2.fits.gz"
+        }
+    ],
+    "flash frontend": [
+        {
+            "code": "FLASH",
+            "description": "Sedov3D test",
+            "filename": "Sedov3D",
+            "size": "38 MB",
+            "url": "http://yt-project.org/data/Sedov3D.tar.gz"
+        },
+        {
+            "code": "FLASH",
+            "description": "Two timesteps of gas sloshing around",
+            "filename": "GasSloshing",
+            "size": "330 MB",
+            "url": "http://yt-project.org/data/GasSloshing.tar.gz"
+        },
+        {
+            "code": "FLASH",
+            "description": "Many timesteps of (low-res) gas sloshing around",
+            "filename": "GasSloshingLowRes",
+            "size": "1 GB",
+            "url": "http://yt-project.org/data/GasSloshingLowRes.tar.gz"
+        },
+        {
+            "code": "FLASH",
+            "description": "Wind tunnel test problem",
+            "filename": "WindTunnel",
+            "size": "74 MB",
+            "url": "http://yt-project.org/data/WindTunnel.tar.gz"
+        },
+        {
+            "code": "FLASH",
+            "description": "The two-body problem with no gas fields",
+            "filename": "Orbit",
+            "size": "6.6 MB",
+            "url": "http://yt-project.org/data/Orbit.tar.gz"
+        },
+        {
+            "code": "FLASH",
+            "description": "A merger of two galaxy clusters",
+            "filename": "GalaxyClusterMerger",
+            "size": "4.0 GB",
+            "url": "http://yt-project.org/data/GalaxyClusterMerger.tar.gz"
+        },
+        {
+            "code": "FLASH",
+            "description": "Magnetized white dwarf binary merger in 2-D cylindrical coordinates, produced by <a href=\"https://sites.google.com/site/fishercompgroup/\">Fisher Computational Astrophysics Group</a> and used in <a href=\"http://adsabs.harvard.edu/abs/2013ApJ...773..136J\">S. Ji et al., 2013, ApJ, 773, 136</a>",
+            "filename": "WDMerger_hdf5_chk_1000",
+            "size": "59 MB",
+            "url": "http://yt-project.org/data/WDMerger_hdf5_chk_1000.tar.gz"
+        }
+    ],
+    "gdf frontend": [
+        {
+            "code": "Grid Data Format",
+            "description": "Toy model for clump finder tests",
+            "filename": "GDFClumps",
+            "size": "96 kB",
+            "url": "http://yt-project.org/data/GDFClumps.tar.gz"
+        }
+    ],
+    "halo_catalog frontends": [
+        {
+            "code": "Gadget FOF",
+            "description": "Two halo catalogs made using inline FOF/SUBFIND in a Gadget N-body simulation",
+            "filename": "gadget_fof_halos",
+            "size": "412 kB",
+            "url": "http://yt-project.org/data/gadget_fof_halos.tar.gz"
+        },
+        {
+            "code": "OWLS Subfind",
+            "description": "Two halo catalogs made using inline FOF in an OWLS N-body simulation",
+            "filename": "owls_fof_halos",
+            "size": "1.6 MB",
+            "url": "http://yt-project.org/data/owls_fof_halos.tar.gz"
+        },
+        {
+            "code": "Rockstar",
+            "description": "Halos found using rockstar halo finder for dataset Enzo_64",
+            "filename": "rockstar_halos",
+            "size": "130 kB",
+            "url": "http://yt-project.org/data/rockstar_halos.tar.gz"
+        }
+    ],
+    "moab frontend": [
+        {
+            "code": "Moab",
+            "description": "Cantor Set. MoabHex8 dataset (63^3)",
+            "filename": "c5",
+            "size": "24 MB",
+            "url": "http://yt-project.org/data/c5.tar.gz"
+        },
+        {
+            "code": "Moab",
+            "description": "fng_usrbin22.h5m: sample mcnp mesh data & mcnp_n_impr_fluka.h5m: faceted geometric model.",
+            "filename": "MoabTest",
+            "size": "168 MB",
+            "url": "http://yt-project.org/data/MoabTest.tar.gz"
+        }
+    ],
+    "other datasets": [
+        {
+            "code": "Genric",
+            "description": "Two datasets of uniformly gridded fields in HDF5 and one in a FITS file.",
+            "filename": "UnigridData",
+            "size": "1.6 GB",
+            "url": "http://yt-project.org/data/UnigridData.tar.gz"
+        },
+        {
+            "code": "Various",
+            "description": "All the datasets used in the yt answer testing suite.",
+            "filename": "test_outputs",
+            "size": "534 MB",
+            "url": "http://yt-project.org/data/test_outputs.tar.gz"
+        }
+    ],
+    "ramses frontend": [
+        {
+            "code": "RAMSES",
+            "description": "Cosmological zoom simulation with gas, DM and stars.Unzips to 366 MB  ",
+            "filename": "output_00080",
+            "size": "250 MB",
+            "url": "http://yt-project.org/data/output_00080.tar.gz"
+        },
+        {
+            "code": "RAMSES",
+            "description": "Isolated galaxy disk dataset containing gas and particles, set up with boxlen != 1. Generated using the <a href=\"https://bitbucket.org/vperret/dice\">DICE code</a>. Unzips to 663 MB.",
+            "filename": "DICEGalaxyDisk",
+            "size": "79 MB",
+            "url": "http://yt-project.org/data/DICEGalaxyDisk.tar.gz"
+        },
+        {
+            "code": "RAMSES",
+            "description": "MHD dataset, 128^3. Unzips to 316 MB.",
+            "filename": "ramses_mhd_128",
+            "size": "7.3 MB",
+            "url": "http://yt-project.org/data/ramses_mhd_128.tar.gz"
+        },
+        {
+            "code": "RAMSES",
+            "description": "MHD dataset, 32^3 base grid, 3 levels of AMR. Unzips to 457 MB.",
+            "filename": "ramses_mhd_amr",
+            "size": "10 MB",
+            "url": "http://yt-project.org/data/ramses_mhd_amr.tar.gz"
+        },
+        {
+            "code": "RAMSES",
+            "description": "DM only cosmology output, unzips to 813 MB",
+            "filename": "output_00101",
+            "size": "400 MB",
+            "url": "http://yt-project.org/data/output_00101.tar.gz"
+        }
+    ],
+    "sph frontend": [
+        {
+            "code": "Gadget (Eagle)",
+            "description": "Gadget HDF5 snapshot (Eagle) dataset with 2*188^3 particles, including Gas and DM.",
+            "filename": "snapshot_028_z000p000",
+            "size": "936 MB",
+            "url": "http://yt-project.org/data/snapshot_028_z000p000.tar.gz"
+        },
+        {
+            "code": "Gadget (Eagle)",
+            "description": "Gadget HDF5 snipshot (Eagle) dataset with 2*188^3 particles, including Gas and DM.",
+            "filename": "snipshot_399_z000p000",
+            "size": "521 MB",
+            "url": "http://yt-project.org/data/snipshot_399_z000p000.tar.gz"
+        },
+        {
+            "code": "Gadget (OWLS)",
+            "description": "Gadget HDF5 snapshot (OWLS) dataset with 2*128^3 particles, including Gas and DM.",
+            "filename": "snapshot_033",
+            "size": "269 MB",
+            "url": "http://yt-project.org/data/snapshot_033.tar.gz"
+        },
+        {
+            "code": "Gadget",
+            "description": "Gadget HDF5 snapshot of a zoom-in disk galaxy including gas and DM.",
+            "filename": "GadgetDiskGalaxy",
+            "size": "432 MB",
+            "url": "http://yt-project.org/data/GadgetDiskGalaxy.tar.gz"
+        },
+        {
+            "code": "Gadget",
+            "description": "Cosmology output",
+            "filename": "snapshot_010",
+            "size": "98 MB",
+            "url": "http://yt-project.org/data/snapshot_010.tar.gz"
+        },
+        {
+            "code": "Gadget",
+            "description": "Rotating isothermal sphere collapse test. Includes both gadget binary and HDF5 format files. 'UnitLength_in_cm': 5.0e16, 'UnitMass_in_g': 1.98992e33, 'UnitVelocity_in_cm_per_s': 46385.190, bounding_box = [[-3, 3], [-3, 3], [-3, 3]]",
+            "filename": "IsothermalCollapse",
+            "size": "8.8 MB",
+            "url": "http://yt-project.org/data/IsothermalCollapse.tar.gz"
+        },
+        {
+            "code": "Gizmo",
+            "description": "Cosmological hydro run with 16 comoving Mpc box, 128**3 particles, metals, cooling, etc.  Simulation includes param file and 20 outputs covering the redshift range z=0.1 to z=0.",
+            "filename": "gizmo_cosmology_plus",
+            "size": "4.5 GB",
+            "url": "http://yt-project.org/data/gizmo_cosmology_plus.tar.gz"
+        },
+        {
+            "code": "Gasoline",
+            "description": "Cosmology output",
+            "filename": "agora_1e11.00400",
+            "size": "277 MB",
+            "url": "http://yt-project.org/data/agora_1e11.00400.tar.gz"
+        },
+        {
+            "code": "PKDGrav",
+            "description": "Cosmology output",
+            "filename": "halo1e11_run1.00400",
+            "size": "1 GB",
+            "url": "http://yt-project.org/data/halo1e11_run1.00400.tar.gz"
+        },
+        {
+            "code": "Tipsy",
+            "description": "Tipsy isolated galaxy dataset",
+            "filename": "TipsyGalaxy",
+            "size": "11 MB",
+            "url": "http://yt-project.org/data/TipsyGalaxy.tar.gz"
+        },
+        {
+            "code": "Tipsy",
+            "description": "Tipsy datasets with auxiliary files",
+            "filename": "TipsyAuxiliary",
+            "size": "39 MB",
+            "url": "http://yt-project.org/data/TipsyAuxiliary.tar.gz"
+        }
+    ]
+}
