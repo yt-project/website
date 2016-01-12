@@ -212,7 +212,7 @@
             "code": "FITS",
             "description": "A FITS 3D cube of VLA radio data of M33, provided by <a href=\"http://www.cv.nrao.edu/~aleroy/Site/Welcome.html\">Adam Leroy</a> of NRAO. This version has been compressed along the spectral axis.",
             "filename": "m33_hi.fits.gz",
-            "size": "430 MB",
+            "size": "174 MB",
             "url": "http://yt-project.org/data/m33_hi.fits.gz"
         },
         {
