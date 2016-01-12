@@ -295,7 +295,7 @@
             "code": "Gadget FOF",
             "description": "300 halo catalogs with halo member IDs made using inline FOF/SUBFIND in a Gadget N-body simulation.  Can be used for experimenting with merger trees.",
             "filename": "gadget_halos",
-            "size": "412 kB",
+            "size": "216 MB",
             "url": "http://yt-project.org/data/gadget_halos.tar.gz"
         },
         {
