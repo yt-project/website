@@ -203,9 +203,9 @@
     "exodus ii frontend": [
         {
             "code": "MOOSE",
-            "description": "A selection of MOOSE simulation outputs using a variety of element types. 1.1 GB total.",
+            "description": "A selection of MOOSE simulation outputs using a variety of element types.",
             "filename": "MOOSE_sample_data",
-            "size": "1.1 GB",
+            "size": "536 MB",
             "url": "http://yt-project.org/data/MOOSE_Sample_data.tar.gz"
         },
     ],
