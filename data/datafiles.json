@@ -207,7 +207,7 @@
             "filename": "MOOSE_sample_data",
             "size": "536 MB",
             "url": "http://yt-project.org/data/MOOSE_Sample_data.tar.gz"
-        },
+        }
     ],
     "fits frontend": [
         {
