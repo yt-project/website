@@ -204,7 +204,7 @@
         {
             "code": "MOOSE",
             "description": "A selection of MOOSE simulation outputs using a variety of element types. 1.1 GB total.",
-            "filename": "MOOSE_same_data",
+            "filename": "MOOSE_sample_data",
             "size": "1.1 GB",
             "url": "http://yt-project.org/data/MOOSE_Sample_data.tar.gz"
         },
