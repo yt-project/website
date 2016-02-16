@@ -78,6 +78,13 @@
         },
         {
             "code": "Maestro",
+            "description": "AMD Sedov-taylor blast in spherical geometry.",
+            "filename": "sedov_1d_sph_plt00120",
+            "size": "17 kb",
+            "url": "http://yt-project.org/data/sedov_1d_sph_plt00120.tar.gz"
+        },
+        {
+            "code": "Maestro",
             "description": "X-ray burst problem, 3-d dataset, plane-parallel base state, 1 level, non-cubic domain",
             "filename": "maestro_xrb_lores_23437",
             "size": "1.8 GB",
