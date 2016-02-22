@@ -201,10 +201,17 @@
         },
         {
             "code": "Enzo",
-            "description": "Enzo 3.0 dataset including CenOstriker active particles",
+            "description": "Enzo 3.0 dataset including CenOstriker active particles as well as dark matter particles",
             "filename": "ActiveParticleCosmology",
             "size": "73 MB",
             "url": "http://yt-project.org/data/ActiveParticleCosmology.tar.gz"
+        },
+        {
+            "code": "Enzo",
+            "description": "Enzo 3.0 time series dataset that tracks the formation of two AccretingParticle active particles",
+            "filename": "ActiveParticleTwoSphere",
+            "size": "22 MB",
+            "url": "http://yt-project.org/data/ActiveParticleTwoSphere.tar.gz"
         }
     ],
     "exodus ii frontend": [
