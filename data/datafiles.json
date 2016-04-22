@@ -470,6 +470,13 @@
             "url": "http://yt-project.org/data/gizmo_64.tar.gz"
         },
         {
+            "code": "Gizmo (FIRE)",
+            "description": "Cosmological hydro zoom run of a 1e12 Msun halo with metals, cooling, etc. at z=0.",
+            "filename": "FIRE_M12i_ref11",
+            "size": "209 MB",
+            "url": "http://yt-project.org/data/FIRE_M12i_ref11.tar.gz"
+        },
+        {
             "code": "Gasoline",
             "description": "Cosmology output",
             "filename": "agora_1e11.00400",
