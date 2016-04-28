@@ -304,6 +304,22 @@
             "url": "http://yt-project.org/data/WDMerger_hdf5_chk_1000.tar.gz"
         }
     ],
+    "gamer frontend": [
+        {
+            "code": "GAMER",
+            "description": "Interacting AGN jets",
+            "filename": "InteractingJets",
+            "size": "77 MB",
+            "url": "yt-project.org/data/InteractingJets.tar.gz"
+        },
+        {
+            "code": "GAMER",
+            "description": "Merger of multiple wave dark matter solitons",
+            "filename": "WaveDarkMatter",
+            "size": "352 MB",
+            "url": "yt-project.org/data/WaveDarkMatter.tar.gz"
+        }
+    ],
     "gdf frontend": [
         {
             "code": "Grid Data Format",
