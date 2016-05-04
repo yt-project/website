@@ -327,6 +327,13 @@
             "filename": "GDFClumps",
             "size": "96 kB",
             "url": "http://yt-project.org/data/GDFClumps.tar.gz"
+        },
+        {
+            "code": "Piernik",
+            "description": "Sedov explosion with multiple levels of refinement",
+            "filename": "sedov_tst_0004",
+            "size": "11 MB",
+            "url": "http://yt-project.org/data/sedov_tst_0004.tar.gz"
         }
     ],
     "halo_catalog frontends": [
