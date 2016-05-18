@@ -302,14 +302,14 @@
             "filename": "WDMerger_hdf5_chk_1000",
             "size": "59 MB",
             "url": "http://yt-project.org/data/WDMerger_hdf5_chk_1000.tar.gz"
-        }
+        },
         {
             "code": "FLASH",
             "description": "A dark matter particle-only dataset of two galaxy clusters merging",
             "filename": "fiducial_1to3_b1",
             "size": "555 MB",
             "url": "http://yt-project.org/data/fiducial_1to3_b1.tar.gz"
-        },
+        }
     ],
     "gamer frontend": [
         {
