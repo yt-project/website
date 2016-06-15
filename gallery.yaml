@@ -1,0 +1,210 @@
+- title: NeuroDome
+  textwidth: 6
+  imagewidth: 6
+  content: |
+    <iframe width="500" height="281" src="//www.youtube.com/embed/fongTLixGvw" frameborder="0" allowfullscreen></iframe>
+  text: >
+    yt has been used to create volumetric renderings of human CT scans in
+    support of the <a href="http://www.neurodome.org/">NeuroDome</a> project.
+    For more information, check out the NeuroDome website.
+- title: Integration of yt Surfaces in Blender
+  textwidth: 6
+  imagewidth: 6
+  content: |
+    <iframe width="500" height="281" src="http://www.youtube.com/embed/z4RfdIP0fEQ" frameborder="0" allowfullscreen></iframe>
+  text: >
+    This movie was completely scripted in <a
+    href="http://www.blender.org/">Blender</a> using the AstroBlend python
+    library, freely available artistic 3D galaxy models and yt-generated
+    surfaces of a FLASH simulation.  AstroBlend tutorials and examples are
+    available on <a href="http://www.astroblend.com/">the AstroBlend
+    website</a>, which is still very much under construction.  Paper due out at
+    some point in the (hopefully) near future.
+- title: "The First Star: Birth through Death"
+  textwidth: 6
+  imagewidth: 6
+  content: |
+    <iframe width="500" height="281" src="http://www.youtube-nocookie.com/embed/tTilF_hbrHE?rel=0" frameborder="0" allowfullscreen></iframe>
+  text: >
+    This movie was created completely with yt by Matthew Turk, John Wise, Sam
+    Skillman, and Mark SubbaRao that shows a zoom-out of a collapsing
+    metal-free halo and then transitions to another simulation that follows the
+    main sequence and supernova of a metal-free star.  The simulation shown in
+    the first half was presented in <a
+    href="http://adsabs.harvard.edu/abs/2009Sci...325..601T">Turk et al.
+    (2009)</a> and the latter simulation will be published shortly.  This
+    visualization won the Best Visualization Award at the <a
+    href="http://www.xsede.org/web/xsede13/">XSEDE 13</a> conference and was
+    exhibited at the Alder Planetarium.
+- title: Radiation Pressure in Early Dwarf Galaxies
+  textwidth: 7
+  imagewidth: 5
+  text: >
+    This multi-panel figure, created with the eps_writer extension, highlights
+    the magnitude and direction of the acceleration created by radiation
+    pressure from massive stars in a dwarf galaxy at redshift 8.  This
+    simulation was presented in <a
+    href="http://adsabs.harvard.edu/abs/2012MNRAS.427..311W">Wise et al.
+    (2012)</a> and conducted with <a href="http://enzo-project.org">Enzo</a>.
+    The bottom panels show the density, temperature, and metallicity of the
+    same slice.  This figure was published in the reference above as Figure 9.
+  images: 
+    - img/gallery/wise-rp.jpg
+- title: Density and Temperature Around a Forming Star
+  textwidth: 5
+  imagewidth: 7
+  content: |
+          <iframe src="http://player.vimeo.com/video/70466967?title=0&amp;byline=0&amp;portrait=0" width="500" height="380" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  text: >
+    This movie shows the density and temperature structure around a forming
+    protostar that is surrounded by an accretion disk and driving a bipolar
+    outflow. The simulation was carried out by S. Offner with the ORION code,
+    the temperature was computed by T. Robitaille with the <a
+    href="http://www.hyperion-rt.org/">Hyperion</a> radiative transfer code and
+    the visualization was produced in Python using yt and matplotlib.
+- title: ALMA Data Cubes
+  textwidth: 7
+  imagewidth: 5
+  images:
+    - img/gallery/alma_4panel.jpg
+  text: >
+    yt was used to render images from ALMA datacubes of extragalactic sources
+    as well as create the cover of the <a
+    href="http://www.nature.com/nature/journal/v499/n7459/index.html">July
+    25</a> cover of Nature Magazine.  For more information as well as movies
+    (made with yt!) of the data, see the <a
+    href="http://www.almaobservatory.org/en/press-room/press-releases/621-starburst-to-star-bust-alma-sheds-light-on-mystery-of-missing-massive-galaxies">ALMA
+    press release</a>.  (Images courtesy Erik Rosolowsky and the ALMA
+    Observatory.)
+- title: Interactive Maps of the Local ISM
+  textwidth: 7
+  imagewidth: 5
+  content: |
+    <iframe width="400" height="400" src="https://sketchfab.com/models/08f624c6ea90459e837b1830f68a3cbc/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="">
+    </iframe>
+    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+    <a href="https://sketchfab.com/models/08f624c6ea90459e837b1830f68a3cbc?utm_source=oembed&utm_medium=embed&utm_campaign=08f624c6ea90459e837b1830f68a3cbc" target="_blank" style="font-weight: bold; color: #1CAAD9;">3D LISM with threshold 0.0004 mag.pc-1</a> by
+    <a href="https://sketchfab.com/lucky.puspitarini?utm_source=oembed&utm_medium=embed&utm_campaign=08f624c6ea90459e837b1830f68a3cbc" target="_blank" style="font-weight: bold; color: #1CAAD9;">lucky.puspitarini</a>
+    on <a #href="https://sketchfab.com?utm_source=oembed&utm_medium=embed&utm_campaign=08f624c6ea90459e837b1830f68a3cbc" #target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+  text: >
+    <a href="http://arxiv.org/abs/1309.6100">Lallement et al. 2013</a> used yt
+    to extract surfaces from maps of the local interstellar medium to create
+    interactive figures.  These figures can be viewed either in the PDFs on the
+    arXiv, or on <a href="http://sketchfab.com/">Sketchfab</a>.  <a
+    href="https://sketchfab.com/show/08f624c6ea90459e837b1830f68a3cbc">Threshold
+    0.004</a> and <a
+    href="https://sketchfab.com/show/f2136abd52964e12a562d5963eea66bc">Threshold
+    0.00007</a>.
+- title: Slice Plot of Magnetized White Dwarf Binary Merger
+  images:
+    - img/gallery/Ji_2013_F1c.png
+    - img/gallery/Ji_2013_F1d.png
+  vertical: true
+  textwidth: 12
+  imagewidth: 6
+  text: >
+    Figure 1(c) and 1(d) from <a href="http://adsabs.harvard.edu/abs/2013ApJ...773..136J">Ji et al.
+    (2013)</a>.  Two frames in the r-z plane of cylindrical coordinate consisting
+    of: Left) magnetic field, with lines of poloidal magnetic field in the r-z
+    plane superposed against a color raster plot of the toroidal field; Right)
+    the ratio of gas pressure to magnetic pressure &beta; value. Figures generated
+    with the yt slice plot.
+- title: GMC Identification
+  textwidth: 7
+  imagewidth: 5
+  images: 
+    - img/gallery/benincasa.jpg
+  text: >
+    A slice through the z-plane of a typical cloud from <a
+    href="http://arxiv.org/abs/1308.0339">Benincasa et al. 2013</a>.  Image
+    size is 300 pc, overlaid with vectors indicating local gas velocity and
+    contours at number density of 100 cm^-3, indicating identified GMCs.
+- title: Velocity Structure of a Collapsing Cloud
+  textwidth: 7
+  imagewidth: 5
+  images: 
+    - img/gallery/Smith_2015_F10.png
+  text: >
+    Figure 10 from <a href="http://arxiv.org/abs/1504.07639">Smith et al.
+    (2015)</a>.  Radial profiles of the various components of the velocity
+    field of a collapsing, metal-enriched gas-cloud.  2D profiles made with the
+    yt halo analysis toolkit and image made with matplotlib.
+- title: Seismology Visualization
+  textwidth: 7
+  imagewidth: 5
+  text: >
+    yt has been used by researchers with the <a
+    href="http://www.seismicsoundlab.org/">Seismic Sound Lab</a> at the <a
+    href="https://www.ldeo.columbia.edu/">Lamont-Doherty Earth Observatory</a>
+    to create public outreach movies of earthquake simulations, which have been
+    coordinated to match sonification of these simulations.
+  images:
+    - img/gallery/seismic.jpg
+- title: Slices of the Computational Domain
+  textwidth: 7
+  imagewidth: 5
+  text: >
+    Figure 1b from <a href="http://arxiv.org/abs/1310.3273">Hanasz et al.
+    (2013)</a>.  Vertical (left panel) and horizontal slices (right panel)
+    through the computational volume from the simulation of the cosmic ray
+    driven outflows in gas-rich, high-redshift galaxies showing electron energy
+    density. Data extracted using yt and visualized with matplotlib.
+  images:
+    - img/gallery/Hanasz_2013_F1b.png
+- title: Neutron Diffusion with PyNE and yt
+  textwidth: 7
+  imagewidth: 5
+  text: >
+    This <a
+    href="http://nbviewer.ipython.org/urls/raw.github.com/pyne/sandbox/master/ndiff.ipynb">notebook</a>
+    demonstrates construction of a simple neutron diffusion problem, using <a
+    href="http://pynesim.org/">PyNE</a>, yt, and the IPython notebook to solve
+    and visualize the system in-memory.  It constructs a semi-structured mesh
+    in memory and then over the course of several timesteps updates the values
+    and plots.
+  images:
+    - img/gallery/pyne_notebook.jpg
+- title: AGORA Project
+  textwidth: 7
+  imagewidth: 5
+  text: >
+    The <a href="http://agorasimulations.org/">AGORA project</a> is a suite of
+    galaxy simulations conducted with multiple codes.  The figures in <a
+    href="http://arxiv.org/abs/1308.2669">Kim et al. 2013</a> were created with
+    yt from data generated by many different simulation platforms, with scripts
+    available in a publicly accessible <a
+    href="https://bitbucket.org/mornkr/agora-analysis-script">repository</a>.
+  images:
+    - img/gallery/agora_full.jpg
+- title: Entropy Distribution
+  textwidth: 7
+  imagewidth: 5
+  text: >
+    This figure, from <a href="http://arxiv.org/abs/1010.6076">Turk et al.
+    2010</a>, demonstrates using yt to construct derived fields for examining
+    local angular momentum, entropy, and the distribution of molecular gas in
+    protostellar disks.
+  images:
+    - img/gallery/turk_entropy.jpg
+- title: Synthetic Observations of the Circumgalactic Medium
+  textwidth: 7
+  imagewidth: 5
+  text: >
+    Figure 1 from <a href="http://arxiv.org/abs/1212.2965">Hummels et al.
+    2013</a> displays views of a galactic halo through synthetic observations
+    of its circumgalactic medium in different ions.  It uses yt to generate
+    off-axis line integrals for computing the equilibrium metal abundances at
+    every point along the line of sight and coadds these to produce a series of
+    column density maps.
+  images:
+    - img/gallery/hummels_circumgalactic_thumb.jpg
+- title: Formation of Compact Clusters
+  textwidth: 7
+  imagewidth: 5
+  text: >
+    In <a href="http://arxiv.org/abs/1308.5684">Richardson et al.  2013</a>,
+    the authors studied the interaction between metal-enriched outflows and
+    cosmological minihalos to examine the formation of clumps of dense,
+    chemically-homogeneous star-forming gas.
+  images:
+    - img/gallery/richardson.jpg

@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+
+      <div class="row yt-package">
+        <div class="col-md-7">
+          <h1>Development</h1>
+          <p class="lead">
+            yt is developed completely in the open.  Our
+            <a href="https://bitbucket.org/yt_analysis">project</a> on 
+            BitBucket contains the repositories that make up the 
+            <a href="https://bitbucket.org/yt_analysis/yt/">source code and documentation</a>,
+            and even <a href="https://bitbucket.org/yt_analysis/website">this website</a>.
+            Since the documentation is in the source code repository, when you 
+            download the source, you get everything necessary to submit 
+            changes to the code or the docs.
+            yt is released under the modified BSD license.
+          </p>
+          <p class="lead">
+            We invite contributions of any type -- code, analysis modules,
+            documentation, blog posts, and even enhancements for the website.
+            Below are some hints on what to expect and how to get involved, but
+            please stop by
+            <a href="http://lists.spacepope.org/listinfo.cgi/yt-dev-spacepope.org">the yt-dev mailing list</a>
+            or <span class="yt_code">#yt</span> on
+            <span class="yt_code">chat.freenode.org</span> if you have any questions.
+            Additionally, we use <a href="https://slack.com">slack</a> as a communication platform for
+            development discussions.
+            Feel free to sign up and <a href="https://yt-project.slack.com/">try it</a> out.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <iframe src="http://www.ohloh.net/p/129183/widgets/project_basic_stats.html"
+            scrolling="no" marginheight="0" marginwidth="0"
+            style="margin-top:70px; height: 192px; background: white; 
+                   width: 334px; border: none; border-radius: 12px; 
+                   -webkit-border-radius: 12px; margin-left: auto;
+                   margin-right: auto; display: block"></iframe>
+          <div id="slack_signup"></div>
+        </div>
+      </div>
+
+      <div class="row yt-package">
+        <div class="col-md-5">
+          <img src="img/pr_screenshot.jpg" class="pull-left img-rounded">
+        </div>
+        <div class="col-md-7">
+          <h1>What To Expect</h1>
+          <p class="lead">
+            Contributions to yt go through several stages.  Once you've
+            submitted a pull request, to the source code, the documentation, or
+            even the blog, you will likely receive comments on it from
+            developers or other individuals.  <b>Every</b> pull request gets
+            reviewed, even those issued by developers that have been with the
+            project for years.
+          </p>
+          <p class="lead">
+            These comments might address stylistic issues, may request changes
+            to the variable names, may suggest methods of testing, or may even
+            suggest alternate approaches to solving given problems.
+          </p>
+          <p class="lead">
+            We're grateful for every contribution, and we hope to hear from
+            you.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row yt-package">
+        <div class="col-md-7">
+          <h1>How to Get Started</h1>
+          <p class="lead">
+            Here's the simplest way to get started contributing to yt.  You can
+            <a href="https://bitbucket.org/yt_analysis/yt/fork">fork</a> yt on
+            Bitbucket, push some changes to your fork, and issue a pull
+            request.
+          </p>
+          <p class="lead">
+            In the documentation you can find an 
+            <a href="http://yt-project.org/doc/developing/index.html">an outline</a>
+            of how to contribute changes, but here are some handy tips and
+            tricks:
+            <ul class="lead">
+              <li>Use <span class="yt_code">hg bookmark</span> to track where
+              you are in your development.  (Avoid using branches!)</li>
+              <li>yt has a pretty forky development process, so check out how
+              to use commands like <span class="yt_code">hg identify</span> and
+              <span class="yt_code">hg log</span> for ease of navigation.</li>
+              <li>Push to your repository and issue pull requests from
+              there.</li>
+              <li>Add
+              <a href="http://yt-project.org/doc/developing/testing.html">tests</a>
+              and documentation for new functionality.  The tests
+              <a href="http://tests.yt-project.org/">are run on every pull request</a>
+              (yt-fido will let you know how your pull request does!) and on
+              every commit to the repository.</li>
+              <li>If you get stuck or want feedback, drop by IRC or the mailing
+              list!</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img src="img/graph_screenshot.jpg" class="pull-left img-rounded">
+        </div>
+      </div>
+
+      <div class="row yt-package">
+        <div class="col-md-5">
+          <img src="img/ytep.jpg" class="pull-left img-rounded">
+        </div>
+        <div class="col-md-7">
+          <h1>Community Directed Development</h1>
+          <p class="lead">
+            The process of designing yt is conducted through
+            <i>consensus-oriented</i> and <i>code-driven</i> discussions.
+            In the waning months of 2012, a process was somewhat codified for
+            discussing major design decisions and strategizing about preserving
+            and breaking backwards compatibility.  Large-reaching design
+            discussions and decisions are described in "yt Enhancement Proposals"
+            (YTEPs).  These documents are stored in a
+            <a href="http://bitbucket.org/yt_analysis/ytep">repository</a>, they
+            are discussed both on the mailing list and through the process of
+            <a href="https://bitbucket.org/yt_analysis/ytep/pull-requests">pull requests</a>
+            and they are meant to be living documents that reflect how and why
+            changes to fundamental components of yt are made.  The current set
+            of all YTEPs can be found at
+            <a href="https://ytep.readthedocs.org/en/latest/">ytep.readthedocs.org</a>.
+          </p>
+          <p class="lead">
+            Because yt is used for
+            analysis and visualization by a number of individuals across the
+            globe, we try to avoid breaking existing scripts and functionality
+            without very good reason.  The process of writing, submitting and
+            iterating on a design document can put overhead on the process of
+            coding and hacking away, but we want to ensure that yt is a reliable
+            basis for long-term and stable analysis.
+          </p>
+        </div>
+      </div>
+
+      <a name="codeofconduct"></a>
+      <div class="row yt-package">
+        <div class="col-md-offset-2 col-md-8">
+          <h1>yt Community Code of Conduct</h1>
+          <p class="lead">The community of participants in open source
+          Scientific projects is made up of members from around the
+          globe with a diverse set of skills, personalities, and
+          experiences. It is through these differences that our
+          community experiences success and continued growth. We
+          expect everyone in our community to follow these guidelines
+          when interacting with others both inside and outside of our
+          community. Our goal is to keep ours a positive, inclusive,
+          successful, and growing community.</p>
+          <p class="lead">As members of the community,
+            <ul>
+              <li>We pledge to treat all people with respect and
+                provide a harassment- and bullying-free environment,
+                regardless of sex, sexual orientation and/or gender
+                identity, disability, physical appearance, body size,
+                race, nationality, ethnicity, and religion. In
+                particular, sexual language and imagery, sexist,
+                racist, or otherwise exclusionary jokes are not
+                appropriate.</li>
+
+              <li>We pledge to respect the work of others by
+                recognizing acknowledgment/citation requests of
+                original authors. As authors, we pledge to be explicit
+                about how we want our own work to be cited or
+                acknowledged.</li>
+
+              <li>We pledge to welcome those interested in joining the
+                community, and realize that including people with a
+                variety of opinions and backgrounds will only serve to
+                enrich our community. In particular, discussions
+                relating to pros/cons of various technologies,
+                programming languages, and so on are welcome, but
+                these should be done with respect, taking proactive
+                measure to ensure that all participants are heard and
+                feel confident that they can freely express their
+                opinions.</li>
+
+              <li>We pledge to welcome questions and answer them
+                respectfully, paying particular attention to those new
+                to the community. We pledge to provide respectful
+                criticisms and feedback in forums, especially in
+                discussion threads resulting from code
+                contributions.</li>
+
+              <li>We pledge to be conscientious of the perceptions of
+                the wider community and to respond to criticism
+                respectfully. We will strive to model behaviors that
+                encourage productive debate and disagreement, both
+                within our community and where we are criticized. We
+                will treat those outside our community with the same
+                respect as people within our community.</li>
+
+              <li>We pledge to help the entire community follow the
+              code of conduct, and to not remain silent when we see
+              violations of the code of conduct. We will take action
+              when members of our community violate this code such as
+              contacting confidential@yt-project.org (all emails sent to
+              this address will be treated with the strictest
+              confidence) or talking privately with the person.</li>
+            </ul>
+          </p>
+
+          <p class="lead">This code of conduct applies to all
+          community situations online and offline, including mailing
+          lists, forums, social media, conferences, meetings,
+          associated social events, and one-to-one interactions.</p>
+
+          <p class="lead">The yt Community Code of Conduct was adapted
+            from the 
+            <a href="http://www.astropy.org/about.html#codeofconduct">
+              Astropy Community Code of Conduct</a>, which was
+              partially inspired by the PSF code of conduct.</p>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+{% endblock content %}

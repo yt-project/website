@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+
+      <div class="row yt-package">
+        <div class="col-md-offset-2 col-md-8">
+          <h1>Gallery of Examples</h1>
+          <p class="lead">
+            Here are some examples of yt in the real world.
+          </p>
+          <p class="lead">
+            We welcome you to submit your own images made with yt from
+            publications, talks, webpages, etc.  Just fork our 
+            <a href="http://bitbucket.org/yt_analysis/website/">repository</a>
+            and issue a pull request with your image at the top of the page.
+            Images should be about 400 pixels wide, and please include a link
+            to any published work.
+          </p>
+        </div>
+      </div>
+
+    {% for entry in entries %}
+    <div class="row yt-package">
+    
+      {% set loopeven = loop.index is divisibleby 2 %}
+      {% if not entry.get('vertical', False) %}
+      {% if loopeven %}
+      <div class="col-md-{{entry['textwidth']}}">
+        <h2>{{entry['title']}}</h2>
+        <p class="lead">
+        {{ entry['text'] }}
+        {% set image_pull = "right" %}
+        </p>
+      </div>
+      {% else %}
+        {% set image_pull = "left" %}
+      {% endif %}
+      <div class="col-md-{{entry['imagewidth']}}">
+        {% if 'content' in entry %}
+        {{ entry['content'] }}
+        {% else %}
+        {% for img in entry['images'] %}
+          <img src="{{img}}" class="pull-{{image_pull}} img-rounded gallery-image">
+        {% endfor %}
+        {% endif %}
+      </div>
+      {% if not loopeven %}
+        <div class="col-md-{{entry['textwidth']}}">
+          <h2>{{entry['title']}}</h2>
+          <p class="lead">
+          {{ entry['text'] }}
+          </p>
+        </div>
+      {% endif %}
+    </div>
+    {% else %} {# vertical #}
+      <div class="row yt-package">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>{{entry['title']}}</h2>
+          <div>
+        </div>
+        <div class="row">
+          {% for img in entry['images'] %}
+           {% if loop.first %}
+             {% set image_pull="left" %}
+           {% elif loop.last %}
+             {% set image_pull="right" %}
+           {% endif %}
+           <div class="col-md-{{entry['imagewidth']}}">
+            <img src="{{img}}" class="pull-{{image_pull}} img-rounded gallery-image">
+          </div>
+          {% endfor %}
+        </div>
+        <div class="row">
+          <div class="col-md-{{entry['textwidth']}}">
+            <p class="lead">
+            {{entry['text']}}
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+    {% endfor %}
+
+    </div><!-- /.container -->
+{% endblock content %}

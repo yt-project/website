@@ -1,0 +1,135 @@
+- name: Kenza Arraki
+  since: 2014
+  content: >
+    Kenza has been a yt project developer since 2013. Her main contributions
+    have been to the ART frontend and she is currently the ART code liason.
+- name: Brian Crosby
+  since: 2016
+- name: Bili Dong
+  since: 2016
+- name: Hilary Egan
+  since: 2014
+  content: >
+    Hilary began developing yt in 2013. She created and maintains the
+    absorption spectrum fitting tool. She has also been involved in developing
+    the new halo analysis framework.
+- name: Nathan Goldbaum
+  since: 2014
+  content: >
+    Nathan has been involved in yt development since 2011. He has been involved
+    in writing and maintaining yt's plotting functionality, the FLASH, Enzo,
+    and SPH frontends, and yt's unit system.
+- name: Cameron Hummels
+  since: 2014
+  content: >
+    Cameron began work on the yt project in 2010.  The focus of his code
+    contributions have been on halo finding, tracking, and merger trees; volume
+    rendering and the camera interface, synthetic spectral generation, and the
+    graphical user interface for yt, Reason, but he has experience making
+    modifications in many corners of the codebase.  Cameron has organized and
+    written a large fraction of the yt documentation and has contributed
+    numerous useful recipes to the cookbook.  As the informal documentation
+    czar, he tries very hard to assure newly developed functionality is
+    accessible to the entire userbase.  He is active in yt project organization
+    and planning.
+- name: Suoqing Ji
+  since: 2014
+  content: >
+    Suoqing has benefited a lot from friendly yt community.  The 2012 user
+    workshop made him stick to yt for analyzing his FLASH datasets, and the
+    2014 development workshop made him into a developer. He has contributed to
+    improvement of plotting functionality and extension of volume rendering.
+    Suoqing started his PhD at UC Santa Babara in 2013, where he also
+    collaborates with local researchers to incorporate yt into the AlloSphere
+    for real-time analysis of astrophysical datasets with stereoscopic 3-D
+    virtual reality.
+- name: Allyson Julian
+  since: 2016
+- name: Ben Keller
+  since: 2014
+  content: >
+    Ben Keller is the current Tipsy frontent liason.  He started his PhD at
+    McMaster University in 2011, and uses yt to analyze simulations generated
+    using the Gasoline and ChaNGa SPH codes.
+- name: Kacper Kowalik
+  since: 2014
+  content: >
+    Kacper has been a developer since 2011.  He has made contributions to, and
+    is actively maintaining Grid Data Format frontend. He is also taking care
+    of continuous integration infrastructure and documentation deployment.
+- name: Sam Leitner
+  since: 2014
+- name: Chris Malone
+  since: 2014
+  content: >
+    Chris began dabbling with yt in 2011, adding support for the BoxLib-based
+    code, Maestro.  Since then, he has helped work with other BoxLib-based
+    codes, and is currently the BoxLib frontend liason.  He's currently a
+    postdoc at Los Alamos National Lab, where he is trying to pull in more yt
+    users for lab-related codes.
+- name: Andrew Myers
+  since: 2014
+  content: >
+    Andrew made his first commit to the code in 2011. He helped develop, and
+    currently maintains, the Orion and Chombo frontends. He also wrote the
+    RADMC-3D export module and has contributed many bugfixes. He is currently
+    working on extending yt's tools for analyzing and visualizing particle
+    datasets.
+- name: Jill Naiman
+  since: 2014
+- name: Jeff Oishi
+  since: 2014
+- name: Brian O'Shea
+  since: 2014
+- name: Douglas Rudd
+  since: 2014
+  content: >
+    Doug is a Scientific Computing Consultant at the Research Computing Center
+    at the University of Chicago. In a past life he developed the distributed
+    version of ART and in 2012 began working on a yt frontend for that code. He
+    currently acts as the liaison to the ARTIO frontend and works on
+    infrastructure projects like periodicity and selectors.
+- name: Anthony Scopatz
+  since: 2014
+- name: Sam Skillman
+  since: 2014
+- name: Stephen Skory
+  since: 2014
+- name: Britton Smith
+  since: 2014
+  content: >
+    Britton has been a developer for the yt project since 2008 and has made
+    contributions to most areas of the code.  He has also been active in
+    project organization and helped to establish the current system of
+    governance for yt.
+- name: Casey Stark
+  since: 2014
+- name: Matthew Turk
+  since: 2014
+  content: >
+    Matt has been a developer since 2006, and has been involved with many
+    different aspects of yt including frontends, infrastructure, visualization,
+    and parallelism.  He's been involved in the organization and community
+    growth of yt.
+- name: John Wise
+  since: 2014
+  content: >
+    John has been a developer since 2007 when Matt Turk and he were graduate
+    students in the same group.  He is the main developer of the eps_writer
+    extension.  He has contributed many minor bugfixes and improvements to
+    various parts of yt, such as the merger tree, Rockstar interface, and the
+    Enzo frontend.  He is an assistant professor at Georgia Tech, where he
+    enjoys showing off yt's usefulness to his research group and students in
+    his upper-level classes.
+- name: Michael Zingale
+  since: 2014
+  content: >
+    Mike saw the light of yt late in the game, when he became too frustrated
+    with other visualization offerings.  He enjoys de-cosmologicalizing the
+    code and hacking where he can to make yt better.
+- name: John ZuHone
+  since: 2014
+  content: >
+    John has been a developer since 2010, and has been involved with developing
+    the FLASH, Athena, and FITS frontends, as well as a number of analysis
+    modules pertaining to simulated observations. 

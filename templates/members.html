@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+
+      <div class="row yt-package">
+        <div class="col-md-offset-2 col-md-8">
+          <h1>Project Members</h1>
+          <p class="lead">
+            In September of 2014, a discussion on the yt-dev mailing list about
+            project governance resulted in the development of a YTEP on the
+            topic of
+            <a href="https://ytep.readthedocs.org/en/latest/YTEPs/YTEP-1776.html">project governance</a>.
+            As an outcome of that, the community decided to establish a
+            "membership" process, whereby individuals who had contributed in a
+            significant way to the project were recognized and identified as
+            members.
+          </p>
+        </div>
+        {% for member in members %}
+        <div class="row yt-package">
+          <div class="col-md-offset-2 col-md-8">
+            <h3>{{member['name']}}</h3>
+            <p class="lead">
+            Member since {{member['since']}}.
+            {{member['content']}}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div><!-- /.container -->
+
+{% endblock content %}

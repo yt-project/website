@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.png" />
+    <link href="https://plus.google.com/107728486871834552760" rel="publisher" />
+
+    <title>The yt Project: {{title | capitalize}}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/{{theme}}/bootstrap.min.css" rel="stylesheet">
+    <link href="css/local.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    {% block navbar %}
+    <div class="navbar-wrapper">
+      <div class="container">
+        <!-- We store a copy of the menubar in menubar.inc.  Better to include
+             that when you modify it, so the changes get propagated.-->
+        <!-- Be sure to modify the "active" item -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="http://yt-project.org/">yt project</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li id="about"><a href="about.html">About</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="http://yt-project.org/docs/dev">Dev</a></li>
+                    <li><a href="http://yt-project.org/doc/">Stable</a></li>
+                    <li><a href="http://yt-project.org/docs/2.6">Legacy (2.x)</a></li>
+                  </ul>
+                </li>
+                <li id="community"><a href="community.html">Community</a></li>
+                <li id="development"><a href="development.html">Develop</a></li>
+                <li id="gallery"><a href="gallery.html">Gallery</a></li>
+                <li id="members"><a href="members.html">Project Members</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">Learning</li>
+                    <li><a href="http://blog.yt-project.org/">yt Blog</a></li>
+                    <li><a href="http://yt-project.org/doc/quickstart/index.html">Quick Start</a></li>
+                    <li><a href="http://yt-project.org/doc/">Documentation</a></li>
+                    <li><a href="http://adsabs.harvard.edu/abs/2011ApJS..192....9T">ApJS paper</a>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Help!</li>
+                    <li><a href="http://lists.spacepope.org/listinfo.cgi/yt-users-spacepope.org">Mailing List</a></li>
+                    <li><a href="http://lists.spacepope.org/listinfo.cgi/yt-dev-spacepope.org">Development Mailing List</a></li>
+                    <li><a href="http://yt-project.org/irc.html">Live Chat</a></li>
+                    <li><a href="http://yt-project.org/docs/cheatsheet.pdf">Cheat sheet</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Development</li>
+                    <li><a href="http://bitbucket.org/yt_analysis/yt/issues/new">Report a Bug</a></li>
+                    <li><a href="http://ytep.readthedocs.org/en/latest/">YTEPs</a></li>
+                    <li><a href="http://bitbucket.org/yt_analysis/yt">Project Page</a></li>
+                    <li><a href="http://trello.com/yt_analysis">Project Planning</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- End of menubar.inc inclusion -->
+
+      </div>
+    </div>
+    {% endblock navbar %}
+
+    {% block content %}
+
+    {% endblock content %}
+
+    {% block footer %}
+      <!-- FOOTER -->
+      <footer>
+        <a href="http://www.numfocus.org">
+        <img width="150 px" class="pull-left", src="img/numfocus-fsa.png" alt="yt is a NumFOCUS fiscally sponsored project">
+        </a>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <script type="text/javascript">
+          sc_project=3616111;
+          sc_invisible=1;
+          sc_partition=41;
+          sc_security="3865f346";
+        </script>
+        <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+
+      </footer>
+    {% endblock footer %}
+
+    {% block corejs %}
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="holder.js"></script>
+    <script type="text/javascript">
+      $('#myCarousel').carousel({interval:15000})
+
+      $('li#{{title}}').addClass('active');
+    </script>
+    <style type="text/css">
+      #myCarousel {
+      width: 100%;
+      }
+      
+      .carousel-inner .item {
+      margin-top: 50px;
+      width: 100%;
+      height: 500px;
+      background-size: cover;
+      background-origin: content-box;
+      }
+
+      .im1 {
+      background: url(img/reion.jpg) no-repeat center center local;
+      }
+
+      .im2 {
+      background: url(img/kowalik.jpg) no-repeat center center local;
+      }
+      
+      .im3 {
+      background: url(img/richardson.jpg) no-repeat center center local;
+      }
+
+    </style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-391373-2']);
+  _gaq.push(['_setDomainName', 'yt-project.org']);
+  _gaq.push(['_setAllowHash', false]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+{% endblock corejs %}
+  </body>
+</html>
