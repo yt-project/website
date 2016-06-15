@@ -34,77 +34,15 @@
           developing, and sharing information about yt.  For a more detailed
           breakdown of contribution information and statistics, check out our
           <a href="https://www.openhub.net/p/yt_amr/contributors?query=&sort=commits">Open HUB Page</a>.
-          and our <a href="members.html">Members Page</a></p>
+          and our <a href="members.html">Members Page</a></p>.
         </div>
-        <div class="col-md-offset-3 col-md-3">
-                Tom Abel<br/>
-                Gabriel Altay<br/>
-                Kenza Arraki<br/>
-                Elliott Biondo<br/>
-                Alex Bogert<br/>
-                Pengfei Chen<br/>
-                David Collins<br/>
-                Brian Crosby<br/>
-                Andrew Cunningham<br/>
-                Hilary Egan<br/>
-                John Forbes<br/>
-                Sam Geen<br/>
-                Nathan Goldbaum<br/>
-                William Gray<br/>
-                Eric Hallman<br/>
-                Markus Haider<br/>
-                Cameron Hummels<br/>
-                Christian Karch<br/>
-                Benjamin Keller<br/>
-                Ji-hoon Kim<br/>
-                Steffen Klemer<br/>
-                Kacper Kowalik<br/>
-                Mark Krumholz<br/>
-                Michael Kuhlen<br/>
-                Eve Lee<br/>
-                Sam Leitner<br/>
-                Yuan Li<br/>
-                Chris Malone<br/>
-                Josh Moloney<br/>
-                Chris Moody<br/>
-                Stuart Mumford<br/>
-                Andrew Myers<br/>
-                Jill Naiman<br/>
+        {% for column in developers|slice(2) %}
+        <div class="{% if loop.first %}col-md-offset-3{%endif%} col-md-3">
+          {% for name in column %}
+          {{name}}<br/>
+          {% endfor %}
         </div>
-        <div class="col-md-3">
-                Desika Narayanan<br/>
-                Kaylea Nelson<br/>
-                Jeff Oishi<br/>
-                Jean-Claude Passy<br/>
-                John Regan<br/>
-                Sherwood Richers<br/>
-                Mark Richardson<br/>
-                Thomas Robitaille<br/>
-                Anna Rosen<br/>
-                Douglas Rudd<br/>
-                Anthony Scopatz<br/>
-                Noel Scudder<br/>
-                Devin Silvia<br/>
-                Sam Skillman<br/>
-                Stephen Skory<br/>
-                Aaron Smith<br/>
-                Britton Smith<br/>
-                Geoffrey So<br/>
-                Casey Stark<br/>
-                Antoine Strugarek<br/>
-                Ji Suoqing<br/>
-                Elizabeth Tasker<br/>
-                Benjamin Thompson<br/>
-                Stephanie Tonnesen<br/>
-                Matthew Turk<br/>
-                Miguel de Val-Borro<br/>
-                Rick Wagner<br/>
-                Mike Warren<br/>
-                Andrew Wetzel<br/>
-                John Wise<br/>
-                Mike Zingale<br/>
-                John ZuHone<br/>
-        </div>
+        {% endfor %}
       </div>
 
       <div class="row yt-package">

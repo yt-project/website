@@ -84,6 +84,8 @@ def about():
         if realname in name_mappings:
             names.add(name_mappings[realname])
             continue
+        realname = realname.decode('utf-8')
+        realname = realname.encode('ascii', 'xmlcharrefreplace')
         names.add(realname)
     #with open("devs.txt", "w") as f:
     #    for name in sorted(names, key=lastname_sort):
