@@ -111,7 +111,7 @@ def development():
 def main():
     for name in sorted(pages):
         setup_func, template_name = pages[name]
-        out_name = os.path.join("output", template_name)
+        out_name = os.path.join(".", template_name)
         context = {'theme': 'cyborg', 'title': name}
         context.update(setup_func())
         with open(out_name, "w") as f:
