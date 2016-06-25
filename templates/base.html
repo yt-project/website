@@ -21,7 +21,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
+    <link href="{{url_prefix}}carousel.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
     {% block custom_scripts %}
     {% endblock custom_scripts %}
@@ -102,7 +102,7 @@
       <!-- FOOTER -->
       <footer>
         <a href="http://www.numfocus.org">
-        <img width="150 px" class="pull-left", src="img/numfocus-fsa.png" alt="yt is a NumFOCUS fiscally sponsored project">
+          <img width="150 px" class="pull-left", src="{{url_prefix}}img/numfocus-fsa.png" alt="yt is a NumFOCUS fiscally sponsored project">
         </a>
         <p class="pull-right"><a href="#">Back to top</a></p>
         <script type="text/javascript">
@@ -122,7 +122,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="holder.js"></script>
+    <script src="{{url_prefix}}holder.js"></script>
     <script type="text/javascript">
       $('#myCarousel').carousel({interval:15000})
 
