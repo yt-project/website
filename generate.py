@@ -18,9 +18,11 @@ def render_template(template_filename, context):
 
 pages = {}
 
-def page(name):
+def page(name, output_name = None):
+    if output_name is None:
+        output_name = name + '.html'
     def _page(func):
-        pages[name] = (func, name + '.html')
+        pages[name] = (func, output_name)
         return func
     return _page
 
@@ -108,11 +110,16 @@ def members():
 def development():
     return {}
 
+@page('data/index')
+def data():
+    return {'url_prefix':'../'}
+
 def main():
     for name in sorted(pages):
         setup_func, template_name = pages[name]
         out_name = os.path.join(".", template_name)
-        context = {'theme': 'cyborg', 'title': name}
+        context = {'theme': 'cyborg', 'title': name,
+                   'url_prefix': ''}
         context.update(setup_func())
         with open(out_name, "w") as f:
             html = render_template(template_name, context)

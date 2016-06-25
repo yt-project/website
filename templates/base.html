@@ -23,6 +23,8 @@
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
+    {% block custom_scripts %}
+    {% endblock custom_scripts %}
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -46,7 +48,7 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li id="about"><a href="about.html">About</a></li>
+                <li id="about"><a href="{{url_prefix}}about.html">About</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -55,10 +57,10 @@
                     <li><a href="http://yt-project.org/docs/2.6">Legacy (2.x)</a></li>
                   </ul>
                 </li>
-                <li id="community"><a href="community.html">Community</a></li>
-                <li id="development"><a href="development.html">Develop</a></li>
-                <li id="gallery"><a href="gallery.html">Gallery</a></li>
-                <li id="members"><a href="members.html">Project Members</a></li>
+                <li id="community"><a href="{{url_prefix}}community.html">Community</a></li>
+                <li id="development"><a href="{{url_prefix}}development.html">Develop</a></li>
+                <li id="gallery"><a href="{{url_prefix}}gallery.html">Gallery</a></li>
+                <li id="members"><a href="{{url_prefix}}members.html">Project Members</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <b class="caret"></b></a>
                   <ul class="dropdown-menu">

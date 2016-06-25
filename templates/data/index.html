@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block custom_scripts %}
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script>
+       $(function() {
+	  $.getJSON('datafiles.json', function(data) {
+	     $.each(data, function(key, val) {
+	     	 var codeRow = "<tr><td colspan=\"5\" class=\"frontend\">" + key + "</td></tr>"
+		 $(codeRow).appendTo("#datafiles tbody");
+
+	         $.each(val, function(i, f) {
+
+		     var tblRow = "<tr>" + "<td>" + f.filename + "</td>"
+	                         + "<td>" + f.size + "</td>"
+	                         + "<td>" + f.description + "</td>"
+				 + "<td>" + f.code + "</td>"
+	                         + "<td><a href=\"" + f.url + "\">download</a></td>"
+		                 + "</tr>"
+                     $(tblRow).appendTo("#datafiles tbody");
+		 });
+	     });
+	  });
+       });
+    </script>
+{% endblock custom_scripts %}
+{% block content %}
+    <div class="container">
+
+
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Sample Data</div>
+      <div class="panel-body">
+        <p><strong>These datasets are provided for experimentation and
+          testing purposes only.  They do not necessarily reflect any
+          published work or scientific consistency.</strong></p>
+      </div>
+
+      <!-- Table -->
+      <table class="table" id="datafiles">
+        <thead>
+          <tr><th>Filename</th><th>Size</th><th>Description</th><th>Code</th><th>Link</th></tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Auxiliary Data Files</div>
+      <div class="panel-body">
+        <p><strong>These data files can be used in yt for various analysis
+          tasks.</strong></p>
+      </div>
+
+      <table class="table">
+      <thead>
+        <tr><th>Auxiliary Data Files</th><th>Size (mb)</th><th>Description</th><th>Link</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>cloudy_emissivity</td>
+            <td>2.1 MB</td>
+            <td>X-ray emissivity tables created
+            with <a href="http://www.nublado.org/">Cloudy</a>
+            (for a photoionized plasma) and used for creating x-ray emissivity and
+            luminosity fields.</td>
+            <td><a href="http://yt-project.org/data/cloudy_emissivity.h5">download</a></td>
+        </tr>
+        <tr><td>apec_emissivity</td>
+            <td>197 KB</td>
+            <td>X-ray emissivity tables created
+            with <a href="http://www.atomdb.org/">AtomDB</a>
+            (for a collisionally ionized plasma) and used for creating x-ray emissivity
+            and luminosity fields.</td>
+            <td><a href="http://yt-project.org/data/apec_emissivity.h5">download</a></td>
+        </tr>
+        <tr><td>xray_data</td>
+            <td>30 MB</td>
+            <td>Various data tables and response files for use with
+            the X-ray Photon
+            Simulator Analysis Module.</td>
+            <td><a href="http://yt-project.org/data/xray_data.tar.gz">download</a></td>
+        </tr>
+        <tr><td>owls_ion_data</td>
+             <td>13 MB</td>
+             <td>OWLS ionization equilibrium data</td>
+             <td><a href="http://yt-project.org/data/owls_ion_data.tar.gz">download</a></td>
+        </tr>
+        <tr><td>bc03</td>
+             <td>57 MB</td>
+             <td>Tables from <a href="http://arxiv.org/abs/astro-ph/0309134">
+                   'Stellar population synthesis at the resolution of 2003'</a>
+             by Bruzual & Charlot (2003).</td>
+             <td><a href="http://yt-project.org/data/bc03.tar.gz">download</a></td>
+        </tr>
+        <tr><td>absorption_spectrum_data</td>
+             <td>78 KB</td>
+             <td>Sample outputs from AbsorptionSpectrum analysis module for
+                 use in testing. Lyman-alpha spectra for the
+                 enzo_cosmology_plus dataset.</td>
+             <td><a href="http://yt-project.org/data/absorption_spectrum_data.tar.gz">download</a></td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+{% endblock content %}
