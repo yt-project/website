@@ -212,6 +212,20 @@
             "filename": "ActiveParticleTwoSphere",
             "size": "22 MB",
             "url": "http://yt-project.org/data/ActiveParticleTwoSphere.tar.gz"
+        },
+        {
+            "code": "Enzo",
+            "description": "1D Toro Shock Tube",
+            "filename": "ToroShockTube",
+            "size": "10 kB",
+            "url": "http://yt-project.org/data/ToroShockTube.tar.gz"
+        },
+        {
+            "code": "Enzo",
+            "description": "2D Kelvin-Helmholtz test",
+            "filename": "EnzoKelvinHelmholtz.tar.gz",
+            "size": "4.3 MB",
+            "url": "http://yt-project.org/data/EnzoKelvinHelmholtz.tar.gz"
         }
     ],
     "exodus ii frontend": [
