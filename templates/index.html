@@ -231,9 +231,9 @@
           <p class="lead" style="margin-top:20px;">Once you've downloaded it, just run:</p>
           <div class="yt_code">
             $ bash install_script.sh<br/>
-            $ source YT_DEST/bin/activate
+            $ export PATH=/path/to/YT_DEST/bin:$PATH
           </div>
-          <p class="lead">where YT_DEST will be where you installed yt (usually <span class="yt_code">yt-x86_64</span> but depends on your system).</p>
+          <p class="lead">where YT_DEST will be the folder created by the install script containing a yt installation  (usually <span class="yt_code">yt-conda</span>).</p>
         </div>
         <div class="col-md-offset-2 col-md-5">
           <h1>Get yt:<span class="text-muted"> using conda.</h1>
@@ -245,7 +245,13 @@
             to manage python packages, you can install the latest stable version
             of yt with the following command:
             <div class="yt_code">
-              $ conda install yt
+              $ conda install -c conda-forge yt
+            </div>
+          </p>
+          <p class="lead">
+            Or a nightly development build:
+            <div class="yt_code">
+              $ conda install -c http://use.yt/with_conda yt
             </div>
           </p>
           <h1>Get yt:<span class="text-muted"> from source.</h1>
@@ -276,24 +282,6 @@
           <div class="yt_code">
             $ python setup.py develop
           </div>
-          <p class="lead">
-            To build yt, you will first need to install a number of Python and C
-            libraries that yt uses for key functionality.
-            <ul>
-              <li> HDF5 </li> <!-- version numbers? -->
-              <li> NumPy </li>
-              <li> h5py </li>
-              <li> Matplotlib </li>
-              <li> Sympy </li>
-              <li> Cython </li>
-              <li> Setuptools </li>
-              <li> libpng </li>
-              <li> Freetype2 </li>
-              <li> IPython </li>
-              <li> PyX </li>
-              <li> Nose </li>
-            </ul>
-          </p>
         </div>
       </div>
 
