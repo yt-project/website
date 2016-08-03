@@ -158,7 +158,7 @@
     This <a
     href="http://nbviewer.ipython.org/urls/raw.github.com/pyne/sandbox/master/ndiff.ipynb">notebook</a>
     demonstrates construction of a simple neutron diffusion problem, using <a
-    href="http://pynesim.org/">PyNE</a>, yt, and the IPython notebook to solve
+    href="http://pyne.io/">PyNE</a>, yt, and the IPython notebook to solve
     and visualize the system in-memory.  It constructs a semi-structured mesh
     in memory and then over the course of several timesteps updates the values
     and plots.
