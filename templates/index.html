@@ -3,101 +3,28 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide container ytCarousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item ytImage active im1">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Volumetric Data Analysis</h1>
-              <p>yt is a python package for analyzing and visualizing
-              volumetric, multi-resolution data from astrophysical simulations,
-              radio telescopes, and a burgeoning interdisciplinary community.</p>
-              <p><a class="btn btn-large btn-primary" href="#getyt">Get yt</a></p>
-            </div>
-          </div>
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-3">
+          <object data="img/yt_logo.svg" type="image/svg+xml">
+              <img src="img/yt_logo.png" />
+          </object>
         </div>
-        <div class="item ytImage im2">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Quantitative Analysis and Visualization</h1>
-              <p>yt is more than a visualization package: it is a tool to seamlessly handle
-              simulation output files to make analysis simple.  yt can easily
-              knit together volumetric data to investigate phase-space
-              distributions, averages, line integrals, streamline queries,
-              region selection, halo finding, contour identification,
-              surface extraction and more.</p>
-              <p><a class="btn btn-large btn-primary" href="#getyt">Get yt</a></p>
-            </div>
-          </div>
+        <div class="col-lg-7">
+          <p class="lead">yt is an open-source, permissively-licensed python
+          package for analyzing and visualizing volumetric data.</p>
+          <p>yt supports structured, variable-resolution meshes
+          unstructured meshes, and discrete or sampled data such as particles.
+          Focused on driving physically-meaningful inquiry, yt has been
+          applied in domains such as astrophysics, seismology, nuclear
+          engineering, molecular dynamics, and oceanography.  Composed of a
+          friendly community of users and developers, we want to make it easy
+          to use and develop &mdash; we'd love it if you got involved!</p>
         </div>
-        <div class="item ytImage im3">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Many formats, one language</h1>
-              <p>
-                yt aims to provide a simple uniform way of handling volumetric
-                data, regardless of where it is generated. yt currently supports
-                FLASH, Enzo, Boxlib, Athena, arbitrary volumes, Gadget, Tipsy, ART, 
-                RAMSES and MOAB. If your data
-                isn't already supported, why not add it?
-              </p>
-              <p><a class="btn btn-large btn-primary" href="#getyt">Get yt</a></p>
-            </div>
-          </div>
+        <div class="col-lg-2">
+          <a class="btn btn-lg btn-info btn-block" href="#getyt">Get yt!</a>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
-
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/logmagz_140.png" alt="Ji et al, arxiv/1302.5700">
-          <h2>Data-Driven</h2>
-          <p>
-            yt is designed to provide a consistent, cross-code interface to
-            analyzing and visualizing astrophysical simulation data from a
-            physical perspective.
-          </p>
-          <p><a class="btn btn-default" href="#learn">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/community_small_140.jpg" alt="Workshop picture">
-          <h2>Community</h2>
-          <p>
-            yt is composed of a friendly community of users and developers. We
-            want to make it easy to use and develop &mdash; we'd love it if you
-            got involved!
-          </p>
-          <p><a class="btn btn-default" href="#community">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/working_hard_140.jpg" alt="Developing">
-          <h2>Free Software</h2>
-            <p>
-              yt is developed completely in the open under a 3-clause BSD
-              license.  The developers are committed to open source practices
-              and fidelity of scientific results.
-            </p>
-          <p><a class="btn btn-default" href="#development">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
 
       <!-- START THE FEATURETTES -->
 
@@ -107,7 +34,7 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">Learn:
               <span class="text-muted"> getting started.</span></h2>
-          <p class="lead">
+          <p>
             To get started using yt to explore data, we provide resources
             including <a href="http://yt-project.org/doc/">documentation</a>,
             <a href="http://yt-project.org/workshop2012/">workshop material</a>,
@@ -116,7 +43,7 @@
             demonstrating many of yt's capabilities.
           </p>
 
-          <p class="lead">
+          <p>
             But if you just want to dive in and start using yt, we have a long
             list of
             <a href="http://yt-project.org/doc/cookbook/index.html">recipes</a>
@@ -143,14 +70,14 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">Community:
               <span class="text-muted">yt's best feature.</span></h2></a>
-          <p class="lead">
+          <p>
             yt is a friendly community.  We like hearing about fun things you
             have done with the code, and we're happy to help you out if you
             have a question or some trouble.  You can join us in IRC, on the
             mailing lists, and if you'd like, you can check out how to
             <a href="#development"> develop, too</a>.
           </p>
-          <p class="lead">
+          <p>
             If you've got some code to share, or scripts that you'd like to
             share, start up a repo on <a href="http://bitbucket.org/">BitBucket
             </a> or share them on our <a href="http://paste.yt-project.org/">
@@ -168,7 +95,7 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">Participatory
               <span class="text-muted"> development.</span></h2></a>
-          <p class="lead">
+          <p>
             If you're interested in getting started with helping out, the
             easiest way is to <a
             href="http://bitbucket.org/yt_analysis/yt/fork">Fork us
@@ -179,7 +106,7 @@
             development mailing list</a>.  yt is released under the 
             modified BSD License.
           </p>
-          <p class="lead">
+          <p>
             There are lots of <a
             href="http://yt-project.org/doc/developing/intro.html#technical-contributions">
             fun projects to work on</a>, along with some <a
@@ -235,7 +162,7 @@
           </div>
           <p class="lead">where YT_DEST will be the folder created by the install script containing a yt installation  (usually <span class="yt_code">yt-conda</span>).</p>
         </div>
-        <div class="col-md-offset-2 col-md-5">
+        <div class="col-md-offset-1 col-md-6">
           <h1>Get yt:<span class="text-muted"> using conda.</h1>
           <p class="lead">
             If you use

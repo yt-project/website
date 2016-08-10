@@ -1,3 +1,8 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
 .featurette-heading {
   margin-top:1px;
 }
@@ -6,7 +11,7 @@
 }  
 .yt_code {
   font-family: Inconsolata;
-  color: #FFFFFF;
+  color: #000000;
 }
 div.yt_code {
   font-size: 140%;
@@ -17,7 +22,7 @@ div.yt_code {
 }
 span.download_script {
   font-family: Inconsolata;
-  color: #FFFFFF;
+  color: #000000;
   font-size: 110%;
   margin-bottom: 10px;
   white-space:nowrap;
@@ -34,7 +39,7 @@ div.gadget {
  background-color: white;
 }
 
-body { padding-top: 70px; }
+body { padding-top: 70px; margin-bottom: 60px;}
 
 body {
     -webkit-animation-delay: 0.1s;
@@ -51,7 +56,7 @@ body {
 
 td.frontend {
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
 
 div.irc_window {
@@ -60,4 +65,12 @@ div.irc_window {
 
 div.slack_signup_container {
     padding-top: 50px
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
 }

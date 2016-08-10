@@ -36,7 +36,7 @@
              that when you modify it, so the changes get propagated.-->
         <!-- Be sure to modify the "active" item -->
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-default navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -124,36 +124,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="{{url_prefix}}holder.js"></script>
     <script type="text/javascript">
-      $('#myCarousel').carousel({interval:15000})
-
       $('li#{{title}}').addClass('active');
     </script>
-    <style type="text/css">
-      #myCarousel {
-      width: 100%;
-      }
-      
-      .carousel-inner .item {
-      margin-top: 50px;
-      width: 100%;
-      height: 500px;
-      background-size: cover;
-      background-origin: content-box;
-      }
-
-      .im1 {
-      background: url(img/reion.jpg) no-repeat center center local;
-      }
-
-      .im2 {
-      background: url(img/kowalik.jpg) no-repeat center center local;
-      }
-      
-      .im3 {
-      background: url(img/richardson.jpg) no-repeat center center local;
-      }
-
-    </style>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];

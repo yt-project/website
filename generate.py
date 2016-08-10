@@ -89,9 +89,6 @@ def about():
         realname = realname.decode('utf-8')
         realname = realname.encode('ascii', 'xmlcharrefreplace')
         names.add(realname)
-    #with open("devs.txt", "w") as f:
-    #    for name in sorted(names, key=lastname_sort):
-    #        f.write("%s\n" % name)
     devs = list(names)
     devs.sort(key=lastname_sort)
     return {'developers': devs}
@@ -118,7 +115,7 @@ def main():
     for name in sorted(pages):
         setup_func, template_name = pages[name]
         out_name = os.path.join(".", template_name)
-        context = {'theme': 'cyborg', 'title': name,
+        context = {'theme': 'flatly', 'title': name,
                    'url_prefix': ''}
         context.update(setup_func())
         with open(out_name, "w") as f:
