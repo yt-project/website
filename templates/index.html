@@ -65,7 +65,12 @@
         {% if loop.first %} {% set first_time = True %} {% endif %}
         {% for example in category['entries'] %}
         <div role="tabpanel" class="yt_example tab-pane{% if first_time and loop.first %} active{%endif%}" id="{{example['id']}}">
+        <div class="col-lg-8">
           <pre class="yt_example"><code class="yt_example language-python">{{-example['content']-}}</code></pre>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-responsive yt_ex_image" src="img/galaxy0030_Slice_z_density.png">
+        </div>
         </div>
         {% endfor %}
         {% set first_time = False %}
@@ -311,13 +316,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();
 $(document).ready(function(){
-    var maxHeight = 0;
-    $('.yt_example', this).each(function(){
-      if($(this).height() > maxHeight) {
-        maxHeight = $(this).height();
-      }
-    });
-    $('code.yt_example').height(maxHeight);
+    $('code.yt_example').height(300);
 });
 </script>
 {% endblock customjs %}

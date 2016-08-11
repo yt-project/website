@@ -1,6 +1,7 @@
 from __future__ import print_function
 import yaml
 import os
+import sys
 from jinja2 import Environment, FileSystemLoader
 import hglib
 PATH = os.path.dirname(os.path.abspath(__file__))
@@ -61,7 +62,8 @@ lastname_sort = lambda a: a.rsplit(None, 1)[-1]
 @page('about')
 def about():
     # Uncomment for rapid dev
-    # return {'developers': []}
+    if "--fast" in sys.argv:
+        return {'developers': []}
     import hglib
     from email.utils import parseaddr
     cmd = hglib.util.cmdbuilder("churn", "-c")
