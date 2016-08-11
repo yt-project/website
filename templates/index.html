@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+{% block custom_scripts %}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/obsidian.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{% endblock custom_scripts %}
 {% block content %}
 
     <!-- Carousel
@@ -22,7 +27,16 @@
           to use and develop &mdash; we'd love it if you got involved!</p>
         </div>
         <div class="col-lg-2">
-          <a class="btn btn-lg btn-info btn-block" href="#getyt">Get yt!</a>
+          <div class="row">
+            <div class="col-lg-12">
+              <a class="btn btn-lg btn-info btn-block" href="#getyt">Get yt!</a><br/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <a class="btn btn-lg btn-success btn-block" href="https://use.yt/">Try yt!</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -33,17 +47,18 @@
       <! -- Examples -->
       <ul class="nav nav-tabs" role="tablist">
         {% for category in examples %}
-
-        <li class="dropdown">
+        {% if loop.first %} {% set first_time = True %} {% endif %}
+        <li class="dropdown{% if loop.first %} active{%endif%}">
           <a class="dropdown-toggle" data-toggle="dropdown"
                                      href="#">{{category['category']}}<span class="caret"></span></a>
           <ul class="dropdown-menu">
           {% for example in category['entries'] %}
-            <li role="presentation">
+          <li role="presentation" {% if first_time and loop.first %}class="active"{%endif%}>
             <a href="#{{example['id']}}" aria-controls="{{example['id']}}" role="tab" data-toggle="tab">
             {{example['name']}}</a>
             </li>
           {% endfor %}
+          {% set first_time = False %}
           </ul>
         </li>
         {% endfor %}
@@ -52,11 +67,14 @@
       <!-- Tab panes -->
       <div class="tab-content">
         {% for category in examples %}
+        {% if loop.first %} {% set first_time = True %} {% endif %}
         {% for example in category['entries'] %}
-        <div role="tabpanel" class="tab-pane" id="{{example['id']}}">
-          {{example['content']}}
+        <div role="tabpanel" class="tab-pane{% if first_time and loop.first %} active{%endif%}" id="{{example['id']}}">
+          <pre><code class="language-python">{{example['content']}}
+          </code></pre>
         </div>
         {% endfor %}
+        {% set first_time = False %}
         {% endfor %}
       </div>
 
