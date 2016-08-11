@@ -28,7 +28,8 @@ def page(name, output_name = None):
 
 @page('index')
 def index():
-    return {'title': 'Home'}
+    examples = yaml.load(open("examples.yaml", "r"))
+    return {'title': 'Home', 'examples': examples}
 
 @page('gallery')
 def gallery():
@@ -59,6 +60,7 @@ lastname_sort = lambda a: a.rsplit(None, 1)[-1]
 
 @page('about')
 def about():
+    return {'developers': []}
     import hglib
     from email.utils import parseaddr
     cmd = hglib.util.cmdbuilder("churn", "-c")

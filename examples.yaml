@@ -1,0 +1,33 @@
+- category: Data
+  entries:
+    - name: Quick calculations
+      id: quick_calc
+      content: |
+        import yt
+        ds = yt.load("IsolatedGalaxy/galaxy0030/galaxy0030")
+        ds.r[0.45:0.55,:,:].sum("cell_mass").in_units("Mjup")
+- category: Viz
+  entries:
+    - name: Slicing
+      id: slicing
+      content: |
+        import yt
+        ds = yt.load("snapshot_033/snap_033.0.hdf5")
+        ds.r[(12.4, 'Mpc'),:,:].plot()
+    - name: Integrating
+      id: integrating
+      content: |
+        import yt
+        ds = yt.load()
+    - name: Interaction
+      id: interaction
+      content: |
+        import yt
+        ds = yt.load("IsolatedGalaxy/galaxy0030/galaxy0030")
+        yt.interactive_render(ds)
+- category: Analysis
+  entries:
+    - name: Extrema
+      id: extrema
+      content: |
+        ds.r[:].ptp()

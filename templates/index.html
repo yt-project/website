@@ -28,6 +28,40 @@
 
       <!-- START THE FEATURETTES -->
 
+    <div class="row">
+
+      <! -- Examples -->
+      <ul class="nav nav-tabs" role="tablist">
+        {% for category in examples %}
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown"
+                                     href="#">{{category['category']}}<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          {% for example in category['entries'] %}
+            <li role="presentation">
+            <a href="#{{example['id']}}" aria-controls="{{example['id']}}" role="tab" data-toggle="tab">
+            {{example['name']}}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        {% for category in examples %}
+        {% for example in category['entries'] %}
+        <div role="tabpanel" class="tab-pane" id="{{example['id']}}">
+          {{example['content']}}
+        </div>
+        {% endfor %}
+        {% endfor %}
+      </div>
+
+    </div>
+
       <hr class="featurette-divider">
 
       <div class="row featurette" id="learn">
