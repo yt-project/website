@@ -1,9 +1,4 @@
 {% extends "base.html" %}
-{% block custom_scripts %}
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/obsidian.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-{% endblock custom_scripts %}
 {% block content %}
 
     <!-- Carousel
@@ -65,13 +60,12 @@
       </ul>
 
       <!-- Tab panes -->
-      <div class="tab-content">
+      <div class="yt_example tab-content">
         {% for category in examples %}
         {% if loop.first %} {% set first_time = True %} {% endif %}
         {% for example in category['entries'] %}
-        <div role="tabpanel" class="tab-pane{% if first_time and loop.first %} active{%endif%}" id="{{example['id']}}">
-          <pre><code class="language-python">{{example['content']}}
-          </code></pre>
+        <div role="tabpanel" class="yt_example tab-pane{% if first_time and loop.first %} active{%endif%}" id="{{example['id']}}">
+          <pre class="yt_example"><code class="yt_example language-python">{{-example['content']-}}</code></pre>
         </div>
         {% endfor %}
         {% set first_time = False %}
@@ -312,3 +306,18 @@
       </script>
       <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
 {% endblock footer %}
+{% block customjs %}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/atom-one-light.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();
+$(document).ready(function(){
+    var maxHeight = 0;
+    $('.yt_example', this).each(function(){
+      if($(this).height() > maxHeight) {
+        maxHeight = $(this).height();
+      }
+    });
+    $('code.yt_example').height(maxHeight);
+});
+</script>
+{% endblock customjs %}

@@ -60,6 +60,8 @@ lastname_sort = lambda a: a.rsplit(None, 1)[-1]
 
 @page('about')
 def about():
+    # Uncomment for rapid dev
+    # return {'developers': []}
     import hglib
     from email.utils import parseaddr
     cmd = hglib.util.cmdbuilder("churn", "-c")

@@ -31,3 +31,9 @@
       id: extrema
       content: |
         ds.r[:].ptp()
+        ds.r[:].max()
+        ds.r[:].max()
+        ds.r[:].max()
+        ds.r[:].max()
+        ds.r[:].max()
+        ds.r[:].max()
