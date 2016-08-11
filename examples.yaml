@@ -6,6 +6,20 @@
         import yt
         ds = yt.load("IsolatedGalaxy/galaxy0030/galaxy0030")
         ds.r[0.45:0.55,:,:].sum("cell_mass").in_units("Mjup")
+      output: |
+        9.98537989593e+12 Mjup
+    - name: Derived fields
+      id: derived_fields
+      content: |
+        import yt
+        ds = yt.load("IsolatedGalaxy/galaxy0030/galaxy0030")
+        def thermal_energy_dens(field, data):
+            return (3/2)*data['gas', 'number_density'] * data['gas', 'kT']
+        ds.add_field(("gas", "thermal_energy_density"), units="erg/cm**3",
+                     function=thermal_energy_dens)
+        ds.r[:].mean("thermal_energy_density", "z", weight="density").plot()
+      image: galaxy0030_Projection_z_thermal_energy_density_density.png
+
 - category: Viz
   entries:
     - name: Slicing

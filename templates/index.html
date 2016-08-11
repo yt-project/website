@@ -69,7 +69,11 @@
           <pre class="yt_example"><code class="yt_example language-python">{{-example['content']-}}</code></pre>
         </div>
         <div class="col-lg-4">
-          <img class="img-responsive yt_ex_image" src="img/galaxy0030_Slice_z_density.png">
+          {% if 'image' in example %}
+          <img class="img-responsive yt_ex_image" src="{{url_prefix}}/img/{{example['image']}}">
+          {% elif 'output' in example %}
+          <pre><code class="img_responsive yt_example language-python">{{-example['output']-}}</code></pre>
+          {% endif %}
         </div>
         </div>
         {% endfor %}
