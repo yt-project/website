@@ -10,9 +10,12 @@ TEMPLATE_ENVIRONMENT = Environment(
     loader=FileSystemLoader(os.path.join(PATH, 'templates')),
     trim_blocks=False)
 
-import pkg_resources
-yt_provider = pkg_resources.get_provider("yt")
-yt_path = os.path.dirname(yt_provider.module_path)
+try:
+    import pkg_resources
+    yt_provider = pkg_resources.get_provider("yt")
+    yt_path = os.path.dirname(yt_provider.module_path)
+except ImportError:
+    yt_path = None
 
 def render_template(template_filename, context):
     return TEMPLATE_ENVIRONMENT.get_template(template_filename).render(context)
@@ -66,8 +69,14 @@ def about():
         return {'developers': []}
     import hglib
     from email.utils import parseaddr
-    cmd = hglib.util.cmdbuilder("churn", "-c")
-    c = hglib.open(yt_path)
+    cmd = hglib.util.cmdbuilder("--config", "extensions.churn=", "churn", "-c")
+    if yt_path:
+        c = hglib.open(yt_path)
+    else:
+        import tempfile
+        repo_path = tempfile.mkdtemp()
+        c = hglib.clone("https://bitbucket.org/yt_analysis/yt", repo_path)
+        c = hglib.open(repo_path)
     emails = set([])
     for dev in c.rawcommand(cmd).split("\n"):
         if len(dev.strip()) == 0: continue
