@@ -34,27 +34,70 @@
       content: |
         import yt
         ds = yt.load("snapshot_033/snap_033.0.hdf5")
-        ds.r[(12.4, 'Mpc'),:,:].plot()
+        ds.r[(12.4, 'Mpc'),:,:].plot("density")
+      image: snap_033_Slice_x_density.png
     - name: Integrating
       id: integrating
       content: |
         import yt
-        ds = yt.load()
+        ds = yt.load("D9p_500/10MpcBox_HartGal_csf_a0.500.d")
+        ds.r[:].integrate("density", axis="y").plot()
+      image: 10MpcBox_HartGal_csf_a0.500.d_Projection_y_density.png
     - name: Interaction
       id: interaction
       content: |
         import yt
         ds = yt.load("IsolatedGalaxy/galaxy0030/galaxy0030")
         yt.interactive_render(ds)
+      image: interactive.png
+    - name: Profile
+      id: profile
+      content: |
+        import yt
+        ds = yt.load("snipshot_399_z000p000/snip_399_z000p000.0.hdf5")
+        yt.ProfilePlot(ds.r[:], ("PartType0", "density"), ("PartType0", "temperature"),
+                       weight_field = ("PartType0", "particle_mass")).save()
+      image: snip_399_z000p000_1d-Profile_density_temperature.png
 - category: Analysis
   entries:
     - name: Extrema
       id: extrema
       content: |
-        ds.r[:].ptp()
-        ds.r[:].max()
-        ds.r[:].max()
-        ds.r[:].max()
-        ds.r[:].max()
-        ds.r[:].max()
-        ds.r[:].max()
+        import yt
+        ds = yt.load("Enzo_64/DD0043/data0043")
+        ds.r[:].min(), ds.r[:].max()
+      output: |
+        (3.81289338015e-32 g/cm**3, 6.27892369905e-27 g/cm**3)
+    - name: Averages
+      id: averages
+      content: |
+        import yt
+        ds = yt.load("output_00080/info_00080.txt")
+        ds.r[(10.0, "Mpc"):(20.0, "Mpc"),
+             (30.0, "Mpc"):(40.0, "Mpc"),
+             (50.0, "Mpc"):(60.0, "Mpc")].mean("temperature", weight="density")
+      output: |
+        296317.62046 K
+    - name: Line query
+      id: line_query
+      content: |
+        import yt
+        ds = yt.load("IsolatedGalaxy/galaxy0030/galaxy0030")
+        loc1 = ds.r[:].argmax("temperature")
+        loc2 = ds.r[:].argmax("density")
+        ray = ds.ray(loc1, loc2)
+        ray["velocity_magnitude"].in_units("cm/s")
+      output: |
+        YTArray([ 22921344.10593038, 
+                  24626806.46165072,
+                  24759784.32406003,
+                  26583519.63858156,
+                  27331481.53657745,
+                  27728742.61474814,
+                  28734604.40420894,
+                  30188600.75890669,
+                  30989266.0493723 ,
+                  31197303.98155414,
+                  ...
+                  10846216.93678336,
+                  12222078.64819527]) cm/s
