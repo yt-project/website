@@ -19,7 +19,14 @@
                      function=thermal_energy_dens)
         ds.r[:].mean("thermal_energy_density", "z", weight="density").plot()
       image: galaxy0030_Projection_z_thermal_energy_density_density.png
-
+    - name: Unit systems
+      id: unit_systems
+      content: |
+        import yt
+        ds = yt.load("GasSloshing/sloshing_nomag2_hdf5_plt_cnt_0150",
+                     unit_system="imperial")
+        slc = yt.SlicePlot(ds, 'z', "kT", width=(600,"kpc"))
+      image: sloshing_nomag2_hdf5_plt_cnt_0150_Slice_z_kT.png
 - category: Viz
   entries:
     - name: Slicing
