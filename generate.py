@@ -125,6 +125,11 @@ def development():
 def data():
     return {'url_prefix':'../'}
 
+@page('extensions')
+def extensions():
+    extensions = yaml.load(open("extensions.yaml", "r"))
+    return {'extensions': extensions}
+
 def main():
     for name in sorted(pages):
         setup_func, template_name = pages[name]

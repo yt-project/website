@@ -1,0 +1,32 @@
+- name: Trident
+  url: http://trident-project.org/
+  image: trident_logo_blackbg.png
+  description: |
+    Trident is a full-featured tool that projects arbitrary sightlines through
+    astrophysical hydrodynamics simulations for generating mock spectral
+    observations of the IGM and CGM. 
+  import_as: trident
+  contact: Cameron Hummels
+- name: pyXSIM
+  url: http://hea-www.cfa.harvard.edu/~jzuhone/pyxsim/
+  image: cluster_merger_events.png
+  description: |
+    pyXSIM is a Python package for simulating X-ray observations from
+    astrophysical sources.
+  import_as: pyxsim
+  contact: John ZuHone
+- name: yt interaction
+  url: https://bitbucket.org/data-exp-lab/yt_interaction
+  description: |
+    This extension is an experiment to work with the <a
+    href="http://holoviews.org/">holoviews</a> package for interactive
+    visualization.
+  import_as: yt.extensions.interaction
+  contact: Matthew Turk
+- name: ViewYT
+  url: https://bitbucket.org/data-exp-lab/yt_viewyt
+  description: |
+    An ongoing effort to build reusable Qt-based widgets for interacting wiht
+    yt plots and datasets.
+  import_as: yt.extensions.viewyt
+  contact: Austin Gilbert
