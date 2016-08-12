@@ -22,15 +22,15 @@
           to use and develop &mdash; we'd love it if you got involved!</p>
         </div>
         <div class="col-lg-2">
-          <div class="row">
-            <div class="col-lg-12">
-              <a class="btn btn-lg btn-info btn-block" href="#getyt">Get yt!</a><br/>
-            </div>
+          <div class="glyph_container_button">
+            <a class="btn btn-lg btn-info btn-block" href="#getyt">
+                <span class="glyph_button glyphicon glyphicon-download"
+                  aria-hidden="true"></span>&nbsp;&nbsp;Get yt!</a><br/>
           </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <a class="btn btn-lg btn-success btn-block" href="https://use.yt/">Try yt!</a>
-            </div>
+          <div class="glyph_container_button">
+            <a class="btn btn-lg btn-success btn-block" href="https://use.yt/">
+                <span class="glyph_button glyphicon glyphicon-play-circle"
+                  aria-hidden="true"></span>&nbsp;&nbsp;Try yt!</a><br/>
           </div>
         </div>
       </div>
@@ -64,17 +64,28 @@
         {% for category in examples %}
         {% if loop.first %} {% set first_time = True %} {% endif %}
         {% for example in category['entries'] %}
-        <div role="tabpanel" class="yt_example tab-pane{% if first_time and loop.first %} active{%endif%}" id="{{example['id']}}">
-        <div class="col-lg-8">
-          <pre class="yt_example"><code class="yt_example language-python">{{-example['content']-}}</code></pre>
-        </div>
-        <div class="col-lg-4">
-          {% if 'image' in example %}
-          <img class="img-responsive yt_ex_image" src="{{url_prefix}}/img/{{example['image']}}">
-          {% elif 'output' in example %}
-          <pre><code class="img_responsive yt_example language-python">{{-example['output']-}}</code></pre>
-          {% endif %}
-        </div>
+        <div role="tabpanel" class="tab-pane{% if first_time and loop.first %} active{%endif%}" id="{{example['id']}}">
+          <div class="row">
+          <div class="col-lg-8 yt_nopadding">
+            <pre class="yt_example"><code class="yt_example language-python">{{-example['content']-}}</code></pre>
+            </div>
+            <div class="col-lg-4 yt_nopadding">
+              {% if 'image' in example %}
+              <a href="{{url_prefix}}/img/{{example['image']}}" target="_blank">
+                <img border=0 class="img-responsive yt_ex_image" src="{{url_prefix}}/img/{{example['image']}}">
+              </a>
+              {% elif 'output' in example %}
+              <pre><code class="img-responsive yt_example language-python">{{-example['output']-}}
+
+              </code></pre>
+              {% endif %}
+            </div>
+            <div class="yt_example glyph_container">
+              <div class="arrow_glyph">
+                <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
         </div>
         {% endfor %}
         {% set first_time = False %}
@@ -317,8 +328,5 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/atom-one-light.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();
-$(document).ready(function(){
-    $('code.yt_example').height(300);
-});
 </script>
 {% endblock customjs %}

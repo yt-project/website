@@ -77,3 +77,46 @@ div.slack_signup_container {
 
 .yt_ex_image {
 }
+
+.yt_nopadding {
+  padding: 0px;
+}
+
+code.yt_example {
+  height: 320px;
+}
+
+.glyph_container {
+  position: relative;
+  z-index: 100;
+  height: 320px;
+}
+
+.arrow_glyph {
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.arrow_glyph > span {
+  left: 63%;
+  top: 50%;
+  font-size: 200%;
+}
+
+.glyph_container_button {
+  position: relative;
+  height: 100%;
+}
+
+.glyph_button {
+ position: absolute;
+ vertical-align: center;
+ top: 20%;
+ left: 5%;
+ font-size: 200%;
+ color: #ffffff;
+}
