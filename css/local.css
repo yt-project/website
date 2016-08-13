@@ -78,8 +78,10 @@ div.slack_signup_container {
 .yt_ex_image {
 }
 
-.yt_nopadding {
-  padding: 0px;
+@media (min-width: @screen-lg-min) { 
+  .yt_nopadding {
+    padding: 0px;
+  }
 }
 
 code.yt_example {
