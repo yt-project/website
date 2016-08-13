@@ -25,8 +25,9 @@
   contact: Matthew Turk
 - name: ViewYT
   url: https://bitbucket.org/data-exp-lab/yt_viewyt
+  image: viewyt.png
   description: |
-    An ongoing effort to build reusable Qt-based widgets for interacting wiht
+    An ongoing effort to build reusable Qt-based widgets for interacting with
     yt plots and datasets.
   import_as: yt.extensions.viewyt
   contact: Austin Gilbert
