@@ -107,6 +107,21 @@ code.yt_example {
   font-size: 200%;
 }
 
+.arrow_glyph_down {
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.arrow_glyph_down > span {
+  left: 50%;
+  top: 95%;
+  font-size: 200%;
+}
+
 .glyph_container_button {
   position: relative;
   height: 100%;
