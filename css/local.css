@@ -75,10 +75,7 @@ div.slack_signup_container {
   height: 60px;
 }
 
-.yt_ex_image {
-}
-
-@media (min-width: @screen-lg-min) { 
+@media screen and (min-width: 1024px) { 
   .yt_nopadding {
     padding: 0px;
   }
@@ -99,12 +96,13 @@ code.yt_example {
   z-index: 100;
   top: 0px;
   left: 0px;
+  text-align: right;
   width: 100%;
   height: 100%;
 }
 
 .arrow_glyph > span {
-  left: 63%;
+  left: 10px;
   top: 50%;
   font-size: 200%;
 }
