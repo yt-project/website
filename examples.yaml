@@ -25,8 +25,8 @@
         import yt
         ds = yt.load("GasSloshing/sloshing_nomag2_hdf5_plt_cnt_0150",
                      unit_system="imperial")
-        slc = yt.SlicePlot(ds, 'z', "kT", width=(600,"kpc"))
-      image: sloshing_nomag2_hdf5_plt_cnt_0150_Slice_z_kT.png
+        slc = yt.SlicePlot(ds, 'z', "temperature", width=(600,"kpc"))
+      image: sloshing_nomag2_hdf5_plt_cnt_0150_Slice_z_temperature.png
 - category: Viz
   entries:
     - name: Slicing
