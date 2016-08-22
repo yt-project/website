@@ -78,7 +78,7 @@
           <div class="col-lg-5 yt_nopadding">
             {% if 'image' in example %}
             <a href="{{url_prefix}}/img/{{example['image']}}" target="_blank">
-              <img border=0 class="img-responsive yt_ex_image" src="{{url_prefix}}/img/{{example['image']}}">
+              <img border=0 class="img-responsive yt_ex_image" src="{{url_prefix}}/img/examples/{{example['image']}}">
             </a>
             {% elif 'output' in example %}
             <pre><code class="img-responsive yt_example language-python">{{-example['output']-}}
