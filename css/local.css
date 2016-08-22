@@ -82,13 +82,13 @@ div.slack_signup_container {
 }
 
 code.yt_example {
-  height: 320px;
+  height: 400px;
 }
 
 .glyph_container {
   position: relative;
   z-index: 100;
-  height: 320px;
+  height: 400px;
 }
 
 .arrow_glyph {
@@ -134,4 +134,13 @@ code.yt_example {
  left: 5%;
  font-size: 200%;
  color: #ffffff;
+}
+
+.row_anchor {
+ padding-top: 40px;
+ margin-top: -40px;
+}
+
+p.feature {
+  font-size: 125%;
 }

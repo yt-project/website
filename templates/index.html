@@ -66,7 +66,7 @@
         {% for example in category['entries'] %}
         <div role="tabpanel" class="tab-pane{% if first_time and loop.first %} active{%endif%}" id="{{example['id']}}">
           <div class="row">
-          <div class="col-lg-8 yt_nopadding">
+          <div class="col-lg-7 yt_nopadding">
             <pre class="yt_example"><code class="yt_example language-python">{{-example['content']-}}</code></pre>
               <div class="hidden-xs hidden-sm hidden-md arrow_glyph">
                 <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
@@ -75,7 +75,7 @@
                 <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
               </div>
           </div>
-          <div class="col-lg-4 yt_nopadding">
+          <div class="col-lg-5 yt_nopadding">
             {% if 'image' in example %}
             <a href="{{url_prefix}}/img/{{example['image']}}" target="_blank">
               <img border=0 class="img-responsive yt_ex_image" src="{{url_prefix}}/img/{{example['image']}}">
@@ -101,7 +101,7 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">Learn:
               <span class="text-muted"> getting started.</span></h2>
-          <p>
+          <p class="feature">
             To get started using yt to explore data, we provide resources
             including <a href="http://yt-project.org/doc/">documentation</a>,
             <a href="http://yt-project.org/workshop2012/">workshop material</a>,
@@ -110,7 +110,7 @@
             demonstrating many of yt's capabilities.
           </p>
 
-          <p>
+          <p class="feature">
             But if you just want to dive in and start using yt, we have a long
             list of
             <a href="http://yt-project.org/doc/cookbook/index.html">recipes</a>
@@ -137,14 +137,14 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">Community:
               <span class="text-muted">yt's best feature.</span></h2></a>
-          <p>
+          <p class="feature">
             yt is a friendly community.  We like hearing about fun things you
             have done with the code, and we're happy to help you out if you
             have a question or some trouble.  You can join us in IRC, on the
             mailing lists, and if you'd like, you can check out how to
             <a href="#development"> develop, too</a>.
           </p>
-          <p>
+          <p class="feature">
             If you've got some code to share, or scripts that you'd like to
             share, start up a repo on <a href="http://bitbucket.org/">BitBucket
             </a> or share them on our <a href="http://paste.yt-project.org/">
@@ -158,11 +158,11 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette" id="development">
+      <a name="development"></a><div class="row featurette row_anchor" id="development">
         <div class="col-md-7">
           <h2 class="featurette-heading">Participatory
               <span class="text-muted"> development.</span></h2></a>
-          <p>
+          <p class="feature">
             If you're interested in getting started with helping out, the
             easiest way is to <a
             href="http://bitbucket.org/yt_analysis/yt/fork">Fork us
@@ -173,7 +173,7 @@
             development mailing list</a>.  yt is released under the 
             modified BSD License.
           </p>
-          <p>
+          <p class="feature">
             There are lots of <a
             href="http://yt-project.org/doc/developing/intro.html#technical-contributions">
             fun projects to work on</a>, along with some <a
@@ -195,7 +195,7 @@
 
       <!-- /END THE FEATURETTES -->
 
-      <a name="getyt"></a><div class="row" style="padding-top: 40px; margin-top: -40px;">
+      <a name="getyt"></a><div class="row row_anchor">
         <div class="col-md-5">
           <h1>Get yt:<span class="text-muted"> all-in-one script.</h1>
           <p class="lead">
