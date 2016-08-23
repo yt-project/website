@@ -82,7 +82,7 @@
         import yt
         ds = yt.load("HiresIsolatedGalaxy/DD0044/DD0044")
         yt.PhasePlot(ds.r[:], "density", "temperature", "cell_mass",
-                       weight_field=None).save()
+                     weight_field=None).save()
       image: DD0044_2d-Profile_density_temperature_cell_mass.png
 - category: Analysis
   entries:
