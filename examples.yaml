@@ -27,6 +27,23 @@
                      unit_system="imperial")
         slc = yt.SlicePlot(ds, 'z', "temperature", width=(600,"kpc"))
       image: sloshing_nomag2_hdf5_plt_cnt_0150_Slice_z_temperature.png
+    - name: Data Portability
+      id: data_portability
+      content: |
+        import yt
+        ds = yt.load("galaxy0030/galaxy0030")
+        sp = ds.sphere([0.5, 0.5, 0.5], (8, "kpc"))
+        sp.save_as_dataset("my_sphere.h5", ["density", "particle_mass"])
+        ds2 = yt.load("my_sphere.h5")
+        print (ds2.data["particle_mass"].to("Msun"))
+      output: |
+        [ 213975.58440381 
+          213975.58440381  
+          213975.58440381 
+          ...,  
+          102714.05991054
+          102857.70970906 
+          102981.94762343] Msun
 - category: Viz
   entries:
     - name: Slicing
