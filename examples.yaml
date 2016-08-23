@@ -72,7 +72,8 @@
       content: |
         import yt
         ds = yt.load("snipshot_399_z000p000/snip_399_z000p000.0.hdf5")
-        yt.ProfilePlot(ds.r[:], ("PartType0", "density"), ("PartType0", "temperature"),
+        yt.ProfilePlot(ds.r[:], ("PartType0", "density"),
+                       ("PartType0", "temperature"),
                        weight_field = ("PartType0", "particle_mass")).save()
       image: snip_399_z000p000_1d-Profile_density_temperature.png
     - name: Phase Plot
