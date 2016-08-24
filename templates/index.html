@@ -6,14 +6,14 @@
     <div class="container marketing">
       <div class="row">
         <div class="col-sm-3">
-          <object class="img-responsive" data="img/yt_logo.svg" type="image/svg+xml">
+          <object class="img-responsive" style="max-width:250px;margin:auto" data="img/yt_logo.svg" type="image/svg+xml">
               <img class="img-responsive" src="img/yt_logo.png" />
           </object>
         </div>
         <div class="col-sm-6">
           <p class="lead">yt is an open-source, permissively-licensed python
           package for analyzing and visualizing volumetric data.</p>
-          <p>yt supports structured, variable-resolution meshes
+          <p>yt supports structured, variable-resolution meshes,
           unstructured meshes, and discrete or sampled data such as particles.
           Focused on driving physically-meaningful inquiry, yt has been
           applied in domains such as astrophysics, seismology, nuclear
@@ -66,7 +66,7 @@
         {% for example in category['entries'] %}
         <div role="tabpanel" class="tab-pane{% if first_time and loop.first %} active{%endif%}" id="{{example['id']}}">
           <div class="row">
-          <div class="col-lg-7 yt_nopadding">
+          <div class="col-md-7 yt_nopadding">
             <pre class="yt_example"><code class="yt_example language-python">{{-example['content']-}}</code></pre>
               <div class="hidden-xs hidden-sm hidden-md arrow_glyph">
                 <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
@@ -75,7 +75,7 @@
                 <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
               </div>
           </div>
-          <div class="col-lg-5 yt_nopadding">
+          <div class="col-md-5 yt_nopadding">
             {% if 'image' in example %}
             <a href="{{url_prefix}}/img/{{example['image']}}" target="_blank">
               <img border=0 class="img-responsive yt_ex_image" src="{{url_prefix}}/img/examples/{{example['image']}}">
