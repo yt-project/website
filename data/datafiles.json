@@ -500,6 +500,13 @@
             "url": "http://yt-project.org/data/IsothermalCollapse.tar.gz"
         },
         {
+            "code": "Gadget 3",
+            "description": "FIXME",
+            "filename": "Gadget3-snap-format2",
+            "size": "37 MB",
+            "url": "http://yt-project.org/data/Gadget3-snap-format2.tar.gz"
+        },
+        {
             "code": "Gizmo",
             "description": "Cosmological hydro run with 16 comoving Mpc box, 128**3 particles, metals, cooling, etc.  Simulation includes param file and 20 outputs covering the redshift range z=0.1 to z=0.",
             "filename": "gizmo_cosmology_plus",
