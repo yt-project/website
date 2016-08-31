@@ -501,7 +501,7 @@
         },
         {
             "code": "Gadget 3",
-            "description": "FIXME",
+            "description": "Gadget snapshot with format 2. It contains a head block for each data block, in order of "HEAD", "POS ", "VEL ", "ID  ", "MASS", "U   ", "RHO ", "HSML", "SFR ", "AGE "."
             "filename": "Gadget3-snap-format2",
             "size": "37 MB",
             "url": "http://yt-project.org/data/Gadget3-snap-format2.tar.gz"
