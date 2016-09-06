@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/{{theme}}/bootstrap.min.css" rel="stylesheet">
-    <link href="css/local.css" rel="stylesheet">
+    <link href="{{url_prefix}}/css/local.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -21,7 +21,6 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="{{url_prefix}}carousel.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
     {% block custom_scripts %}
     {% endblock custom_scripts %}
@@ -36,7 +35,7 @@
              that when you modify it, so the changes get propagated.-->
         <!-- Be sure to modify the "active" item -->
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-default navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -48,7 +47,18 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li id="about"><a href="{{url_prefix}}about.html">About</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle"
+                              data-toggle="dropdown">About<b
+                              class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li id="about"><a href="{{url_prefix}}about.html">About</a></li>
+                    <li id="community"><a href="{{url_prefix}}community.html">Community</a></li>
+                    <li id="gallery"><a href="{{url_prefix}}gallery.html">Gallery</a></li>
+                    <li id="members"><a href="{{url_prefix}}members.html">Project Members</a></li>
+                  </ul>
+                </li>
+
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs<b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -57,10 +67,9 @@
                     <li><a href="http://yt-project.org/docs/2.6">Legacy (2.x)</a></li>
                   </ul>
                 </li>
-                <li id="community"><a href="{{url_prefix}}community.html">Community</a></li>
                 <li id="development"><a href="{{url_prefix}}development.html">Develop</a></li>
-                <li id="gallery"><a href="{{url_prefix}}gallery.html">Gallery</a></li>
-                <li id="members"><a href="{{url_prefix}}members.html">Project Members</a></li>
+                <li id="extensions"><a href="{{url_prefix}}extensions.html">Extensions</a></li>
+                <li id="hub"><a href="https://hub.yt/">Data Hub</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -99,21 +108,13 @@
     {% endblock content %}
 
     {% block footer %}
-      <!-- FOOTER -->
-      <footer>
-        <a href="http://www.numfocus.org">
-          <img width="150 px" class="pull-left", src="{{url_prefix}}img/numfocus-fsa.png" alt="yt is a NumFOCUS fiscally sponsored project">
-        </a>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <script type="text/javascript">
-          sc_project=3616111;
-          sc_invisible=1;
-          sc_partition=41;
-          sc_security="3865f346";
-        </script>
-        <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
-
-      </footer>
+      <script type="text/javascript">
+        sc_project=3616111;
+        sc_invisible=1;
+        sc_partition=41;
+        sc_security="3865f346";
+      </script>
+      <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
     {% endblock footer %}
 
     {% block corejs %}
@@ -124,36 +125,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="{{url_prefix}}holder.js"></script>
     <script type="text/javascript">
-      $('#myCarousel').carousel({interval:15000})
-
+    $(document).ready(function(){
       $('li#{{title}}').addClass('active');
+    });
     </script>
-    <style type="text/css">
-      #myCarousel {
-      width: 100%;
-      }
-      
-      .carousel-inner .item {
-      margin-top: 50px;
-      width: 100%;
-      height: 500px;
-      background-size: cover;
-      background-origin: content-box;
-      }
-
-      .im1 {
-      background: url(img/reion.jpg) no-repeat center center local;
-      }
-
-      .im2 {
-      background: url(img/kowalik.jpg) no-repeat center center local;
-      }
-      
-      .im3 {
-      background: url(img/richardson.jpg) no-repeat center center local;
-      }
-
-    </style>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -169,6 +144,8 @@
   })();
 
 </script>
+{% block customjs %}
+{% endblock customjs %}
 {% endblock corejs %}
   </body>
 </html>

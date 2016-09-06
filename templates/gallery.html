@@ -27,7 +27,7 @@
       {% if loopeven %}
       <div class="col-md-{{entry['textwidth']}}">
         <h2>{{entry['title']}}</h2>
-        <p class="lead">
+        <p>
         {{ entry['text'] }}
         {% set image_pull = "right" %}
         </p>
@@ -47,7 +47,7 @@
       {% if not loopeven %}
         <div class="col-md-{{entry['textwidth']}}">
           <h2>{{entry['title']}}</h2>
-          <p class="lead">
+          <p>
           {{ entry['text'] }}
           </p>
         </div>
@@ -74,7 +74,7 @@
         </div>
         <div class="row">
           <div class="col-md-{{entry['textwidth']}}">
-            <p class="lead">
+            <p>
             {{entry['text']}}
             </p>
           </div>

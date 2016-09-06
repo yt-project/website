@@ -3,103 +3,97 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide container ytCarousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item ytImage active im1">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Volumetric Data Analysis</h1>
-              <p>yt is a python package for analyzing and visualizing
-              volumetric, multi-resolution data from astrophysical simulations,
-              radio telescopes, and a burgeoning interdisciplinary community.</p>
-              <p><a class="btn btn-large btn-primary" href="#getyt">Get yt</a></p>
-            </div>
-          </div>
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-sm-3">
+          <object class="img-responsive" style="max-width:250px;margin:auto" data="img/yt_logo.svg" type="image/svg+xml">
+              <img class="img-responsive" src="img/yt_logo.png" />
+          </object>
         </div>
-        <div class="item ytImage im2">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Quantitative Analysis and Visualization</h1>
-              <p>yt is more than a visualization package: it is a tool to seamlessly handle
-              simulation output files to make analysis simple.  yt can easily
-              knit together volumetric data to investigate phase-space
-              distributions, averages, line integrals, streamline queries,
-              region selection, halo finding, contour identification,
-              surface extraction and more.</p>
-              <p><a class="btn btn-large btn-primary" href="#getyt">Get yt</a></p>
-            </div>
-          </div>
+        <div class="col-sm-6">
+          <p class="lead">yt is an open-source, permissively-licensed python
+          package for analyzing and visualizing volumetric data.</p>
+          <p>yt supports structured, variable-resolution meshes,
+          unstructured meshes, and discrete or sampled data such as particles.
+          Focused on driving physically-meaningful inquiry, yt has been
+          applied in domains such as astrophysics, seismology, nuclear
+          engineering, molecular dynamics, and oceanography.  Composed of a
+          friendly community of users and developers, we want to make it easy
+          to use and develop &mdash; we'd love it if you got involved!</p>
         </div>
-        <div class="item ytImage im3">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Many formats, one language</h1>
-              <p>
-                yt aims to provide a simple uniform way of handling volumetric
-                data, regardless of where it is generated. yt currently supports
-                FLASH, Enzo, Boxlib, Athena, arbitrary volumes, Gadget, Tipsy, ART, 
-                RAMSES and MOAB. If your data
-                isn't already supported, why not add it?
-              </p>
-              <p><a class="btn btn-large btn-primary" href="#getyt">Get yt</a></p>
-            </div>
+        <div class="col-sm-3">
+          <div class="glyph_container_button">
+            <a class="btn btn-lg btn-info btn-block" href="#getyt">
+                <span class="glyph_button glyphicon glyphicon-download"
+                  aria-hidden="true"></span>&nbsp;&nbsp;Get yt!</a><br/>
+          </div>
+          <div class="glyph_container_button">
+            <a class="btn btn-lg btn-success btn-block" href="https://use.yt/">
+                <span class="glyph_button glyphicon glyphicon-play-circle"
+                  aria-hidden="true"></span>&nbsp;&nbsp;Try yt!</a><br/>
           </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
-
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/logmagz_140.png" alt="Ji et al, arxiv/1302.5700">
-          <h2>Data-Driven</h2>
-          <p>
-            yt is designed to provide a consistent, cross-code interface to
-            analyzing and visualizing astrophysical simulation data from a
-            physical perspective.
-          </p>
-          <p><a class="btn btn-default" href="#learn">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/community_small_140.jpg" alt="Workshop picture">
-          <h2>Community</h2>
-          <p>
-            yt is composed of a friendly community of users and developers. We
-            want to make it easy to use and develop &mdash; we'd love it if you
-            got involved!
-          </p>
-          <p><a class="btn btn-default" href="#community">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/working_hard_140.jpg" alt="Developing">
-          <h2>Free Software</h2>
-            <p>
-              yt is developed completely in the open under a 3-clause BSD
-              license.  The developers are committed to open source practices
-              and fidelity of scientific results.
-            </p>
-          <p><a class="btn btn-default" href="#development">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
 
       <!-- START THE FEATURETTES -->
+
+    <div class="row">
+
+      <! -- Examples -->
+      <ul class="nav nav-tabs" role="tablist">
+        {% for category in examples %}
+        {% if loop.first %} {% set first_time = True %} {% endif %}
+        <li class="dropdown{% if loop.first %} active{%endif%}">
+          <a class="dropdown-toggle" data-toggle="dropdown"
+                                     href="#">{{category['category']}}<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          {% for example in category['entries'] %}
+          <li role="presentation" {% if first_time and loop.first %}class="active"{%endif%}>
+            <a href="#{{example['id']}}" aria-controls="{{example['id']}}" role="tab" data-toggle="tab">
+            {{example['name']}}</a>
+            </li>
+          {% endfor %}
+          {% set first_time = False %}
+          </ul>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="yt_example tab-content">
+        {% for category in examples %}
+        {% if loop.first %} {% set first_time = True %} {% endif %}
+        {% for example in category['entries'] %}
+        <div role="tabpanel" class="tab-pane{% if first_time and loop.first %} active{%endif%}" id="{{example['id']}}">
+          <div class="row">
+          <div class="col-md-7 yt_nopadding">
+            <pre class="yt_example"><code class="yt_example language-python">{{-example['content']-}}</code></pre>
+              <div class="hidden-xs hidden-sm hidden-md arrow_glyph">
+                <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+              </div>
+              <div class="visible-xs visible-sm arrow_glyph_down">
+                <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+              </div>
+          </div>
+          <div class="col-md-5 yt_nopadding">
+            {% if 'image' in example %}
+            <a href="{{url_prefix}}/img/{{example['image']}}" target="_blank">
+              <img border=0 class="img-responsive yt_ex_image" src="{{url_prefix}}/img/examples/{{example['image']}}">
+            </a>
+            {% elif 'output' in example %}
+            <pre><code class="img-responsive yt_example language-python">{{-example['output']-}}
+
+            </code></pre>
+            {% endif %}
+          </div>
+          </div>
+        </div>
+        {% endfor %}
+        {% set first_time = False %}
+        {% endfor %}
+      </div>
+
+    </div>
 
       <hr class="featurette-divider">
 
@@ -107,7 +101,7 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">Learn:
               <span class="text-muted"> getting started.</span></h2>
-          <p class="lead">
+          <p class="feature">
             To get started using yt to explore data, we provide resources
             including <a href="http://yt-project.org/doc/">documentation</a>,
             <a href="http://yt-project.org/workshop2012/">workshop material</a>,
@@ -116,7 +110,7 @@
             demonstrating many of yt's capabilities.
           </p>
 
-          <p class="lead">
+          <p class="feature">
             But if you just want to dive in and start using yt, we have a long
             list of
             <a href="http://yt-project.org/doc/cookbook/index.html">recipes</a>
@@ -143,14 +137,14 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">Community:
               <span class="text-muted">yt's best feature.</span></h2></a>
-          <p class="lead">
+          <p class="feature">
             yt is a friendly community.  We like hearing about fun things you
             have done with the code, and we're happy to help you out if you
             have a question or some trouble.  You can join us in IRC, on the
             mailing lists, and if you'd like, you can check out how to
             <a href="#development"> develop, too</a>.
           </p>
-          <p class="lead">
+          <p class="feature">
             If you've got some code to share, or scripts that you'd like to
             share, start up a repo on <a href="http://bitbucket.org/">BitBucket
             </a> or share them on our <a href="http://paste.yt-project.org/">
@@ -164,11 +158,11 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette" id="development">
+      <a name="development"></a><div class="row featurette row_anchor" id="development">
         <div class="col-md-7">
           <h2 class="featurette-heading">Participatory
               <span class="text-muted"> development.</span></h2></a>
-          <p class="lead">
+          <p class="feature">
             If you're interested in getting started with helping out, the
             easiest way is to <a
             href="http://bitbucket.org/yt_analysis/yt/fork">Fork us
@@ -179,7 +173,7 @@
             development mailing list</a>.  yt is released under the 
             modified BSD License.
           </p>
-          <p class="lead">
+          <p class="feature">
             There are lots of <a
             href="http://yt-project.org/doc/developing/intro.html#technical-contributions">
             fun projects to work on</a>, along with some <a
@@ -201,7 +195,7 @@
 
       <!-- /END THE FEATURETTES -->
 
-      <a name="getyt"></a><div class="row">
+      <a name="getyt"></a><div class="row row_anchor">
         <div class="col-md-5">
           <h1>Get yt:<span class="text-muted"> all-in-one script.</h1>
           <p class="lead">
@@ -213,9 +207,14 @@
             host operating system.
           </p>
           <p class="lead">
+            If you use yt in a publication, we request that you please consider
+            citing <a href="http://adsabs.harvard.edu/abs/2011ApJS..192....9T">our method paper</a>
+            (<a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2011ApJS..192....9T&data_type=BIBTEX&db_key=AST&nocookieset=1">BibTeX</a>).
+          </p>
+          <p class="lead">
             Usually getting yt is as simple as running the installation script.
-            Simply download the legacy, stable, or development version of the
-            install script and run it.  You can do this using <span
+            Simply download the install script and run it.  You can do this 
+            using <span
               class="yt_code">wget</span> or <span class="yt_code">curl</span>,
             or even just right click and choose <b>Save As</b>.  Carefully read
             the instructions the script prints to your terminal since there
@@ -223,9 +222,7 @@
           </p>
 
           <p class="text-center">
-            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-info" href="http://bitbucket.org/yt_analysis/yt/raw/yt-2.x/doc/install_script.sh">Legacy (2.x)</a><br/>
-            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-success" href="http://bitbucket.org/yt_analysis/yt/raw/stable/doc/install_script.sh">Stable</a><br/>
-            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-warning" href="http://bitbucket.org/yt_analysis/yt/raw/yt/doc/install_script.sh">Development</a><br/>
+            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-warning" href="http://bitbucket.org/yt_analysis/yt/raw/yt/doc/install_script.sh">Download</a><br/>
           </p>
 
           <p class="lead" style="margin-top:20px;">Once you've downloaded it, just run:</p>
@@ -235,7 +232,7 @@
           </div>
           <p class="lead">where YT_DEST will be the folder created by the install script containing a yt installation  (usually <span class="yt_code">yt-conda</span>).</p>
         </div>
-        <div class="col-md-offset-2 col-md-5">
+        <div class="col-md-offset-1 col-md-6">
           <h1>Get yt:<span class="text-muted"> using conda.</h1>
           <p class="lead">
             If you use
@@ -288,3 +285,54 @@
 
     </div><!-- /.container -->
 {% endblock content %}
+{% block footer %}
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2">
+              <a href="http://www.nsf.gov/"><img src="img/nsf1.gif"
+                                                 width="150 px"
+                                                 alt="nsf logo"></a>
+            </div>
+            <div class="col-lg-2">
+              <a href="https://moore.org/"><img
+                 src="img/moore-logo.png" width="150 px" alt="GBMF logo"></a>
+            </div>
+            <div class="col-lg-2">
+              <a href="http://www.numfocus.org">
+                <img width="150 px" src="img/numfocus-fsa.png" alt="yt is a NumFOCUS fiscally sponsored project">
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <small><p>
+              yt has benefited from work supported by the National Science
+              Foundation under Grant No.
+              <a
+                href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1535651">1535651</a>
+              (<a
+                href="https://figshare.com/articles/SI2_SSE_yt_Reusable_Components_for_Simulating_Analyzing_and_Visualizing_Astrophysical_Systems/909413">proposal</a>).
+              It has also benefited from work supported by the Gordon and Betty
+              Moore Foundation's Data-Driven Discovery Initiative through Grant
+              GBMF4561 to Matthew Turk.</p>
+              <p>yt is a fiscally-sponsored project of <a
+                href="http://numfocus.org/">NumFOCUS</a>.
+              </p></small>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script type="text/javascript">
+        sc_project=3616111;
+        sc_invisible=1;
+        sc_partition=41;
+        sc_security="3865f346";
+      </script>
+      <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+{% endblock footer %}
+{% block customjs %}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/atom-one-light.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();
+</script>
+{% endblock customjs %}
