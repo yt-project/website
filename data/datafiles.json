@@ -463,6 +463,22 @@
             "url": "http://yt-project.org/data/output_00101.tar.gz"
         }
     ],
+    "openPMD frontend": [
+        {
+            "code": "openPMD",
+            "description": "2D test dataset",
+            "filename": "example-2d",
+            "size": "12 MB",
+            "url": "http://yt-project.org/data/example-2d.tar.gz"
+        },
+        {
+            "code": "openPMD",
+            "description": "3D test dataset",
+            "filename": "example-3d",
+            "size": "13 MB",
+            "url": "http://yt-project.org/data/example-3d.tar.gz"
+        }
+    ],
     "sph frontend": [
         {
             "code": "Gadget (Eagle)",
