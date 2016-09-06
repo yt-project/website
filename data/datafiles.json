@@ -339,6 +339,13 @@
             "filename": "WaveDarkMatter",
             "size": "333 MB",
             "url": "http://yt-project.org/data/WaveDarkMatter.tar.gz"
+        },
+        {
+            "code": "GAMER",
+            "description": "Plummer model with both gas and particles",
+            "filename": "Plummer",
+            "size": "23 MB",
+            "url": "http://yt-project.org/data/Plummer.tar.gz"
         }
     ],
     "gdf frontend": [
