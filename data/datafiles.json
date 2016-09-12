@@ -437,7 +437,7 @@
 	{
             "code": "RAMSES",
             "description": "Non cosmological isolated galaxy disk dataset containing gas and particles, set up with boxlen != 1. Generated using the <a href=\"https://bitbucket.org/vperret/dice\">DICE code</a>",
-            "filename": "ramses_nonCosmological",
+            "filename": "DICEGalaxyDisk_nonCosmological",
             "size": "415 MB",
             "url": "yt-project.org/data/DICEGalaxyDisk_nonCosmological.tar.gz"
         },
