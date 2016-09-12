@@ -434,6 +434,13 @@
             "size": "250 MB",
             "url": "http://yt-project.org/data/output_00080.tar.gz"
         },
+	{
+            "code": "RAMSES",
+            "description": "Non cosmological isolated galaxy disk dataset containing gas and particles, set up with boxlen != 1. Generated using the <a href=\"https://bitbucket.org/vperret/dice\">DICE code</a>",
+            "filename": "ramses_nonCosmological",
+            "size": "415 MB",
+            "url": "http://yt-project.org/data/DICEGalaxyDisk_nonCosmological.tar.gz"
+        },
         {
             "code": "RAMSES",
             "description": "Isolated galaxy disk dataset containing gas and particles, set up with boxlen != 1. Generated using the <a href=\"https://bitbucket.org/vperret/dice\">DICE code</a>. Unzips to 663 MB.",
