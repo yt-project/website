@@ -524,7 +524,7 @@
         },
         {
             "code": "Gadget",
-            "description": "Rotating isothermal sphere collapse test. Includes both gadget binary and HDF5 format files. 'UnitLength_in_cm': 5.0e16, 'UnitMass_in_g': 1.98992e33, 'UnitVelocity_in_cm_per_s': 46385.190, bounding_box = [[-3, 3], [-3, 3], [-3, 3]]",
+            "description": "Rotating isothermal sphere collapse test. Includes both gadget binary and HDF5 format files. Load following \"ds = yt.load(unit_base={'UnitLength_in_cm': 5.0e16, 'UnitMass_in_g': 1.98992e33, 'UnitVelocity_in_cm_per_s': 46385.190}, bounding_box = [[-3, 3], [-3, 3], [-3, 3]])\"",
             "filename": "IsothermalCollapse",
             "size": "8.8 MB",
             "url": "http://yt-project.org/data/IsothermalCollapse.tar.gz"
