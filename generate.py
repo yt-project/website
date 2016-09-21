@@ -41,21 +41,23 @@ def gallery():
     return {'entries': entries}
 
 name_mappings = {
-        # Sometimes things get filtered out by hgchurn pointing elsewhere.
-        # So we can add them back in manually
-        "andrew.wetzel@yale.edu" : "Andrew Wetzel",
-        "df11c@my.fsu.edu": "Daniel Fenn",
-        "dnarayan@haverford.edu": "Desika Narayanan",
-        "jmtomlinson95@gmail.com": "Joseph Tomlinson",
-        "kaylea.nelson@yale.edu": "Kaylea Nelson",
-        "tabel@slac.stanford.edu": "Tom Abel",
-        "pshriwise": "Patrick Shriwise",
-        "jnaiman": "Jill Naiman",
-        "gsiisg": "Geoffrey So",
-        "dcollins4096@gmail.com": "David Collins",
-        "bcrosby": "Brian Crosby",
-        "astrugarek": "Antoine Strugarek",
-        "AJ": "Allyson Julian",
+    # Sometimes things get filtered out by hgchurn pointing elsewhere.
+    # So we can add them back in manually
+    "andrew.wetzel@yale.edu" : "Andrew Wetzel",
+    "df11c@my.fsu.edu": "Daniel Fenn",
+    "dnarayan@haverford.edu": "Desika Narayanan",
+    "jmtomlinson95@gmail.com": "Joseph Tomlinson",
+    "kaylea.nelson@yale.edu": "Kaylea Nelson",
+    "tabel@slac.stanford.edu": "Tom Abel",
+    "pshriwise": "Patrick Shriwise",
+    "jnaiman": "Jill Naiman",
+    "gsiisg": "Geoffrey So",
+    "dcollins4096@gmail.com": "David Collins",
+    "bcrosby": "Brian Crosby",
+    "astrugarek": "Antoine Strugarek",
+    "AJ": "Allyson Julian",
+    "stonnes": "Stephanie Tonnesen",
+    "RicardaBeckmann": "Ricarda Beckmann"
 }
 
 name_ignores = ["convert-repo"]
@@ -78,7 +80,8 @@ def about():
         c = hglib.clone("https://bitbucket.org/yt_analysis/yt", repo_path)
         c = hglib.open(repo_path)
     emails = set([])
-    for dev in c.rawcommand(cmd).split("\n"):
+    cmd = [cd.encode('utf8') for cd in cmd]
+    for dev in c.rawcommand(cmd).decode('utf-8').split("\n"):
         if len(dev.strip()) == 0: continue
         emails.add(dev.rsplit(None, 2)[0])
     print("Generating real names for {0} emails".format(len(emails)))
@@ -94,14 +97,12 @@ def about():
             print("Error finding {0}".format(email))
             realname = email
         else:
-            realname, addr = parseaddr(cset[0][4])
+            realname, addr = parseaddr(cset[0][4].decode('utf-8'))
         if realname == '':
             realname = email
         if realname in name_mappings:
             names.add(name_mappings[realname])
             continue
-        realname = realname.decode('utf-8')
-        realname = realname.encode('ascii', 'xmlcharrefreplace')
         names.add(realname)
     devs = list(names)
     devs.sort(key=lastname_sort)
@@ -139,6 +140,8 @@ def main():
         context.update(setup_func())
         with open(out_name, "w") as f:
             html = render_template(template_name, context)
+            if sys.version_info.major < 3:
+                html = html.encode('utf8')
             f.write(html)
 
 if __name__ == "__main__":
