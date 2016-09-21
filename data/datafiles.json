@@ -235,11 +235,11 @@
             "filename": "MOOSE_sample_data",
             "size": "536 MB",
             "url": "http://yt-project.org/data/MOOSE_Sample_data.tar.gz"
-        }
+        },
         {
             "code": "MOOSE",
             "description": "A MOOSE simulation with data on second order triangular elements.",
-            "filename": "SecondOrderTris"
+            "filename": "SecondOrderTris",
             "size": "79 kB",
             "url": "http://yt-project.org/data/SecondOrderTris.tar.gz"
         }
