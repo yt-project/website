@@ -31,3 +31,12 @@
     yt plots and datasets.
   import_as: yt.extensions.viewyt
   contact: Austin Gilbert
+- name: ytree
+  url: http://ytree.readthedocs.io
+  description: |
+    A merger-tree code with yt-style syntax for loading data and field
+    access. ytree can create merger-trees from Gadget FoF/Subfind catalogs,
+    either for all or just a specific set of halos, and can load data from
+    consistent-trees and Rockstar catalogs.
+  import_as: ytree
+  contact: Britton Smith
