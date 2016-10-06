@@ -242,6 +242,13 @@
             "filename": "SecondOrderTris",
             "size": "79 kB",
             "url": "http://yt-project.org/data/SecondOrderTris.tar.gz"
+        },
+        {
+            "code": "MOOSE",
+            "description": "MOOSE simulation with data on second order tetrahedral elements.",
+            "filename": "SecondOrderTets",
+            "size": "124 kB",
+            "url": "http://yt-project.org/data/SecondOrderTets.tar.gz"
         }
     ],
     "fits frontend": [
@@ -441,7 +448,7 @@
             "size": "250 MB",
             "url": "http://yt-project.org/data/output_00080.tar.gz"
         },
-	{
+        {
             "code": "RAMSES",
             "description": "Non cosmological isolated galaxy disk dataset containing gas and particles, set up with boxlen != 1. Generated using the <a href=\"https://bitbucket.org/vperret/dice\">DICE code</a>",
             "filename": "DICEGalaxyDisk_nonCosmological",
