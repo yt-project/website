@@ -496,7 +496,7 @@
     "simulationio frontend": [
         {
             "code": "Einstein Toolkit",
-            "description": "Einstein Toolkit's example datasets",
+            "description": "Two data sets containing initial data for a single neutron star and one data set containing a binary black hole system mid in-spiral.",
             "filename": "CompactObjects",
             "size": "1.9 GB",
             "url": "http://yt-project.org/data/CompactObjects.tar.gz"
