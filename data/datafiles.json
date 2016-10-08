@@ -441,7 +441,7 @@
             "size": "250 MB",
             "url": "http://yt-project.org/data/output_00080.tar.gz"
         },
-	{
+        {
             "code": "RAMSES",
             "description": "Non cosmological isolated galaxy disk dataset containing gas and particles, set up with boxlen != 1. Generated using the <a href=\"https://bitbucket.org/vperret/dice\">DICE code</a>",
             "filename": "DICEGalaxyDisk_nonCosmological",
@@ -491,6 +491,15 @@
             "filename": "example-3d",
             "size": "13 MB",
             "url": "http://yt-project.org/data/example-3d.tar.gz"
+        }
+    ],
+    "simulationio frontend": [
+        {
+            "code": "Einstein Toolkit",
+            "description": "Einstein Toolkit's example datasets",
+            "filename": "CompactObjects",
+            "size": "1.9 GB",
+            "url": "http://yt-project.org/data/CompactObjects.tar.gz"
         }
     ],
     "sph frontend": [
