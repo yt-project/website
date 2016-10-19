@@ -337,6 +337,13 @@
             "filename": "fiducial_1to3_b1",
             "size": "555 MB",
             "url": "http://yt-project.org/data/fiducial_1to3_b1.tar.gz"
+        },
+        {
+            "code": "FLASH",
+            "description": "An example FLASH 2.5 dataset",
+            "filename": "DensTurbMag",
+            "size": "1.6 MB",
+            "url": "http://yt-project.org/data/DensTurbMag.tar.gz"
         }
     ],
     "gamer frontend": [
