@@ -242,6 +242,13 @@
             "filename": "SecondOrderTris",
             "size": "79 kB",
             "url": "http://yt-project.org/data/SecondOrderTris.tar.gz"
+        },
+        {
+            "code": "MOOSE",
+            "description": "MOOSE simulation with data on second order tetrahedral elements.",
+            "filename": "SecondOrderTets",
+            "size": "124 kB",
+            "url": "http://yt-project.org/data/SecondOrderTets.tar.gz"
         }
     ],
     "fits frontend": [
