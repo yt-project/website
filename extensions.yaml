@@ -1,3 +1,11 @@
+- name: ytini
+  url: http://www.ytini.com/
+  image: ytini_logo_horizontal_left.png
+  description: |
+    ytini is set of tools and tutorials for using yt as a tool inside the 3D visual effects software Houdini 
+    or a data pre-processor externally to Houdini.
+  import_as: vdbyt
+  contact: Jill Naiman
 - name: Trident
   url: http://trident-project.org/
   image: trident_logo_blackbg.png
