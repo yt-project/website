@@ -61,27 +61,45 @@
         <tr><th>Auxiliary Data Files</th><th>Size (mb)</th><th>Description</th><th>Link</th></tr>
       </thead>
       <tbody>
-        <tr><td>cloudy_emissivity</td>
+        <tr><td>cloudy_emissivity (v. 2)</td>
             <td>2.1 MB</td>
             <td>X-ray emissivity tables created
             with <a href="http://www.nublado.org/">Cloudy</a>
-            (for a photoionized plasma) and used for creating x-ray emissivity and
-            luminosity fields.</td>
+            (for a photoionized plasma), used for creating X-ray fields. Identical
+            to v. 1 except that emissivity is per keV instead of per Hz, and the file contains
+	    the edges of the energy bins.</td>
+            <td><a href="http://yt-project.org/data/cloudy_emissivity_v2.h5">download</a></td>
+        </tr>
+        <tr><td>apec_emissivity (v. 2)</td>
+            <td>243 KB</td>
+            <td>X-ray emissivity tables created
+            with <a href="http://www.atomdb.org/">AtomDB</a>
+            (for a collisionally ionized plasma), used for creating X-ray fields. Identical
+	    to v. 1 except that emissivity is per keV instead of per Hz, the file contains
+            the edges of the energy bins, and the grid of temperatures has more values.</td>
+            <td><a href="http://yt-project.org/data/apec_emissivity_v2.h5">download</a></td>
+        </tr>
+        <tr><td>cloudy_emissivity (v. 1)</td>
+            <td>2.1 MB</td>
+            <td>X-ray emissivity tables created
+            with <a href="http://www.nublado.org/">Cloudy</a>
+            (for a photoionized plasma) and used for creating X-ray fields. Calculated 
+	    with Cloudy 13 rc1 on 12/10/2012.</td>
             <td><a href="http://yt-project.org/data/cloudy_emissivity.h5">download</a></td>
         </tr>
-        <tr><td>apec_emissivity</td>
+        <tr><td>apec_emissivity (v. 1)</td>
             <td>197 KB</td>
             <td>X-ray emissivity tables created
             with <a href="http://www.atomdb.org/">AtomDB</a>
-            (for a collisionally ionized plasma) and used for creating x-ray emissivity
-            and luminosity fields.</td>
+            (for a collisionally ionized plasma) and used for creating X-ray fields.
+            Calculated with APEC v2.0.2 on 06/24/2014.</td>
             <td><a href="http://yt-project.org/data/apec_emissivity.h5">download</a></td>
         </tr>
         <tr><td>xray_data</td>
             <td>30 MB</td>
             <td>Various data tables and response files for use with
-            the X-ray Photon
-            Simulator Analysis Module.</td>
+            the X-ray Photon Simulator Analysis Module, which has been deprecated. These 
+	    files are also deprecated.</td>
             <td><a href="http://yt-project.org/data/xray_data.tar.gz">download</a></td>
         </tr>
         <tr><td>owls_ion_data</td>
