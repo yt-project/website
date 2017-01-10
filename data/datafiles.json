@@ -265,6 +265,13 @@
             "filename": "SecondOrderTets",
             "size": "124 kB",
             "url": "http://yt-project.org/data/SecondOrderTets.tar.gz"
+        },
+        {
+            "code": "MOOSE",
+            "description": "A selection of MOOSE datasets used for testing.",
+            "filename": "ExodusII_tests",
+            "size": "723 kB",
+            "url": "http://yt-project.org/data/ExodusII_tests.tar.gz"
         }
     ],
     "fits frontend": [
