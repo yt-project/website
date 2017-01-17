@@ -249,6 +249,13 @@
             "filename": "SecondOrderTets",
             "size": "124 kB",
             "url": "http://yt-project.org/data/SecondOrderTets.tar.gz"
+        },
+        {
+            "code": "MOOSE",
+            "description": "MOOSE example data for visualizing a single variable on multiple mesh blocks.",
+            "filename": "MultiRegion",
+            "size": "5.3 kB",
+            "url": "http://yt-project.org/data/MultiRegion.tar.gz"
         }
     ],
     "fits frontend": [
