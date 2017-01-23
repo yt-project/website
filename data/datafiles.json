@@ -497,7 +497,7 @@
             "description": "Non cosmological isolated galaxy disk dataset containing gas and particles, set up with boxlen != 1. Generated using the <a href=\"https://bitbucket.org/vperret/dice\">DICE code</a>",
             "filename": "DICEGalaxyDisk_nonCosmological",
             "size": "415 MB",
-            "url": "yt-project.org/data/DICEGalaxyDisk_nonCosmological.tar.gz"
+            "url": "http://yt-project.org/data/DICEGalaxyDisk_nonCosmological.tar.gz"
         },
         {
             "code": "RAMSES",
@@ -526,7 +526,15 @@
             "filename": "output_00101",
             "size": "400 MB",
             "url": "http://yt-project.org/data/output_00101.tar.gz"
-        }
+        },
+	{
+	    "code": "RAMSES",
+	    "description": "DM + hydro run, unzip to 1.1G with extra particle fields (temperature + family)",
+	    "filename": "ramses_extra_fields",
+	    "size": "220 MB",
+	    "url": "http://yt-project.org/data/ramses_extra_fields.tar.gz"
+	}
+
     ],
     "openPMD frontend": [
         {
