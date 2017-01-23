@@ -106,6 +106,13 @@
             "size": "1.8 GB",
             "url": "http://yt-project.org/data/maestro_xrb_lores_23437.tar.gz"
         },
+	{
+             "code": "Nyx",
+             "description": "Tiny Nyx dataset",
+             "filename": "nyx_small",
+             "size": "0.1 MB",
+             "url": "http://yt-project.org/data/nyx_small.tar.gz"
+	},
         {
             "code": "Nyx",
             "description": "Example Nyx dataset",
