@@ -108,10 +108,10 @@
         },
         {
             "code": "Nyx",
-            "description": "Tiny Nyx dataset",
-            "filename": "nyx_small",
-            "size": "0.1 MB",
-            "url": "http://yt-project.org/data/nyx_small.tar.gz"
+            "description": "Example Nyx dataset",
+            "filename": "Nyx_LyA",
+            "size": "5.1 MB",
+            "url": "http://yt-project.org/data/Nyx_LyA.tar.gz"
         },
         {
             "code": "Orion",
@@ -133,6 +133,20 @@
             "filename": "StarParticles",
             "size": "12 MB",
             "url": "http://yt-project.org/data/StarParticles.tar.gz"
+        }
+        {
+            "code": "WarpX",
+            "description": "A WarpX dataset with only one particle species",
+            "filename": "LangmuirWave",
+            "size": "41 MB",
+            "url": "http://yt-project.org/data/LangmuirWave.tar.gz"
+        }
+        {
+            "code": "WarpX",
+            "description": "A WarpX dataset with two particle species",
+            "filename": "PlasmaAcceleration",
+            "size": "6.4 MB",
+            "url": "http://yt-project.org/data/PlasmaAcceleration.tar.gz"
         }
     ],
     "chombo frontend": [
