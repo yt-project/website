@@ -140,14 +140,14 @@
             "filename": "StarParticles",
             "size": "12 MB",
             "url": "http://yt-project.org/data/StarParticles.tar.gz"
-        }
+        },
         {
             "code": "WarpX",
             "description": "A WarpX dataset with only one particle species",
             "filename": "LangmuirWave",
             "size": "41 MB",
             "url": "http://yt-project.org/data/LangmuirWave.tar.gz"
-        }
+        },
         {
             "code": "WarpX",
             "description": "A WarpX dataset with two particle species",
