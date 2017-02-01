@@ -86,6 +86,13 @@
             "url": "http://yt-project.org/data/castro_sedov_2d_cyl_in_cart_plt00150.tar.gz"
         },
         {
+            "code": "Castro",
+            "description": "3 levels, 2-d dataset, contains particles",
+            "filename": "RT_particles.tar.gz",
+            "size": "232 kb",
+            "url": "http://yt-project.org/data/RT_particles.tar.gz"
+        },
+        {
             "code": "Maestro",
             "description": "sub-chandra problem, 3-d dataset, spherical base state, 2 levels",
             "filename": "maestro_subCh_plt00248",
