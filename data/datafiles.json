@@ -296,6 +296,13 @@
         },
         {
             "code": "MOOSE",
+            "description": "MOOSE simulation with data on second order quadrilateral elements.",
+            "filename": "SecondOrderQuads",
+            "size": "166 kB",
+            "url": "http://yt-project.org/data/SecondOrderQuads.tar.gz"
+        },
+        {
+            "code": "MOOSE",
             "description": "A selection of MOOSE datasets used for testing.",
             "filename": "ExodusII_tests",
             "size": "723 kB",
