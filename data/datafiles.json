@@ -651,7 +651,7 @@
             "description": "Gadget snapshot with binary format 2, BigEndian encoding",
             "filename": "BigEndianGadgetBinary",
             "size": "723 MB",
-            "url": "http://yt-project.org/data/BigEndianGadgetBinary"
+            "url": "http://yt-project.org/data/BigEndianGadgetBinary.tar.gz"
         },
         {
             "code": "Gizmo",
