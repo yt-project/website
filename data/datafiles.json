@@ -641,10 +641,17 @@
         },
         {
             "code": "Gadget 3",
-            "description": "Gadget snapshot using binary format 2",
+            "description": "Gadget snapshot with binary format 2",
             "filename": "Gadget3-snap-format2",
             "size": "37 MB",
             "url": "http://yt-project.org/data/Gadget3-snap-format2.tar.gz"
+        },
+        {
+            "code": "Gadget 3",
+            "description": "Gadget snapshot with binary format 2, BigEndian encoding",
+            "filename": "BigEndianGadgetBinary",
+            "size": "723 MB",
+            "url": "http://yt-project.org/data/BigEndianGadgetBinary"
         },
         {
             "code": "Gizmo",
