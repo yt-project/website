@@ -100,8 +100,8 @@
             "url": "http://yt-project.org/data/maestro_subCh_plt00248.tar.gz"
         },
         {
-            "code": "Maestro",
-            "description": "AMD Sedov-taylor blast in spherical geometry.",
+            "code": "Castro",
+            "description": "AMR 1-d Sedov-taylor blast in spherical geometry.",
             "filename": "sedov_1d_sph_plt00120",
             "size": "17 kb",
             "url": "http://yt-project.org/data/sedov_1d_sph_plt00120.tar.gz"
@@ -126,6 +126,13 @@
             "filename": "Nyx_LyA",
             "size": "5.1 MB",
             "url": "http://yt-project.org/data/Nyx_LyA.tar.gz"
+        },
+        {
+            "code": "Nyx",
+            "description": "Nyx pure hydro (no particles) dataset",
+            "filename": "nyx_sedov_plt00086",
+            "size": "3.6 MB",
+            "url": "http://yt-project.org/data/nyx_sedov_plt00086.tgz"
         },
         {
             "code": "Orion",
