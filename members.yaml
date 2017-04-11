@@ -59,6 +59,12 @@
     of continuous integration infrastructure and documentation deployment.
 - name: Sam Leitner
   since: 2014
+- name: Alex Lindsay
+  since: 2016
+  content: >
+    Alex is focused on expanding yt support of unstructured mesh visualization,
+    particularly for Exodus datasets which are the default file output of the
+    finite element code MOOSE.
 - name: Chris Malone
   since: 2014
   content: >
