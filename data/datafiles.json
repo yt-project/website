@@ -683,7 +683,7 @@
         },
         {
             "code": "Gasoline",
-            "description": "Cosmology output",
+            "description": "DM-only Cosmology output",
             "filename": "agora_1e11.00400",
             "size": "277 MB",
             "url": "http://yt-project.org/data/agora_1e11.00400.tar.gz"
@@ -696,18 +696,32 @@
             "url": "http://yt-project.org/data/halo1e11_run1.00400.tar.gz"
         },
         {
-            "code": "Tipsy",
+            "code": "Gasoline",
             "description": "Tipsy isolated galaxy dataset",
             "filename": "TipsyGalaxy",
             "size": "11 MB",
             "url": "http://yt-project.org/data/TipsyGalaxy.tar.gz"
         },
         {
-            "code": "Tipsy",
+            "code": "Gasoline",
             "description": "Tipsy datasets with auxiliary files",
             "filename": "TipsyAuxiliary",
             "size": "39 MB",
             "url": "http://yt-project.org/data/TipsyAuxiliary.tar.gz"
+        },
+        {
+            "code": "Gasoline",
+            "description": "Medium size Tipsy dataset with auxiliary files",
+            "filename": "medium_tipsy",
+            "size": "184 MB",
+            "url": "http://yt-project.org/data/medium_tipsy.tar.gz"
+        },
+        {
+            "code": "Gasoline",
+            "description": "Big Tipsy dataset with auxiliary files",
+            "filename": "big_tipsy",
+            "size": "1.4 GB",
+            "url": "http://yt-project.org/data/big_tipsy.tar.gz"
         }
     ]
 }
