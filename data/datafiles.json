@@ -168,6 +168,13 @@
             "filename": "PlasmaAcceleration",
             "size": "6.4 MB",
             "url": "http://yt-project.org/data/PlasmaAcceleration.tar.gz"
+        },
+        {
+            "code": "WarpX",
+            "description": "A WarpX dataset with node-centered fields",
+            "filename": "Laser",
+            "size": "1.7 MB",
+            "url": "http://yt-project.org/data/Laser.tar.gz"
         }
     ],
     "chombo frontend": [
