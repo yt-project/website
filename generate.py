@@ -58,8 +58,8 @@ def about():
     else:
         import tempfile
         repo_path = tempfile.mkdtemp()
-        repo = git.Repo(repo_path)
-        repo.clone('https://github.com/yt-project/yt')
+        repo = git.Repo.clone_from(
+            'https://github.com/yt-project/yt', repo_path)
     devs = set()
     shortlog = repo.git.shortlog('-ns').split('\n')
     repo.close()
