@@ -60,7 +60,6 @@ def about():
         repo_path = tempfile.mkdtemp()
         repo = git.Repo.clone_from(
             'https://github.com/yt-project/yt', repo_path)
-    devs = set()
     shortlog = repo.git.shortlog('-ns').split('\n')
     repo.close()
     devs = set([sl.split('\t')[1] for sl in shortlog])
