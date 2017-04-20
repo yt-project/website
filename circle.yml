@@ -10,4 +10,4 @@ deployment:
   push_to_server:
     branch: master
     commands:
-			- rsync -avu --progress --exclude=.hg --exclude=generate.py --exclude=*.yaml . yt_analysis@dickenson.dreamhost.com:/tmp/yt-project.org/
+      - rsync -avu --progress --exclude=.hg --exclude=generate.py --exclude=*.yaml . yt_analysis@dickenson.dreamhost.com:/tmp/yt-project.org/
