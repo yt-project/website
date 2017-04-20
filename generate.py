@@ -3,7 +3,7 @@ import yaml
 import os
 import sys
 from jinja2 import Environment, FileSystemLoader
-import hglib
+
 PATH = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_ENVIRONMENT = Environment(
     autoescape=False,
@@ -14,6 +14,8 @@ try:
     import pkg_resources
     yt_provider = pkg_resources.get_provider("yt")
     yt_path = os.path.dirname(yt_provider.module_path)
+    if not os.path.exists(os.sep.join([yt_path, '.git'])):
+        yt_path = None
 except ImportError:
     yt_path = None
 
@@ -40,73 +42,31 @@ def gallery():
     entries = yaml.load(open("gallery.yaml", "r"))
     return {'entries': entries}
 
-name_mappings = {
-    # Sometimes things get filtered out by hgchurn pointing elsewhere.
-    # So we can add them back in manually
-    "andrew.wetzel@yale.edu" : "Andrew Wetzel",
-    "df11c@my.fsu.edu": "Daniel Fenn",
-    "dnarayan@haverford.edu": "Desika Narayanan",
-    "jmtomlinson95@gmail.com": "Joseph Tomlinson",
-    "kaylea.nelson@yale.edu": "Kaylea Nelson",
-    "tabel@slac.stanford.edu": "Tom Abel",
-    "pshriwise": "Patrick Shriwise",
-    "jnaiman": "Jill Naiman",
-    "gsiisg": "Geoffrey So",
-    "dcollins4096@gmail.com": "David Collins",
-    "bcrosby": "Brian Crosby",
-    "astrugarek": "Antoine Strugarek",
-    "AJ": "Allyson Julian",
-    "stonnes": "Stephanie Tonnesen",
-    "RicardaBeckmann": "Ricarda Beckmann"
-}
-
 name_ignores = ["convert-repo"]
 
-lastname_sort = lambda a: a.rsplit(None, 1)[-1]
+def lastname_sort(a):
+    return a.rsplit(None, 1)[-1]
 
 @page('about')
 def about():
     # Uncomment for rapid dev
     if "--fast" in sys.argv:
         return {'developers': []}
-    import hglib
-    from email.utils import parseaddr
-    cmd = hglib.util.cmdbuilder("--config", "extensions.churn=", "churn", "-c")
+    import git
     if yt_path:
-        c = hglib.open(yt_path)
+        repo = git.Repo(yt_path)
     else:
         import tempfile
         repo_path = tempfile.mkdtemp()
-        c = hglib.clone("https://bitbucket.org/yt_analysis/yt", repo_path)
-        c = hglib.open(repo_path)
-    emails = set([])
-    cmd = [cd.encode('utf8') for cd in cmd]
-    for dev in c.rawcommand(cmd).decode('utf-8').split("\n"):
-        if len(dev.strip()) == 0: continue
-        emails.add(dev.rsplit(None, 2)[0])
-    print("Generating real names for {0} emails".format(len(emails)))
-    names = set([])
-    for email in sorted(emails):
-        if email in name_ignores:
-            continue
-        if email in name_mappings:
-            names.add(name_mappings[email])
-            continue
-        cset = c.log(revrange="last(author('%s'))" % email)
-        if len(cset) == 0:
-            print("Error finding {0}".format(email))
-            realname = email
-        else:
-            realname, addr = parseaddr(cset[0][4].decode('utf-8'))
-        if realname == '':
-            realname = email
-        if realname in name_mappings:
-            names.add(name_mappings[realname])
-            continue
-        names.add(realname)
-    devs = list(names)
-    devs.sort(key=lastname_sort)
-    return {'developers': devs}
+        repo = git.Repo(repo_path)
+        repo.clone('https://github.com/yt-project/yt')
+    devs = set()
+    shortlog = repo.git.shortlog('-ns').split('\n')
+    repo.close()
+    devs = set([sl.split('\t')[1] for sl in shortlog])
+    for name in name_ignores:
+        devs.discard(name)
+    return {'developers': sorted(devs, key=lastname_sort)}
 
 @page('community')
 def community():
