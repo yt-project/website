@@ -9,5 +9,5 @@ add it to gallery.yaml at the top.
 To add a new member, add to members.yaml.
 
 To generate the website, run generate.py.  This requires a yt to be installed
-from its mercurial repository directory, and it additionally requires hglib,
+from its git repository directory, and it additionally requires gitpython,
 pyyaml and jinja2 to be installed.
