@@ -1,8 +1,8 @@
 FROM continuumio/miniconda
 
 COPY . /srv/website
-RUN conda install -qy jinja2 mercurial
-RUN pip install python-hglib
+RUN conda install -qy jinja2 git
+RUN pip install gitpython
 WORKDIR /srv/website
 RUN python generate.py
 
