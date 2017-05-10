@@ -1,3 +1,16 @@
+- title: Ram Pressure Stripping of Galaxies in Clusters
+  textwidth: 7
+  imagewidth: 5
+  text: >
+    In <a href="http://adsabs.harvard.edu/abs/2017MNRAS.468.4107R">Ruggiero
+    & Lima Neto (2017)</a>, the authors used yt to do all the analysis
+    and visualization of their data. This figure shows gas density
+    projections of a Milky Way like galaxy falling into a galaxy cluster
+    with different entry speeds, for the case where the cluster has
+    a cool-core (first three rows) or does not have a cool-core (last
+    three rows).
+  images:
+    - img/gallery/ruggiero_gaseousdisks.jpg
 - title: NeuroDome
   textwidth: 6
   imagewidth: 6
@@ -208,16 +221,3 @@
     chemically-homogeneous star-forming gas.
   images:
     - img/gallery/richardson.jpg
-- title: Ram Pressure Stripping of Galaxies in Clusters
-  textwidth: 7
-  imagewidth: 5
-  text: >
-    In <a href="http://adsabs.harvard.edu/abs/2017MNRAS.468.4107R">Ruggiero
-    & Lima Neto (2017)</a>, the authors used yt to do all the analysis
-    and visualization of their data. This figure shows gas density
-    projections of a Milky Way like galaxy falling into a galaxy cluster
-    with different entry speeds, for the case where the cluster has
-    a cool-core (first three rows) or does not have a cool-core (last
-    three rows).
-  images:
-    - img/gallery/ruggiero_gaseousdisks.jpg
