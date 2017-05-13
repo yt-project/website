@@ -90,6 +90,10 @@ def extensions():
     extensions = yaml.load(open("extensions.yaml", "r"))
     return {'extensions': extensions}
 
+@page('slack')
+def slack():
+    return {}
+
 def main():
     for name in sorted(pages):
         setup_func, template_name = pages[name]
