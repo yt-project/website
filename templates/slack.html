@@ -1,20 +1,18 @@
 {% extends "base_withsignup.html" %}
 {% block content %}
-    <div class="container">
-      <div class="row yt-package">
-        <h1>Join yt Project on Slack.</h1>
-        <form role="form" data-async data-target="#myModal" id="signupForm">
-          <div class="form-group">
-            <label for="email">Your Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email">
-          </div>
-          <div class="form-group">
-            <label for="name">Your Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-          </div>
-          <div id="success"> </div> <!-- For success/fail messages -->
-          <input type="submit" value="Sign up" class="btn btn-info btn-block">
-        </form>
+  <div class="container">
+    <div class="row yt-package">
+      <div class="col-md-offset-2 col-md-8">
+         <h2>Thank you for signing up!</h2>
+         <h3>You should receive confirmation email shortly.</h3>
       </div>
-    </div><!-- /.container -->
+    </div>
+  </div>
 {% endblock content %}
+{% block auxjs %}
+<script type="text/javascript">
+   $(window).on('load', function() {
+      $('#myModal').modal('show');
+   });
+</script>
+{% endblock auxjs %}
