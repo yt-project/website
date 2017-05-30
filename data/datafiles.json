@@ -259,6 +259,13 @@
         },
         {
             "code": "Enzo",
+            "description": "Deeply nested Enzo dataset with 40 levels of AMR",
+            "filename": "DeeplyNestedZoom",
+            "size": "1.5 GB",
+            "url": "http://yt-project.org/data/DeeplyNestedZoom.tar.gz"
+        },
+        {
+            "code": "Enzo",
             "description": "Enzo 3.0 dataset including CenOstriker active particles as well as dark matter particles",
             "filename": "ActiveParticleCosmology",
             "size": "73 MB",
@@ -446,6 +453,13 @@
             "filename": "WaveDarkMatter",
             "size": "333 MB",
             "url": "http://yt-project.org/data/WaveDarkMatter.tar.gz"
+        },
+        {
+            "code": "GAMER",
+            "description": "Galaxy cluster merger simulation with a large number of grid objects",
+            "filename": "ClusterMerger",
+            "size": "3.3 GB",
+            "url": "http://yt-project.org/data/ClusterMerger.tar.gz"
         },
         {
             "code": "GAMER",
