@@ -266,6 +266,13 @@
         },
         {
             "code": "Enzo",
+            "description": "MHDCT time series, includes face-centered fields",
+            "filename": "MHDCTOrszagTang",
+            "size": "170 kB",
+            "url": "http://yt-project.org/data/MHDCTOrszagTang.tar.gz"
+        },
+        {
+            "code": "Enzo",
             "description": "Enzo 3.0 dataset including CenOstriker active particles as well as dark matter particles",
             "filename": "ActiveParticleCosmology",
             "size": "73 MB",
@@ -288,7 +295,7 @@
         {
             "code": "Enzo",
             "description": "2D Kelvin-Helmholtz test",
-            "filename": "EnzoKelvinHelmholtz.tar.gz",
+            "filename": "EnzoKelvinHelmholtz",
             "size": "4.3 MB",
             "url": "http://yt-project.org/data/EnzoKelvinHelmholtz.tar.gz"
         }
