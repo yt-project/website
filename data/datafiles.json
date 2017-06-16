@@ -600,6 +600,13 @@
             "url": "http://yt-project.org/data/ramses_mhd_amr.tar.gz"
         },
         {
+            "code": "RAMSES-RT",
+            "description": "Dataset containing RT fields",
+            "filename": "ramses_rt_00088",
+            "size": "617 MB",
+            "url": "http://yt-project.org/data/ramses_rt_00088.tar.gz"
+        },
+        {
             "code": "RAMSES",
             "description": "DM only cosmology output, unzips to 813 MB",
             "filename": "output_00101",
