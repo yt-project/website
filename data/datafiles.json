@@ -309,7 +309,7 @@
             "url": "http://yt-project.org/data/hello-0200.tar.gz"
         }
     ],
-    "exodus ii frontend": [
+    "exodus_ii frontend": [
         {
             "code": "MOOSE",
             "description": "A selection of MOOSE simulation outputs using a variety of element types.",
