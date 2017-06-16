@@ -300,6 +300,15 @@
             "url": "http://yt-project.org/data/EnzoKelvinHelmholtz.tar.gz"
         }
     ],
+    "enzo_p frontend": [
+        {
+            "code": "Enzo-P",
+            "description": "A dataset from a 2D simulation of a high-pressure region shaped like the word \"Hi\".",
+            "filename": "hello-0200",
+            "size": "166 MB",
+            "url": "http://yt-project.org/data/hello-0200.tar.gz"
+        }
+    ],
     "exodus ii frontend": [
         {
             "code": "MOOSE",
