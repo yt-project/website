@@ -625,7 +625,7 @@
 	    "description": "Hydro run, unzip to 26MB with extra particle fields (temperature + family)",
 	    "filename": "ramses_extra_fields_small",
 	    "size": "15 MB",
-	    "url": "http://yt-project.org/data/ramses_custom_fields.tar.gz"
+	    "url": "http://yt-project.org/data/ramses_extra_fields_small.tar.gz"
 	}
     ],
     "openPMD frontend": [
