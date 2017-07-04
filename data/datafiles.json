@@ -1,13 +1,4 @@
 {
-    "ahf frontend": [
-        {
-            "code": "AHF",
-            "description": "Halos found using AHF (AMIGA Halo Finder) for dataset gizmo_64",
-            "filename": "ahf_halos",
-            "size": "59 MB",
-            "url": "http://yt-project.org/data/ahf_halos.tar.gz"
-        }
-    ],
     "art frontend": [
         {
             "code": "NMSU-ART",
@@ -511,6 +502,13 @@
         }
     ],
     "halo_catalog frontends": [
+        {
+            "code": "AHF",
+            "description": "Halos found using AHF (AMIGA Halo Finder) for dataset gizmo_64",
+            "filename": "ahf_halos",
+            "size": "59 MB",
+            "url": "http://yt-project.org/data/ahf_halos.tar.gz"
+        },
         {
             "code": "Gadget FOF",
             "description": "300 halo catalogs with halo member IDs made using inline FOF/SUBFIND in a Gadget N-body simulation.  Can be used for experimenting with merger trees.",
