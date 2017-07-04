@@ -1,4 +1,13 @@
 {
+    "ahf frontend": [
+        {
+            "code": "AHF",
+            "description": "Halos found using rockstar halo finder for dataset gizmo_64",
+            "filename": "ahf_halos",
+            "size": "59 MB",
+            "url": "http://yt-project.org/data/ahf_halos.tar.gz"
+        }
+    ],
     "art frontend": [
         {
             "code": "NMSU-ART",
