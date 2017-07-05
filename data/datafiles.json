@@ -160,7 +160,7 @@
             "description": "A WarpX dataset with only one particle species",
             "filename": "LangmuirWave",
             "size": "41 MB",
-            "url": "http://yt-project.org/data/LangmuirWave.tar.gz"
+            "url": "http://yt-project.org/data/LangmuirWave_v2.tar.gz"
         },
         {
             "code": "WarpX",
