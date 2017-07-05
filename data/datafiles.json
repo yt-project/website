@@ -176,6 +176,13 @@
             "size": "1.7 MB",
             "url": "http://yt-project.org/data/Laser.tar.gz"
         }
+        {
+            "code": "WarpX",
+            "description": "A WarpX dataset with mesh refinement",
+            "filename": "GaussianBeam",
+            "size": "6.2 MB",
+            "url": "http://yt-project.org/data/GaussianBeam.tar.gz"
+        }
     ],
     "chombo frontend": [
         {
