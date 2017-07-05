@@ -167,7 +167,7 @@
             "description": "A WarpX dataset with two particle species",
             "filename": "PlasmaAcceleration",
             "size": "6.4 MB",
-            "url": "http://yt-project.org/data/PlasmaAcceleration.tar.gz"
+            "url": "http://yt-project.org/data/PlasmaAcceleration_v2.tar.gz"
         },
         {
             "code": "WarpX",
