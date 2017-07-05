@@ -175,7 +175,7 @@
             "filename": "Laser",
             "size": "1.7 MB",
             "url": "http://yt-project.org/data/Laser.tar.gz"
-        }
+        },
         {
             "code": "WarpX",
             "description": "A WarpX dataset with mesh refinement",
