@@ -160,14 +160,14 @@
             "description": "A WarpX dataset with only one particle species",
             "filename": "LangmuirWave",
             "size": "41 MB",
-            "url": "http://yt-project.org/data/LangmuirWave.tar.gz"
+            "url": "http://yt-project.org/data/LangmuirWave_v2.tar.gz"
         },
         {
             "code": "WarpX",
             "description": "A WarpX dataset with two particle species",
             "filename": "PlasmaAcceleration",
             "size": "6.4 MB",
-            "url": "http://yt-project.org/data/PlasmaAcceleration.tar.gz"
+            "url": "http://yt-project.org/data/PlasmaAcceleration_v2.tar.gz"
         },
         {
             "code": "WarpX",
@@ -175,6 +175,13 @@
             "filename": "Laser",
             "size": "1.7 MB",
             "url": "http://yt-project.org/data/Laser.tar.gz"
+        },
+        {
+            "code": "WarpX",
+            "description": "A WarpX dataset with mesh refinement",
+            "filename": "GaussianBeam",
+            "size": "6.2 MB",
+            "url": "http://yt-project.org/data/GaussianBeam.tar.gz"
         }
     ],
     "chombo frontend": [
