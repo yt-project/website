@@ -314,6 +314,13 @@
             "filename": "hello-0200",
             "size": "166 MB",
             "url": "http://yt-project.org/data/hello-0200.tar.gz"
+        },
+        {
+            "code": "Enzo-P",
+            "description": "The initial dataset from a 3D simulation of a collapsing tophat with both particles and gas.",
+            "filename": "collapse-3d-0000",
+            "size": "108 MB",
+            "url": "http://yt-project.org/data/collapse-3d-0000.tar.gz"
         }
     ],
     "exodus_ii frontend": [
