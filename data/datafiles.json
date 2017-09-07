@@ -640,6 +640,13 @@
 	    "filename": "ramses_extra_fields_small",
 	    "size": "15 MB",
 	    "url": "http://yt-project.org/data/ramses_extra_fields_small.tar.gz"
+	},
+	{
+	    "code": "RAMSES",
+	    "description": "Hydro run with stars and black holes (sink).",
+	    "filename": "ramses_sink_00016",
+	    "size": "3.9 MB",
+	    "url": "http://yt-project.org/data/ramses_sink_00016.tar.gz"
 	}
     ],
     "openPMD frontend": [
