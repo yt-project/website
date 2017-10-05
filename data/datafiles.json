@@ -725,6 +725,13 @@
             "url": "http://yt-project.org/data/IsothermalCollapse.tar.gz"
         },
         {
+            "code": "Gadget",
+            "description": "Keplerian ring test. HDF5 output that does not contain cosmological flags in header.",
+            "filename": "KeplerianRing",
+            "size": "1.5 MB",
+            "url": "http://yt-project.org/data/KeplerianRing.tar.gz"
+        },
+        {
             "code": "Gadget 3",
             "description": "Gadget snapshot with binary format 2",
             "filename": "Gadget3-snap-format2",
