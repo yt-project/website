@@ -654,6 +654,13 @@
 	    "filename": "ramses_sink_00016",
 	    "size": "3.9 MB",
 	    "url": "http://yt-project.org/data/ramses_sink_00016.tar.gz"
+	},
+	{
+	    "code": "RAMSES",
+	    "description": "RAMSES run with particle output format from version > stable_17_09.",
+	    "filename": "ramses_new_format",
+	    "size": "5.5 MB",
+	    "url": "http://yt-project.org/data/ramses_new_format.tar.gz"
 	}
     ],
     "openPMD frontend": [
