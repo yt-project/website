@@ -659,7 +659,7 @@
 	    "code": "RAMSES",
 	    "description": "RAMSES run with particle output format from version > stable_17_09.",
 	    "filename": "ramses_new_format",
-	    "size": "7.5 MB",
+	    "size": "4.4 MB",
 	    "url": "http://yt-project.org/data/ramses_new_format.tar.gz"
 	}
     ],
