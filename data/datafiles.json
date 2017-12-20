@@ -661,6 +661,13 @@
 	    "filename": "ramses_new_format",
 	    "size": "4.4 MB",
 	    "url": "http://yt-project.org/data/ramses_new_format.tar.gz"
+	},
+	{
+	    "code": "RAMSES",
+	    "description": "RAMSES run with star formation and sinks.",
+	    "filename": "ramses_star_formation",
+	    "size": "231 MB",
+	    "url": "http://yt-project.org/data/ramses_star_formation.tar.gz"
 	}
     ],
     "openPMD frontend": [
