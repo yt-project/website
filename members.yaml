@@ -5,6 +5,9 @@
     have been to the ART frontend and she is currently the ART code liason.
 - name: Corentin Cadiou
   since: 2017
+  content: >
+    Corentin has been a yt project developer since 2017. He has been involved in
+    maintaining and improving RAMSES' frontend.
 - name: Brian Crosby
   since: 2016
 - name: Bili Dong
@@ -140,4 +143,4 @@
   content: >
     John has been a developer since 2010, and has been involved with developing
     the FLASH, Athena, and FITS frontends, as well as a number of analysis
-    modules pertaining to simulated observations. 
+    modules pertaining to simulated observations.
