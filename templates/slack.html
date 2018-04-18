@@ -1,18 +1,13 @@
 {% extends "base_withsignup.html" %}
 {% block content %}
-  <div class="container">
-    <div class="row yt-package">
-      <div class="col-md-offset-2 col-md-8">
-         <h2>Thank you for signing up!</h2>
-         <h3>You should receive confirmation email shortly.</h3>
-      </div>
-    </div>
+  <div class="slack_signup_container">
+    <button type="button" style="display:none;" id="slackSign"></button>
   </div>
 {% endblock content %}
 {% block auxjs %}
 <script type="text/javascript">
-   $(window).on('load', function() {
-      $('#myModal').modal('show');
+  $(window).on('load', function() {
+    $("#slackSign").click();
    });
 </script>
 {% endblock auxjs %}
