@@ -6,7 +6,7 @@
   $("#slack").click(function(event) {
     $.ajax({
       type: "GET",
-      url: "http://use.yt/slack_signup",
+      url: "https://use.yt/slack_signup",
       success: function(data, status) {
         window.location.href = JSON.parse(data).url;
       },
