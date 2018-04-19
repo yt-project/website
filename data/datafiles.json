@@ -784,7 +784,7 @@
             "code": "Gizmo",
             "description": "One snapshot of a low resolution idealized MW MHD run after 500 Myr of evolution. Could be loaded with a bounding box of [-400, 400] kpc.",
             "filename": "gizmo_mhd_mwdisk",
-            "size": "92 MB",
+            "size": "69 MB",
             "url": "http://yt-project.org/data/gizmo_mhd_mwdisk.tar.gz"
         },
         {
