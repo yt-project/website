@@ -184,6 +184,15 @@
             "url": "http://yt-project.org/data/GaussianBeam.tar.gz"
         }
     ],
+    "cf radial frontend": [
+        {
+            "code": "cf/radial",
+            "description": "A Cartesian 3D Gridded Cf/Radial RADAR dataset",
+            "filename": "CfRadialGrid",
+            "size": "20 MB",
+            "url": "http://yt-project.org/data/CfRadialGrid.tar.gz"
+        }
+    ],
     "chombo frontend": [
         {
             "code": "Orion 2",
