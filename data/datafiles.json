@@ -749,10 +749,17 @@
         },
         {
             "code": "SWIFT",
-            "description": "Keplerian ring test. Output is in the Gadget HDF5 output format. Does not contain cosmological flags in header.",
+            "description": "Keplerian ring test. Output is in HDF5 output format. Does not contain cosmological flags in header.",
             "filename": "KeplerianRing",
-            "size": "1.5 MB",
+            "size": "765 kB",
             "url": "http://yt-project.org/data/KeplerianRing.tar.gz"
+        },
+        {
+            "code": "SWIFT",
+            "description": "Small cosmological volume from the EAGLE suite of simulations. This contains cosmological flags.",
+            "filename": "EAGLE_6",
+            "size": "70.5 MB",
+            "url": "http://yt-project.org/data/EAGLE_6.tar.gz"
         },
         {
             "code": "Gadget 3",
