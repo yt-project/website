@@ -844,6 +844,13 @@
             "filename": "big_tipsy",
             "size": "1.4 GB",
             "url": "http://yt-project.org/data/big_tipsy.tar.gz"
+        },
+        {
+            "code": "Arepo",
+            "description": "Arepo dataset of a head-on galaxy cluster merger",
+            "filename": "ArepoBullet",
+            "size": "770 MB",
+            "url": "http://yt-project.org/data/ArepoBullet.tar.gz"
         }
     ]
 }
