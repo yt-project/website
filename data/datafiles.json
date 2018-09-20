@@ -1,4 +1,13 @@
 {
+    "arepo frontend": [
+        {
+            "code": "Arepo",
+            "description": "Arepo dataset of a head-on galaxy cluster merger",
+            "filename": "ArepoBullet",
+            "size": "770 MB",
+            "url": "http://yt-project.org/data/ArepoBullet.tar.gz"
+        }
+    ],
     "art frontend": [
         {
             "code": "NMSU-ART",
