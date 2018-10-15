@@ -1,3 +1,16 @@
+- title: Standing Accretion Shock Instability Spiral Wave in a Core-Collapse Supernova Simulations
+  textwidth: 7
+  imagewidth: 5
+  text: >
+    In <a href="http://adsabs.harvard.edu/abs/2018ApJ...865...81O">O'Connor
+    & Couch (2018)</a>, the authors used yt for the visualization of their data. 
+    This figure, a volume rendering of entropy near the gain region of a
+    core-collapse supernova, shows the multidimensional hydrodynamic instabilities
+    at work.  Both turbulence and the standing accretion shock instability
+    (the spiral wave wrapping around from the left) aid the neutrino mechanism
+    in reviving the stalled shock.
+  images:
+    - img/gallery/CCSN_in_FLASH.png
 - title: Ram Pressure Stripping of Galaxies in Clusters
   textwidth: 7
   imagewidth: 5
