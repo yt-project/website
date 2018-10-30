@@ -588,7 +588,7 @@
     ],
     "other datasets": [
         {
-            "code": "Genric",
+            "code": "Generic",
             "description": "Two datasets of uniformly gridded fields in HDF5 and one in a FITS file.",
             "filename": "UnigridData",
             "size": "1.6 GB",
@@ -600,6 +600,13 @@
             "filename": "test_outputs",
             "size": "534 MB",
             "url": "http://yt-project.org/data/test_outputs.tar.gz"
+        },
+        {
+            "code": "Generic",
+            "description": "This dataset is from the NASA Global Modeling and Assimilation Office. It is a snapshot from 0900 on August 22, 2018.",
+            "filename": "geos",
+            "size": "2.1 GB",
+            "url": "http://yt-project.org/data/geos.tar.gz"
         }
     ],
     "ramses frontend": [
