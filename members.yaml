@@ -84,6 +84,11 @@
     users for lab-related codes.
 - name: Madicken Munk
   since: 2018
+  content: >
+    Madicken has been working with yt since 2017. Her contributions to yt have
+    included adding support for georeferenced data and building the frontend 
+    the discrete ordinates code Denovo. Madicken is interested in building 
+    further support for nuclear engineering simulation codes. 
 - name: Andrew Myers
   since: 2014
   content: >
