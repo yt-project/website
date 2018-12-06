@@ -570,6 +570,15 @@
             "url": "http://yt-project.org/data/rockstar_halos.tar.gz"
         }
     ],
+    "ytree frontend": [
+        {
+            "code": "ytree",
+            "description": "A small merger tree created using the Rockstar halo finder and consistent-trees merger tree code, then converted to the ytree format.",
+            "filename": "arbor",
+            "size": "5 MB",
+            "url": "http://yt-project.org/data/arbor.tar.gz"
+        }
+    ]
     "moab frontend": [
         {
             "code": "Moab",
