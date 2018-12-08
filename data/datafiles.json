@@ -467,6 +467,13 @@
         },
         {
             "code": "FLASH",
+            "description": "MHD simulation in 3-D cylindrical coordinates",
+            "filename": "MHD_Cyl3d_hdf5_plt_cnt_0100",
+            "size": "44 MB",
+            "url": "http://yt-project.org/data/MHD_Cyl3d_hdf5_plt_cnt_0100.tar.gz"
+        },
+        {
+            "code": "FLASH",
             "description": "A dark matter particle-only dataset of two galaxy clusters merging",
             "filename": "fiducial_1to3_b1",
             "size": "555 MB",
