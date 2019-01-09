@@ -85,6 +85,10 @@ def development():
 def data():
     return {'url_prefix':'../'}
 
+@page('workshops/spring2019/index')
+def data():
+    return {'url_prefix':'../../'}
+
 @page('extensions')
 def extensions():
     extensions = yaml.load(open("extensions.yaml", "r"))
