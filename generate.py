@@ -85,6 +85,10 @@ def development():
 def data():
     return {'url_prefix':'../'}
 
+@page('workshops/spring2019/index')
+def data():
+    return {'url_prefix':'../../'}
+
 @page('extensions')
 def extensions():
     extensions = yaml.load(open("extensions.yaml", "r"))
@@ -98,6 +102,9 @@ def main():
     for name in sorted(pages):
         setup_func, template_name = pages[name]
         out_name = os.path.join(".", template_name)
+        dir_name = os.path.dirname(out_name)
+        if not os.path.isdir(dir_name):
+            os.makedirs(dir_name)
         context = {'theme': 'flatly', 'title': name,
                    'url_prefix': ''}
         context.update(setup_func())
