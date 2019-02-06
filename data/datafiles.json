@@ -876,6 +876,13 @@
             "filename": "big_tipsy",
             "size": "1.4 GB",
             "url": "http://yt-project.org/data/big_tipsy.tar.gz"
+        },
+        {
+            "code": "Gizmo",
+            "description": "One z=2 snapshot of a cosmological hydro run with 50 comoving Mpc box, 512^3 particles.",
+            "filename": "SimbaExample",
+            "size": "14 GB",
+            "url": "http://yt-project.org/data/SimbaExample.tar.gz"
         }
     ]
 }
