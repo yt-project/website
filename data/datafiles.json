@@ -323,6 +323,13 @@
             "filename": "EnzoKelvinHelmholtz",
             "size": "4.3 MB",
             "url": "http://yt-project.org/data/EnzoKelvinHelmholtz.tar.gz"
+        },
+        {
+            "code": "Enzo",
+            "description": "A high redshift cosmological simulation with non-zero Omega_radiation cosmology.",
+            "filename": "PopIII_mini",
+            "size": "290 MB",
+            "url": "http://yt-project.org/data/PopIII_mini.tar.gz"
         }
     ],
     "enzo_p frontend": [
