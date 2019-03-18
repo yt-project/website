@@ -85,6 +85,10 @@ def development():
 def data():
     return {'url_prefix':'../'}
 
+@page('news/2019-03-18-ytworkshop')
+def news():
+    return {'url_prefix':'../'}
+
 @page('workshops/spring2019/index')
 def data():
     return {'url_prefix':'../../'}

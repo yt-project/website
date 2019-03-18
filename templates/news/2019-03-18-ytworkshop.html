@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+
+      <div class="row yt-package">
+      </div>
+      <div class="row yt-package">
+        <div class="col-md-offset-2 col-md-8">
+          <h1>Development Workshop - Spring 2019</h1>
+          <h5>March 18, 2019</h5>
+          <p class="lead">
+            A <a href="http://yt-project.org/workshops/spring2019/">development 
+                workshop</a> 
+            for yt was held on March 4-6 2019 at the National 
+            Center for Supercomputing Applications at the University of Illinois 
+            at Urbana-Champaign. The workshop had contributors from a variety 
+            of backgrounds and experience levels, ultimately ending in \____ 
+            pull requests opened (and sometimes even merged)!
+          </p>
+          <p class="lead">
+            The workshop began with duelling breakout groups, one addressing 
+            identifying barriers to the yt 4.0 branch getting merged into the 
+            master development branch and the other introducing the git/github 
+            workflow of the yt project for new contributors. Over the next 
+            several days, attendees identified projects that they wanted to 
+            work on and other developers with whom they wanted to work. 
+            Some of the topics included: resolving clump finding errors, 
+            collaboration on interactive data visualization tools, gradient 
+            calculation of AMR data, and creating a new cf-compliant frontend.
+          </p>
+          <p class="lead">
+            Some additional developments for the yt-project that 
+            occured at the workshop included conversations about the 
+            yt-project governance structure and project management. To that end, 
+            the yt repo itself now has
+            <a href="https://github.com/yt-project/yt/projects/">
+                projects in the projects tab</a> on github, a revised
+            set of 
+            <a href="https://github.com/yt-project/yt/labels">labels</a> 
+            for issues and PRs, and two new bots to help with the day-to-day operations on github. 
+          </p>
+          <p class="lead">
+            Thank you to the participants in the yt workshop, both local and 
+            remote! We're already looking forward to the next workshop! 
+          </p>
+        </div>
+      </div>
+
+      <div class="row yt-package">
+        <h2>List of Pull Requests</h2>
+        <p class="lead">
+          <li><a href="https://github.com/yt-project/yt/pull/2194">Deprecate smoothed fields</a></li>
+          <li><a href="https://github.com/yt-project/yt/pull/2181">Adding a welcomebot config</a></li>
+          <li><a href="https://github.com/yt-project/yt/pull/2184">Escape astrisk in pep8speaks</a></li>
+          <li><a href="https://github.com/yt-project/yt/pull/2175">Fix projection units</a></li>
+          <li><a href="https://github.com/yt-project/yt/pull/2167">Update docs and code comments on loading SPH data in stream frontend</a></li>
+          <li><a href="https://github.com/yt-project/yt/pull/2168">Vendor cykdtree</a></li>
+          <li><a href="https://github.com/yt-project/yt/pull/2169">Fix show/hide colorbar for Phase Plots</a></li>
+          <li><a href="https://github.com/yt-project/yt/pull/2170">Set max value in contour finder to be max value in clump finder</a></li>
+        </p>
+      </div>
+
+      <div class="row yt-package">
+        <h2>Other Achievements</h2>
+        <p class="lead">
+          <li>Updated the ytep <a href="https://ytep.readthedocs.io/en/master/">readthedocs</a> to build on the correct branch</li>
+          <li>Created a welcome bot. Example of a welcome <a href="https://github.com/yt-project/yt/pull/2184">here</a></li>
+          <li>Created a triage bot to ensure all new issues get triaged <a href="https://github.com/yt-project/yt/issues/2198">illustrative issue</a></li>
+          <li>Github projects started for yt-project repository <a href="https://github.com/yt-project/yt/projects">link</a></li>
+        </p>
+      </div>
+
+    </div>
+{% endblock content %}
