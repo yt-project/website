@@ -891,5 +891,14 @@
             "size": "14 GB",
             "url": "http://yt-project.org/data/SimbaExample.tar.gz"
         }
+    ],
+    "ytdata frontend": [
+        {
+            "code": "yt",
+            "description": "Testing datasets made with the save_as_dataset command.",
+            "filename": "ytdata_test",
+            "size": "1.7 MB",
+            "url": "http://yt-project.org/data/ytdata_test.tar.gz"
+        }
     ]
 }
