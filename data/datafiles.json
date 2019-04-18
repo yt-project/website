@@ -9,7 +9,7 @@
         },
         {
             "code": "Arepo",
-            "description": "Cut-out of a galaxy cluster halo from the TNG300 simulation, including gas, DM, stars, and black holes. The center of the cluster is at [48669.34, 53984.04, 62114.90] in code_length.",
+            "description": "Cut-out of a galaxy cluster halo from the TNG300 simulation, including gas, DM, and stars. The center of the cluster is at [48669.34, 53984.04, 62114.90] in code_length.",
             "filename": "TNGHalo",
             "size": "1012 MB",
             "url": "http://yt-project.org/data/TNGHalo.tar.gz"
