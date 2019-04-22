@@ -27,7 +27,16 @@ jobs:
       - run:
           command: |
             mkdir -p /tmp/generated_website
-            rsync -au --exclude=.git* --exclude=generate.py --exclude=*.yaml --exclude=venv . /tmp/generated_website/
+            rsync -au \
+              --exclude=.git* \
+              --exclude=generate.py \
+              --exclude=templates \
+              --exclude requirements.txt \
+              --exclude=*.yaml \
+              --exclude=venv \
+              --exclude=.circleci \
+              --exclude=Dockerfile \
+              . /tmp/generated_website/
       - store_artifacts:
           path: /tmp/generated_website
       - add_ssh_keys:
