@@ -42,6 +42,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "d2:b4:cd:6e:b3:5d:0e:b0:44:7c:12:59:62:ae:37:d8"
+      - run: echo $REMOTE_HOSTKEY >> ~/.ssh/known_hosts
       - run:
           name: Deploy to Dreamhost
           command: |
