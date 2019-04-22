@@ -1,0 +1,43 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.7
+        environment:
+           TZ: "America/Chicago"
+    steps:
+      - checkout
+      - restore_cache:
+          key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
+      - run:
+          name: Install Python deps in a venv
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install -r requirements.txt
+      - save_cache:
+          key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
+          paths:
+            - "venv"
+      - run:
+          command: |
+            . venv/bin/activate
+            python generate.py
+      - run: sudo apt-get install -qyy rsync
+      - run:
+          command: |
+            mkdir -p /tmp/generated_website
+            rsync -au --exclude=.git* --exclude=generate.py --exclude=*.yaml --exclude=venv . /tmp/generated_website/
+      - store_artifacts:
+          path: /tmp/generated_website
+      - add_ssh_keys:
+          fingerprints:
+            - "d2:b4:cd:6e:b3:5d:0e:b0:44:7c:12:59:62:ae:37:d8"
+      - run:
+          name: Deploy to Dreamhost
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              rsync -avce ssh /tmp/generated_website/ yt_analysis@dickenson.dreamhost.com:yt-project.org/
+            else
+              echo "Not master branch, dry run only"
+            fi
