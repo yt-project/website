@@ -668,6 +668,13 @@
 	    "filename": "ramses_star_formation",
 	    "size": "231 MB",
 	    "url": "http://yt-project.org/data/ramses_star_formation.tar.gz"
+	},
+	{
+	    "code": "RAMSES",
+	    "description": "Isolated galaxy with empty records (mass_sph). Unzips to 330M.",
+	    "filename": "ramses_empty_record",
+	    "size": "164 MB",
+	    "url": "http://yt-project.org/data/ramses_empty_record.tar.gz"
 	}
     ],
     "openPMD frontend": [
