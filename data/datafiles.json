@@ -636,14 +636,14 @@
         },
 	{
 	    "code": "RAMSES",
-	    "description": "DM + hydro run, unzip to 1.1G with extra particle fields (temperature + family)",
+	    "description": "DM + hydro run, unzips to 1.1G with extra particle fields (temperature + family)",
 	    "filename": "ramses_extra_fields",
 	    "size": "220 MB",
 	    "url": "http://yt-project.org/data/ramses_extra_fields.tar.gz"
 	},
 	{
 	    "code": "RAMSES",
-	    "description": "Hydro run, unzip to 26MB with extra particle fields (temperature + family)",
+	    "description": "Hydro run, unzips to 26MB with extra particle fields (temperature + family)",
 	    "filename": "ramses_extra_fields_small",
 	    "size": "15 MB",
 	    "url": "http://yt-project.org/data/ramses_extra_fields_small.tar.gz"
