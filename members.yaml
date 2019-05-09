@@ -3,6 +3,8 @@
   content: >
     Kenza has been a yt project developer since 2013. Her main contributions
     have been to the ART frontend and she is currently the ART code liason.
+- name: Ricarda Beckmann
+  since: 2018
 - name: Corentin Cadiou
   since: 2017
   content: >
@@ -42,12 +44,9 @@
   content: >
     Suoqing has benefited a lot from friendly yt community.  The 2012 user
     workshop made him stick to yt for analyzing his FLASH datasets, and the
-    2014 development workshop made him into a developer. He has contributed to
-    improvement of plotting functionality and extension of volume rendering.
-    Suoqing started his PhD at UC Santa Babara in 2013, where he also
-    collaborates with local researchers to incorporate yt into the AlloSphere
-    for real-time analysis of astrophysical datasets with stereoscopic 3-D
-    virtual reality.
+    2014 development workshop turned him into a developer. He obtained his PhD
+    in physics from UC Santa Barbara in 2018, and now is the Sherman Fairchild
+    Fellow at Caltech.
 - name: Allyson Julian
   since: 2016
 - name: Ben Keller
@@ -56,6 +55,8 @@
     Ben Keller is the current Tipsy frontent liason.  He started his PhD at
     McMaster University in 2011, and uses yt to analyze simulations generated
     using the Gasoline and ChaNGa SPH codes.
+- name: Ashley Kelly
+  since: 2018
 - name: Kacper Kowalik
   since: 2014
   content: >
@@ -78,6 +79,13 @@
     codes, and is currently the BoxLib frontend liason.  He's currently a
     postdoc at Los Alamos National Lab, where he is trying to pull in more yt
     users for lab-related codes.
+- name: Madicken Munk
+  since: 2018
+  content: >
+    Madicken has been working with yt since 2017. Her contributions to yt have
+    included adding support for georeferenced data and building the frontend 
+    the discrete ordinates code Denovo. Madicken is interested in building 
+    further support for nuclear engineering simulation codes. 
 - name: Andrew Myers
   since: 2014
   content: >
@@ -102,6 +110,8 @@
     infrastructure projects like periodicity and selectors.
 - name: Anthony Scopatz
   since: 2014
+- name: Abhishek Singh
+  since: 2018
 - name: Sam Skillman
   since: 2014
 - name: Stephen Skory

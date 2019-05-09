@@ -1,4 +1,20 @@
 {
+    "arepo frontend": [
+        {
+            "code": "Arepo",
+            "description": "Arepo dataset of a head-on galaxy cluster merger",
+            "filename": "ArepoBullet",
+            "size": "770 MB",
+            "url": "http://yt-project.org/data/ArepoBullet.tar.gz"
+        },
+        {
+            "code": "Arepo",
+            "description": "Cut-out of a galaxy cluster halo from the TNG300 simulation, including gas, DM, and stars. The center of the cluster is at [48669.34, 53984.04, 62114.90] in code_length.",
+            "filename": "TNGHalo",
+            "size": "1012 MB",
+            "url": "http://yt-project.org/data/TNGHalo.tar.gz"
+        }
+    ],
     "art frontend": [
         {
             "code": "NMSU-ART",
@@ -184,6 +200,15 @@
             "url": "http://yt-project.org/data/GaussianBeam.tar.gz"
         }
     ],
+    "cf radial frontend": [
+        {
+            "code": "cf/radial",
+            "description": "A Cartesian 3D Gridded Cf/Radial RADAR dataset",
+            "filename": "CfRadialGrid",
+            "size": "20 MB",
+            "url": "http://yt-project.org/data/CfRadialGrid.tar.gz"
+        }
+    ],
     "chombo frontend": [
         {
             "code": "Orion 2",
@@ -305,22 +330,29 @@
             "filename": "EnzoKelvinHelmholtz",
             "size": "4.3 MB",
             "url": "http://yt-project.org/data/EnzoKelvinHelmholtz.tar.gz"
+        },
+        {
+            "code": "Enzo",
+            "description": "A high redshift cosmological simulation with non-zero Omega_radiation cosmology.",
+            "filename": "PopIII_mini",
+            "size": "290 MB",
+            "url": "http://yt-project.org/data/PopIII_mini.tar.gz"
         }
     ],
     "enzo_p frontend": [
         {
             "code": "Enzo-P",
             "description": "A dataset from a 2D simulation of a high-pressure region shaped like the word \"Hi\".",
-            "filename": "hello-0200",
-            "size": "166 MB",
-            "url": "http://yt-project.org/data/hello-0200.tar.gz"
+            "filename": "hello-0210",
+            "size": "31 MB",
+            "url": "http://yt-project.org/data/hello-0210.tar.gz"
         },
         {
             "code": "Enzo-P",
-            "description": "The initial dataset from a 3D simulation of a collapsing tophat with both particles and gas.",
-            "filename": "collapse-3d-0000",
-            "size": "444 kB",
-            "url": "http://yt-project.org/data/collapse-3d-0000.tar.gz"
+            "description": "A cosmological dataset of a 3 Mpc/h comoving box with 64^3 grid cells and dark matter particles.",
+            "filename": "ENZOP_DD0140",
+            "size": "208 MB",
+            "url": "http://yt-project.org/data/ENZOP_DD0140.tar.gz"
         }
     ],
     "exodus_ii frontend": [
@@ -449,6 +481,13 @@
         },
         {
             "code": "FLASH",
+            "description": "MHD simulation in 3-D cylindrical coordinates",
+            "filename": "MHD_Cyl3d_hdf5_plt_cnt_0100",
+            "size": "44 MB",
+            "url": "http://yt-project.org/data/MHD_Cyl3d_hdf5_plt_cnt_0100.tar.gz"
+        },
+        {
+            "code": "FLASH",
             "description": "A dark matter particle-only dataset of two galaxy clusters merging",
             "filename": "fiducial_1to3_b1",
             "size": "555 MB",
@@ -552,6 +591,15 @@
             "url": "http://yt-project.org/data/rockstar_halos.tar.gz"
         }
     ],
+    "ytree frontend": [
+        {
+            "code": "ytree",
+            "description": "A small merger tree created using the Rockstar halo finder and consistent-trees merger tree code, then converted to the ytree format.",
+            "filename": "arbor",
+            "size": "5 MB",
+            "url": "http://yt-project.org/data/arbor.tar.gz"
+        }
+    ],
     "moab frontend": [
         {
             "code": "Moab",
@@ -570,7 +618,7 @@
     ],
     "other datasets": [
         {
-            "code": "Genric",
+            "code": "Generic",
             "description": "Two datasets of uniformly gridded fields in HDF5 and one in a FITS file.",
             "filename": "UnigridData",
             "size": "1.6 GB",
@@ -582,6 +630,13 @@
             "filename": "test_outputs",
             "size": "534 MB",
             "url": "http://yt-project.org/data/test_outputs.tar.gz"
+        },
+        {
+            "code": "Generic",
+            "description": "This dataset is from the NASA Global Modeling and Assimilation Office. It is a snapshot from 0900 on August 22, 2018.",
+            "filename": "geos",
+            "size": "2.1 GB",
+            "url": "http://yt-project.org/data/geos.tar.gz"
         }
     ],
     "ramses frontend": [
@@ -747,10 +802,17 @@
         },
         {
             "code": "SWIFT",
-            "description": "Keplerian ring test. Output is in the Gadget HDF5 output format. Does not contain cosmological flags in header.",
+            "description": "Keplerian ring test. Output is in HDF5 output format. Does not contain cosmological flags in header.",
             "filename": "KeplerianRing",
-            "size": "1.5 MB",
+            "size": "765 kB",
             "url": "http://yt-project.org/data/KeplerianRing.tar.gz"
+        },
+        {
+            "code": "SWIFT",
+            "description": "Small cosmological volume from the EAGLE suite of simulations. This contains cosmological flags.",
+            "filename": "EAGLE_6",
+            "size": "70.5 MB",
+            "url": "http://yt-project.org/data/EAGLE_6.tar.gz"
         },
         {
             "code": "Gadget 3",
@@ -786,6 +848,13 @@
             "filename": "FIRE_M12i_ref11",
             "size": "209 MB",
             "url": "http://yt-project.org/data/FIRE_M12i_ref11.tar.gz"
+        },
+        {
+            "code": "Gizmo",
+            "description": "One snapshot of a low resolution idealized MW MHD run after 500 Myr of evolution. Could be loaded with a bounding box of [-400, 400] kpc.",
+            "filename": "gizmo_mhd_mwdisk",
+            "size": "69 MB",
+            "url": "http://yt-project.org/data/gizmo_mhd_mwdisk.tar.gz"
         },
         {
             "code": "Gasoline",
@@ -828,6 +897,22 @@
             "filename": "big_tipsy",
             "size": "1.4 GB",
             "url": "http://yt-project.org/data/big_tipsy.tar.gz"
+        },
+        {
+            "code": "Gizmo",
+            "description": "One z=2 snapshot of a cosmological hydro run with 50 comoving Mpc box, 512^3 particles.",
+            "filename": "SimbaExample",
+            "size": "14 GB",
+            "url": "http://yt-project.org/data/SimbaExample.tar.gz"
+        }
+    ],
+    "ytdata frontend": [
+        {
+            "code": "yt",
+            "description": "Testing datasets made with the save_as_dataset command.",
+            "filename": "ytdata_test",
+            "size": "1.7 MB",
+            "url": "http://yt-project.org/data/ytdata_test.tar.gz"
         }
     ]
 }
