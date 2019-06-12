@@ -1,9 +1,23 @@
+- title: Mixed-morphology SNR simulations with a cloudy environment
+  textwidth: 7
+  imagewidth: 5
+  text: >
+    In <a href="http://adsabs.harvard.edu/abs/2019ApJ...875...81Z">
+    Zhang et al. 2019</a>,
+    authours used yt to present the 3D simulation of
+    a mixed-morphology supernova remnant.
+    The volumetric rendering of density shows in the top panel,
+    with a density histogram (black curve)
+    and the transfer function in the bottom panel. 
+    The SNR shock front is in cyan, and dense clouds are in red.
+  images:
+    - img/gallery/mmsnr_3d_rendering.png
 - title: Standing Accretion Shock Instability Spiral Wave in a Core-Collapse Supernova Simulations
   textwidth: 7
   imagewidth: 5
   text: >
     In <a href="http://adsabs.harvard.edu/abs/2018ApJ...865...81O">O'Connor
-    & Couch (2018)</a>, the authors used yt for the visualization of their data. 
+    & Couch (2018)</a>, the authors used yt for the visualization of their data.
     This figure, a volume rendering of entropy near the gain region of a
     core-collapse supernova, shows the multidimensional hydrodynamic instabilities
     at work.  Both turbulence and the standing accretion shock instability
@@ -74,7 +88,7 @@
     (2012)</a> and conducted with <a href="http://enzo-project.org">Enzo</a>.
     The bottom panels show the density, temperature, and metallicity of the
     same slice.  This figure was published in the reference above as Figure 9.
-  images: 
+  images:
     - img/gallery/wise-rp.jpg
 - title: Density and Temperature Around a Forming Star
   textwidth: 5
@@ -138,7 +152,7 @@
 - title: GMC Identification
   textwidth: 7
   imagewidth: 5
-  images: 
+  images:
     - img/gallery/benincasa.jpg
   text: >
     A slice through the z-plane of a typical cloud from <a
@@ -148,7 +162,7 @@
 - title: Velocity Structure of a Collapsing Cloud
   textwidth: 7
   imagewidth: 5
-  images: 
+  images:
     - img/gallery/Smith_2015_F10.png
   text: >
     Figure 10 from <a href="http://arxiv.org/abs/1504.07639">Smith et al.
