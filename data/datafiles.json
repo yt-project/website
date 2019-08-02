@@ -536,6 +536,13 @@
             "filename": "Plummer",
             "size": "23 MB",
             "url": "http://yt-project.org/data/Plummer.tar.gz"
+        },
+        {
+            "code": "GAMER",
+            "description": "MHD Orszag-Tang Vortex Simulation",
+            "filename": "MHDOrszagTangVortex",
+            "size": "8.7 MB",
+            "url": "http://yt-project.org/data/MHDOrszagTangVortex.tar.gz"
         }
     ],
     "gdf frontend": [
