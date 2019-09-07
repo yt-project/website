@@ -40,6 +40,43 @@
             "url": "http://yt-project.org/data/sizmbhloz-clref04SNth-rs9_a0.9011.tar.gz"
         }
     ],
+    "amrvac frontend": [
+	{
+	    "code": "MPI-AMRVAC",
+	    "description": "MHD Jet cloud run (2.5D). Unzips to 4KB",
+	    "filename": "amrvac_jet_cylindrical_25D",
+	    "size": "4KB",
+	    "url": "http://yt-project.org/data/amrvac_mhd_jet.tar.gz"
+	},
+	{
+	    "code": "MPI-AMRVAC",
+	    "description": "2D polar blast wave run. Unzips to 772KB"
+	    "filename": "amrvac_blastwave_polar_2D",
+	    "size": "704KB",
+	    "url": "http://yt-project.org/data/amrvac_bw2d.tar.gz"
+	},
+	{
+	    "code": "MPI-AMRVAC",
+	    "description": "3D cartesian kelvin-helmoltz run. Unzips to 16MB",
+	    "filename": "amrvac_khi_cartesian_3D",
+	    "size": "13MB",
+	    "url": "http://yt-project.org/data/amrvac_kh3d.tar.gz"
+	},
+	{
+	    "code": "MPI-AMRVAC",
+	    "description": "2D cartesian kelvin-helmoltz run. Unzips to 598KB",
+	    "filename": "amrvac_khi_cartesian_2D",
+	    "size": "488KB",
+	    "url": "http://yt-project.org/data/amrvac_kh2d.tar.gz"
+	},
+	{
+	    "code": "MPI-AMRVAC",
+	    "description": "Reiman 1.75D run. Unzips to 52KB",
+	    "filename": "amrvac_riemann_cartesian_175D",
+	    "size": "28KB",
+	    "url": "http://yt-project.org/data/amrvac_riemann1d.tar.gz"
+	},
+    ]
     "athena frontend": [
         {
             "code": "Athena",
