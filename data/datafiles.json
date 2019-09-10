@@ -76,7 +76,7 @@
 	    "size": "28KB",
 	    "url": "http://yt-project.org/data/amrvac_riemann1d.tar.gz"
 	},
-    ]
+    ],
     "athena frontend": [
         {
             "code": "Athena",
