@@ -34,12 +34,12 @@ def page(name, output_name = None):
 
 @page('index')
 def index():
-    examples = yaml.load(open("examples.yaml", "r"))
+    examples = yaml.load(open("examples.yaml", "r"), Loader=yaml.SafeLoader)
     return {'title': 'Home', 'examples': examples}
 
 @page('gallery')
 def gallery():
-    entries = yaml.load(open("gallery.yaml", "r"))
+    entries = yaml.load(open("gallery.yaml", "r"), Loader=yaml.SafeLoader)
     return {'entries': entries}
 
 name_ignores = ["convert-repo"]
@@ -73,7 +73,7 @@ def community():
 
 @page('members')
 def members():
-    members = yaml.load(open("members.yaml", "r"))
+    members = yaml.load(open("members.yaml", "r"), Loader=yaml.SafeLoader)
     members.sort(key = lambda a: lastname_sort(a['name']))
     return {'members': members}
 
@@ -91,7 +91,7 @@ def data():
 
 @page('extensions')
 def extensions():
-    extensions = yaml.load(open("extensions.yaml", "r"))
+    extensions = yaml.load(open("extensions.yaml", "r"), Loader=yaml.SafeLoader)
     return {'extensions': extensions}
 
 @page('slack')
