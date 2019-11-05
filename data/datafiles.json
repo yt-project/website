@@ -52,8 +52,29 @@
             "code": "MPI-AMRVAC",
             "description": "2D polar blast wave run. Unzips to 518KB",
             "filename": "amrvac_blastwave_polar_2D",
-            "size": "704KB",
-            "url": "http://yt-project.org/data/amrvac_bw2d.tar.gz"
+            "size": "457KB",
+            "url": "http://yt-project.org/data/amrvac_bw_polar_2d.tar.gz"
+        },
+        {
+            "code": "MPI-AMRVAC",
+            "description": "2D spherical blast wave run. Unzips to 771KB",
+            "filename": "amrvac_blastwave_polar_2D",
+            "size": "703KB",
+            "url": "http://yt-project.org/data/amrvac_bw_spherical_2d.tar.gz"
+        },
+        {
+            "code": "MPI-AMRVAC",
+            "description": "3D cartesian blast wave run. Unzips to 3.8MB",
+            "filename": "amrvac_blastwave_cartesian_3D",
+            "size": "2.5MB",
+            "url": "http://yt-project.org/data/amrvac_bw_cartesian_3d.tar.gz"
+        },
+        {
+            "code": "MPI-AMRVAC",
+            "description": "3D cylindrical blast wave run. Unzips to 16MB",
+            "filename": "amrvac_blastwave_cylindrical_3D",
+            "size": "7.3MB",
+            "url": "http://yt-project.org/data/amrvac_bw_cylindrical_3D.tar.gz"
         },
         {
             "code": "MPI-AMRVAC",
