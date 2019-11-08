@@ -58,7 +58,7 @@
         {
             "code": "MPI-AMRVAC",
             "description": "2D spherical blast wave run. Unzips to 771KB",
-            "filename": "amrvac_blastwave_polar_2D",
+            "filename": "amrvac_blastwave_spherical_2D",
             "size": "703KB",
             "url": "http://yt-project.org/data/amrvac_bw_spherical_2d.tar.gz"
         },
