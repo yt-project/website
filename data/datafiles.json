@@ -43,9 +43,9 @@
     "amrvac frontend": [
         {
             "code": "MPI-AMRVAC",
-            "description": "MHD Jet cloud run (2.5D). Unzips to 4KB",
+            "description": "MHD Jet cloud run (2.5D). Unzips to 8.2MB",
             "filename": "amrvac_jet_cylindrical_25D",
-            "size": "4KB",
+            "size": "6.1MB",
             "url": "http://yt-project.org/data/amrvac_mhd_jet.tar.gz"
         },
         {
