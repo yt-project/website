@@ -104,6 +104,13 @@
   since: 2014
 - name: Clément Robert
   since: 2019
+  content:
+    Clément has been using multiple hydro-simulation codes and got frustrated
+    with the wheel-reinventing that was too often required to read and analyze
+    code specific data formats. In 2018, he fell in love with yt's philosophy
+    for building and sharing one flexible tool with a community of users and
+    developers and started working on a frontend for MPI-AMRVAC, which came to
+    life in 2019.
 - name: Douglas Rudd
   since: 2014
   content: >
