@@ -74,7 +74,7 @@
             "description": "3D cylindrical blast wave run. Unzips to 16MB",
             "filename": "amrvac_blastwave_cylindrical_3D",
             "size": "7.3MB",
-            "url": "http://yt-project.org/data/amrvac_bw_cylindrical_3D.tar.gz"
+            "url": "http://yt-project.org/data/amrvac_bw_cylindrical_3d.tar.gz"
         },
         {
             "code": "MPI-AMRVAC",
