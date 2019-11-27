@@ -64,7 +64,7 @@
         },
         {
             "code": "MPI-AMRVAC",
-            "description": "3D cartesian blast wave run. Unzips to 3.8MB",
+            "description": "3D cartesian blast wave run, with associated parfile + a modifier parfile. Unzips to 3.8MB",
             "filename": "amrvac_blastwave_cartesian_3D",
             "size": "2.5MB",
             "url": "http://yt-project.org/data/amrvac_bw_cartesian_3d.tar.gz"
