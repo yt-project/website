@@ -979,5 +979,14 @@
             "size": "1.7 MB",
             "url": "http://yt-project.org/data/ytdata_test.tar.gz"
         }
+    ],
+    "adaptahop frontend": [
+        {
+            "code": "AdaptaHOP",
+            "description": "Halo catalog for cosmological zoom output_00080 (see above). Unzips to 5.4 Mio",
+            "filename": "output_00080_halos",
+            "size": "5 MB",
+            "url": "http://yt-project.org/data/output_00080_halos.tar.gz"
+        }
     ]
 }
