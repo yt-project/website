@@ -92,10 +92,17 @@
         },
         {
             "code": "MPI-AMRVAC",
-            "description": "Reiman 1.75D run. Unzips to 52KB",
+            "description": "Reimann 1.75D run. Unzips to 52KB",
             "filename": "amrvac_riemann_cartesian_175D",
             "size": "28KB",
             "url": "http://yt-project.org/data/amrvac_riemann1d.tar.gz"
+        },
+        {
+            "code": "MPI-AMRVAC",
+            "description": "Richtmyer-Meshkov instability 2D run. Parfile included. Unzips to 472KB",
+            "filename": "amrvac_rmi_dust_2D",
+            "size": "159KB",
+            "url": "http://yt-project.org/data/amrvac_rmi_dust_2d.tar.gz"
         }
     ],
     "athena frontend": [
