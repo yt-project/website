@@ -1,3 +1,19 @@
+- title: Mesh-refinement for laser-plasma interation simulations with WarpX
+  textwidth: 7
+  imagewidth: 5
+  text: >
+    Yt was used to render this multi-stage laser-plasma acceleration simulation
+    with the electromagnetic particle-in-cell code
+    <a href="https://github.com/ECP-WarpX/WarpX">WarpX</a>, see
+    <a href="https://www.sciencedirect.com/science/article/pii/S0168900218300524"> Vay et al. 2018</a>.
+    An ultrashort ultraintense laser pulse (red) propagates through a
+    low-density plasma and triggers plasma oscillations with strong electric
+    field (yellow-blue). A beam of electrons (white dots) is trapped in this
+    wake and accelerated to high energies (GeV). The horizontal lines show
+    lines of plasma particles. For higher accuracy, a refinement patch is added
+    around the electron beam (white parallelepiped).
+  images:
+    - img/gallery/warpx.png
 - title: Mixed-morphology SNR simulations with a cloudy environment
   textwidth: 7
   imagewidth: 5
@@ -8,7 +24,7 @@
     a mixed-morphology supernova remnant.
     The volumetric rendering of density shows in the top panel,
     with a density histogram (black curve)
-    and the transfer function in the bottom panel. 
+    and the transfer function in the bottom panel.
     The SNR shock front is in cyan, and dense clouds are in red.
   images:
     - img/gallery/mmsnr_3d_rendering.png
