@@ -662,6 +662,13 @@
             "size": "130 kB",
             "url": "http://yt-project.org/data/rockstar_halos.tar.gz"
         }
+        {
+            "code": "yt FoF",
+            "description": "47 halo catalogs with particle IDs made from the enzo_tiny_cosmology data with yt FoF.",
+            "filename": "tiny_fof_halos",
+            "side": "1.4 MB",
+            "url": "http://yt-project.org/data/tiny_fof_halos.tar.gz"
+        }
     ],
     "ytree frontend": [
         {
