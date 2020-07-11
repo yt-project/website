@@ -626,7 +626,7 @@
             "url": "http://yt-project.org/data/sedov_tst_0004.tar.gz"
         }
     ],
-    "halo_catalog frontends": [
+    "halo catalog frontends": [
         {
             "code": "AdaptaHOP",
             "description": "Halo catalog for cosmological zoom output_00080 (see below). Unzips to 5.4 MB",
