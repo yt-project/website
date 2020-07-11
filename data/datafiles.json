@@ -628,6 +628,13 @@
     ],
     "halo_catalog frontends": [
         {
+            "code": "AdaptaHOP",
+            "description": "Halo catalog for cosmological zoom output_00080 (see below). Unzips to 5.4 MB",
+            "filename": "output_00080_halos",
+            "size": "5 MB",
+            "url": "http://yt-project.org/data/output_00080_halos.tar.gz"
+        },
+        {
             "code": "AHF",
             "description": "Halos found using AHF (AMIGA Halo Finder) for dataset gizmo_64",
             "filename": "ahf_halos",
@@ -664,7 +671,7 @@
         }
         {
             "code": "yt FoF",
-            "description": "47 halo catalogs with particle IDs made from the enzo_tiny_cosmology data with yt FoF.",
+            "description": "47 halo catalogs with particle IDs made from the enzo_tiny_cosmology data with yt FoF",
             "filename": "tiny_fof_halos",
             "side": "1.4 MB",
             "url": "http://yt-project.org/data/tiny_fof_halos.tar.gz"
@@ -994,13 +1001,4 @@
             "url": "http://yt-project.org/data/ytdata_test.tar.gz"
         }
     ],
-    "adaptahop frontend": [
-        {
-            "code": "AdaptaHOP",
-            "description": "Halo catalog for cosmological zoom output_00080 (see above). Unzips to 5.4 Mio",
-            "filename": "output_00080_halos",
-            "size": "5 MB",
-            "url": "http://yt-project.org/data/output_00080_halos.tar.gz"
-        }
-    ]
 }
