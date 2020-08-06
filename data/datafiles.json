@@ -263,6 +263,13 @@
             "filename": "GaussianBeam",
             "size": "6.2 MB",
             "url": "http://yt-project.org/data/GaussianBeam.tar.gz"
+        },
+        {
+            "code": "AMReX",
+            "description": "An AMRex particle dataset",
+            "filename": "ParticleCavity",
+            "size": "692KB",
+            "url": "http://yt-project.org/data/ParticleCavity.tar.gz"
         }
     ],
     "cf radial frontend": [
