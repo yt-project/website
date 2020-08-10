@@ -103,6 +103,13 @@
             "filename": "amrvac_rmi_dust_2D",
             "size": "159KB",
             "url": "http://yt-project.org/data/amrvac_rmi_dust_2d.tar.gz"
+        },
+        {
+            "code": "MPI-AMRVAC",
+            "description": "A 2.5D MHD simulation of the solar atmosphere. Unzips to 456MB",
+            "filename": "amrvac_solar_prominence_25D",
+            "size": "416MB",
+            "url": "http://yt-project.org/data/amrvac_solarprom2d.tar.gz"
         }
     ],
     "athena frontend": [
