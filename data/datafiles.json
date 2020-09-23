@@ -707,6 +707,22 @@
             "url": "http://yt-project.org/data/MoabTest.tar.gz"
         }
     ],
+    "nc4_cm1 frontend": [
+        {
+            "code": "cm1",
+            "description": "nc4_cm1_lofs_tornado_test.nc: low elevation tornado simulation, cartesian data, run with cm1r19 lofs",
+            "filename": "cm1_tornado_lofs",
+            "size": "4.4 MB",
+            "url": "http://yt-project.org/data/cm1_tornado_lofs.tar.gz"
+        },
+        {
+            "code": "cm1",
+            "description": "cm1out_000009.nc and cm1out.nc: 2km resolution supercell generated with cm1r19.10",
+            "filename": "cm1_supercell_native",
+            "size": "40 MB",
+            "url": "http://yt-project.org/data/cm1_supercell_native.tar.gz"
+        }
+    ], 
     "other datasets": [
         {
             "code": "Generic",
