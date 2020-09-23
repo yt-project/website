@@ -710,10 +710,17 @@
     "nc4_cm1 frontend": [
         {
             "code": "cm1",
-            "description": "testyt.04400.0000000.nc: sample file run using cm1 code",
-            "filename": "testyt",
-            "size": "4.7 MB",
-            "url": "http://yt-project.org/data/nc4cm1_testyt.tar.gz"
+            "description": "nc4_cm1_lofs_tornado_test.nc: low elevation tornado simulation, cartesian data, run with cm1r19 lofs",
+            "filename": "cm1_tornado_lofs",
+            "size": "4.4 MB",
+            "url": "http://yt-project.org/data/cm1_tornado_lofs.tar.gz"
+        },
+        {
+            "code": "cm1",
+            "description": "cm1out_000009.nc and cm1out.nc: 2km resolution supercell generated with cm1r19.10",
+            "filename": "cm1_supercell_native",
+            "size": "40 MB",
+            "url": "http://yt-project.org/data/cm1_supercell_native.tar.gz"
         }
     ], 
     "other datasets": [
