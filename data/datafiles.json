@@ -707,6 +707,15 @@
             "url": "http://yt-project.org/data/MoabTest.tar.gz"
         }
     ],
+    "nc4_cm1 frontend": [
+        {
+            "code": "cm1",
+            "description": "testyt.04400.0000000.nc: sample file run using cm1 code",
+            "filename": "testyt",
+            "size": "4.7 MB",
+            "url": "http://yt-project.org/data/nc4cm1_testyt.tar.gz"
+        }
+    ], 
     "other datasets": [
         {
             "code": "Generic",
