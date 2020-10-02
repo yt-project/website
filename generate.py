@@ -1,7 +1,7 @@
 from __future__ import print_function
-import yaml
-import os
-import sys
+import yaml # importing the yaml module
+import os   # importing the os module
+import sys  # importing the sys module
 from jinja2 import Environment, FileSystemLoader
 
 PATH = os.path.dirname(os.path.abspath(__file__))
