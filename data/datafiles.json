@@ -416,6 +416,13 @@
             "filename": "PopIII_mini",
             "size": "290 MB",
             "url": "https://yt-project.org/data/PopIII_mini.tar.gz"
+        },
+        {
+            "code": "Enzo",
+            "description": "A cosmological simulation using SmartStar active particles with array-like particle fields.",
+            "filename": "SmartStars",
+            "size": "1.2 GB",
+            "url": "https://yt-project.org/data/SmartStars.tar.gz"
         }
     ],
     "enzo_p frontend": [
