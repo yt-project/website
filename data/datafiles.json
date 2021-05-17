@@ -915,6 +915,13 @@
             "url": "https://yt-project.org/data/IsothermalCollapse.tar.gz"
         },
         {
+            "code": "Gadget",
+            "description": "Gadget snapshot with binary format 2 from the Magneticum simulations. The center of the cluster is at [310306.53, 340613.47, 265758.47] in code units. Load with \"ds = yt.load('snap_132', long_ids=True, field_spec='magneticum_box2_hr')\",", 
+            "filename": "MagneticumCluster",
+            "size": "190 MB",
+            "url": "https://yt-project.org/data/MagneticumCluster.tar.gz"
+        },
+        {
             "code": "SWIFT",
             "description": "Keplerian ring test. Output is in HDF5 output format. Does not contain cosmological flags in header.",
             "filename": "KeplerianRing",
