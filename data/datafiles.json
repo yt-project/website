@@ -44,72 +44,72 @@
         {
             "code": "MPI-AMRVAC",
             "description": "MHD Jet cloud run (2.5D). Unzips to 8.2MB",
-            "filename": "amrvac_jet_cylindrical_25D",
+            "filename": "mhd_jet",
             "size": "6.1MB",
-            "url": "https://yt-project.org/data/amrvac_mhd_jet.tar.gz"
+            "url": "https://yt-project.org/data/mhd_jet.tar.gz"
         },
         {
             "code": "MPI-AMRVAC",
             "description": "2D polar blast wave run. Unzips to 518KB",
-            "filename": "amrvac_blastwave_polar_2D",
+            "filename": "bw_polar_2d",
             "size": "457KB",
-            "url": "https://yt-project.org/data/amrvac_bw_polar_2d.tar.gz"
+            "url": "https://yt-project.org/data/bw_polar_2d.tar.gz"
         },
         {
             "code": "MPI-AMRVAC",
             "description": "2D spherical blast wave run. Unzips to 771KB",
-            "filename": "amrvac_blastwave_spherical_2D",
+            "filename": "bw_spherical_2d",
             "size": "703KB",
-            "url": "https://yt-project.org/data/amrvac_bw_spherical_2d.tar.gz"
+            "url": "https://yt-project.org/data/bw_spherical_2d.tar.gz"
         },
         {
             "code": "MPI-AMRVAC",
             "description": "3D cartesian blast wave run. Unzips to 3.8MB",
-            "filename": "amrvac_blastwave_cartesian_3D",
+            "filename": "bw_cartesian_3d",
             "size": "2.5MB",
-            "url": "https://yt-project.org/data/amrvac_bw_cartesian_3d.tar.gz"
+            "url": "https://yt-project.org/data/bw_cartesian_3d.tar.gz"
         },
         {
             "code": "MPI-AMRVAC",
             "description": "3D cylindrical blast wave run. Unzips to 16MB",
-            "filename": "amrvac_blastwave_cylindrical_3D",
+            "filename": "bw_cylindrical_3d",
             "size": "7.3MB",
-            "url": "https://yt-project.org/data/amrvac_bw_cylindrical_3d.tar.gz"
+            "url": "https://yt-project.org/data/bw_cylindrical_3d.tar.gz"
         },
         {
             "code": "MPI-AMRVAC",
             "description": "3D cartesian kelvin-helmoltz run. Unzips to 16MB",
-            "filename": "amrvac_khi_cartesian_3D",
+            "filename": "kh3d",
             "size": "13MB",
-            "url": "https://yt-project.org/data/amrvac_kh3d.tar.gz"
+            "url": "https://yt-project.org/data/kh3d.tar.gz"
         },
         {
             "code": "MPI-AMRVAC",
             "description": "2D cartesian kelvin-helmoltz run. Unzips to 598KB",
-            "filename": "amrvac_khi_cartesian_2D",
+            "filename": "kh2d",
             "size": "488KB",
-            "url": "https://yt-project.org/data/amrvac_kh2d.tar.gz"
+            "url": "https://yt-project.org/data/kh2d.tar.gz"
         },
         {
             "code": "MPI-AMRVAC",
             "description": "Reimann 1.75D run. Unzips to 52KB",
-            "filename": "amrvac_riemann_cartesian_175D",
+            "filename": "riemann1d",
             "size": "28KB",
-            "url": "https://yt-project.org/data/amrvac_riemann1d.tar.gz"
+            "url": "https://yt-project.org/data/riemann1d.tar.gz"
         },
         {
             "code": "MPI-AMRVAC",
             "description": "Richtmyer-Meshkov instability 2D run. Parfile included. Unzips to 472KB",
-            "filename": "amrvac_rmi_dust_2D",
+            "filename": "rmi_dust_2d",
             "size": "159KB",
-            "url": "https://yt-project.org/data/amrvac_rmi_dust_2d.tar.gz"
+            "url": "https://yt-project.org/data/rmi_dust_2d.tar.gz"
         },
         {
             "code": "MPI-AMRVAC",
             "description": "A 2.5D MHD simulation of the solar atmosphere. Unzips to 456MB",
-            "filename": "amrvac_solar_prominence_25D",
+            "filename": "solarprom2d",
             "size": "416MB",
-            "url": "https://yt-project.org/data/amrvac_solarprom2d.tar.gz"
+            "url": "https://yt-project.org/data/solarprom2d.tar.gz"
         }
     ],
     "athena frontend": [
