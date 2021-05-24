@@ -636,6 +636,13 @@
             "filename": "MHDOrszagTangVortex",
             "size": "8.7 MB",
             "url": "https://yt-project.org/data/MHDOrszagTangVortex.tar.gz"
+        },
+        {
+            "code": "GAMER",
+            "description": "Special relativistic hydrodynamics simulation of a jet hitting an interface between two fluids",
+            "filename": "JetICMWall",
+            "size": "2.3 MB",
+            "url": "https://yt-project.org/data/JetICMWall.tar.gz"
         }
     ],
     "gdf frontend": [
