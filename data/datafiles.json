@@ -439,6 +439,13 @@
             "filename": "ENZOP_DD0140",
             "size": "208 MB",
             "url": "https://yt-project.org/data/ENZOP_DD0140.tar.gz"
+        },
+        {
+            "code": "Enzo-E",
+            "description": "A dataset from a 3D MHD simulation of an Orszag-Tang Vortex.",
+            "filename": "ENZOE_orszag-tang_0.5",
+            "size": "25 MB",
+            "url": "https://yt-project.org/data/ENZOE_orszag-tang_0.5.tar.gz"
         }
     ],
     "exodus_ii frontend": [
