@@ -4,7 +4,8 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script>
        $(function() {
-	  $.getJSON('datafiles.json', function(data) {
+         const datafiles_url = "https://girder.hub.yt/api/v1/ythub/5e178e0868085e00016c2f73/examples";
+	  $.getJSON(datafiles_url, function(data) {
 	     $.each(data, function(key, val) {
 	     	 var codeRow = "<tr><td colspan=\"5\" class=\"frontend\">" + key + "</td></tr>"
 		 $(codeRow).appendTo("#datafiles tbody");
