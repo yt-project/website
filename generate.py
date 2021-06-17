@@ -1,7 +1,9 @@
 from __future__ import print_function
+import git
 import yaml
 import os
 import sys
+import tempfile
 from jinja2 import Environment, FileSystemLoader
 
 PATH = os.path.dirname(os.path.abspath(__file__))
@@ -52,20 +54,18 @@ def about():
     # Uncomment for rapid dev
     if "--fast" in sys.argv:
         return {'developers': []}
-    import git
     if yt_path:
         repo = git.Repo(yt_path)
     else:
-        import tempfile
-        repo_path = tempfile.mkdtemp()
-        repo = git.Repo.clone_from(
-            'https://github.com/yt-project/yt', repo_path)
-    shortlog = repo.git.shortlog('-ns').split('\n')
-    repo.close()
-    devs = set([sl.split('\t')[1] for sl in shortlog])
+        with tempfile.TemporaryDirectory() as repo_path:
+            with git.Repo.clone_from(
+                "https://github.com/yt-project/yt", repo_path
+            ) as repo:
+                shortlog = repo.git.shortlog(["-ns", "HEAD"]).split("\n")
+    devs = set([sl.split("\t")[1] for sl in shortlog])
     for name in name_ignores:
         devs.discard(name)
-    return {'developers': sorted(devs, key=lastname_sort)}
+    return {"developers": sorted(devs, key=lastname_sort)}
 
 @page('community')
 def community():
