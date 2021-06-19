@@ -510,9 +510,9 @@
         {
             "code": "FITS",
             "description": "Two X-ray images provided by <a href=\"http://hea-www.cfa.harvard.edu/~srandall/\">Scott Randall</a>, used in <a href=\"http://adsabs.harvard.edu/cgi-bin/bib_query?2011ApJ...737...99B\">Blanton, E.L., Randall, S.W., Clarke, T.E., et al. 2011, ApJ, 737, 99</a>.",
-            "filename": "A2052",
+            "filename": "xray_fits",
             "size": "507 kB",
-            "url": "https://yt-project.org/data/A2052.tar.gz"
+            "url": "https://yt-project.org/data/xray_fits.tar.gz"
         },
         {
             "code": "FITS",
