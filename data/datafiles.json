@@ -176,7 +176,7 @@
         {
             "code": "Castro",
             "description": "3 levels, 2-d dataset, contains particles",
-            "filename": "RT_particles.tar.gz",
+            "filename": "RT_particles",
             "size": "232 kb",
             "url": "https://yt-project.org/data/RT_particles.tar.gz"
         },
