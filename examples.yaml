@@ -4,7 +4,7 @@
       id: quick_calc
       content: |
         import yt
-        ds = yt.load("IsolatedGalaxy/galaxy0030/galaxy0030")
+        ds = yt.load_sample("IsolatedGalaxy")
         ds.r[0.45:0.55,:,:].sum("cell_mass").in_units("Mjup")
       output: |
         9.98537989593e+12 Mjup
@@ -12,11 +12,11 @@
       id: derived_fields
       content: |
         import yt
-        ds = yt.load("IsolatedGalaxy/galaxy0030/galaxy0030")
+        ds = yt.load_sample("IsolatedGalaxy")
         def thermal_energy_dens(field, data):
             return (3/2)*data['gas', 'number_density'] * data['gas', 'kT']
         ds.add_field(("gas", "thermal_energy_density"), units="erg/cm**3",
-                     function=thermal_energy_dens)
+                     function=thermal_energy_dens, sampling_type="cell")
         ad = ds.all_data()
         ad.mean("thermal_energy_density", "z", weight="density").plot()
       image: galaxy0030_Projection_z_thermal_energy_density_density.png
@@ -32,7 +32,7 @@
       id: data_portability
       content: |
         import yt
-        ds = yt.load("galaxy0030/galaxy0030")
+        ds = yt.load_sample("IsolatedGalaxy")
         sp = ds.sphere([0.5, 0.5, 0.5], (8, "kpc"))
         sp.save_as_dataset("my_sphere.h5", ["density", "particle_mass"])
         ds2 = yt.load("my_sphere.h5")
@@ -51,28 +51,28 @@
       id: slicing
       content: |
         import yt
-        ds = yt.load("snapshot_033/snap_033.0.hdf5")
-        ds.r[(12.4, 'Mpc'),:,:].plot("density")
+        ds = yt.load_sample("snapshot_033")
+        ds.r[(12.4, 'Mpc'),:,:].plot(("gas", "density"))
       image: snap_033_Slice_x_density.png
     - name: Projecting
       id: projecting
       content: |
         import yt
-        ds = yt.load("D9p_500/10MpcBox_HartGal_csf_a0.500.d")
+        ds = yt.load_sample("D9p_500")
         p = yt.ProjectionPlot(ds, "y", "density")
       image: 10MpcBox_HartGal_csf_a0.500.d_Projection_y_density.png
     - name: Interaction
       id: interaction
       content: |
         import yt
-        ds = yt.load("IsolatedGalaxy/galaxy0030/galaxy0030")
+        ds = yt.load_sample("IsolatedGalaxy")
         yt.interactive_render(ds)
       image: interactive.png
     - name: Profile
       id: profile
       content: |
         import yt
-        ds = yt.load("snipshot_399_z000p000/snip_399_z000p000.0.hdf5")
+        ds = yt.load_sample("snipshot_399_z000p000")
         ad = ds.all_data()
         yt.ProfilePlot(ad, ("PartType0", "density"),
                        ("PartType0", "temperature"),
@@ -82,7 +82,7 @@
       id: phase
       content: |
         import yt
-        ds = yt.load("HiresIsolatedGalaxy/DD0044/DD0044")
+        ds = yt.load_sample("HiresIsolatedGalaxy")
         ad = ds.all_data()
         yt.PhasePlot(ad, "density", "temperature", "cell_mass",
                      weight_field=None).save()
@@ -93,7 +93,7 @@
       id: extrema
       content: |
         import yt
-        ds = yt.load("Enzo_64/DD0043/data0043")
+        ds = yt.load_sample("Enzo_64", "DD0043/data0043")
         ds.r[:].min(), ds.r[:].max()
       output: |
         (3.81289338015e-32 g/cm**3,
@@ -102,7 +102,7 @@
       id: averages
       content: |
         import yt
-        ds = yt.load("output_00080/info_00080.txt")
+        ds = yt.load_sample("output_00080")
         ds.r[(10.0, "Mpc"):(20.0, "Mpc"),
              (30.0, "Mpc"):(40.0, "Mpc"),
              (50.0, "Mpc"):(60.0, "Mpc")].mean("temperature", weight="density")
@@ -112,7 +112,7 @@
       id: line_query
       content: |
         import yt
-        ds = yt.load("IsolatedGalaxy/galaxy0030/galaxy0030")
+        ds = yt.load_sample("IsolatedGalaxy")
         loc1 = ds.r[:].argmax("temperature")
         loc2 = ds.r[:].argmax("density")
         ray = ds.ray(loc1, loc2)
