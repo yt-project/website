@@ -9,6 +9,13 @@
         },
         {
             "code": "Arepo",
+            "description": "Arepo dataset of a galaxy cluster merger with a black hole and cosmic rays",
+            "filename": "ArepoCosmicRays",
+            "size": "1.2 GB",
+            "url": "https://yt-project.org/data/ArepoCosmicRays.tar.gz"
+        },
+        {
+            "code": "Arepo",
             "description": "Cut-out of a galaxy cluster halo from the TNG300 simulation, including gas, DM, and stars. The center of the cluster is at [48669.34, 53984.04, 62114.90] in code_length.",
             "filename": "TNGHalo",
             "size": "1012 MB",
