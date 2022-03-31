@@ -295,6 +295,22 @@
             "url": "https://yt-project.org/data/CfRadialGrid.tar.gz"
         }
     ],
+    "chimera frontend": [
+        {
+            "code": "chimera",
+            "description": "2D Dataset",
+            "filename": "F37_80",
+            "size": "815 MB",
+            "url": "https://yt-project.org/data/F37_80.tar.gz"
+        },
+        {
+            "code": "chimera",
+            "description": "3D Dataset",
+            "filename": "C15-3D-3deg",
+            "size": "7.9 GB",
+            "url": "https://yt-project.org/data/C15-3D-3deg.tar.gz"
+        }
+    ],
     "chombo frontend": [
         {
             "code": "Orion 2",
