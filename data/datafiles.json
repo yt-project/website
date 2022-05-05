@@ -114,9 +114,9 @@
         {
             "code": "MPI-AMRVAC",
             "description": "A 2.5D MHD simulation of the solar atmosphere. Unzips to 456MB",
-            "filename": "solarprom2d",
+            "filename": "solar_prom2d",
             "size": "416MB",
-            "url": "https://yt-project.org/data/solarprom2d.tar.gz"
+            "url": "https://yt-project.org/data/solar_prom2d.tar.gz"
         }
     ],
     "athena frontend": [
