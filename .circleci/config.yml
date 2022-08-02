@@ -46,8 +46,8 @@ jobs:
       - run:
           name: Deploy to Dreamhost
           command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            if [ "${CIRCLE_BRANCH}" == "main" ]; then
               rsync -avc /tmp/generated_website/ yt_analysis@dickenson.dreamhost.com:yt-project.org/
             else
-              echo "Not master branch, dry run only"
+              echo "Not main branch, dry run only"
             fi
