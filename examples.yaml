@@ -93,7 +93,7 @@
       id: extrema
       content: |
         import yt
-        ds = yt.load_sample("Enzo_64", "DD0043/data0043")
+        ds = yt.load_sample("Enzo_64/DD0043/data0043")
         ds.r[:].min(), ds.r[:].max()
       output: |
         (3.81289338015e-32 g/cm**3,
