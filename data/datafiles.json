@@ -311,6 +311,15 @@
             "url": "https://yt-project.org/data/C15-3D-3deg.tar.gz"
         }
     ],
+    "cholla frontend": [
+        {
+            "code": "cholla",
+            "description": "Small 3D Gradient Dataset",
+            "filename": "ChollaSimple",
+            "size": "164 kB",
+            "url": "https://yt-project.org/data/ChollaSimple.tar.gz"
+        }
+    ],
     "chombo frontend": [
         {
             "code": "Orion 2",
