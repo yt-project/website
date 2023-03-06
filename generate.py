@@ -6,6 +6,11 @@ import sys
 import tempfile
 from jinja2 import Environment, FileSystemLoader
 
+if sys.version_info >= (3, 9):
+    import importlib.resources as importlib_resources
+else:
+    import importlib_resources
+
 PATH = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_ENVIRONMENT = Environment(
     autoescape=False,
@@ -13,13 +18,12 @@ TEMPLATE_ENVIRONMENT = Environment(
     trim_blocks=False)
 
 try:
-    import pkg_resources
-    yt_provider = pkg_resources.get_provider("yt")
-    yt_path = os.path.dirname(yt_provider.module_path)
-    if not os.path.exists(os.sep.join([yt_path, '.git'])):
-        yt_path = None
-except ImportError:
+    yt_path = str(importlib_resources.files("yt"))
+except ModuleNotFoundError:
     yt_path = None
+else:
+    if not (yt_path / '.git').is_dir():
+        yt_path = None
 
 def render_template(template_filename, context):
     return TEMPLATE_ENVIRONMENT.get_template(template_filename).render(context)
