@@ -1,5 +1,5 @@
 pyyaml>=4.2b1
-GitPython==2.1.15
+GitPython==3.1.30
 gitdb2==2.0.6
 gitdb==0.6.4
 Jinja2>=2.10.1
