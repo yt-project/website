@@ -1024,6 +1024,13 @@
             "url": "https://yt-project.org/data/gizmo_mhd_mwdisk.tar.gz"
         },
         {
+            "code": "Gizmo",
+            "description": "Two snapshots of the Zeldovich Pancake test with cooling and metals from GIZMO_version=2022. Used for testing the updated file validation and cosmological header parsing.",
+            "filename": "gizmo_zeldovich",
+            "size": "28 MB",
+            "url": "https://yt-project.org/data/gizmo_zeldovich.tar.gz"
+        },
+        {
             "code": "Gasoline",
             "description": "DM-only Cosmology output",
             "filename": "agora_1e11.00400",
