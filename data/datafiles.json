@@ -968,6 +968,13 @@
             "url": "https://yt-project.org/data/MagneticumCluster.tar.gz"
         },
         {
+            "code": "Gadget",
+            "description": "Gadget snapshot using the Magneticum simulation model for the CAMELS simulations at z = 0.1. A subset of the original bounding box has been chosen for size considerations. Load with bounding box = [[8126, 22126], [5140, 19140], [5500, 19500]]", 
+            "filename": "magneticum_camels",
+            "size": "159 MB",
+            "url": "https://yt-project.org/data/magneticum_camels.tar.gz"
+        },
+        {
             "code": "SWIFT",
             "description": "Keplerian ring test. Output is in HDF5 output format. Does not contain cosmological flags in header.",
             "filename": "KeplerianRing",
