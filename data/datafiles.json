@@ -747,7 +747,7 @@
             "code": "yt FoF",
             "description": "47 halo catalogs with particle IDs made from the enzo_tiny_cosmology data with yt FoF",
             "filename": "tiny_fof_halos",
-            "side": "1.4 MB",
+            "size": "1.4 MB",
             "url": "https://yt-project.org/data/tiny_fof_halos.tar.gz"
         }
     ],
