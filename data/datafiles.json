@@ -682,6 +682,13 @@
             "filename": "JetICMWall",
             "size": "2.3 GB",
             "url": "https://yt-project.org/data/JetICMWall.tar.gz"
+        },
+	    {
+            "code": "GAMER",
+            "description": "1-D Cosmic Ray Shock Tube Problem",
+            "filename": "CRShockTube",
+            "size": "12 kB",
+            "url": "https://yt-project.org/data/CRShockTube.tar.gz"
         }
     ],
     "gdf frontend": [
