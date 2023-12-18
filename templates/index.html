@@ -198,43 +198,24 @@
 
       <a name="getyt"></a><div class="row row_anchor">
         <div class="col-md-5">
-          <h1>Get yt:<span class="text-muted"> all-in-one script.</h1>
+          <h1>Get yt:<span class="text-muted"> overview.</span></h1>
           <p class="lead">
             yt is built on a stack of completely <a
             href="https://www.fsf.org/working-together/">free and libre open source
-            software</a>, with <b>no</b> proprietary dependencies. It provides its
-            own install script, to assist with constructing an isolated
-            environment that can be upgraded and operated independently of the
-            host operating system.
+            software</a>, with <b>no</b> proprietary dependencies and is distributed to
+            both the conda and PyPi package repositories for easy installation. For a full
+            description of how to install, including selecting optional dependencies and
+            installing from source, see the
+            <a href="https://yt-project.org/doc/installing.html">main documentation</a>.
           </p>
           <p class="lead">
             If you use yt in a publication, we request that you please consider
             citing <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....9T">our method paper</a>
             (<a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....9T/exportcitation">BibTeX</a>).
           </p>
-          <p class="lead">
-            Usually getting yt is as simple as running the installation script.
-            Simply download the install script and run it.  You can do this 
-            using <span
-              class="yt_code">wget</span> or <span class="yt_code">curl</span>,
-            or even just right click and choose <b>Save As</b>.  Carefully read
-            the instructions the script prints to your terminal since there
-            might be special instructions for your operating system.
-          </p>
-
-          <p class="text-center">
-            <a style="margin-bottom:5px; width:200px;" class="btn btn-llg btn-warning" href="https://raw.githubusercontent.com/yt-project/yt/master/doc/install_script.sh">Download</a><br/>
-          </p>
-
-          <p class="lead" style="margin-top:20px;">Once you've downloaded it, just run:</p>
-          <div class="yt_code">
-            $ bash install_script.sh<br/>
-            $ export PATH=/path/to/YT_DEST/bin:$PATH
-          </div>
-          <p class="lead">where YT_DEST will be the folder created by the install script containing a yt installation  (usually <span class="yt_code">yt-conda</span>).</p>
         </div>
         <div class="col-md-offset-1 col-md-6">
-          <h1>Get yt:<span class="text-muted"> using conda.</h1>
+          <h1>Get yt:<span class="text-muted"> using conda.</span></h1>
           <p class="lead">
             If you use
             the <a href="https://store.continuum.io/cshop/anaconda/">anaconda
@@ -252,24 +233,18 @@
               $ conda install -c yt-project/label/dev yt
             </div>
           </p>
-          <h1>Get yt:<span class="text-muted"> from source.</h1>
+          <h1>Get yt:<span class="text-muted"> using pip.</span></h1>
           <p class="lead">
-            If you are comfortable installing Python packages and have a
-            build environment set up, you can install yt via
-            <span class="yt_code">pip</span>:
+            You can also can install the latest stable version
+            of yt via <span class="yt_code">pip</span> with:
             <div class="yt_code">
-              $ pip install yt
+              $ python -m pip install --user yt
             </div>
           </p>
           <p class="lead">
-            If you would like to install the development version of yt, just
-            clone the repository and execute the setup.py script: 
+          See <a href="https://yt-project.org/doc/installing.html">here</a> for more details
+          on installation.
           </p>
-          <div class="yt_code">
-            $ git clone https://github.com/yt-project/yt<br/>
-            $ cd yt<br/>
-            $ python setup.py develop
-          </div>
         </div>
       </div>
 
