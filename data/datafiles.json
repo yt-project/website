@@ -175,6 +175,13 @@
         },
         {
             "code": "Castro",
+            "description": "Sedov problem, 1-d dataset, 4 levels, cylindrical geometry",
+            "filename": "castro_sedov_1d_cyl_plt00150",
+            "size": "82 kB",
+            "url": "https://yt-project.org/data/castro_sedov_1d_cyl_plt00150.tar.gz"
+        },
+        {
+            "code": "Castro",
             "description": "Sedov problem, 2-d dataset, 4 levels",
             "filename": "castro_sedov_2d_cyl_in_cart_plt00150",
             "size": "4.6 MB",
