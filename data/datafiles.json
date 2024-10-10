@@ -189,6 +189,20 @@
         },
         {
             "code": "Castro",
+            "description": "Sedov problem, 2-d dataset, 4 levels, cylindrical geometry",
+            "filename": "castro_sedov_2d_sph_in_cyl_plt00130",
+            "size": "558 kB",
+            "url": "https://yt-project.org/data/castro_sedov_2d_sph_in_cyl_plt00130.tar.gz"
+        },
+        {
+            "code": "Castro",
+            "description": "X-ray burst in a spherical shell, 2-d dataset",
+            "filename": "xrb_spherical_smallplt00010",
+            "size": "1.2 MB",
+            "url": "https://yt-project.org/data/xrb_spherical_smallplt00010.tar.gz"
+        },
+        {
+            "code": "Castro",
             "description": "3 levels, 2-d dataset, contains particles",
             "filename": "RT_particles.tar.gz",
             "size": "232 kb",
