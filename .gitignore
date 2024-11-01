@@ -1,3 +1,6 @@
 /*.html
 data/index.html
 workshops/
+
+# pycharm config
+.idea*

@@ -5,20 +5,21 @@ import os
 import sys
 import tempfile
 from jinja2 import Environment, FileSystemLoader
+from pathlib import Path
 
 if sys.version_info >= (3, 9):
     import importlib.resources as importlib_resources
 else:
     import importlib_resources
 
-PATH = os.path.dirname(os.path.abspath(__file__))
+CURRENT_PATH = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_ENVIRONMENT = Environment(
     autoescape=False,
-    loader=FileSystemLoader(os.path.join(PATH, 'templates')),
+    loader=FileSystemLoader(os.path.join(CURRENT_PATH, 'templates')),
     trim_blocks=False)
 
 try:
-    yt_path = str(importlib_resources.files("yt"))
+    yt_path = Path(importlib_resources.files("yt"))
 except ModuleNotFoundError:
     yt_path = None
 else:
@@ -96,7 +97,10 @@ def data():
 @page('extensions')
 def extensions():
     extensions = yaml.load(open("extensions.yaml", "r"), Loader=yaml.SafeLoader)
-    return {'extensions': extensions}
+    return {'extensions': extensions['active'],
+            'ytproject': extensions['ytproject'],
+            'frontends': extensions['frontends'],
+            'legacyextensions': extensions['inactive']}
 
 @page('slack')
 def slack():

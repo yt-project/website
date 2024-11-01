@@ -1,48 +1,131 @@
-- name: ytini
-  url: http://www.ytini.com/
-  image: ytini_logo_horizontal_left.png
-  description: |
-    ytini is set of tools and tutorials for using yt as a tool inside the 3D visual effects software Houdini 
-    or a data pre-processor externally to Houdini.
-  import_as: vdbyt
-  contact: Jill Naiman
-- name: Trident
-  url: http://trident-project.org/
-  image: trident_logo_blackbg.png
-  description: |
-    Trident is a full-featured tool that projects arbitrary sightlines through
-    astrophysical hydrodynamics simulations for generating mock spectral
-    observations of the IGM and CGM. 
-  import_as: trident
-  contact: Cameron Hummels
-- name: pyXSIM
-  url: http://hea-www.cfa.harvard.edu/~jzuhone/pyxsim/
-  image: cluster_merger_events.png
-  description: |
-    pyXSIM is a Python package for simulating X-ray observations from
-    astrophysical sources.
-  import_as: pyxsim
-  contact: John ZuHone
-- name: yt interaction
-  url: https://bitbucket.org/data-exp-lab/yt_interaction
-  description: |
-    This extension is an experiment to work with the <a
-    href="http://holoviews.org/">holoviews</a> package for interactive
-    visualization.
-  import_as: yt.extensions.interaction
-  contact: Matthew Turk
-- name: ViewYT
-  url: https://bitbucket.org/data-exp-lab/yt_viewyt
-  image: viewyt.png
-  description: |
-    An ongoing effort to build reusable Qt-based widgets for interacting with
-    yt plots and datasets.
-  import_as: yt.extensions.viewyt
-  contact: Austin Gilbert
-- name: ytree
-  url: https://ytree.readthedocs.io
-  image: ytree.png
-  description: |
-    Analyze merger tree data from multiple sources. It's yt for merger trees!
-  import_as: ytree
-  contact: Britton Smith
+
+active:
+  - name: ytini
+    url: http://www.ytini.com/
+    image: ytini_logo_horizontal_left.png
+    description: |
+      ytini is set of tools and tutorials for using yt as a tool inside the 3D visual effects software Houdini 
+      or a data pre-processor externally to Houdini.
+    import_as: vdbyt
+    contact: Jill Naiman
+  - name: yt_idv
+    url: https://yt-idv.readthedocs.io/en/stable/
+    import_as: yt_idv
+    description: |
+      This package provides interactive visualization using OpenGL for datasets 
+      loaded in yt. It is written to provide both scripting and interactive access.
+    contact: Matthew Turk
+  - name: Trident
+    url: http://trident-project.org/
+    image: trident_logo_blackbg.png
+    description: |
+      Trident is a full-featured tool that projects arbitrary sightlines through
+      astrophysical hydrodynamics simulations for generating mock spectral
+      observations of the IGM and CGM.
+    import_as: trident
+    contact: Cameron Hummels
+  - name: pyXSIM
+    url: http://hea-www.cfa.harvard.edu/~jzuhone/pyxsim/
+    image: cluster_merger_events.png
+    description: |
+      pyXSIM is a Python package for simulating X-ray observations from
+      astrophysical sources.
+    import_as: pyxsim
+    contact: John ZuHone
+  - name: ytree
+    url: https://ytree.readthedocs.io
+    image: ytree.png
+    description: |
+      Analyze merger tree data from multiple sources. It's yt for merger trees!
+    import_as: ytree
+    contact: Britton Smith
+  - name: yt-napari
+    url: https://yt-napari.readthedocs.io
+    description: | 
+      A <a href='https://napari.org'>napari</a> plugin for loading data from yt.
+    contact: Chris Havlin
+    import_as: yt_napari
+  - name: widgyts
+    contact: Matthew Turk
+    url: https://widgyts.readthedocs.io
+    description: | 
+      A fully client-side pan-and-zoom widget, using WebAssembly, for variable 
+      mesh datasets from yt. It runs in the browser, so once the data hits your 
+      notebook, it's super fast and responsive!
+  - name: libyt
+    url: https://libyt.readthedocs.io
+    description: | 
+      an in situ analysis tool that allows researchers to analyze and visualize 
+      data using yt or other Python packages in parallel during simulation 
+      runtime.
+    import_as: libyt
+    contact: Shin-Rong Tsai
+  - name: powderday
+    url: https://powderday.readthedocs.io
+    contact: Desika Narayanan
+    description: |
+      Powderday is a dust radiative transfer package designed to interface with 
+      galaxy formation simulations in order to produce spectral energy 
+      distributions, as well as realistic images. It relies signficantly on 
+      yt.
+  - name: yt_experiments
+    url: https://github.com/yt-project/yt_experiments
+    contact: Chris Havlin
+    description: | 
+      Experimental enhancements for yt.
+ytproject:
+  - name: unyt
+    url: https://unyt.readthedocs.io
+    contact: John Zuhone
+    description: |
+      unyt is a Python library for working with data that has physical units. It
+       was originally developed as part of the yt Project and was split out as 
+      an independent project so that other Python projects can easily make use
+       of it.
+  - name: yt_astro_analysis
+    url: https://yt-astro-analysis.readthedocs.io
+    contact: Britton Smith
+    description: The yt extension package for astrophysical analysis.
+    import_as: yt_astro_analysis
+  - name: cmyt
+    url: https://github.com/yt-project/cmyt
+    contact: Clément Robert
+    import_as: cmyt
+    description: Matplotlib colormaps from the yt project!
+  - name: ewah_bool_utils
+    url: https://github.com/yt-project/ewah_bool_utils
+    contact: Matthew Turk
+    description: |
+      EWAH Bool Array utilities for yt. Efficient compression of in-memory 
+      integer arrays, useful for indexing arrays.
+inactive:
+  - name: yt interaction
+    url: https://bitbucket.org/data-exp-lab/yt_interaction
+    description: |
+      This extension is an experiment to work with the <a
+      href="http://holoviews.org/">holoviews</a> package for interactive
+      visualization.
+    import_as: yt.extensions.interaction
+    contact: Matthew Turk
+  - name: ViewYT
+    url: https://github.com/data-exp-lab/yt_viewyt
+    image: viewyt.png
+    description: |
+      An ongoing effort to build reusable Qt-based widgets for interacting with
+      yt plots and datasets.
+    import_as: yt.extensions.viewyt
+    contact: Austin Gilbert
+frontends:
+  - name: yt-idefix
+    url: https://github.com/neutrinoceros/yt_idefix
+    contact: Clément Robert
+    description: |
+      A yt frontend for Idefix and Pluto, packaged as an extension for yt.
+  - name: yt_aspect
+    url: https://github.com/data-exp-lab/yt_aspect/
+    contact: Chris Havlin
+    description: |
+      A yt frontend for ASPECT unstructured mesh output as well as generic .pvtu
+      data.
+
+
