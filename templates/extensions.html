@@ -76,6 +76,21 @@
           {% endfor %}
           </table>
           <table class="table table-bordered">
+            <caption>Built on yt</caption>
+          {% for ext in related %}
+            <tr>
+              <td class="col-lg-12">
+                <h3>{{ext['name']}}</h3>
+                <p>{{ext['description']}}</p>
+                <ul class="list-unstyled">
+                  <li><em>URL: </em>
+                    <a href="{{ext['url']}}">{{ext['url']}}</a></li>
+                </ul>
+              </td>
+            </tr>
+          {% endfor %}
+          </table>
+          <table class="table table-bordered">
             <caption>Legacy Extensions (no longer maintained)</caption>
           {% for ext in legacyextensions %}
             <tr>

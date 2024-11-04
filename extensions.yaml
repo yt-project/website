@@ -15,6 +15,7 @@ active:
       This package provides interactive visualization using OpenGL for datasets 
       loaded in yt. It is written to provide both scripting and interactive access.
     contact: Matthew Turk
+    image: yt-idv.gif
   - name: Trident
     url: http://trident-project.org/
     image: trident_logo_blackbg.png
@@ -45,6 +46,7 @@ active:
       A <a href='https://napari.org'>napari</a> plugin for loading data from yt.
     contact: Chris Havlin
     import_as: yt_napari
+    image: yt-napari.gif
   - name: widgyts
     contact: Matthew Turk
     url: https://widgyts.readthedocs.io
@@ -52,27 +54,26 @@ active:
       A fully client-side pan-and-zoom widget, using WebAssembly, for variable 
       mesh datasets from yt. It runs in the browser, so once the data hits your 
       notebook, it's super fast and responsive!
+    image: widgyts.gif
+    import_as: widgyts
   - name: libyt
     url: https://libyt.readthedocs.io
     description: | 
       an in situ analysis tool that allows researchers to analyze and visualize 
       data using yt or other Python packages in parallel during simulation 
       runtime.
+    image: yt_logo.png
     import_as: libyt
     contact: Shin-Rong Tsai
-  - name: powderday
-    url: https://powderday.readthedocs.io
-    contact: Desika Narayanan
-    description: |
-      Powderday is a dust radiative transfer package designed to interface with 
-      galaxy formation simulations in order to produce spectral energy 
-      distributions, as well as realistic images. It relies signficantly on 
-      yt.
-  - name: yt_experiments
-    url: https://github.com/yt-project/yt_experiments
-    contact: Chris Havlin
+  - name: yt_xarray
+    import_as: yt_xarray
     description: | 
-      Experimental enhancements for yt.
+      An xarray accessor plugin for streamlining data communication between 
+      xarray and yt.
+    image: yt_xr.png
+    url: https://yt-xarray.readthedocs.io
+    contact: Chris Havlin
+
 ytproject:
   - name: unyt
     url: https://unyt.readthedocs.io
@@ -98,6 +99,11 @@ ytproject:
     description: |
       EWAH Bool Array utilities for yt. Efficient compression of in-memory 
       integer arrays, useful for indexing arrays.
+  - name: yt_experiments
+    url: https://github.com/yt-project/yt_experiments
+    contact: Chris Havlin
+    description: |
+      Experimental enhancements for yt.
 inactive:
   - name: yt interaction
     url: https://bitbucket.org/data-exp-lab/yt_interaction
@@ -127,5 +133,12 @@ frontends:
     description: |
       A yt frontend for ASPECT unstructured mesh output as well as generic .pvtu
       data.
-
-
+related:
+  - name: powderday
+    url: https://powderday.readthedocs.io
+    description: |
+      Powderday is a dust radiative transfer package designed to interface with 
+      galaxy formation simulations in order to produce spectral energy 
+      distributions, as well as realistic images. It relies signficantly on 
+      yt.
+      
