@@ -47,7 +47,7 @@ jobs:
           name: Deploy to Dreamhost
           command: |
             if [ "${CIRCLE_BRANCH}" == "main" ]; then
-              rsync -avc /tmp/generated_website/ yt_analysis@dickenson.dreamhost.com:yt-project.org/
+              rsync -avc /tmp/generated_website/ yt_analysis@yt-project.org:yt-project.org/
             else
               echo "Not main branch, dry run only"
             fi
