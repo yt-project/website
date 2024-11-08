@@ -100,6 +100,7 @@ def extensions():
     return {'extensions': extensions['active'],
             'ytproject': extensions['ytproject'],
             'frontends': extensions['frontends'],
+            'related': extensions['related'],
             'legacyextensions': extensions['inactive']}
 
 @page('slack')
