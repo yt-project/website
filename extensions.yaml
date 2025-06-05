@@ -79,7 +79,7 @@ active:
       A yt extension for analyzing geotagged image files that are loadable with rasterio. 
       The yt_georaster extension combines yt and rasterio, allowing users to query data 
       contained within geometric shapes, like circles, rectangles, and arbitrary polygons 
-      saved as Shapefiles. 
+      saved as Shapefiles. yt_georaster also allows users to load non-trivially overlapping images (e.g., from different satellites) and get back data in a uniform pixelization.
     image: yt-georaster.png
     url: https://yt-georaster.readthedocs.io
     contact: Britton Smith
