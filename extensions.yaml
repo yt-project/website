@@ -83,6 +83,20 @@ active:
     image: yt-georaster.png
     url: https://yt-georaster.readthedocs.io
     contact: Britton Smith
+  - name: CAESAR
+    import_as: caesar
+    description: |
+      CAESAR is a python-based yt extension package for analyzing the 
+      outputs from cosmological simulations. CAESAR takes as input a 
+      single snapshot from a simulation, and outputs a portable and 
+      compact HDF5 catalog containing a host of galaxy and halo 
+      properties that can be read in and explored without the 
+      original simulation binary. CAESAR thus provides a simple 
+      and intuitive interface for exploring object data within your 
+      outputs.
+    image: CAESAR_bust.png
+    url: https://caesar.readthedocs.io
+    contact: Romeel Davé
 
 ytproject:
   - name: unyt
