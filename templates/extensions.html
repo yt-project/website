@@ -20,12 +20,12 @@
             <caption>Extension Packages</caption>
           {% for ext in extensions %}
             <tr>
-              <td class="col-lg-4">
+              <td class="col-lg-3">
                 {%if 'image' in ext%}
                   <img class="img-responsive" src="{{url_prefix}}/img/extensions/{{ext['image']}}"/>
                 {%endif%}
               </td>
-              <td class="col-lg-8">
+              <td class="col-lg-9">
                 <h3>{{ext['name']}}</h3>
                 <p>{{ext['description']}}</p>
                 <ul class="list-unstyled">
@@ -94,12 +94,12 @@
             <caption>Legacy Extensions (no longer maintained)</caption>
           {% for ext in legacyextensions %}
             <tr>
-              <td class="col-lg-4">
+              <td class="col-lg-3">
                 {%if 'image' in ext%}
                   <img class="img-responsive" src="{{url_prefix}}/img/extensions/{{ext['image']}}"/>
                 {%endif%}
               </td>
-              <td class="col-lg-8">
+              <td class="col-lg-9">
                 <h3>{{ext['name']}}</h3>
                 <p>{{ext['description']}}</p>
                 <ul class="list-unstyled">
