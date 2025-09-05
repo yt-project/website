@@ -957,6 +957,13 @@
             "filename": "athenapk_disk",
             "size": "13 KB",
             "url": "https://yt-project.org/data/athenapk_disk.tar.gz"
+        },
+		{
+            "code": "RIOT (Parthenon-Based)",
+            "description": "A 2D Hydro simulation of a Sedov blast in curvilinear geometry with AMR.",
+            "filename": "riot_sedov_curvlinear",
+            "size": "1.1 MB",
+            "url": "https://yt-project.org/data/riot_sedov_curvlinear.tar.gz"
         }
     ],
     "simulationio frontend": [
