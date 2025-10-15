@@ -272,6 +272,13 @@
             "url": "https://yt-project.org/data/StarParticles.tar.gz"
         },
         {
+            "code": "Quokka",
+            "description": "Two small test datasets for Quokka: quokka/HydroWave/plt00004 and quokka/RadiatingParticles/plt026",
+            "filename": "quokka",
+            "size": "692 KB",
+            "url": "https://yt-project.org/data/quokka.tar.gz"
+        },
+        {
             "code": "WarpX",
             "description": "A WarpX dataset with only one particle species",
             "filename": "LangmuirWave",
@@ -810,7 +817,7 @@
             "size": "40 MB",
             "url": "https://yt-project.org/data/cm1_supercell_native.tar.gz"
         }
-    ], 
+    ],
     "other datasets": [
         {
             "code": "Generic",
@@ -1013,14 +1020,14 @@
         },
         {
             "code": "Gadget",
-            "description": "Gadget snapshot with binary format 2 from the Magneticum simulations. The center of the cluster is at [310306.53, 340613.47, 265758.47] in code units. Load with \"ds = yt.load('snap_132', long_ids=True, field_spec='magneticum_box2_hr')\",", 
+            "description": "Gadget snapshot with binary format 2 from the Magneticum simulations. The center of the cluster is at [310306.53, 340613.47, 265758.47] in code units. Load with \"ds = yt.load('snap_132', long_ids=True, field_spec='magneticum_box2_hr')\",",
             "filename": "MagneticumCluster",
             "size": "190 MB",
             "url": "https://yt-project.org/data/MagneticumCluster.tar.gz"
         },
         {
             "code": "Gadget",
-            "description": "Gadget snapshot using the Magneticum simulation model for the CAMELS simulations at z = 0.1. A subset of the original bounding box has been chosen for size considerations. Load with bounding box = [[8126, 22126], [5140, 19140], [5500, 19500]]", 
+            "description": "Gadget snapshot using the Magneticum simulation model for the CAMELS simulations at z = 0.1. A subset of the original bounding box has been chosen for size considerations. Load with bounding box = [[8126, 22126], [5140, 19140], [5500, 19500]]",
             "filename": "magneticum_camels",
             "size": "159 MB",
             "url": "https://yt-project.org/data/magneticum_camels.tar.gz"
