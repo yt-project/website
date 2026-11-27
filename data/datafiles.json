@@ -117,6 +117,20 @@
             "filename": "solar_prom2d",
             "size": "416MB",
             "url": "https://yt-project.org/data/solar_prom2d.tar.gz"
+        },
+        {
+            "code": "MPI-AMRVAC",
+            "description": "2.5D radially stretched solar wind arcade (8 levels). Unzips to 35MB",
+            "filename": "amrvac_stretched_2d",
+            "size": "33MB",
+            "url": "https://yt-project.org/data/amrvac_stretched_2d.tar.gz"
+        },
+        {
+            "code": "MPI-AMRVAC",
+            "description": "3D radially stretched CME in the solar wind (2 levels). Unzips to 45MB",
+            "filename": "amrvac_stretched_3d",
+            "size": "25MB",
+            "url": "https://yt-project.org/data/amrvac_stretched_3d.tar.gz"
         }
     ],
     "athena frontend": [
